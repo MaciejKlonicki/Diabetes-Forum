@@ -8,3 +8,29 @@
     position: sticky;
     top: 0;
 }
+
+.header-links {
+    color: white;
+    text-decoration: none;
+}
+
+.header-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    width: 70vw;
+    justify-content: end;
+    margin-right: 2rem;
+  }
+
+  .header-item {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+
+  .header-links:hover {
+    background: rgb(17, 199, 255);
+    border-radius: 5px;
+    transition: all 0.2s ease-out;
+  }

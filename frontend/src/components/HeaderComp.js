@@ -8,7 +8,7 @@ function HeaderComp() {
   const [dropdown, setDropdown] = useState(false);
 
   const onMouseEnter = () => {
-    if (window.innerWidth < 960) {
+    if (window.innerWidth < 540) {
       setDropdown(false);
     } else {
       setDropdown(true);
@@ -16,7 +16,7 @@ function HeaderComp() {
   };
 
   const onMouseLeave = () => {
-    if (window.innerWidth < 960) {
+    if (window.innerWidth < 540) {
       setDropdown(false);
     } else {
       setDropdown(false);

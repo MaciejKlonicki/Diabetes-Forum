@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import { AboutDiabetes } from './AboutDiabetes';
 
 function MoveDown() {
-
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click); 
 

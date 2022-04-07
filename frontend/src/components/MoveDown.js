@@ -11,7 +11,7 @@ function MoveDown() {
     <>
         <ul
             onClick={handleClick}
-            className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}
+            className={click ? 'movedown-menu clicked' : 'movedown-menu'}
         >
             {AboutDiabetes.map((item, index)=>{
                 return (

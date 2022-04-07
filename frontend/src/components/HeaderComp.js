@@ -35,7 +35,7 @@ function HeaderComp() {
         to='/'
         className='header-links'
         >
-        Wszystko o curzycy <i className='fas fa-caret-down' />
+        Wszystko o curzycy 
         </Link>
         {dropdown && <MoveDown />}
         </li>

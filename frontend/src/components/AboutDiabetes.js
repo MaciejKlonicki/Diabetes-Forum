@@ -2,11 +2,11 @@ export const AboutDiabetes = [
     {
         title: 'Porady',
         path: '/porady',
-        cName: 'dropdown-link'
+        cName: 'movedown-link'
     },
     {
         title: 'Rodzaje cukrzycy',
         path: '/rodzaje-cukrzycy',
-        cName: 'dropdown-link'
+        cName: 'movedown-link'
     },
 ];

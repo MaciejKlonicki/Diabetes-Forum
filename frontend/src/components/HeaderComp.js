@@ -35,7 +35,7 @@ function HeaderComp() {
         to='/'
         className='header-links'
         >
-        Wszystko o curzycy 
+        Informacje
         </Link>
         {dropdown && <MoveDown />}
         </li>

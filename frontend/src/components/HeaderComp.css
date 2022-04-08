@@ -1,10 +1,10 @@
 .header {
-    background: rgb(17, 199, 255);
+    background: -webkit-linear-gradient(90deg, rgb(12, 52, 182) 5%,rgb(17, 199, 255) 100%);
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1;
+    font-size: 2;
     position: sticky;
     top: 0;
 }
@@ -12,10 +12,7 @@
 .header-links {
     color: white;
     text-decoration: none;
-}
-
-.header-icon {
-  display: none;
+    font-family: 'Muli', sans-serif;
 }
 
 .header-menu {
@@ -24,7 +21,7 @@
     grid-gap: 10px;
     width: 70vw;
     justify-content: end;
-    margin-right: 2rem;
+    margin-right: 5rem;
   }
 
   .header-item {
@@ -34,7 +31,6 @@
   }
 
   .header-links:hover {
-    background: rgb(17, 199, 255);
-    border-radius: 5px;
+    transform: scale(1.2);
     transition: all 0.2s ease-out;
   }

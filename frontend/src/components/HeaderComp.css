@@ -9,6 +9,11 @@
     top: 0;
 }
 
+.header-logo {
+  margin-left: -20px;
+  display: flex;
+}
+
 .header-links {
     color: white;
     text-decoration: none;
@@ -18,7 +23,7 @@
 .header-menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-gap: 100px;
+    grid-gap: 150px;
     width: 90vw;
     justify-content: end;
     margin-right: 2rem;
@@ -43,5 +48,10 @@
       width: 150vw;
       justify-content: end;
       margin-right: 0rem;
+    }
+
+    .header-logo {
+      margin-left: 10px;
+      display: flex;
     }
   }

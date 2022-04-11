@@ -3,12 +3,12 @@
       width: 100px;
       position: absolute;
       top: 50px;
-      right: 330px;
+      right: 310px;
       list-style: none;
       text-align: center;
       border-bottom-right-radius: 5px;
       border-bottom-left-radius: 5px;
-      font-family:'Courier New', Courier, monospace;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     
     .movedown-link-medicaments {
@@ -39,7 +39,7 @@
           text-align: center;
           border-bottom-right-radius: 5px;
           border-bottom-left-radius: 5px;
-          font-family:'Courier New', Courier, monospace;
+          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
   
         .movedown-link-medicaments {

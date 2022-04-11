@@ -10,6 +10,7 @@ function HeaderComp() {
   const [dropdown, setDropdown] = useState(false);
   const [dropdown2, setDropdown2] = useState(false);
   const [dropdown3, setDropdown3] = useState(false);
+  const [dropdown4, setDropdown4] = useState(false);
 
   const onMouseEnter = () => {
     if (window.innerWidth < 540) {
@@ -60,6 +61,22 @@ function HeaderComp() {
     }
   };
 
+  const onMouseEnter4 = () => {
+    if (window.innerWidth < 540) {
+      setDropdown4(false);
+    } else {
+      setDropdown4(true);
+    }
+  };
+
+  const onMouseLeave4 = () => {
+    if (window.innerWidth < 540) {
+      setDropdown4(false);
+    } else {
+      setDropdown4(false);
+    }
+  };
+
   return (
     <nav className='header'>
       <Link to='/' className='header-logo'>
@@ -104,6 +121,20 @@ function HeaderComp() {
         </Link>
         {dropdown3 && <MoveDownAdvices />}
         </li>
+
+        <li
+          className='header-item'
+          onMouseEnter={onMouseEnter4}
+          onMouseLeave={onMouseLeave4}
+        >
+        <Link 
+        className='header-links'
+        >
+        Więcej
+        </Link>
+        {dropdown4 && <MoveDownAdvices />}
+        </li>
+        <a href="/"><button class="bn632-hover bn26">Przeliczniki</button></a>
       </ul>
     </nav>
   )

@@ -18,10 +18,10 @@
 .header-menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
-    grid-gap: 10px;
-    width: 70vw;
+    grid-gap: 100px;
+    width: 90vw;
     justify-content: end;
-    margin-right: 5rem;
+    margin-right: 2rem;
   }
 
   .header-item {
@@ -33,4 +33,15 @@
   .header-links:hover {
     transform: scale(1.2);
     transition: all 0.2s ease-out;
+  }
+
+  @media screen and (max-width: 960px) {
+    .header-menu {
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      grid-gap: 70px;
+      width: 150vw;
+      justify-content: end;
+      margin-right: 0rem;
+    }
   }

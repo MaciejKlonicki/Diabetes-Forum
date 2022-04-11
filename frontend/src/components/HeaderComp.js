@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import './HeaderComp.css';
 import { Link } from 'react-router-dom';
-import MoveDown from './MoveDown';
+import MoveDownDiabetes from './MoveDownDiabetes';
+import MoveDownMedicaments from './MoveDownMedicaments';
 
 function HeaderComp() {
 
   const [dropdown, setDropdown] = useState(false);
+  const [dropdown2, setDropdown2] = useState(false);
 
   const onMouseEnter = () => {
     if (window.innerWidth < 540) {
@@ -23,6 +25,23 @@ function HeaderComp() {
     }
   };
 
+  
+  const onMouseEnter2 = () => {
+    if (window.innerWidth < 540) {
+      setDropdown2(false);
+    } else {
+      setDropdown2(true);
+    }
+  };
+
+  const onMouseLeave2 = () => {
+    if (window.innerWidth < 540) {
+      setDropdown2(false);
+    } else {
+      setDropdown2(false);
+    }
+  };
+
   return (
     <nav className='header'>
       <ul className='header-menu'>
@@ -32,14 +51,26 @@ function HeaderComp() {
           onMouseLeave={onMouseLeave}
         >
         <Link 
-        to='/'
         className='header-links'
         >
-        Informacje
+        O cukrzycy
         </Link>
-        {dropdown && <MoveDown />}
+        {dropdown && <MoveDownDiabetes />}
         </li>
-        </ul>
+
+        <li
+          className='header-item'
+          onMouseEnter={onMouseEnter2}
+          onMouseLeave={onMouseLeave2}
+        >
+        <Link 
+        className='header-links'
+        >
+        Sprzęt
+        </Link>
+        {dropdown2 && <MoveDownMedicaments />}
+        </li>
+      </ul>
     </nav>
   )
 }

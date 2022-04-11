@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-import './MoveDown.css'
-import { Link } from 'react-router-dom'
-import { AboutDiabetes } from './AboutDiabetes';
-
+import React, { useState } from 'react';
+import './MoveDownMedicaments.css';
+import { Link } from 'react-router-dom';
+import { Medicaments } from './Medicaments';
+ 
 function MoveDown() {
     const [click, setClick] = useState(false);
     const handleClick = () => setClick(!click); 
@@ -11,9 +11,9 @@ function MoveDown() {
     <>
         <ul
             onClick={handleClick}
-            className={click ? 'movedown-menu clicked' : 'movedown-menu'}
+            className={click ? 'movedown-menu-medicaments clicked' : 'movedown-menu-medicaments'}
         >
-            {AboutDiabetes.map((item, index)=>{
+            {Medicaments.map((item, index)=>{
                 return (
                     <li key={index}>
                         <Link
@@ -23,6 +23,7 @@ function MoveDown() {
                         >
                             {item.title}
                         </Link>
+                        
                     </li>
                 );
             })}

@@ -134,7 +134,7 @@ function HeaderComp() {
         </Link>
         {dropdown4 && <MoveDownAdvices />}
         </li>
-        <a href="/"><button class="bn632-hover bn26">Przeliczniki</button></a>
+        <a href="/"><button class="header-button btn">Przeliczniki</button></a>
       </ul>
     </nav>
   )

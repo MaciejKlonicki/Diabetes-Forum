@@ -14,10 +14,48 @@
   display: flex;
 }
 
+
 .header-links {
     color: white;
     text-decoration: none;
+    text-align:center;
     font-family: 'Muli', sans-serif;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    background-image: linear-gradient(
+      to right,
+      #54b3d6,
+      #54b3d6 50%,
+      #fff 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.header-links::before {
+  content: '';
+  background: #54b3d6;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-links:hover {
+  background-position: 0;
+}
+
+.header-links:hover::before {
+  width: 100%;
 }
 
 .header-menu {
@@ -35,13 +73,9 @@
     height: 80px;
   }
 
-  .header-links:hover {
-    transform: scale(1.2);
-    transition: all 0.2s ease-out;
-  }
 
-  .bn632-hover {
-    width: 130px;
+  .header-button {
+    width: 110px;
     font-size: 14px;
     font-weight: 600;
     color: #fff;
@@ -50,25 +84,25 @@
     height: 35px;
     text-align:center;
     border: none;
-    background-size: 300% 100%;
-    border-radius: 50px;
-    -o-transition: all .4s ease-in-out;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    background-size: 200% 100%;
+    border-radius: 20px;
+    -o-transition: all .5s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
   }
   
-  .bn632-hover:hover {
+  .header-button:hover {
     background-position: 100% 0;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
   }
   
-  .bn632-hover:focus {
+  .header-button:focus {
     outline: none;
   }
   
-  .bn632-hover.bn26 {
+  .header-button.btn {
     background-image: linear-gradient(
       to right,
       #25aae1,

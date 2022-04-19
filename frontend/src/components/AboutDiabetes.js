@@ -1,7 +1,7 @@
 export const AboutDiabetes = [
     {
         title: 'Podstawy',
-        path: '/porady',
+        path: '/podstawy',
         cName: 'movedown-link-diabetes'
     },
     {

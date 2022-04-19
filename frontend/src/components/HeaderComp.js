@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import MoveDownDiabetes from './MoveDownDiabetes';
 import MoveDownMedicaments from './MoveDownMedicaments';
 import MoveDownAdvices from './MoveDownAdvices';
+import MoveDownMore from './MoveDownMore';
 
 function HeaderComp() {
 
@@ -132,7 +133,7 @@ function HeaderComp() {
         >
         Więcej
         </Link>
-        {dropdown4 && <MoveDownAdvices />}
+        {dropdown4 && <MoveDownMore />}
         </li>
       </ul>
         <a href="/kalkulator"><button class="header-button-calc btn">Kalkulator</button></a>

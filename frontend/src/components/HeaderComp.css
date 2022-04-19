@@ -174,10 +174,10 @@
   .header-button-login.btn {
     background-image: linear-gradient(
       to right,
-      #16dd0f,
-      #147421,
-      #13f113,
-      #217416
+      #25aae1,
+      #4481eb,
+      #04befe,
+      #3f86ed
     );
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
   }
@@ -210,10 +210,10 @@
   .header-button-registration.btn {
     background-image: linear-gradient(
       to right,
-      #16dd0f,
-      #147421,
-      #13f113,
-      #217416
+      #25aae1,
+      #4481eb,
+      #04befe,
+      #3f86ed
     );
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
   }

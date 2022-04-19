@@ -134,8 +134,11 @@ function HeaderComp() {
         </Link>
         {dropdown4 && <MoveDownAdvices />}
         </li>
-        <a href="/"><button class="header-button btn">Przeliczniki</button></a>
       </ul>
+        <a href="/kalkulator"><button class="header-button-calc btn">Kalkulator</button></a>
+        <a href="/przeliczniki"><button class="header-button btn">Przeliczniki</button></a>
+        <a href="/logowanie"><button class="header-button-login btn">Zaloguj się</button></a>
+        <a href="/rejestracja"><button class="header-button-registration btn">Zarejestruj się</button></a>
     </nav>
   )
 }

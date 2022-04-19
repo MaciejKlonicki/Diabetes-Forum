@@ -21,7 +21,7 @@
     text-align:center;
     font-family: 'Muli', sans-serif;
     display: flex;
-    font-weight: 600;
+    font-weight: 500;
     align-items: center;
     background-image: linear-gradient(
       to right,
@@ -64,7 +64,7 @@
     grid-gap: 120px;
     width: 90vw;
     justify-content: end;
-    margin-right: 40rem;
+    margin-right: 25rem;
   }
 
   .header-item {
@@ -76,19 +76,16 @@
 
   .header-button {
     width: 110px;
+    height: 35px;
+    position: relative;
+    right: 520px;
     font-size: 14px;
     font-weight: 600;
     color: #fff;
     cursor: pointer;
-    margin: 22px;
-    height: 35px;
-    text-align:center;
     border: none;
     background-size: 200% 100%;
     border-radius: 20px;
-    -o-transition: all .5s ease-in-out;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
   }
   
   .header-button:hover {
@@ -112,6 +109,115 @@
     );
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
   }
+
+  .header-button-calc {
+    width: 110px;
+    height: 35px;
+    position: relative;
+    right: 200px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    background-size: 200% 100%;
+    border-radius: 20px;
+  }
+  
+  .header-button-calc:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .header-button-calc:focus {
+    outline: none;
+  }
+  
+  .header-button-calc.btn {
+    background-image: linear-gradient(
+      to right,
+      #25aae1,
+      #4481eb,
+      #04befe,
+      #3f86ed
+    );
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  }
+
+  .header-button-login {
+    width: 110px;
+    height: 35px;
+    position: relative;
+    right: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    background-size: 200% 100%;
+    border-radius: 20px;
+  }
+
+  .header-button-login:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .header-button-login:focus {
+    outline: none;
+  }
+  
+  .header-button-login.btn {
+    background-image: linear-gradient(
+      to right,
+      #16dd0f,
+      #147421,
+      #13f113,
+      #217416
+    );
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  }
+
+  .header-button-registration {
+    width: 110px;
+    height: 35px;
+    position: relative;
+    right: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    background-size: 200% 100%;
+    border-radius: 20px;
+  }
+
+  .header-button-registration:hover {
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .header-button-registration:focus {
+    outline: none;
+  }
+  
+  .header-button-registration.btn {
+    background-image: linear-gradient(
+      to right,
+      #16dd0f,
+      #147421,
+      #13f113,
+      #217416
+    );
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  }
+
   @media screen and (max-width: 960px) {
     .header-menu {
       display: grid;

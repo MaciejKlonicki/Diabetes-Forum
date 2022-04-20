@@ -222,7 +222,7 @@
     .header-menu {
       display: grid;
       grid-template-columns: repeat(5, auto);
-      grid-gap: 70px;
+      grid-gap: 20px;
       width: 150vw;
       justify-content: end;
       margin-right: 0rem;
@@ -232,4 +232,93 @@
       margin-left: 10px;
       display: flex;
     }
+
+    .header-button-registration {
+      width: 70px;
+      height: 35px;
+      position: relative;
+      right: 5px;
+      font-size: 11px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+      background-size: 200% 100%;
+      border-radius: 20px;
+    }
+
+    .header-button-login {
+      width: 70px;
+      height: 35px;
+      position: relative;
+      right: 10px;
+      font-size: 11px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+      background-size: 200% 100%;
+      border-radius: 20px;
+    }
+
+    .header-button-calc {
+      width: 70px;
+      height: 35px;
+      position: relative;
+      right: 0px;
+      font-size: 11px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+      background-size: 200% 100%;
+      border-radius: 20px;
+    }
+
+    .header-button {
+      width: 70px;
+      height: 35px;
+      position: relative;
+      right: 170px;
+      font-size: 11px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      border: none;
+      background-size: 200% 100%;
+      border-radius: 20px;
+    }
+
+    .header-menu {
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      grid-gap: 30px;
+      width: 90vw;
+      justify-content: end;
+      margin-right: 7rem;
+    }
+
+    .header-links {
+      color: white;
+      text-decoration: none;
+      text-align:center;
+      font-family: 'Muli', sans-serif;
+      display: flex;
+      font-weight: 500;
+      font-size: 15px;
+      align-items: center;
+      background-image: linear-gradient(
+        to right,
+        #54b3d6,
+        #54b3d6 50%,
+        #fff 50%
+      );
+      background-size: 200% 100%;
+      background-position: -100%;
+      display: inline-block;
+      position: relative;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.3s ease-in-out;
+  }
   }

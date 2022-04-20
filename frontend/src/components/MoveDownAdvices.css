@@ -32,14 +32,15 @@
     .movedown-menu-advices {
         background: -webkit-linear-gradient(90deg, rgb(12, 52, 182) 5%,rgb(17, 199, 255) 100%);
         position: absolute;
-        width: 100px;
+        width: 70px;
         top: 50px;
-        right: 90px;
+        right: 467px;
         list-style: none;
         text-align: center;
         border-bottom-right-radius: 5px;
         border-bottom-left-radius: 5px;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
       }
 
       .movedown-link-advices {

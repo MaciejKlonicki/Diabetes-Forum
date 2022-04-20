@@ -138,8 +138,8 @@ function HeaderComp() {
       </ul>
         <a href="/kalkulator"><button class="header-button-calc btn">Kalkulator</button></a>
         <a href="/przeliczniki"><button class="header-button btn">Przeliczniki</button></a>
-        <a href="/logowanie"><button class="header-button-login btn">Zaloguj się</button></a>
-        <a href="/rejestracja"><button class="header-button-registration btn">Zarejestruj się</button></a>
+        <a href="/logowanie"><button class="header-button-login btn">Logowanie</button></a>
+        <a href="/rejestracja"><button class="header-button-registration btn">Rejestracja</button></a>
     </nav>
   )
 }

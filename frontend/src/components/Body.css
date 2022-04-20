@@ -1,0 +1,19 @@
+.background-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+    display: flex;
+}
+
+@media screen and (max-width: 960px) {
+    
+    .background-image {
+      flex-direction: column;
+      width: 100%;
+      height: 100vh;
+      position: relative; 
+      object-fit: cover;
+    }
+}

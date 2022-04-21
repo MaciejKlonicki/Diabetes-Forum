@@ -5,6 +5,7 @@
     position: fixed;
     z-index: -1;
     display: flex;
+    opacity: 0.5;
 }
 
 @media screen and (max-width: 960px) {
@@ -15,5 +16,6 @@
       height: 100vh;
       position: relative; 
       object-fit: cover;
+      opacity: 0.5;
     }
 }

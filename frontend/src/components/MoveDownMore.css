@@ -1,9 +1,9 @@
 .movedown-menu-more {
   background: -webkit-linear-gradient(90deg, rgb(12, 52, 182) 5%,rgb(17, 199, 255) 100%);
-    width: 100px;
+    width: 110px;
     position: absolute;
     top: 50px;
-    right: 915px;
+    right: 930px;
     list-style: none;
     text-align: center;
     border-bottom-right-radius: 5px;
@@ -20,7 +20,7 @@
     padding: 10px;
     text-align: start;
     position: relative;
-    left: -30px;
+    font-size: 15px;
   }
 
   .movedown-link-more:hover {
@@ -32,9 +32,9 @@
     .movedown-menu-more {
         background: -webkit-linear-gradient(90deg, rgb(12, 52, 182) 5%,rgb(17, 199, 255) 100%);
         position: absolute;
-        width: 68px;
+        width: 80px;
         top: 50px;
-        right: 390px;
+        right: 405px;
         list-style: none;
         text-align: center;
         border-bottom-right-radius: 5px;
@@ -44,6 +44,6 @@
       }
 
       .movedown-link-more {
-        left: -30px;
+        font-size: 12px;
       }
   }

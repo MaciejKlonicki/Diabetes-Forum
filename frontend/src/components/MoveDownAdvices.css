@@ -3,7 +3,7 @@
     width: 100px;
     position: absolute;
     top: 50px;
-    right: 1085px;
+    right: 1105px;
     list-style: none;
     text-align: center;
     border-bottom-right-radius: 5px;
@@ -17,10 +17,10 @@
     width: 100%;
     text-decoration: none;
     color: #fff;
-    padding: 10px;
+    padding: 15px;
     text-align: start;
     position: relative;
-    left: -30px;
+    font-size: 15px;
   }
 
   .movedown-link-advices:hover {
@@ -32,9 +32,9 @@
     .movedown-menu-advices {
         background: -webkit-linear-gradient(90deg, rgb(12, 52, 182) 5%,rgb(17, 199, 255) 100%);
         position: absolute;
-        width: 70px;
+        width: 80px;
         top: 50px;
-        right: 467px;
+        right: 480px;
         list-style: none;
         text-align: center;
         border-bottom-right-radius: 5px;
@@ -44,6 +44,6 @@
       }
 
       .movedown-link-advices {
-        left: -30px;
+        font-size: 12px;
       }
   }

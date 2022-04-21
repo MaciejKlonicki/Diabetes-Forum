@@ -1,10 +1,11 @@
 import React from 'react'
 import './Body.css';
 import '../App.css';
+import { Link } from 'react-router-dom';
 
 function Body() {
   return (
-    <div>
+    <div className='body-container'>
         <BackImage />
     </div>
   )
@@ -17,5 +18,19 @@ function BackImage() {
       alt='backgroundimg'/>
     )
   }
+
+function Card(props) {
+  return (
+    <div>
+      <div>
+        <button to={props.path}>  
+        
+        </button>
+      </div>
+    </div>
+  )
+}
+
+
 
 export default Body

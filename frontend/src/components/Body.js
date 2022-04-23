@@ -8,7 +8,7 @@ function Body() {
     <div className='body-container'>
         <BackImage />
         <Card
-          img='/images/informations.png'
+          img='/images/informations.jpg'
           path='/informations'/>
     </div>
   )
@@ -25,7 +25,7 @@ function BackImage() {
 function Card(props) {
   return (
     <div className='cards_image'>
-      <h1 class="dynamic-text-shadow">Informacje</h1>
+      <h1 class="dynamic-text-shadow">Informacje ogólne</h1>
       <Link to={props.path}>
         <img
           src={props.img}

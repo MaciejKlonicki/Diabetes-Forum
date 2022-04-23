@@ -7,6 +7,9 @@ function Body() {
   return (
     <div className='body-container'>
         <BackImage />
+        <Card
+          img='/images/informations.png'
+          path='/informations'/>
     </div>
   )
 }
@@ -21,12 +24,15 @@ function BackImage() {
 
 function Card(props) {
   return (
-    <div>
-      <div>
-        <button to={props.path}>  
-        
-        </button>
-      </div>
+    <div className='cards_image'>
+      <h1 class="dynamic-text-shadow">Informacje</h1>
+      <Link to={props.path}>
+        <img
+          src={props.img}
+          alt='Informations'
+          className='photo_cards'
+        />
+      </Link>
     </div>
   )
 }

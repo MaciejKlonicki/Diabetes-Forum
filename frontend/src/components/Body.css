@@ -18,6 +18,52 @@
   align-items: center;
   object-fit: cover;
 }
+
+.cards_image {
+  background-color: rgba(0,0,0, 0.4);
+  border: 3px solid #25aae1;
+  position: fixed;
+  top: 50%;
+  left: 15%;
+  height: 600px;
+  width: 350px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
+.photo_cards {
+  height: 100px;
+  width: 100px;
+  position:relative;
+  top: 65%;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 2;
+  text-align: center;
+  font-family: 'Raleway',sans-serif;
+  color: #ffffff;
+}
+
+h1::after {
+  position: absolute;
+  width: 45%;
+  top: 11%;
+  left: 33%;
+  margin-left: -5.5%;
+  content: '';
+  border-bottom: 2px solid #ffffff;
+}
+
+.dynamic-text-shadow {
+  text-shadow: .1em .2em .1em hsl(200 50% 30%);
+}
+
+
 @media screen and (max-width: 960px) {
     
     .background-image {

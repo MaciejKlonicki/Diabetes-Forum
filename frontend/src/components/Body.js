@@ -9,7 +9,7 @@ function Body() {
         <BackImage />
         <Card
           img='/images/informations.jpg'
-          path='/informations'/>
+          path='/informacje'/>
     </div>
   )
 }

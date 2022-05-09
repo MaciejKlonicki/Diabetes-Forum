@@ -6,7 +6,7 @@ function FooterComp() {
     <div className='footer'>
         &copy; {new Date().getFullYear()} Kielce University of Technology | All rights reserved | Terms of Service | Privacy
       <div>
-      <a href="/kontakt"><button class="footer-button-contact btn">Kontakt</button></a>
+      <a href="/kontakt"><button className="footer-button-contact btn">Kontakt</button></a>
       </div>
     </div>
   )

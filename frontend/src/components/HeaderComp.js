@@ -89,7 +89,7 @@ function HeaderComp() {
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}
         >
-        <Link 
+        <Link to='/'
         className='header-links'
         >
         O cukrzycy
@@ -102,7 +102,7 @@ function HeaderComp() {
           onMouseEnter={onMouseEnter2}
           onMouseLeave={onMouseLeave2}
         >
-        <Link 
+        <Link to='/'
         className='header-links'
         >
         Sprzęt
@@ -115,7 +115,7 @@ function HeaderComp() {
           onMouseEnter={onMouseEnter3}
           onMouseLeave={onMouseLeave3}
         >
-        <Link 
+        <Link to='/'
         className='header-links'
         >
         Porady
@@ -128,7 +128,7 @@ function HeaderComp() {
           onMouseEnter={onMouseEnter4}
           onMouseLeave={onMouseLeave4}
         >
-        <Link 
+        <Link to='/'
         className='header-links'
         >
         Więcej
@@ -136,10 +136,10 @@ function HeaderComp() {
         {dropdown4 && <MoveDownMore />}
         </li>
       </ul>
-        <a href="/kalkulator"><button class="header-button-calc btn">Kalkulator</button></a>
-        <a href="/przeliczniki"><button class="header-button btn">Przeliczniki</button></a>
-        <a href="/logowanie"><button class="header-button-login btn">Logowanie</button></a>
-        <a href="/rejestracja"><button class="header-button-registration btn">Rejestracja</button></a>
+        <a href="/kalkulator"><button className="header-button-calc btn">Kalkulator</button></a>
+        <a href="/przeliczniki"><button className="header-button btn">Przeliczniki</button></a>
+        <a href="/logowanie"><button className="header-button-login btn">Logowanie</button></a>
+        <a href="/rejestracja"><button className="header-button-registration btn">Rejestracja</button></a>
     </nav>
   )
 }

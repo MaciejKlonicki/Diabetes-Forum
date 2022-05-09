@@ -8,16 +8,16 @@ function Body() {
   return (
     <div>
         <BackImage />
-        <Information_Card
+        <InformationCard
           img='/images/informations.jpg'
           path='/informacje'/>
-        <Food_Card
+        <FoodCard
           img='/images/food.jpg'
           path='/przeliczniki'/>
-        <Calculator_Card
+        <CalculatorCard
           img='/images/calc.jpg'
           path='/kalkulator'/>
-        <Login_Card
+        <LoginCard
           img='/images/login.jpg'
           path='/logowanie'/>
     </div>
@@ -32,10 +32,10 @@ function BackImage() {
     )
   }
 
-function Information_Card(props) {
+function InformationCard(props) {
   return (
     <div className='cards_image'>
-      <h1 class="dynamic-text-shadow">Informacje ogólne</h1>
+      <h1 className="dynamic-text-shadow">Informacje ogólne</h1>
       <Link to={props.path}>
         <img
           src={props.img}
@@ -48,10 +48,10 @@ function Information_Card(props) {
   )
 }
 
-function Food_Card(props) {
+function FoodCard(props) {
   return (
     <div className='cards_image2'>
-      <h1 class="dynamic-text-shadow">Przeliczniki</h1>
+      <h1 className="dynamic-text-shadow">Przeliczniki</h1>
       <Link to={props.path}>
         <img
           src={props.img}
@@ -64,10 +64,10 @@ function Food_Card(props) {
   )
 }
 
-function Calculator_Card(props) {
+function CalculatorCard(props) {
   return (
     <div className='cards_image3'>
-      <h1 class="dynamic-text-shadow">Kalkulator</h1>
+      <h1 className="dynamic-text-shadow">Kalkulator</h1>
       <Link to={props.path}>
         <img
           src={props.img}
@@ -80,10 +80,10 @@ function Calculator_Card(props) {
   )
 }
 
-function Login_Card(props) {
+function LoginCard(props) {
   return (
     <div className='cards_image4'>
-      <h1 class="dynamic-text-shadow">Zaloguj się</h1>
+      <h1 className="dynamic-text-shadow">Zaloguj się</h1>
       <Link to={props.path}>
         <img
           src={props.img}

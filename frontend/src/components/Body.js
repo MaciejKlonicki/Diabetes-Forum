@@ -1,7 +1,5 @@
 import React from 'react'
 import './Body.css';
-import '../App.css';
-import './HeaderComp.css'
 import { Link } from 'react-router-dom';
 
 function Body() {

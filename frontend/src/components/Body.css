@@ -8,17 +8,6 @@
     opacity: 0.5;
 }
 
-.body-container {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  position: fixed;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  object-fit: cover;
-}
-
 .cards_image {
   background-color: rgba(0,0,0, 0.4);
   border: 5px solid #25aae1;

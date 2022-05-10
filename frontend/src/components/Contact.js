@@ -1,6 +1,5 @@
 import emailjs from "emailjs-com";
 import React from 'react';
-import './Body.css';
 import './Contact.css';
 
 export default function Contact() {
@@ -19,24 +18,34 @@ export default function Contact() {
 
     function BackImage() {
         return (
-          <img className='background-image' 
+          <img className='background-image-contact' 
           src={"/images/background.jpg"} 
-          alt='backgroundimg'/>
+          alt='backgroundimgcontact'/>
         )
       }
 
+
+
     return(
         <div>
-            <div className="container">
+            <div>
             <BackImage />
             <form onSubmit={sendEmail}>
                         <div className="name-holder">
-                            <input type="text" className="form-control" placeholder="Nazwa" name="name"/>
+                            <input type="text" className="form-control" placeholder="Nazwa użytkownika" required name="name"/>
                         </div>
-                            <input type="email" className="form-control" placeholder="E-mail" name="email"/>
-                            <input type="text" className="form-control" placeholder="Temat" name="subject"/>
-                            <textarea className="form-control" id="" cols="30" rows="8" placeholder="Wiadomość" name="message"></textarea>
-                            <input type="submit" className="btn btn-info" value="Wyślij"></input>
+                        <div className="email-holder">
+                            <input type="email" className="form-control" placeholder="E-mail" required name="email"/>
+                        </div>
+                        <div className="text-holder">
+                            <input type="text" className="form-control" placeholder="Temat" required name="subject"/>
+                        </div>
+                        <div className="form-holder">
+                            <textarea className="form-control" id="" cols="80" rows="20" placeholder="Wiadomość" required name="message"></textarea>
+                        </div>
+                        <div className="submit-holder">
+                            <button className="header-button-sub btn" value="Wyślij">Wyślij</button>
+                        </div>
                 </form>
             </div>
         </div>

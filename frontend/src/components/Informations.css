@@ -1,0 +1,20 @@
+.image-for-info {
+        position: fixed;
+        top: 50%;
+        left: 200px;
+        height: 600px;
+        width: 380px;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        text-align: center;
+}
+
+.info-photo {
+  height: 400px;
+  width: 350px;
+  position:relative;
+  top: 11%;
+  opacity: 0.9;
+  transition: all 0.5s ease;
+  border-radius: 5%;
+}

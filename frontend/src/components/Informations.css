@@ -10,11 +10,50 @@
 }
 
 .info-photo {
-  height: 400px;
-  width: 350px;
+  height: 700px;
+  width: 400px;
   position:relative;
-  top: 11%;
+  bottom: 10%;
+  left: 10%;
   opacity: 0.9;
   transition: all 0.5s ease;
-  border-radius: 5%;
+  border-radius: 2%;
+  cursor:auto;
+  opacity: 1;
 }
+
+
+.image__overlay {
+  position: absolute;
+  bottom: -15%;
+  left: 10%;
+  width: 400px;
+  height: 700px;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.25s;
+  font-size: 10px;
+} 
+
+.h2-position {
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  width: 350px;
+  height: 650px;
+  bottom: 0%;
+  left: 15%;
+}
+
+ .image__overlay:hover {
+  opacity: 1;
+}
+
+.image__description {
+  font-size: 1.25em;
+  margin-top: 0.25em;
+}
+
+

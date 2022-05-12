@@ -1,6 +1,5 @@
 import React from 'react'
 import './Body.css';
-import { Link } from 'react-router-dom';
 import './Informations.css'
 
 function Informations() {
@@ -8,7 +7,7 @@ function Informations() {
     <div>
         <BackImage />
         <ImagesForInformations
-          img='/images/informations1.jpg'/>
+          img='/images/question.jpg'/>
     </div>
   )
 }
@@ -24,13 +23,19 @@ function BackImage() {
   function ImagesForInformations(props) {
     return (
       <div className='image-for-info'>
-        <Link to={props.path}>
           <img
           src={props.img}
           alt='Informations'
           className='info-photo'
           />
-        </Link>
+          <div className='h2-position'>
+          <h2>Czym jest cukrzyca?</h2>
+          </div>
+          <div className="image__overlay">
+          <p className="image__description">
+            Here we have a brick wall.
+          </p>
+          </div>
       </div>
     );
   }

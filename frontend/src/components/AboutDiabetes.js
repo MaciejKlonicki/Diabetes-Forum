@@ -5,11 +5,6 @@ export const AboutDiabetes = [
         cName: 'movedown-link-diabetes'
     },
     {
-        title: 'Rodzaje cukrzycy',
-        path: '/rodzaje-cukrzycy',
-        cName: 'movedown-link-diabetes'
-    },
-    {
         title: 'Odżywianie',
         path: '/odzywianie',
         cName: 'movedown-link-diabetes'

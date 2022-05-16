@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Informations from './components/Informations';
 import Converters from './components/Converters';
+import Basics from './components/Basics';
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path='/kontakt' exact component={Contact} />
         <Route path='/informacje' exact component={Informations} />
         <Route path='/przeliczniki' exact component={Converters} />
+        <Route path='/podstawy' exact component={Basics} />
       </Switch>
       <FooterComp />
       </Router>

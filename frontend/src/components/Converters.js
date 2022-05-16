@@ -1,6 +1,5 @@
 import React from 'react';
 import './Converters.css';
-import './Body.css';
   
 function Converters() {
   return (
@@ -48,7 +47,7 @@ function FirstTable() {
         <tr>
           <td>Kajzerka</td>
           <td>20 g = 1WW</td>
-          <td>1/2 bułki</td>
+          <td>½ bułki</td>
         </tr>
         <tr>
           <td>Bułka tarta</td>
@@ -77,12 +76,12 @@ function SecondTable() {
         <tr>
           <td>Jogurt naturalny</td>
           <td>170 g = 1WW</td>
-          <td>3/4 szklanki</td>
+          <td>1 szklanka</td>
         </tr>
         <tr>
           <td>Jogurt truskawkowy</td>
           <td>130 g = 1WW</td>
-          <td>1/2 szklanki</td>
+          <td>½ szklanki</td>
         </tr>
         <tr>
           <td>Kefir</td>
@@ -141,7 +140,7 @@ function ThirdTable() {
         <tr>
           <td>Makaron gotowany</td>
           <td>45 g = 1WW</td>
-          <td>1/2 szklanki</td>
+          <td>½ szklanki</td>
         </tr>
       </table>
     </div>

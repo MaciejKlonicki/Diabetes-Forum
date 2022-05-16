@@ -11,7 +11,6 @@
 .h2-basic {
     color: white;
     position: relative;
-    top: 20px;
     left: 800px;
     text-shadow: .1em .2em .1em hsl(200 50% 30%);
     font-size: 20px;
@@ -19,6 +18,7 @@
     font-family: 'Raleway',sans-serif;
     color: #ffffff;
     align-items: center;
+    top: 60px;
 }
 
 .h2-basic::after {
@@ -32,10 +32,12 @@
 }
 
  .p-basic {
+     top: 50px;
     position: relative;
     margin-top: 5.25em;
     margin-left: 250px;
     margin-right: 250px;
     color: black;
     font-weight: 100;
+    font-size: 1.20em;
  }

@@ -32,12 +32,12 @@
 }
 
  .p-basic {
-     top: 45px;
+    top: 45px;
     position: relative;
     margin-top: 5.25em;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 300px;
+    margin-right: 300px;
     color: black;
     font-weight: 100;
-    font-size: 1.20em;
+    font-size: 1.15em;
  }

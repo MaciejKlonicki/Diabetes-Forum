@@ -1,14 +1,14 @@
 .header {
-    background: -webkit-linear-gradient(90deg, rgb(12, 52, 182) 5%,rgb(17, 199, 255) 100%);
-    height: 50px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2;
-    position: sticky;
-    top: 0;    
-    z-index: 2;
+  background: -webkit-linear-gradient(90deg, rgb(12, 52, 182) 5%,rgb(17, 199, 255) 100%);
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2;
+  position: sticky;
+  top: 0;    
+  z-index: 2;
 }
 
 .header-logo {
@@ -17,26 +17,26 @@
 }
 
 .header-links {
-    color: white;
-    text-decoration: none;
-    text-align:center;
-    font-family: 'Muli', sans-serif;
-    display: flex;
-    font-weight: 500;
-    align-items: center;
-    background-image: linear-gradient(
+  color: white;
+  text-decoration: none;
+  text-align:center;
+  font-family: 'Muli', sans-serif;
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  background-image: linear-gradient(
       to right,
       #54b3d6,
       #54b3d6 50%,
       #fff 50%
     );
-    background-size: 200% 100%;
-    background-position: -100%;
-    display: inline-block;
-    position: relative;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all 0.3s ease-in-out;
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
 }
 
 .header-links::before {
@@ -60,19 +60,19 @@
 }
 
 .header-menu {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-gap: 120px;
-    width: 90vw;
-    justify-content: end;
-    margin-right: 25rem;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 120px;
+  width: 90vw;
+  justify-content: end;
+  margin-right: 25rem;
   }
 
-  .header-item {
-    display: flex;
-    align-items: center;
-    height: 80px;
-  }
+.header-item {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
 
 
   .header-button {

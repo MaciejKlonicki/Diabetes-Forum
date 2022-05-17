@@ -18,7 +18,7 @@
     font-family: 'Raleway',sans-serif;
     color: #ffffff;
     align-items: center;
-    top: 30px;
+    top: 20px;
 }
 
 .h2-daily::after {
@@ -32,7 +32,7 @@
 }
 
 .p-daily {
-    bottom: 30px;
+    bottom: 50px;
     position: relative;
     margin-top: 5.25em;
     margin-left: 300px;

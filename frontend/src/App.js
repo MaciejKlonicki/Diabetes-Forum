@@ -9,6 +9,7 @@ import Converters from './components/Converters';
 import Basics from './components/Basics';
 import Nutrition from './components/Nutrition';
 import Daily from './components/Daily';
+import Glucometers from './components/Glucometers';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path='/podstawy' exact component={Basics} />
         <Route path='/odzywianie' exact component={Nutrition} />
         <Route path='/codziennosc' exact component={Daily} />
+        <Route path='/glukometry' exact component={Glucometers} />
       </Switch>
       <FooterComp />
       </Router>

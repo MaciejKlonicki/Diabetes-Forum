@@ -8,6 +8,7 @@ import Informations from './components/Informations';
 import Converters from './components/Converters';
 import Basics from './components/Basics';
 import Nutrition from './components/Nutrition';
+import Daily from './components/Daily';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path='/przeliczniki' exact component={Converters} />
         <Route path='/podstawy' exact component={Basics} />
         <Route path='/odzywianie' exact component={Nutrition} />
+        <Route path='/codziennosc' exact component={Daily} />
       </Switch>
       <FooterComp />
       </Router>

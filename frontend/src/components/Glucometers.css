@@ -7,3 +7,178 @@
     display: flex;
     opacity: 0.5;
 }
+
+.image-for-glucometr-1 {
+    position: fixed;
+    top: 50%;
+    left: 150px;
+    height: 700px;
+    width: 380px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.image-for-glucometr-2 {
+    position: fixed;
+    top: 102%;
+    left: 600px;
+    height: 700px;
+    width: 380px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.image-for-glucometr-3 {
+    position: fixed;
+    top: 102%;
+    left: 1050px;
+    height: 700px;
+    width: 380px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.image-for-glucometr-4 {
+    position: fixed;
+    top: 102%;
+    left: 1500px;
+    height: 700px;
+    width: 380px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.glucometr-1-photo{
+    height: 500px;
+    width: 400px;
+    position:relative;
+    bottom: 10%;
+    left: 9%;
+    opacity: 0.9;
+}
+
+.glucometr-2-photo{
+    height: 470px;
+    width: 400px;
+    position:relative;
+    bottom: 74%;
+    left: 9%;
+    opacity: 0.9;
+}
+
+.glucometr-3-photo{
+    height: 470px;
+    width: 400px;
+    position:relative;
+    bottom: 74%;
+    left: 9%;
+    opacity: 0.9;
+}
+
+.glucometr-4-photo{
+    height: 470px;
+    width: 400px;
+    position:relative;
+    bottom: 74%;
+    left: 9%;
+    opacity: 0.9;
+}
+
+.h2-position-glucometer-1 {
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    bottom: 0%;
+    left: 17%;
+}
+
+.h2-position-glucometer-2 {
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: -16%;
+    left: 17%;
+}
+
+.h2-position-glucometer-3 {
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: -16%;
+    left: 17%;
+}
+
+.h2-position-glucometer-4 {
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: -15%;
+    left: 17%;
+}
+
+.image__description {
+    font-size: 1.00em;
+    margin-top: 5.25em;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    position: relative;
+    bottom: 180px;
+    left: 60px;
+    margin-left: 35px;
+    margin-right: 60px;
+  }
+
+  .image__description-2 {
+    font-size: 1.00em;
+    margin-top: 5.25em;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: -20%;
+    left: 17%;
+    bottom: 180px;
+    margin-left: 35px;
+    margin-right: 10px;
+  }
+
+  .image__description-3 {
+    font-size: 1.00em;
+    margin-top: 5.25em;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: -23%;
+    left: 17%;
+    bottom: 180px;
+    margin-left: 35px;
+    margin-right: 10px;
+  }
+
+  .image__description-4 {
+    font-size: 1.00em;
+    margin-top: 5.25em;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: -23%;
+    left: 17%;
+    bottom: 180px;
+    margin-left: 35px;
+    margin-right: 10px;
+  }

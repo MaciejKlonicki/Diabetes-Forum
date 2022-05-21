@@ -10,6 +10,7 @@ import Basics from './components/Basics';
 import Nutrition from './components/Nutrition';
 import Daily from './components/Daily';
 import Glucometers from './components/Glucometers';
+import Stripes from './components/Stripes';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path='/odzywianie' exact component={Nutrition} />
         <Route path='/codziennosc' exact component={Daily} />
         <Route path='/glukometry' exact component={Glucometers} />
+        <Route path='/paski' exact component={Stripes} />
       </Switch>
       <FooterComp />
       </Router>

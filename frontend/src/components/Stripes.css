@@ -1,0 +1,185 @@
+.background-image-stripes {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    display: flex;
+    opacity: 0.5;
+}
+
+.image-for-stripes-1 {
+    position: fixed;
+    top: 50%;
+    left: 150px;
+    height: 700px;
+    width: 380px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.image-for-stripes-2 {
+    position: fixed;
+    top: 50%;
+    left: 600px;
+    height: 700px;
+    width: 380px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.image-for-stripes-3 {
+    position: fixed;
+    top: 50%;
+    left: 1050px;
+    height: 700px;
+    width: 380px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.image-for-stripes-4 {
+    position: fixed;
+    top: 50%;
+    left: 1460px;
+    height: 700px;
+    width: 380px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.stripes-1-photo {
+    height: 300px;
+    width: 300px;
+    position:relative;
+    bottom: -5%;
+    left: 9%;
+    opacity: 0.9;
+}
+
+.stripes-2-photo {
+    height: 300px;
+    width: 300px;
+    position:relative;
+    bottom: -5%;
+    left: 9%;
+    opacity: 0.9;
+}
+
+.stripes-3-photo {
+    height: 300px;
+    width: 300px;
+    position:relative;
+    bottom: -5%;
+    left: 9%;
+    opacity: 0.9;
+}
+
+.stripes-4-photo {
+    height: 300px;
+    width: 300px;
+    position:relative;
+    bottom: -5%;
+    left: 9%;
+    opacity: 0.9;
+}
+
+.h2-position-stripes-1 {
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    bottom: 5%;
+    left: 17%;
+}
+
+.h2-position-stripes-2 {
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    bottom: 5%;
+    left: 17%;
+}
+
+.h2-position-stripes-3 {
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    bottom: 5%;
+    left: 17%;
+}
+
+.h2-position-stripes-4 {
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    bottom: 5%;
+    left: 17%;
+}
+
+.image__description-stripes {
+    font-size: 1.00em;
+    margin-top: 5.25em;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    position: relative;
+    bottom: 30px;
+    left: 60px;
+    margin-left: 35px;
+    margin-right: 60px;
+  }
+
+  .image__description-stripes-2 {
+    font-size: 1.00em;
+    margin-top: 5.25em;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 270px;
+    left: 60px;
+    margin-left: 35px;
+    margin-right: 10px;
+  }
+
+  .image__description-stripes-3 {
+    font-size: 1.00em;
+    margin-top: 5.25em;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 270px;
+    left: 60px;
+    margin-left: 35px;
+    margin-right: 10px;
+  }
+
+  .image__description-stripes-4 {
+    font-size: 1.00em;
+    margin-top: 5.25em;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    top: 270px;
+    left: 60px;
+    margin-left: 35px;
+    margin-right: 10px;
+  }
+
+

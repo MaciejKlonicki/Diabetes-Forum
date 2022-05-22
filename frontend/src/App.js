@@ -12,7 +12,10 @@ import Daily from './components/Daily';
 import Glucometers from './components/Glucometers';
 import Stripes from './components/Stripes';
 import Needles from './components/Needles';
-
+import HowTo from './components/HowTo';
+import Complications from './components/Complications';
+import FirstAidKit from './components/FirstAidKit';
+import Depression from './components/Depression';
 
 function App() {
   return (
@@ -29,6 +32,10 @@ function App() {
         <Route path='/glukometry' exact component={Glucometers} />
         <Route path='/paski' exact component={Stripes} />
         <Route path='/igły' exact component={Needles} />
+        <Route path='/jak-zyc-z-cukrzyca' exact component={HowTo} />
+        <Route path='/powiklania-cukrzycy' exact component={Complications} />
+        <Route path='/apteczka-cukrzyka' exact component={FirstAidKit} />
+        <Route path='/depresja-cukrzyka' exact component={Depression} />
       </Switch>
       <FooterComp />
       </Router>

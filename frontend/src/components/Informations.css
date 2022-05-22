@@ -95,7 +95,23 @@
   opacity: 1;
 }
 
-.image__description {
+.image__description-info-1 {
+  font-size: 1.59em;
+  margin-top: 5.25em;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  cursor:default;
+}
+
+.image__description-info-2 {
+  font-size: 1.59em;
+  margin-top: 5.25em;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  cursor:default;
+}
+
+.image__description-info-3 {
   font-size: 1.59em;
   margin-top: 5.25em;
   font-weight: 400;

@@ -11,6 +11,7 @@ import Nutrition from './components/Nutrition';
 import Daily from './components/Daily';
 import Glucometers from './components/Glucometers';
 import Stripes from './components/Stripes';
+import Needles from './components/Needles';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path='/codziennosc' exact component={Daily} />
         <Route path='/glukometry' exact component={Glucometers} />
         <Route path='/paski' exact component={Stripes} />
+        <Route path='/igły' exact component={Needles} />
       </Switch>
       <FooterComp />
       </Router>

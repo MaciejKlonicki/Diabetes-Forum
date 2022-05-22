@@ -10,11 +10,6 @@ export const Medicaments = [
         cName: 'movedown-link-medicaments'
     },
     {
-        title: 'Pompy',
-        path: '/pompy',
-        cName: 'movedown-link-medicaments'
-    },
-    {
         title: 'Igły',
         path: '/igły',
         cName: 'movedown-link-medicaments'

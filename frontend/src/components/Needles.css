@@ -53,37 +53,37 @@
 }
 
 .needles-1-photo{
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     position:relative;
-    bottom: 10%;
+    bottom: 0%;
     left: 15%;
     opacity: 0.8;
 }
 
 .needles-2-photo{
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     position:relative;
-    bottom: 10%;
+    bottom: 0%;
     left: 15%;
     opacity: 0.8;
 }
 
 .needles-3-photo{
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     position:relative;
-    bottom: 10%;
+    bottom: 0%;
     left: 15%;
     opacity: 0.8;
 }
 
 .needles-4-photo{
-    height: 400px;
-    width: 400px;
+    height: 300px;
+    width: 300px;
     position:relative;
-    bottom: 10%;
+    bottom: 0%;
     left: 15%;
     opacity: 0.8;
 }
@@ -95,7 +95,7 @@
     position: absolute;
     width: 350px;
     height: 350px;
-    bottom: 10%;
+    bottom: 13%;
     left: 22%;
 }
 
@@ -106,7 +106,7 @@
     position: absolute;
     width: 350px;
     height: 350px;
-    bottom: 10%;
+    bottom: 13%;
     left: 22%;
 }
 
@@ -117,7 +117,7 @@
     position: absolute;
     width: 350px;
     height: 350px;
-    bottom: 10%;
+    bottom: 13%;
     left: 22%;
 }
 
@@ -128,7 +128,7 @@
     position: absolute;
     width: 350px;
     height: 350px;
-    bottom: 10%;
+    bottom: 13%;
     left: 22%;
 }
 
@@ -138,7 +138,7 @@
     font-weight: 400;
     color: rgb(0, 0, 0);
     position: relative;
-    bottom: 150px;
+    bottom: 70px;
     left: 75px;
     margin-left: 35px;
     margin-right: 60px;
@@ -150,7 +150,7 @@
     font-weight: 400;
     color: rgb(0, 0, 0);
     position: relative;
-    bottom: 150px;
+    bottom: 70px;
     left: 75px;
     margin-left: 35px;
     margin-right: 60px;
@@ -162,7 +162,7 @@
     font-weight: 400;
     color: rgb(0, 0, 0);
     position: relative;
-    bottom: 175px;
+    bottom: 85px;
     left: 75px;
     margin-left: 35px;
     margin-right: 60px;
@@ -174,7 +174,7 @@
     font-weight: 400;
     color: rgb(0, 0, 0);
     position: relative;
-    bottom: 175px;
+    bottom: 85px;
     left: 75px;
     margin-left: 35px;
     margin-right: 60px;

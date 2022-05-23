@@ -17,6 +17,7 @@ import Complications from './components/Complications';
 import FirstAidKit from './components/FirstAidKit';
 import Depression from './components/Depression';
 import Curiosities from './components/Curiosities';
+import Infoline from './components/Infoline';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         <Route path='/apteczka-cukrzyka' exact component={FirstAidKit} />
         <Route path='/depresja-cukrzyka' exact component={Depression} />
         <Route path='/ciekawostki' exact component={Curiosities} />
+        <Route path='/infolinie' exact component={Infoline} />
       </Switch>
       <FooterComp />
       </Router>

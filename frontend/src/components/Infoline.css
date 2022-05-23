@@ -1,0 +1,225 @@
+.background-image-infoline {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    display: flex;
+    opacity: 0.5;
+}
+
+.image-for-infoline {
+    position: fixed;
+    top: 49%;
+    left: 600px;
+    bottom: -100px;
+    width: 380px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.image-for-infoline2 {
+    position: fixed;
+    top: 50%;
+    left: 600px;
+    bottom: 120px;
+    width: 380px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.image-for-infoline3 {
+    position: fixed;
+    top: 51%;
+    left: 600px;
+    bottom: 360px;
+    width: 380px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.image-for-infoline4 {
+    position: fixed;
+    top: 52%;
+    left: 600px;
+    bottom: 500px;
+    width: 380px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.image-for-infoline5 {
+    position: fixed;
+    top: 67%;
+    left: 600px;
+    bottom: 680px;
+    width: 380px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.image-for-infoline6 {
+    position: fixed;
+    top: 83%;
+    left: 600px;
+    bottom: 680px;
+    width: 380px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.infoline-photo {
+    height: 50px;
+    width: 50px;
+    position:relative;
+    bottom: 12%;
+    left: 10%;
+    opacity: 0.9;
+    transition: all 0.5s ease;
+    cursor:auto;
+    opacity: 1;
+  }
+
+  .infoline-photo2 {
+    height: 50px;
+    width: 50px;
+    position:relative;
+    bottom: 19%;
+    left: 10%;
+    opacity: 0.9;
+    transition: all 0.5s ease;
+    cursor:auto;
+    opacity: 1;
+  }
+
+  .infoline-photo3 {
+    height: 50px;
+    width: 50px;
+    position:relative;
+    bottom: 105%;
+    left: 10%;
+    opacity: 0.9;
+    transition: all 0.5s ease;
+    cursor:auto;
+    opacity: 1;
+  }
+
+  .infoline-photo4 {
+    height: 50px;
+    width: 50px;
+    position:relative;
+    bottom: 12%;
+    left: 10%;
+    opacity: 0.9;
+    transition: all 0.5s ease;
+    cursor:auto;
+    opacity: 1;
+  }
+
+  .infoline-photo5 {
+    height: 50px;
+    width: 50px;
+    position:relative;
+    bottom: 12%;
+    left: 10%;
+    opacity: 0.9;
+    transition: all 0.5s ease;
+    cursor:auto;
+    opacity: 1;
+  }
+
+  .infoline-photo6 {
+    height: 50px;
+    width: 50px;
+    position:relative;
+    bottom: 12%;
+    left: 10%;
+    opacity: 0.9;
+    transition: all 0.5s ease;
+    cursor:auto;
+    opacity: 1;
+  }
+
+  .image__description-infoline {
+    font-size: 1.5em;
+    margin-top: 2.5em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    cursor:default;
+    position: relative;
+    left: 300px;
+    bottom: 200px;
+  }
+
+  .image__description-infoline2 {
+    font-size: 1.5em;
+    margin-top: 2.5em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    cursor:default;
+    position: relative;
+    left: 300px;
+    bottom: 200px;
+  }
+
+  .image__description-infoline3 {
+    font-size: 1.5em;
+    margin-top: 2.5em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    cursor:default;
+    position: relative;
+    left: 300px;
+    bottom: 180px;
+  }
+
+  .image__description-infoline4 {
+    font-size: 1.5em;
+    margin-top: 2.5em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    cursor:default;
+    position: relative;
+    left: 300px;
+    bottom: 130px;
+  }
+
+  .image__description-infoline5 {
+    font-size: 1.5em;
+    margin-top: 2.5em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    cursor:default;
+    position: relative;
+    left: 300px;
+    bottom: 130px;
+  }
+
+  .image__description-infoline6 {
+    font-size: 1.5em;
+    margin-top: 2.5em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    font-weight: 100;
+    color: rgb(0, 0, 0);
+    cursor:default;
+    position: relative;
+    left: 300px;
+    bottom: 130px;
+  }

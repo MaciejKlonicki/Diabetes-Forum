@@ -55,7 +55,7 @@ function InformationAboutGlucometers2(props) {
         className='glucometr-2-photo'
         />
         <div className='h2-position-glucometer-2'>
-        <h2>Glukometr Glucomaxx Connect</h2>
+        <h2>Glukometr Glucosense PRO</h2>
         </div>
         <p className="image__description-2">
           Glukometr Glucosense pro z paskami testowymi Glucosense to system monitorowania glikemii stworzony specjalnie dla osób z cukrzycą typu 2.

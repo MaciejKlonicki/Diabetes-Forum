@@ -19,36 +19,36 @@
   .first-table {
     position:relative;
     top: 0px;
-    left: 1050px;
+    left: 1150px;
   }
 
   .second-table {
     position:relative;
-    left: 1350px;
+    left: 1250px;
   }
 
   .third-table {
     position:relative;
     top: 310px;
-    right: 150px;
+    left: -50px;
   }
 
   .fourth-table {
     position:relative;
     top: 310px;
-    right: -150px;
+    right: -50px;
   }
 
   .fifth-table {
     position:relative;
     top: 620px;
-    right: 1350px;
+    right: 1250px;
   }
 
   .sixth-table {
     position:relative;
     top: 620px;
-    right: 1050px;
+    right: 1150px;
   }
 
   table {

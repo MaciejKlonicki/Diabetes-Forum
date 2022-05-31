@@ -219,20 +219,7 @@
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
   }
 
-  @media screen and (max-width: 960px) {
-    .header-menu {
-      display: grid;
-      grid-template-columns: repeat(5, auto);
-      grid-gap: 20px;
-      width: 150vw;
-      justify-content: end;
-      margin-right: 0rem;
-    }
-
-    .header-logo {
-      margin-left: 10px;
-      display: flex;
-    }
+  @media screen and (max-width: 850px) {
 
     .header-button-registration {
       width: 70px;

@@ -147,7 +147,7 @@ function CuriositiesInformations1(props) {
           />
           <div className="image__overlay-curiosities-6">
           <p className="image__description-curiosities-6">
-          Cukrzyca spowodowała 4,2 miliona zgonów na całym świecie w 2019 roku
+          Cukrzyca spowodowała 4,2 miliona zgonów na całym świecie w 2019 roku.
           </p>
           </div>
       </div>
@@ -181,7 +181,7 @@ function CuriositiesInformations1(props) {
           />
           <div className="image__overlay-curiosities-8">
           <p className="image__description-curiosities-8">
-          Obecnie nie ma możliwości wyleczenia cukrzycy
+          Obecnie nie ma możliwości wyleczenia cukrzycy.
           </p>
           </div>
       </div>

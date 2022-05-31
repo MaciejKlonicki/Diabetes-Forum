@@ -50,7 +50,7 @@ function DailyRoutines() {
         Pomiar cukru we krwi i podawanie leków to jej podstawa. 
         Świat mknie do przodu. Medycyna i dostępne metody diagnostyczne także cały czas się rozwijają i ewoluują. 
         Naukowcy pracują i dostarczają nowoczesne rozwiązania, które możemy stosować w leczeniu cukrzycy. 
-        W dalszym ciągu jednak cukrzyca pozostaje chorobą nieuleczalną, a jedynym lekiem ratującym życie w przypadku cukrzycy typu 1 jest insuliny. <br />
+        W dalszym ciągu jednak cukrzyca pozostaje chorobą nieuleczalną, a jedynym lekiem ratującym życie w przypadku cukrzycy typu 1 jest insulina. <br />
         Aktywność fizyczna jest ważną częścią prawidłowego, kompleksowego
         postepowania w profilaktyce wielu chorób, m.in. cukrzycy i otyłości.
         Regularne ćwiczenia fizyczne powodują obniżenie poziomu glukozy we

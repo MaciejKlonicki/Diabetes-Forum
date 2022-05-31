@@ -67,7 +67,7 @@ function BackImage() {
           Wyróżnia się cukrzycę typu 1, cukrzycę typu 2, cukrzycę ciążową oraz inne specyficzne typy cukrzycy. <br />
           <b>Cukrzyca typu 1</b> rozwija się ona w wyniku błędu układu odpornościowego, który z niewiadomych powodów niszczy zdrowe komórki trzustki produkujące insulinę. W wyniku tej autoagresji dochodzi do znacznych deficytów, bądź zupełnego braku insuliny w organizmie.
           Cukrzyca typu 1 diagnozowana jest głównie u dzieci i młodzieży. Wymaga leczenia insuliną oraz intensywnej samokontroli. <br />
-          <b>Cukrzyca typu 2</b> to przykład schorzenia, która dotyka współczesne społeczeństwa z powodu epidemii nadwagi i otyłości, do których prowadzi niezdrowy stylu życia. Osoby z cukrzycą typu 2 zwykle mają nadmierną masę ciała, są mało aktywne fizycznie, a ich dieta obfituje w cukry proste.
+          <b>Cukrzyca typu 2</b> to przykład schorzenia, która dotyka współczesne społeczeństwa z powodu epidemii nadwagi i otyłości, do których prowadzi niezdrowy styl życia. Osoby z cukrzycą typu 2 zwykle mają nadmierną masę ciała, są mało aktywne fizycznie, a ich dieta obfituje w cukry proste.
           Trzustka osób z cukrzycą typu 2 w momencie diagnozy zwykle wydziela insulinę, ale albo jest jej zbyt mało, by mogła utrzymać właściwy poziom cukru we krwi. <br />
           <b>Cukrzyca ciążowa</b> to zaburzenia tolerancji glukozy, które po raz pierwszy pojawiły się w okresie ciąży. Podwyższony poziom cukru we krwi u ciężarnych powodowany jest zmianami hormonalnymi wynikającymi z rozwoju płodu.
           Podwyższone cukry, będące efektem cukrzycy ciążowej zwykle koryguje się przy pomocy diety bogatej opartej o węglowodany złożone, a limitującej cukry proste.

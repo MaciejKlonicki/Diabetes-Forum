@@ -39,9 +39,10 @@
   left: 10%;
   opacity: 0.9;
   transition: all 0.5s ease;
-  border-radius: 2%;
+  border-radius: 1%;
   cursor:auto;
   opacity: 1;
+  border: 3px solid #000000e0;
 }
 
 

@@ -43,7 +43,7 @@ function BackImage() {
             <div className='border-window-3'>
             <p className='p-nutrition'><b>Unikaj:</b><br />
             1. Pieczywa zawierającego miód, karmel, słód jęczmienny<br />
-            2. Ciast kruchych, fancuskich ucieranych,<br />
+            2. Ciast kruchych, francuskich ucieranych,<br />
             3. Ciepłego pieczywa, <br />
             </p>
             </div>

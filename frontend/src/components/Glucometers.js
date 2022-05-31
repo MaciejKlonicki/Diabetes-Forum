@@ -107,7 +107,7 @@ function InformationAboutGlucometers4(props) {
         Brak kodowania – eliminuje ryzyko błędu przy nowym opakowaniu pasków.
         Wyrzut paska po pomiarze – bezpieczeństwo dla pacjenta i osób z jego otoczenia.
         Funkcja średnich z 60 i 90 dni – pomoc w oszacowaniu HbA1c i profilaktyce powikłań cukrzycy.
-        Paski testowe iXell używane są prze personel medyczny, w polskich szpitalach.
+        Paski testowe iXell używane są przez personel medyczny, w polskich szpitalach.
         Dokładność systemu potwierdzona certyfikatem spełnienia wymogów najnowszej normy.
         </p>
       </div>

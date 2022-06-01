@@ -219,7 +219,7 @@
     box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
   }
 
-  @media screen and (max-width: 850px) {
+  @media screen and (max-width: 900px) {
 
     .header-button-registration {
       width: 70px;

@@ -7,3 +7,16 @@
     display: flex;
     opacity: 0.5;
 }
+
+.h2-calc {
+    color: white;
+    position: relative;
+    left: 800px;
+    text-shadow: .1em .2em .1em hsl(200 50% 30%);
+    font-size: 20px;
+    font-weight: 800;
+    font-family: 'Raleway',sans-serif;
+    color: #ffffff;
+    align-items: center;
+    top: 40px;
+  }

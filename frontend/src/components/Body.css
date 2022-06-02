@@ -111,16 +111,3 @@ p {
   line-height: 24px; 
   margin: 0 0 14px; 
 }
-
-
-@media screen and (max-width: 960px) {
-    
-    .background-image {
-      flex-direction: column;
-      width: 100%;
-      height: 100vh;
-      position: relative; 
-      object-fit: cover;
-      opacity: 0.5;
-    }
-}

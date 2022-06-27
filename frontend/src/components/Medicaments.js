@@ -11,7 +11,7 @@ export const Medicaments = [
     },
     {
         title: 'Igły',
-        path: '/igły',
+        path: '/igly',
         cName: 'movedown-link-medicaments'
     }
 ];

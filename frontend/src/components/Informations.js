@@ -91,7 +91,7 @@ function BackImage() {
           </div>
           <div className="image__overlay">
           <p className="image__description-info-3">
-          Leczenie cukrzycy musi być zaplanowane i zaordynowane przez lekarza prowadzącego, który dobierze i określi ich odpowiednie dawki. 
+          Leczenie cukrzycy musi być zaplanowane i zaordynowane przez lekarza, który dobierze i określi ich odpowiednie dawki. 
           Leczenie cukrzycy polega przede wszystkim na przestrzeganiu prawidłowej diety, a  najczęściej również, zależnie od typu choroby i zaleceń lekarza, na przyjmowaniu leków i przyjmowaniu insuliny.
           Odpowiednia edukacja chorego też stanowi element leczenia. Ma to znaczenie przede wszystkim takie, że dzięki profesjonalnej wiedzy pacjent może odpowiednio zareagować w razie dostrzeżenia pierwszych niepokojących objawów, które mogą świadczyć o niewłaściwym poziomie cukru we krwi. 
           Osoba chora powinna nauczyć się kilku dodatkowych zasad m.in., jak różne spożywane produkty żywnościowe wpływają na stężenie glukozy we krwi.

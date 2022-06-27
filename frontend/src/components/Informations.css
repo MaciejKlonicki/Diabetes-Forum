@@ -98,7 +98,9 @@
 
 .image__description-info-1 {
   font-size: 1.59em;
-  margin-top: 5.25em;
+  margin-top: 5.15em;
+  margin-right: 5px;
+  margin-left: 5px;
   font-weight: 400;
   color: rgb(255, 255, 255);
   cursor:default;
@@ -107,6 +109,8 @@
 .image__description-info-2 {
   font-size: 1.59em;
   margin-top: 5.25em;
+  margin-right: 5px;
+  margin-left: 5px;
   font-weight: 400;
   color: rgb(255, 255, 255);
   cursor:default;
@@ -115,6 +119,8 @@
 .image__description-info-3 {
   font-size: 1.59em;
   margin-top: 5.25em;
+  margin-right: 5px;
+  margin-left: 5px;
   font-weight: 400;
   color: rgb(255, 255, 255);
   cursor:default;

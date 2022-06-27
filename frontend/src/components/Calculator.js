@@ -25,7 +25,7 @@ function BackImage() {
           <h2>Kalkulator</h2>
         </div>
         <p className="calculator-desc-1">
-          Zmierzony cukier: 
+          Posiłek
           </p>
       </div>
     )

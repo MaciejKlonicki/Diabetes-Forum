@@ -20,3 +20,12 @@
     align-items: center;
     top: 40px;
   }
+
+  .calculator-desc-1 {
+    font-size: 1.5em;
+    margin-top: 4.0em;
+    margin-left: 10em;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    cursor:default;
+  }

@@ -6,6 +6,7 @@ function Calculator() {
     <div>
         <BackImage />
         <Calculators />
+        <Correct />
     </div>
   )
 }
@@ -25,7 +26,32 @@ function BackImage() {
           <h2>Kalkulator</h2>
         </div>
         <p className="calculator-desc-1">
-          Posiłek
+          Przeliczniki
+          </p>
+      </div>
+    )
+  }
+
+  var correctNumber;
+  var firstBreakfast = "Pierwsze śniadanie";
+
+  function Correct() {
+    return (
+      <div>
+        <p className="calculator-desc-2">
+          Korekta:  
+          <textarea
+          id='correctNumber'
+          name='correctNumber'
+          value={correctNumber}
+          > </textarea> mg/dl insuliny
+          </p>
+          <p className='calculator-desc-3'>
+            Posiłki:
+            <textarea
+            id='first-breakfast'
+            name='first-breakfast'
+            value={firstBreakfast}> </textarea> 
           </p>
       </div>
     )

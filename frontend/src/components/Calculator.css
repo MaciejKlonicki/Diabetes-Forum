@@ -38,8 +38,17 @@
     color: rgb(0, 0, 0);
     cursor:default;
   }
+
+  .calculator-desc-3 {
+    font-size: 1.6em;
+    margin-top: 1em;
+    margin-left: 11.2em;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    cursor:default;
+  }
   
-  textarea {
+  .correct-textarea {
     position: relative;
     top: 10px;
     left: 3px;

@@ -33,25 +33,22 @@ function BackImage() {
   }
 
   var correctNumber;
-  var firstBreakfast = "Pierwsze śniadanie";
+  // var firstBreakfast = "Pierwsze śniadanie";
 
   function Correct() {
     return (
       <div>
         <p className="calculator-desc-2">
-          Korekta:  
+          Korekta:
           <textarea
+          className='correct-textarea'
           id='correctNumber'
           name='correctNumber'
-          value={correctNumber}
-          > </textarea> mg/dl insuliny
+          value={correctNumber}> 
+          </textarea> mg/dl insuliny
           </p>
           <p className='calculator-desc-3'>
-            Posiłki:
-            <textarea
-            id='first-breakfast'
-            name='first-breakfast'
-            value={firstBreakfast}> </textarea> 
+            Posiłki
           </p>
       </div>
     )

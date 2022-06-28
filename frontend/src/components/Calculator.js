@@ -25,10 +25,13 @@ function BackImage() {
     return (
       <div>
         <div className='h2-calc'>
-          <h2>Kalkulator</h2>
+          <h2>Kalkulator cukrzyka</h2>
         </div>
         <p className="calculator-desc-1">
           Przeliczniki
+          </p>
+        <p className="calculator-desc-4">
+          Kalkulator
           </p>
       </div>
     )
@@ -36,16 +39,13 @@ function BackImage() {
 
   var correctNumber;
 
-
   function Correct() {
-
     const [firstBreakfast, setFirstBreakfast] = useState("");
     const [secondBreakfast, setSecondBreakfast] = useState("");
     const [lunch, setLunch] = useState("");
     const [tea, setTea] = useState("");
     const [firstDinner, setFirstDinner] = useState("");
     const [secondDinner, setSecondDinner] = useState("");
-
 
     const handleChange = event => {
       setFirstBreakfast(event.target.value);
@@ -92,7 +92,7 @@ function BackImage() {
             name='firstBreakfast'
             value={firstBreakfast}> 
             </input><br /><br />
-            <p className='first-breakfast-position'>pierwsze śniadanie</p>
+            <p className='first-breakfast-position'>Pierwsze śniadanie</p>
             <input
             className='second-breakfast'
             type={propTypes.number}
@@ -101,7 +101,7 @@ function BackImage() {
             name='secondBreakfast'
             value={secondBreakfast}> 
             </input>
-            <p className='second-breakfast-position'>drugie śniadanie</p>
+            <p className='second-breakfast-position'>Drugie śniadanie</p>
             {/* <div>Wynik = {Number(firstBreakfast) + Number(secondBreakfast)}</div> */}
             <input
             className='lunch'
@@ -111,7 +111,7 @@ function BackImage() {
             name='lunch'
             value={lunch}> 
             </input>
-            <p className='lunch-position'>obiad</p>
+            <p className='lunch-position'>Obiad</p>
             <input
             className='tea'
             type={propTypes.number}
@@ -120,7 +120,7 @@ function BackImage() {
             name='tea'
             value={tea}> 
             </input>
-            <p className='tea-position'>podwieczorek</p>
+            <p className='tea-position'>Podwieczorek</p>
             <input
             className='first-dinner'
             type={propTypes.number}
@@ -129,7 +129,7 @@ function BackImage() {
             name='first-dinner'
             value={firstDinner}> 
             </input>
-            <p className='first-dinner-position'>pierwsza kolacja</p>
+            <p className='first-dinner-position'>Pierwsza kolacja</p>
             <input
             className='second-dinner'
             type={propTypes.number}
@@ -138,7 +138,7 @@ function BackImage() {
             name='second-dinner'
             value={secondDinner}> 
             </input>
-            <p className='second-dinner-position'>druga kolacja</p>
+            <p className='second-dinner-position'>Druga kolacja</p>
           </p>
       </div>
     )

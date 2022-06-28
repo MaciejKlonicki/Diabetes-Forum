@@ -50,28 +50,30 @@
   
   .correct-textarea {
     position: relative;
-    top: 10px;
-    left: 3px;
+    top: 2px;
+    left: 2px;
     width: 35px;
     height: 30px;
     cursor: text;
     resize: none;
     font-size: 15px;
-    padding-top: 5px;
-    padding-left: 5px;
+    padding-top: 2px;
+    padding-left: 9px;
+    border-radius: 5px;
   }
 
   .first-breakfast {
     position: relative;
     top: 40px;
-    left: 45px;
+    left: 40px;
     width: 35px;
     height: 30px;
     cursor: text;
     resize: none;
     font-size: 15px;
-    padding-top: 5px;
+    padding-top: 3px;
     padding-left: 5px;
+    border-radius: 5px;
   }
   .first-breakfast-position {
     font-size: 0.78em;
@@ -84,8 +86,8 @@
 
   .second-breakfast {
     position: relative;
-    top: 15px;
-    left: 117px;
+    top: 10px;
+    left: 113px;
     width: 35px;
     height: 30px;
     cursor: text;
@@ -93,8 +95,97 @@
     font-size: 15px;
     padding-top: 5px;
     padding-left: 5px;
+    border-radius: 5px;
   }
   .second-breakfast-position {
+    font-size: 0.78em;
+    margin-top: -0.8em;
+    margin-left: -3em;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    cursor:default;
+  }
+
+  .lunch {
+    position: relative;
+    top: 10px;
+    left: 113px;
+    width: 35px;
+    height: 30px;
+    cursor: text;
+    resize: none;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+  }
+  .lunch-position {
+    font-size: 0.78em;
+    margin-top: -0.8em;
+    margin-left: -3em;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    cursor:default;
+  }
+
+  .tea {
+    position: relative;
+    top: 10px;
+    left: 113px;
+    width: 35px;
+    height: 30px;
+    cursor: text;
+    resize: none;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+  }
+  .tea-position {
+    font-size: 0.78em;
+    margin-top: -0.8em;
+    margin-left: -3em;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    cursor:default;
+  }
+
+  .first-dinner {
+    position: relative;
+    top: 10px;
+    left: 113px;
+    width: 35px;
+    height: 30px;
+    cursor: text;
+    resize: none;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+  }
+  .first-dinner-position {
+    font-size: 0.78em;
+    margin-top: -0.8em;
+    margin-left: -3em;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    cursor:default;
+  }
+
+  .second-dinner {
+    position: relative;
+    top: 10px;
+    left: 113px;
+    width: 35px;
+    height: 30px;
+    cursor: text;
+    resize: none;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+  }
+  .second-dinner-position {
     font-size: 0.78em;
     margin-top: -0.8em;
     margin-left: -3em;

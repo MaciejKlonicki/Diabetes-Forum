@@ -35,14 +35,17 @@ function BackImage() {
   }
 
   var correctNumber;
-  var lunch;
-  var tea;
-  var firstDinner;
-  var secondDinner;
+
 
   function Correct() {
-    const [firstBreakfast, setFirstBreakfast] = useState('');
-    const [secondBreakfast, setSecondBreakfast] = useState('');
+
+    const [firstBreakfast, setFirstBreakfast] = useState("");
+    const [secondBreakfast, setSecondBreakfast] = useState("");
+    const [lunch, setLunch] = useState("");
+    const [tea, setTea] = useState("");
+    const [firstDinner, setFirstDinner] = useState("");
+    const [secondDinner, setSecondDinner] = useState("");
+
 
     const handleChange = event => {
       setFirstBreakfast(event.target.value);
@@ -52,18 +55,32 @@ function BackImage() {
       setSecondBreakfast(event.target.value);
     };
 
-    const wynik =  firstBreakfast + secondBreakfast;
+    const handleChange3 = event => {
+      setLunch(event.target.value);
+    };
+
+    const handleChange4 = event => {
+      setTea(event.target.value);
+    };
+
+    const handleChange5 = event => {
+      setFirstDinner(event.target.value);
+    };
+
+    const handleChange6 = event => {
+      setSecondDinner(event.target.value);
+    };
 
     return (
       <div>
         <p className="calculator-desc-2">
           Korekta:
-          <textarea
+          <input
           className='correct-textarea'
           id='correctNumber'
           name='correctNumber'
           value={correctNumber}> 
-          </textarea> mg/dl insuliny
+          </input> mg/dl insuliny
           </p>
           <p className='calculator-desc-3'>
             Posiłki
@@ -83,9 +100,45 @@ function BackImage() {
             onChange={handleChange2}
             name='secondBreakfast'
             value={secondBreakfast}> 
-            </input><br />
+            </input>
             <p className='second-breakfast-position'>drugie śniadanie</p>
-            <p> {"Wynik = " + wynik}</p>
+            {/* <div>Wynik = {Number(firstBreakfast) + Number(secondBreakfast)}</div> */}
+            <input
+            className='lunch'
+            type={propTypes.number}
+            id='lunch'
+            onChange={handleChange3}
+            name='lunch'
+            value={lunch}> 
+            </input>
+            <p className='lunch-position'>obiad</p>
+            <input
+            className='tea'
+            type={propTypes.number}
+            id='tea'
+            onChange={handleChange4}
+            name='tea'
+            value={tea}> 
+            </input>
+            <p className='tea-position'>podwieczorek</p>
+            <input
+            className='first-dinner'
+            type={propTypes.number}
+            id='first-dinner'
+            onChange={handleChange5}
+            name='first-dinner'
+            value={firstDinner}> 
+            </input>
+            <p className='first-dinner-position'>pierwsza kolacja</p>
+            <input
+            className='second-dinner'
+            type={propTypes.number}
+            id='second-dinner'
+            onChange={handleChange6}
+            name='second-dinner'
+            value={secondDinner}> 
+            </input>
+            <p className='second-dinner-position'>druga kolacja</p>
           </p>
       </div>
     )

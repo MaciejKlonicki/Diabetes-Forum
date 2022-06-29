@@ -19,6 +19,7 @@ function FirstTable() {
   return (
     <div className='first-table'>
       <table>
+        <tbody>
         <tr>
           <th>Jedzenie</th>
           <th>Przelicznik</th>
@@ -54,6 +55,7 @@ function FirstTable() {
           <td>15 g = 1WW</td>
           <td>1 łyżka stołowa</td>
         </tr>
+        </tbody>
       </table>
     </div>
   )
@@ -63,6 +65,7 @@ function SecondTable() {
   return (
     <div className='second-table'>
       <table>
+      <tbody>
         <tr>
           <th>Jedzenie</th>
           <th>Przelicznik</th>
@@ -93,6 +96,7 @@ function SecondTable() {
           <td>200 g = 1WW</td>
           <td>1 szklanka</td>
         </tr>
+        </tbody>
       </table>
     </div>
   )
@@ -102,6 +106,7 @@ function ThirdTable() {
   return (
     <div className='third-table'>
       <table>
+      <tbody>
         <tr>
           <th>Jedzenie</th>
           <th>Przelicznik</th>
@@ -142,6 +147,7 @@ function ThirdTable() {
           <td>45 g = 1WW</td>
           <td>½ szklanki</td>
         </tr>
+        </tbody>
       </table>
     </div>
   )
@@ -151,6 +157,7 @@ function FourthTable() {
   return (
     <div className='fourth-table'>
       <table>
+      <tbody>
         <tr>
           <th>Jedzenie</th>
           <th>Przelicznik</th>
@@ -191,6 +198,7 @@ function FourthTable() {
           <td>120 g = 1WW </td>
           <td>1 szklanka</td>
         </tr>
+        </tbody>
       </table>
     </div>
   )
@@ -200,6 +208,7 @@ function FifthTable() {
   return (
     <div className='fifth-table'>
       <table>
+      <tbody>
         <tr>
           <th>Jedzenie</th>
           <th>Przelicznik</th>
@@ -235,6 +244,7 @@ function FifthTable() {
           <td>200 g = 1WW </td>
           <td>½ sztk. </td>
         </tr>
+        </tbody>
       </table>
     </div>
   )
@@ -244,6 +254,7 @@ function SixthTable() {
   return (
     <div className='sixth-table'>
       <table>
+      <tbody>
         <tr>
           <th>Jedzenie</th>
           <th>Przelicznik</th>
@@ -274,6 +285,7 @@ function SixthTable() {
           <td>40 g = 1WW</td>
           <td>1 sztuka </td>
         </tr>
+        </tbody>
       </table>
     </div>
   )

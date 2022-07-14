@@ -37,7 +37,6 @@ function BackImage() {
     )
   }
 
-  var xyz; 
 
   function Correct() {
     const [correctNumber, setCorrectNumber] = useState("");

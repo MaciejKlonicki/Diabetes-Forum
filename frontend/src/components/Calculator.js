@@ -37,15 +37,17 @@ function BackImage() {
     )
   }
 
-  var correctNumber;
+  var xyz; 
 
   function Correct() {
+    const [correctNumber, setCorrectNumber] = useState("");
     const [firstBreakfast, setFirstBreakfast] = useState("");
     const [secondBreakfast, setSecondBreakfast] = useState("");
     const [lunch, setLunch] = useState("");
     const [tea, setTea] = useState("");
     const [firstDinner, setFirstDinner] = useState("");
     const [secondDinner, setSecondDinner] = useState("");
+    const [sugar, setSugar] = useState("");
 
     const handleChange = event => {
       setFirstBreakfast(event.target.value);
@@ -71,13 +73,23 @@ function BackImage() {
       setSecondDinner(event.target.value);
     };
 
+    const handleChange7 = event => {
+      setSugar(event.target.value);
+    };
+    
+    const handleChange8 = event => {
+      setCorrectNumber(event.target.value);
+    };
+
     return (
       <div>
         <p className="calculator-desc-2">
           Korekta:
           <input
           className='correct-textarea'
+          type={propTypes.number}
           id='correctNumber'
+          onChange={handleChange8}
           name='correctNumber'
           value={correctNumber}> 
           </input> mg/dl insuliny
@@ -140,6 +152,16 @@ function BackImage() {
             </input>
             <p className='second-dinner-position'>Druga kolacja</p>
           </p>
+          <p className='sugar-position'>Podaj zmierzony cukier: </p>
+          <div>Wynik = {Number(sugar) / Number(correctNumber)}</div>
+            <input
+            className='sugar'
+            type={propTypes.number}
+            id='sugar'
+            onChange={handleChange7}
+            name='sugar'
+            value={sugar}> 
+            </input>
       </div>
     )
   }

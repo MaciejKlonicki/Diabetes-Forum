@@ -8,7 +8,8 @@ function Calculator() {
     <div>
         <BackImage />
         <Calculators />
-        <Correct />
+        <Correct 
+        img='/images/right-arrow.png'/>
     </div>
   )
 }
@@ -37,8 +38,9 @@ function BackImage() {
     )
   }
 
+  let result;
 
-  function Correct() {
+  function Correct(props) {
     const [correctNumber, setCorrectNumber] = useState("");
     const [firstBreakfast, setFirstBreakfast] = useState("");
     const [secondBreakfast, setSecondBreakfast] = useState("");
@@ -113,7 +115,6 @@ function BackImage() {
             value={secondBreakfast}> 
             </input>
             <p className='second-breakfast-position'>Drugie śniadanie</p>
-            {/* <div>Wynik = {Number(firstBreakfast) + Number(secondBreakfast)}</div> */}
             <input
             className='lunch'
             type={propTypes.number}
@@ -152,7 +153,6 @@ function BackImage() {
             <p className='second-dinner-position'>Druga kolacja</p>
           </p>
           <p className='sugar-position'>Podaj zmierzony cukier: </p>
-          <div>Wynik = {Number(sugar) / Number(correctNumber)}</div>
             <input
             className='sugar'
             type={propTypes.number}
@@ -161,6 +161,13 @@ function BackImage() {
             name='sugar'
             value={sugar}> 
             </input>
+          <p className='sugar-too-high'>Do wyregulowania: {(Number(sugar) - 100)}</p>
+          <img
+          src={props.img}
+          alt='rightArrow'
+          className='right-arrow'
+          />
+          <div className='result-of-sugar-calc'>{((Number(sugar) - 100) / Number(correctNumber)).toFixed(1)} j</div>
       </div>
     )
   }

@@ -195,7 +195,7 @@ function BackImage() {
             alt='rightArrow'
             className='right-arrow2'
             />
-            <div className='final-result'>Wynik = {(Number(result) + Number(result2)).toFixed(1)}j</div>
+            <div className='final-result'>Wynik = {(Number(result) + Number(result2)).toFixed(1)} j</div>
       </div>
     )
   }

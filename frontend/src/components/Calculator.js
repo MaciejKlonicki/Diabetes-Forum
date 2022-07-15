@@ -7,9 +7,11 @@ function Calculator() {
   return (
     <div>
         <BackImage />
-        <Calculators />
+        <Calculators 
+        img='/images/plus.png'/>
         <Correct 
-        img='/images/right-arrow.png'/>
+        img='/images/right-arrow.png'
+        />
     </div>
   )
 }
@@ -22,7 +24,7 @@ function BackImage() {
     )
   }
 
-  function Calculators() {
+  function Calculators(props) {
     return (
       <div>
         <div className='h2-calc'>
@@ -34,11 +36,17 @@ function BackImage() {
         <p className="calculator-desc-4">
           Kalkulator
           </p>
+          <img
+            src={props.img}
+            alt='plus'
+            className='plus'
+          />
       </div>
     )
   }
 
   let result;
+  let result2;
 
   function Correct(props) {
     const [correctNumber, setCorrectNumber] = useState("");
@@ -49,6 +57,7 @@ function BackImage() {
     const [firstDinner, setFirstDinner] = useState("");
     const [secondDinner, setSecondDinner] = useState("");
     const [sugar, setSugar] = useState("");
+    const [exchangersInput, setExchangersInput] = useState("");
 
     const handleChange = event => {
       setFirstBreakfast(event.target.value);
@@ -80,6 +89,10 @@ function BackImage() {
     
     const handleChange8 = event => {
       setCorrectNumber(event.target.value);
+    };
+
+    const handleChange9 = event => {
+      setExchangersInput(event.target.value);
     };
 
     return (
@@ -161,13 +174,28 @@ function BackImage() {
             name='sugar'
             value={sugar}> 
             </input>
-          <p className='sugar-too-high'>Do wyregulowania: {(Number(sugar) - 100)}</p>
           <img
           src={props.img}
           alt='rightArrow'
           className='right-arrow'
           />
-          <div className='result-of-sugar-calc'>{((Number(sugar) - 100) / Number(correctNumber)).toFixed(1)} j</div>
+          <div className='result-of-sugar-calc'>{result = ((Number(sugar) - 100) / Number(correctNumber)).toFixed(1)} j</div>
+          <p className='exchangers-position-text'>Podaj liczbe wymienników: </p>
+          <input
+            className='exchangers-input'
+            type={propTypes.number}
+            id='exchangers-input'
+            onChange={handleChange9}
+            name='exchangers-input'
+            value={exchangersInput}> 
+            </input>
+            <div className='exchangers-calc'>{result2 = ((Number(firstBreakfast) || Number(secondBreakfast) || Number(lunch) || Number(tea) || Number(firstDinner) || Number(secondDinner))*exchangersInput).toFixed(1)} j</div>
+            <img
+            src={props.img}
+            alt='rightArrow'
+            className='right-arrow2'
+            />
+            <div className='final-result'>Wynik = {(Number(result) + Number(result2)).toFixed(1)}j</div>
       </div>
     )
   }

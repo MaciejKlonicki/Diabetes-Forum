@@ -23,7 +23,7 @@
 
   .calculator-desc-1 {
     font-size: 1.8em;
-    margin-top: 4.0em;
+    margin-top: 3.5em;
     margin-left: 14.5em;
     font-weight: 400;
     color: rgb(0, 0, 0);
@@ -215,8 +215,8 @@
 
   .sugar {
     position: relative;
-    bottom: 380px;
-    left: 1140px;
+    bottom: 460px;
+    left: 1160px;
     width: 50px;
     height: 30px;
     cursor: text;
@@ -227,32 +227,80 @@
     border-radius: 5px;
   }
 
-  .sugar-too-high {
-    position: relative;
-    bottom: 370px;
-    left: 895px;
-    font-size: 15px;
-    padding-top: 5px;
-    padding-left: 5px;
-    font-size: 22px;
-    font-weight: 400;
-    color: rgb(0, 0, 0);
-  }
-
   .right-arrow {
     position:relative;
-    bottom: 440px;
-    left: 1230px;
+    bottom: 445px;
+    left: 1220px;
     height: 50px;
     width: 100px;
   }
 
   .result-of-sugar-calc {
     position: relative;
-    bottom: 500px;
+    bottom: 510px;
     left: 1400px;
     padding-top: 5px;
     padding-left: 5px;
+    font-size: 45px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+  }
+
+  .exchangers-position-text {
+    position:relative;
+    bottom: 340px;
+    padding-left: 900px;
+    font-size: 21px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+  }
+
+  .exchangers-input {
+    position: relative;
+    bottom: 380px;
+    left: 1158px;
+    width: 50px;
+    height: 30px;
+    cursor: text;
+    resize: none;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-left: 5px;
+    border-radius: 5px;
+  }
+
+  .exchangers-calc {
+    position: relative;
+    bottom: 430px;
+    left: 1400px;
+    padding-top: 5px;
+    padding-left: 5px;
+    font-size: 45px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    -webkit-appearance: none;
+  }
+
+  .right-arrow2 {
+    position:relative;
+    bottom: 480px;
+    left: 1270px;
+    height: 50px;
+    width: 100px;
+  }
+
+  .plus {
+    position:relative;
+    left: 1420px;
+    top: 125px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .final-result {
+    position:relative;
+    bottom: 400px;
+    padding-left: 1300px;
     font-size: 45px;
     font-weight: 400;
     color: rgb(0, 0, 0);

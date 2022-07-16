@@ -5,13 +5,13 @@ function Glucometers() {
   return (
     <div>
         <BackImage />
-        <InformationAboutGlucometers
+        <InformationAboutGlucometerGlucomaxxx
         img='/images/glucometr-1.png' />
-        <InformationAboutGlucometers2
+        <InformationAboutGlucometerGlucosense
         img='/images/glucometr-2.png' />
-        <InformationAboutGlucometers3
+        <InformationAboutGlucometeriXellPro
         img='/images/glucometr-3.png' />
-        <InformationAboutGlucometers4
+        <InformationAboutGlucometeriXell
         img='/images/glucometr-4.png' />
     </div>
   )
@@ -25,7 +25,7 @@ function BackImage() {
     )
   }
 
-function InformationAboutGlucometers(props) {
+function InformationAboutGlucometerGlucomaxxx(props) {
     return (
         <div className='image-for-glucometr-1'>
           <img
@@ -46,7 +46,7 @@ function InformationAboutGlucometers(props) {
     )
 }
 
-function InformationAboutGlucometers2(props) {
+function InformationAboutGlucometerGlucosense(props) {
   return (
       <div className='image-for-glucometr-2'>
         <img
@@ -69,7 +69,7 @@ function InformationAboutGlucometers2(props) {
   )
 }
 
-function InformationAboutGlucometers3(props) {
+function InformationAboutGlucometeriXellPro(props) {
   return (
       <div className='image-for-glucometr-3'>
         <img
@@ -91,7 +91,7 @@ function InformationAboutGlucometers3(props) {
   )
 }
 
-function InformationAboutGlucometers4(props) {
+function InformationAboutGlucometeriXell(props) {
   return (
       <div className='image-for-glucometr-4'>
         <img

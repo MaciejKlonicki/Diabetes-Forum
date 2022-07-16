@@ -1,25 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import './HeaderComp.css';
 import { Link } from 'react-router-dom';
-import MoveDownDiabetes from './MoveDownDiabetes';
-import MoveDownMedicaments from './MoveDownMedicaments';
-import MoveDownAdvices from './MoveDownAdvices';
-import MoveDownMore from './MoveDownMore';
+import MoveDownDiabetes from './SlideMenu/MoveDownDiabetes';
+import MoveDownMedicaments from './SlideMenu/MoveDownMedicaments';
+import MoveDownAdvices from './SlideMenu/MoveDownAdvices';
+import MoveDownMore from './SlideMenu/MoveDownMore';
 
 function HeaderComp() {
-
-  const [windowWidth, setWindowWidth] = useState(0);
-  const [windowHeight, setWindowHeight] = useState(0);
-  let resizeWindow = () => {
-    setWindowWidth(window.innerWidth);
-    setWindowHeight(window.innerHeight);
-  };
-
-  useEffect(() => {
-    resizeWindow();
-    window.addEventListener("resize", resizeWindow);
-    return () => window.removeEventListener("resize", resizeWindow);
-  }, []);
 
   const [dropdown, setDropdown] = useState(false);
   const [dropdown2, setDropdown2] = useState(false);

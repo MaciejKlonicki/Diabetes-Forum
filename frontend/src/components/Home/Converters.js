@@ -15,6 +15,14 @@ function Converters() {
   );
 }
 
+function BackImage() {
+  return (
+    <img className='background-image-converters' 
+    src={"/images/background.jpg"} 
+    alt='backgroundimg'/>
+  )
+}
+
 function FirstTable() {
   return (
     <div className='first-table'>
@@ -290,13 +298,5 @@ function SixthTable() {
     </div>
   )
 }
-
-function BackImage() {
-    return (
-      <img className='background-image-converters' 
-      src={"/images/background.jpg"} 
-      alt='backgroundimg'/>
-    )
-  }
   
 export default Converters;

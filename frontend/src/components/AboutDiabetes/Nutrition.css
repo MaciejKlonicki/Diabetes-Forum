@@ -9,7 +9,7 @@
   }
 
 
-  .h2-nutrition {
+  .h2-nutrition-how-to {
     color: rgb(255, 255, 255);
     text-shadow: .1em .2em .1em hsl(200 50% 30%);
     position: absolute;
@@ -17,7 +17,7 @@
     left:37%;
   }
 
-  .h2-nutrition-2 {
+  .h2-nutrition-what-and-when {
     color: rgb(255, 255, 255);
     text-shadow: .1em .2em .1em hsl(200 50% 30%);
     position: absolute;
@@ -33,7 +33,7 @@
     font-weight: 200;
   }
 
-  .p-nutrition-2 {
+  .p-nutrition-what-and-when {
     color: rgb(255, 255, 255);
     position: relative;
     font-weight: 100;
@@ -41,7 +41,7 @@
     margin-left: 20px;
   }
 
-  .h2-border {
+  .h2-border-how-to {
     border: 2px solid rgb(8, 157, 243);
     position: relative;
     width: 1125px;
@@ -52,7 +52,7 @@
     z-index: -1;
   }
 
-  .h2-border-2 {
+  .h2-border-what-and-when {
     border: 2px solid rgb(8, 157, 243);
     position: relative;
     width: 1125px;
@@ -63,7 +63,7 @@
     z-index: -1;
   }
 
-  .border-window-1 {
+  .border-window-eat-five {
     border: 2px solid rgb(8, 157, 243);
     position: relative;
     width: 120px;
@@ -75,7 +75,7 @@
   }
 
 
-  .border-window-2 {
+  .border-window-how-to-cook {
     border: 2px solid rgb(8, 157, 243);
     position: relative;
     width: 300px;
@@ -86,7 +86,7 @@
     z-index: 1;
   }
 
-  .border-window-3 {
+  .border-window-avoid {
     border: 2px solid rgb(8, 157, 243);
     position: relative;
     width: 280px;
@@ -97,7 +97,7 @@
     z-index: 1;
   }
 
-  .border-window-4 {
+  .border-window-continues {
     border: 2px solid rgb(8, 157, 243);
     position: relative;
     width: 350px;

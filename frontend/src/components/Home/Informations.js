@@ -36,7 +36,7 @@ function BackImage() {
           <h2>Czym jest cukrzyca?</h2>
           </div>
           <div className="image__overlay">
-          <p className="image__description-info-1">
+          <p className="image__description-info-for-informations">
           Cukrzyca to przewlekła choroba metaboliczna charakteryzująca się przewlekłą hiperglikemią, gdzie trzustka nie produkuje wystarczającej ilości insuliny lub produkowana insulina nie jest prawidłowo wykorzystywana przez organizm.
           Nieleczona lub niewłaściwie leczona może stanowić przyczynę wielu niebezpiecznych powikłań.
           Częstotliwość występowania tej choroby na świecie stale rośnie, na co w istotnym stopniu wpływa zachodni styl życia.
@@ -63,7 +63,7 @@ function BackImage() {
           <h2>Typy cukrzycy</h2>
           </div>
           <div className="image__overlay">
-          <p className="image__description-info-2">
+          <p className="image__description-info-for-types">
           Wyróżnia się cukrzycę typu 1, cukrzycę typu 2, cukrzycę ciążową oraz inne specyficzne typy cukrzycy. <br />
           <b>Cukrzyca typu 1</b> rozwija się ona w wyniku błędu układu odpornościowego, który z niewiadomych powodów niszczy zdrowe komórki trzustki produkujące insulinę. W wyniku tej autoagresji dochodzi do znacznych deficytów, bądź zupełnego braku insuliny w organizmie.
           Cukrzyca typu 1 diagnozowana jest głównie u dzieci i młodzieży. Wymaga leczenia insuliną oraz intensywnej samokontroli. <br />
@@ -90,7 +90,7 @@ function BackImage() {
           <h2>Leczenie cukrzycy</h2>
           </div>
           <div className="image__overlay">
-          <p className="image__description-info-3">
+          <p className="image__description-info-for-treatment">
           Leczenie cukrzycy musi być zaplanowane i zaordynowane przez lekarza, który dobierze i określi ich odpowiednie dawki. 
           Leczenie cukrzycy polega przede wszystkim na przestrzeganiu prawidłowej diety, a  najczęściej również, zależnie od typu choroby i zaleceń lekarza, na przyjmowaniu leków i przyjmowaniu insuliny.
           Odpowiednia edukacja chorego też stanowi element leczenia. Ma to znaczenie przede wszystkim takie, że dzięki profesjonalnej wiedzy pacjent może odpowiednio zareagować w razie dostrzeżenia pierwszych niepokojących objawów, które mogą świadczyć o niewłaściwym poziomie cukru we krwi. 

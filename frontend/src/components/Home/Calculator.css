@@ -21,7 +21,7 @@
     top: 40px;
   }
 
-  .calculator-desc-1 {
+  .calculator-desc-exchangers {
     font-size: 1.8em;
     margin-top: 3.5em;
     margin-left: 14.5em;
@@ -30,7 +30,7 @@
     cursor:default;
   }
 
-  .calculator-desc-2 {
+  .calculator-desc-correct {
     font-size: 1.2em;
     margin-top: 1em;
     margin-left: 20em;
@@ -39,7 +39,7 @@
     cursor:default;
   }
 
-  .calculator-desc-3 {
+  .calculator-desc-eat {
     font-size: 1.6em;
     margin-top: 1em;
     margin-left: 17.5em;
@@ -48,7 +48,7 @@
     cursor:default;
   }
 
-  .calculator-desc-4 {
+  .calculator-desc-calculator {
     font-size: 1.8em;
     margin-top: -1.3em;
     margin-left: 38em;
@@ -204,15 +204,6 @@
     cursor:default;
   }
 
-   .sugar-position {
-    position:fixed;
-    bottom: 580px;
-    padding-left: 900px;
-    font-size: 22px;
-    font-weight: 400;
-    color: rgb(0, 0, 0);
-  }
-
   .sugar {
     position: relative;
     bottom: 460px;
@@ -225,6 +216,15 @@
     padding-top: 5px;
     padding-left: 5px;
     border-radius: 5px;
+  }
+
+  .sugar-position {
+    position:fixed;
+    bottom: 580px;
+    padding-left: 900px;
+    font-size: 22px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
   }
 
   .right-arrow {

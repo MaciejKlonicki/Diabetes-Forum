@@ -22,39 +22,39 @@ function BackImage() {
   function FiveRules() {
       return (
         <div>
-            <div className='h2-border'>
-            <h2 className='h2-nutrition'>Jak przygotowywać potrawy?</h2>
-            <div className='border-window-1'>
-            <p className='p-nutrition'>
+          <div className='h2-border-how-to'>
+              <h2 className='h2-nutrition-how-to'>Jak przygotowywać potrawy?</h2>
+            <div className='border-window-eat-five'>
+              <p className='p-nutrition'>
                 <b>JEDZ 5<br /></b>
                 <br /><b>POSIŁKÓW<br /></b>
                 <br /><b>DZIENNIE<br /></b>
-            </p>
+              </p>
             </div>
-            <div className='border-window-2'>
-            <p className='p-nutrition'><b>Potrawy sporządzaj:</b><br />
-            1. Gotowane na wodzie,<br />
-            2. Na parze,<br />
-            3. Duszone,<br />
-            4. Pieczenie bez tłuszczu w rękawie,<br />
-            5. Folii do grilowania
-            </p>
+            <div className='border-window-how-to-cook'>
+              <p className='p-nutrition'><b>Potrawy sporządzaj:</b><br />
+                1. Gotowane na wodzie,<br />
+                2. Na parze,<br />
+                3. Duszone,<br />
+                4. Pieczenie bez tłuszczu w rękawie,<br />
+                5. Folii do grilowania
+              </p>
             </div>
-            <div className='border-window-3'>
-            <p className='p-nutrition'><b>Unikaj:</b><br />
-            1. Pieczywa zawierającego miód, karmel, słód jęczmienny<br />
-            2. Ciast kruchych, francuskich ucieranych,<br />
-            3. Ciepłego pieczywa, <br />
-            </p>
+            <div className='border-window-avoid'>
+              <p className='p-nutrition'><b>Unikaj:</b><br />
+                1. Pieczywa zawierającego miód, karmel, słód jęczmienny<br />
+                2. Ciast kruchych, francuskich ucieranych,<br />
+                3. Ciepłego pieczywa, <br />
+              </p>
             </div>
-            <div className='border-window-4'>
-            <p className='p-nutrition'>
-            4. Chipsów, krakersów, paluszków, słodyczy,<br />
-            5. Rozgotowanych produktów, potraw np.: makaronu, kaszy, ziemniaków, warzyw,<br />
-            6. Smażonych potraw - ich spożycie podnosi poziom cukru nawet do 5 godzin<br />
-            </p>
+            <div className='border-window-continues'>
+              <p className='p-nutrition'>
+                4. Chipsów, krakersów, paluszków, słodyczy,<br />
+                5. Rozgotowanych produktów, potraw np.: makaronu, kaszy, ziemniaków, warzyw,<br />
+                6. Smażonych potraw - ich spożycie podnosi poziom cukru nawet do 5 godzin<br />
+              </p>
             </div>
-            </div>
+          </div>
         </div>
       );
   }
@@ -62,9 +62,9 @@ function BackImage() {
   function WhatToEat() {
       return (
           <div>
-              <div className='h2-border-2'>
-              <h2 className='h2-nutrition-2'>Co i kiedy jeść?</h2>
-              <p className='p-nutrition-2'>
+              <div className='h2-border-what-and-when'>
+              <h2 className='h2-nutrition-what-and-when'>Co i kiedy jeść?</h2>
+              <p className='p-nutrition-what-and-when'>
                 <b>Pieczywo: </b> razowe, żytnio-razowe, graham, 100% żytni (chleb) <br />
                 <b>Nabiał: </b> chudy, przetworzony np.: jogurt naturalny, kefir, ser biały chudy, serek wiejski lekki, maślanka <br />
                 <b>Jaja: </b> 4-5 sztuk w tygodniu - GOTOWANE na miękko, na twardo, w koszulce<br />

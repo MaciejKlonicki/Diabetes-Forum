@@ -13,8 +13,8 @@ function Depression() {
 function BackImage() {
     return (
       <img className='background-image-depression' 
-      src={"/images/background.jpg"} 
-      alt='backgroundimg'/>
+        src={"/images/background.jpg"} 
+        alt='backgroundimg'/>
     )
   }
 

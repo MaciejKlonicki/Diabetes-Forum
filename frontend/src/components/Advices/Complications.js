@@ -13,8 +13,8 @@ function Complications() {
 function BackImage() {
     return (
       <img className='background-image-complications' 
-      src={"/images/background.jpg"} 
-      alt='backgroundimg'/>
+        src={"/images/background.jpg"} 
+        alt='backgroundimg'/>
     )
   }
 

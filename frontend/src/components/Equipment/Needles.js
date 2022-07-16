@@ -5,13 +5,13 @@ function Needles() {
   return (
     <div>
         <BackImage />
-        <InformationAboutNeedles
+        <InformationAboutNeedleVerifine4mm
         img='/images/igly-1.png' />
-        <InformationAboutNeedles2 
+        <InformationAboutNeedleVerifine6mm
         img='/images/igly-2.png' />
-        <InformationAboutNeedles3 
+        <InformationAboutNeedleInsupen8mm
         img='/images/igly-3.png' />
-        <InformationAboutNeedles4 
+        <InformationAboutNeedleInsupen4mm
         img='/images/igly-4.png' />
     </div>
   )
@@ -20,23 +20,23 @@ function Needles() {
 function BackImage() {
     return (
       <img className='background-image-needles' 
-      src={"/images/background.jpg"} 
-      alt='backgroundimg'/>
+        src={"/images/background.jpg"} 
+        alt='backgroundimg'/>
     )
   }
 
-  function InformationAboutNeedles(props) {
+  function InformationAboutNeedleVerifine4mm(props) {
     return (
-        <div className='image-for-needles-1'>
+        <div className='image-for-needles-verifine4mm'>
           <img
           src={props.img}
-          alt='Needlesr-1'
-          className='needles-1-photo'
+          alt='Needless-verifine4mm'
+          className='needles-verifine4mm-photo'
           />
-          <div className='h2-position-needles-1'>
+          <div className='h2-position-needles-verifine4mm'>
           <h2>Igły Verifine 32G 0,23mm x 4mmt</h2>
           </div>
-          <p className="image__description-needles-1">
+          <p className="image__description-needles-verifine4mm">
           Trójwarstwowe ścianki poddane wewnętrznemu elektroszlifowi oraz pokryte warstwą silikonu zapewniają łatwą i niemal bezbolesną penetrację skóry i iniekcję insuliny.
           Igły Verifine są produktem sterylnym dzięki naświetlaniu EO. Służą do jednorazowego użytku.
           Igły do penów Verifine pasują do wszystkich powszechnie stosowanych wstrzykiwaczy insuliny i hormonu wzrostu.
@@ -47,18 +47,18 @@ function BackImage() {
     )
 }
 
-function InformationAboutNeedles2(props) {
+function InformationAboutNeedleVerifine6mm(props) {
     return (
-        <div className='image-for-needles-2'>
+        <div className='image-for-needles-verifine6mm'>
           <img
           src={props.img}
-          alt='Needlesr-2'
-          className='needles-2-photo'
+          alt='Needless-verifine6mm'
+          className='needles-verifine6mm-photo'
           />
-          <div className='h2-position-needles-2'>
+          <div className='h2-position-needles-verifine6mm'>
           <h2>Igły Verifine 32G 0,23mm x 6mm</h2>
           </div>
-          <p className="image__description-needles-2">
+          <p className="image__description-needles-verifine6mm">
             Igły do penów insulinowych Verifine to najnowszy produkt kanadyjskiej firmy Promisemed . Dzięki wykonaniu w technologii cienkich ścianek (TWT) zapewniają łatwiejszy i szybszy przepływ insuliny.
             Trójwarstwowe ścianki poddane wewnętrznemu elektroszlifowi oraz pokryte warstwą silikonu zapewniają łatwą i niemal bezbolesną penetrację skóry i iniekcję insuliny.
             Igły Verifine są produktem sterylnym dzięki naświetlaniu EO. Służą do jednorazowego użytku.
@@ -68,18 +68,18 @@ function InformationAboutNeedles2(props) {
     )
 }
 
-function InformationAboutNeedles3(props) {
+function InformationAboutNeedleInsupen8mm(props) {
     return (
-        <div className='image-for-needles-3'>
+        <div className='image-for-needles-insupen8mm'>
           <img
           src={props.img}
-          alt='Needlesr-3'
-          className='needles-3-photo'
+          alt='Needless-insupen8mm'
+          className='needles-insupen8mm-photo'
           />
-          <div className='h2-position-needles-3'>
+          <div className='h2-position-needles-insupen8mm'>
           <h2>Igły PIC Insupen 32G 8mm</h2>
           </div>
-          <p className="image__description-needles-3">
+          <p className="image__description-needles-insupen8mm">
             Wysokiej jakości igły, które minimalizują dyskomfort podczas zastrzyków. Przeznaczone do stosowania wraz z urządzeniami do wstrzykiwania. Igły są jednorazowe, jałowe i nietoksyczne.
             Igły Insupen są potrójnie zaostrzone i szlifowane w trzech sekcjach, co zmniejsza tarcie podczas robienia zastrzyków. Dodatkowo w celu ułatwienia penetracji skóry podczas nakłucia pokryto je silikonem.
             Natomiast cienki profil zmniejsza odczucie dyskomfortu. Końcówka igły została poddana specjalnej obróbce, dzięki czemu przebija pojemnik z insuliną w sposób, który zapobiega zanieczyszczeniu leku.
@@ -88,18 +88,18 @@ function InformationAboutNeedles3(props) {
     )
 }
 
-function InformationAboutNeedles4(props) {
+function InformationAboutNeedleInsupen4mm(props) {
     return (
-        <div className='image-for-needles-4'>
+        <div className='image-for-needles-insupen4mm'>
           <img
           src={props.img}
-          alt='Needlesr-4'
-          className='needles-4-photo'
+          alt='Needless-insupen4mm'
+          className='needles-insupen4mm-photo'
           />
-          <div className='h2-position-needles-4'>
+          <div className='h2-position-needles-insupen4mm'>
           <h2>Igły PIC Insupen 33G 4mm</h2>
           </div>
-          <p className="image__description-needles-4">
+          <p className="image__description-needles-insupen4mm">
             <b>Parametry techniczne: </b><br />
             Jałowe, niepirogenne, nietoksyczne, bez lateksu <br />
             Technologia cienkich ścianek: jeszcze większa średnica wewnętrzna przy zachowaniu takiej samej średnicy zewnętrznej pozwala na łatwiejszy i szybszy przepływ insuliny i w efekcie skraca czas wstrzyknięcia <br />

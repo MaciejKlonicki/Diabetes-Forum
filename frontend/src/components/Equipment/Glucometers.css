@@ -8,7 +8,7 @@
     opacity: 0.5;
 }
 
-.image-for-glucometr-1 {
+.image-for-glucometr-glucomaxxx {
     position: fixed;
     top: 50%;
     left: 150px;
@@ -19,7 +19,7 @@
     text-align: center;
 }
 
-.image-for-glucometr-2 {
+.image-for-glucometr-glucosense {
     position: fixed;
     top: 102%;
     left: 600px;
@@ -30,7 +30,7 @@
     text-align: center;
 }
 
-.image-for-glucometr-3 {
+.image-for-glucometr-iXellPro {
     position: fixed;
     top: 102%;
     left: 1050px;
@@ -41,7 +41,7 @@
     text-align: center;
 }
 
-.image-for-glucometr-4 {
+.image-for-glucometr-iXell {
     position: fixed;
     top: 102%;
     left: 1460px;
@@ -52,7 +52,7 @@
     text-align: center;
 }
 
-.glucometr-1-photo{
+.glucometr-glucomaxxx-photo {
     height: 500px;
     width: 400px;
     position:relative;
@@ -61,7 +61,7 @@
     opacity: 0.9;
 }
 
-.glucometr-2-photo{
+.glucometr-glucosense-photo {
     height: 470px;
     width: 400px;
     position:relative;
@@ -70,7 +70,7 @@
     opacity: 0.9;
 }
 
-.glucometr-3-photo{
+.glucometr-iXellPro-photo {
     height: 470px;
     width: 400px;
     position:relative;
@@ -79,7 +79,7 @@
     opacity: 0.9;
 }
 
-.glucometr-4-photo{
+.glucometr-iXell-photo {
     height: 470px;
     width: 400px;
     position:relative;
@@ -88,7 +88,7 @@
     opacity: 0.9;
 }
 
-.h2-position-glucometer-1 {
+.h2-position-glucometer-glucomaxxx {
     align-items: center;
     justify-content: center;
     color: rgb(0, 0, 0);
@@ -99,7 +99,7 @@
     left: 17%;
 }
 
-.h2-position-glucometer-2 {
+.h2-position-glucometer-glucosense {
     align-items: center;
     justify-content: center;
     color: rgb(0, 0, 0);
@@ -110,7 +110,7 @@
     left: 17%;
 }
 
-.h2-position-glucometer-3 {
+.h2-position-glucometer-iXellPro {
     align-items: center;
     justify-content: center;
     color: rgb(0, 0, 0);
@@ -121,7 +121,7 @@
     left: 17%;
 }
 
-.h2-position-glucometer-4 {
+.h2-position-glucometer-iXell {
     align-items: center;
     justify-content: center;
     color: rgb(0, 0, 0);
@@ -132,7 +132,7 @@
     left: 17%;
 }
 
-.image__description {
+.image__description-glucomaxxx {
     font-size: 1.00em;
     margin-top: 5.25em;
     font-weight: 400;
@@ -144,7 +144,7 @@
     margin-right: 60px;
   }
 
-  .image__description-2 {
+  .image__description-glucosense {
     font-size: 1.00em;
     margin-top: 3.8em;
     font-weight: 400;
@@ -157,7 +157,7 @@
     margin-right: 10px;
   }
 
-  .image__description-3 {
+  .image__description-iXellPro {
     font-size: 1.00em;
     margin-top: 5.25em;
     font-weight: 400;
@@ -170,7 +170,7 @@
     margin-right: 10px;
   }
 
-  .image__description-4 {
+  .image__description-iXell {
     font-size: 1.00em;
     margin-top: 5.25em;
     font-weight: 400;

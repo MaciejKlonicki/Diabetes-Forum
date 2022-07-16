@@ -8,7 +8,7 @@
     opacity: 0.5;
 }
 
-.image-for-needles-1 {
+.image-for-needles-verifine4mm {
     position: fixed;
     top: 50%;
     left: 150px;
@@ -19,7 +19,7 @@
     text-align: center;
 }
 
-.image-for-needles-2 {
+.image-for-needles-verifine6mm {
     position: fixed;
     top: 50%;
     left: 600px;
@@ -30,7 +30,7 @@
     text-align: center;
 }
 
-.image-for-needles-3 {
+.image-for-needles-insupen8mm {
     position: fixed;
     top: 50%;
     left: 1050px;
@@ -41,7 +41,7 @@
     text-align: center;
 }
 
-.image-for-needles-4 {
+.image-for-needles-insupen4mm {
     position: fixed;
     top: 50%;
     left: 1460px;
@@ -52,7 +52,7 @@
     text-align: center;
 }
 
-.needles-1-photo{
+.needles-verifine4mm-photo {
     height: 300px;
     width: 300px;
     position:relative;
@@ -61,7 +61,7 @@
     opacity: 0.8;
 }
 
-.needles-2-photo{
+.needles-verifine6mm-photo {
     height: 300px;
     width: 300px;
     position:relative;
@@ -70,7 +70,7 @@
     opacity: 0.8;
 }
 
-.needles-3-photo{
+.needles-insupen8mm-photo {
     height: 300px;
     width: 300px;
     position:relative;
@@ -79,7 +79,7 @@
     opacity: 0.8;
 }
 
-.needles-4-photo{
+.needles-insupen4mm-photo {
     height: 300px;
     width: 300px;
     position:relative;
@@ -88,7 +88,7 @@
     opacity: 0.8;
 }
 
-.h2-position-needles-1 {
+.h2-position-needles-verifine4mm {
     align-items: center;
     justify-content: center;
     color: rgb(0, 0, 0);
@@ -99,7 +99,7 @@
     left: 22%;
 }
 
-.h2-position-needles-2 {
+.h2-position-needles-verifine6mm {
     align-items: center;
     justify-content: center;
     color: rgb(0, 0, 0);
@@ -110,7 +110,7 @@
     left: 22%;
 }
 
-.h2-position-needles-3 {
+.h2-position-needles-insupen8mm {
     align-items: center;
     justify-content: center;
     color: rgb(0, 0, 0);
@@ -121,7 +121,7 @@
     left: 22%;
 }
 
-.h2-position-needles-4 {
+.h2-position-needles-insupen4mm {
     align-items: center;
     justify-content: center;
     color: rgb(0, 0, 0);
@@ -132,7 +132,7 @@
     left: 22%;
 }
 
-.image__description-needles-1 {
+.image__description-needles-verifine4mm {
     font-size: 1.00em;
     margin-top: 5.25em;
     font-weight: 400;
@@ -144,7 +144,7 @@
     margin-right: 60px;
 }
 
-.image__description-needles-2 {
+.image__description-needles-verifine6mm {
     font-size: 1.00em;
     margin-top: 5.25em;
     font-weight: 400;
@@ -156,7 +156,7 @@
     margin-right: 60px;
 }
 
-.image__description-needles-3 {
+.image__description-needles-insupen8mm {
     font-size: 1.00em;
     margin-top: 5.25em;
     font-weight: 400;
@@ -168,7 +168,7 @@
     margin-right: 60px;
 }
 
-.image__description-needles-4 {
+.image__description-needles-insupen4mm {
     font-size: 1.00em;
     margin-top: 5.25em;
     font-weight: 400;

@@ -5,13 +5,13 @@ function Stripes() {
   return (
     <div>
         <BackImage />
-        <InformationAboutStripes 
+        <InformationAboutStripeAccuChekActive
         img='/images/paski-1.png' />
-        <InformationAboutStripes2
+        <InformationAboutStripeAccuChekGuide
         img='/images/paski-2.png' />
-        <InformationAboutStripes3
+        <InformationAboutStripeAccuCheckInstant
         img='/images/paski-3.png' />
-        <InformationAboutStripes4
+        <InformationAboutStripeExamedinFast
         img='/images/paski-4.png' />
     </div>
   )
@@ -20,23 +20,23 @@ function Stripes() {
 function BackImage() {
     return (
       <img className='background-image-stripes' 
-      src={"/images/background.jpg"} 
-      alt='backgroundimg'/>
+        src={"/images/background.jpg"} 
+        alt='backgroundimg'/>
     )
   }
 
-  function InformationAboutStripes(props) {
+  function InformationAboutStripeAccuChekActive(props) {
     return (
-        <div className='image-for-stripes-1'>
+        <div className='image-for-stripes-accuChekActive'>
           <img
           src={props.img}
-          alt='Stripes-1'
-          className='stripes-1-photo'
+          alt='Stripes-accuChekActive'
+          className='stripes-accuChekActive-photo'
           />
-          <div className='h2-position-stripes-1'>
+          <div className='h2-position-stripes-accuChekActive'>
           <h2>Paski Accu-Chek Active</h2>
           </div>
-          <p className="image__description-stripes">
+          <p className="image__description-stripes-accuChekActive">
           Testy paski testowe Accu Check ACtive znajdują się na liście refundacyjnej.
           Metoda pomiaru: Fotometryczna <br />
           Wielkość próbi krwi: 1-2 µl <br />
@@ -49,18 +49,18 @@ function BackImage() {
     )
 }
 
-function InformationAboutStripes2(props) {
+function InformationAboutStripeAccuChekGuide(props) {
     return (
-        <div className='image-for-stripes-2'>
+        <div className='image-for-stripes-accuChekGuide'>
           <img
           src={props.img}
-          alt='Stripes-2'
-          className='stripes-2-photo'
+          alt='Stripes-accuChekGuide'
+          className='stripes-accuChekGuide-photo'
           />
-          <div className='h2-position-stripes-2'>
+          <div className='h2-position-stripes-accuChekGuide'>
           <h2>Paski Accu-Chek Guide</h2>
           </div>
-          <p className="image__description-stripes-2">
+          <p className="image__description-stripes-accuChekGuide">
           Temperatura przechowania: od 4°C do 30°C. <br />
           Granica wykrywalności (najniższa wyświetlana wartość): 10 mg/dL (0,6 mmol/L) dla testu paskowego <br />
           Zakres pomiarowy systemu: 10–600 mg/dL (0,6–33,3 mmol/L) <br />
@@ -72,18 +72,18 @@ function InformationAboutStripes2(props) {
     )
 }
 
-function InformationAboutStripes3(props) {
+function InformationAboutStripeAccuCheckInstant(props) {
     return (
-        <div className='image-for-stripes-3'>
+        <div className='image-for-stripes-accuChekInstant'>
           <img
           src={props.img}
-          alt='Stripes-3'
-          className='stripes-3-photo'
+          alt='Stripes-accuChekInstant'
+          className='stripes-accuChekInstant-photo'
           />
-          <div className='h2-position-stripes-3'>
+          <div className='h2-position-stripes-accuChekInstant'>
           <h2>Paski Accu Check Instant</h2>
           </div>
-          <p className="image__description-stripes-3">
+          <p className="image__description-stripes-accuChekInstant">
           Paski testowe  Accu Check Instant pasujące do glukometru o tej samej nazwie tj. Accu Check Instant.
           Paski charakteryzują się zaprojektowaną według nowej technologii szeroką kapilarą, która doskonale zasysa próbkę krwi. 
           Wystarczy przyłożyć niewielką kroplę krwi w dowolnym punkcie żółtej kapilary, a krew zostanie zassana automatycznie. <br />
@@ -94,18 +94,18 @@ function InformationAboutStripes3(props) {
     )
 }
 
-function InformationAboutStripes4(props) {
+function InformationAboutStripeExamedinFast(props) {
     return (
-        <div className='image-for-stripes-4'>
+        <div className='image-for-stripes-examedinFast'>
           <img
           src={props.img}
-          alt='Stripes-4'
-          className='stripes-4-photo'
+          alt='Stripes-examedinFast'
+          className='stripes-examedinFast-photo'
           />
-          <div className='h2-position-stripes-4'>
+          <div className='h2-position-stripes-examedinFast'>
           <h2>Paski Examedin Fast</h2>
           </div>
-          <p className="image__description-stripes-4">
+          <p className="image__description-stripes-examedinFast">
           Testy paskowe Examedin FAST służą do oznaczania stężenia glukozy w świeżej krwi kapilarnej. 
           Wynik podawany jest na podstawie pomiaru prądu elektrycznego, wytworzonego w reakcji glukozy z enzymem umieszczonym na elektrodzie testu paskowego. 
           Próbka krwi jest automatycznie zasysana przez okienko testu paskowego dzięki wykorzystaniu zjawiska kapilarnego. 

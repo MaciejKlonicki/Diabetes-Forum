@@ -6,13 +6,13 @@ function Glucometers() {
     <div>
         <BackImage />
         <InformationAboutGlucometerGlucomaxxx
-        img='/images/glucometr-1.png' />
+          img='/images/glucometr-1.png' />
         <InformationAboutGlucometerGlucosense
-        img='/images/glucometr-2.png' />
+          img='/images/glucometr-2.png' />
         <InformationAboutGlucometeriXellPro
-        img='/images/glucometr-3.png' />
+          img='/images/glucometr-3.png' />
         <InformationAboutGlucometeriXell
-        img='/images/glucometr-4.png' />
+          img='/images/glucometr-4.png' />
     </div>
   )
 }

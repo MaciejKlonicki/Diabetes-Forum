@@ -185,7 +185,7 @@ function CuriositiesInformationFat(props) {
             </p>
           </div>
       </div>
-    );
+    );  
   }
 
 export default Curiosities

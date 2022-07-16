@@ -5,17 +5,17 @@ function Infoline() {
   return (
     <div>
         <BackImage />
-        <InfolineNumbers
+        <InfolineNumberRoche
             img='/images/telephone.png' />
-        <InfolineNumbers2
+        <InfolineNumberAscensia
             img='/images/telephone.png' />
-        <InfolineNumbers3
+        <InfolineNumberAbbott
             img='/images/telephone.png' />
-        <InfolineNumbers4
+        <InfolineNumberLifeScan
             img='/images/telephone.png' />
-        <InfolineNumbers5
+        <InfolineNumberMedtronic
             img='/images/telephone.png' />
-        <InfolineNumbers6
+        <InfolineNumberBioton
             img='/images/telephone.png' />
     </div>
   )
@@ -24,20 +24,20 @@ function Infoline() {
 function BackImage() {
     return (
       <img className='background-image-infoline' 
-      src={"/images/background.jpg"} 
-      alt='backgroundimg'/>
+        src={"/images/background.jpg"} 
+        alt='backgroundimg'/>
     )
   }
 
-  function InfolineNumbers(props) {
+  function InfolineNumberRoche(props) {
     return (
-      <div className='image-for-infoline'>
+      <div className='image-for-infoline-roche'>
           <img
           src={props.img}
-          alt='Infoline'
-          className='infoline-photo'
+          alt='Infoline-roche'
+          className='infoline-photo-roche'
           />
-          <p className="image__description-infoline">
+          <p className="image__description-infoline-roche">
               <b>Roche Diabetes Care Polska</b><br/>
             <b>801 080 104</b><br />
             czynna poniedziałek-piątek, godz. 8.00 - 16.00
@@ -46,15 +46,15 @@ function BackImage() {
     );
   }
 
-  function InfolineNumbers2(props) {
+  function InfolineNumberAscensia(props) {
     return (
-      <div className='image-for-infoline2'>
+      <div className='image-for-infoline-ascensia'>
           <img
           src={props.img}
-          alt='Infoline2'
-          className='infoline-photo2'
+          alt='Infoline-ascensia'
+          className='infoline-photo-ascensia'
           />
-          <p className="image__description-infoline2">
+          <p className="image__description-infoline-ascensia">
               <b>Ascensia Diabetes Care</b><br/>
             <b>800 999 090</b><br />
                 infolinia bezpłatna z komórek:<br/> 
@@ -64,15 +64,15 @@ function BackImage() {
     );
   }
 
-  function InfolineNumbers3(props) {
+  function InfolineNumberAbbott(props) {
     return (
-      <div className='image-for-infoline3'>
+      <div className='image-for-infoline-abbott'>
           <img
           src={props.img}
-          alt='Infoline3'
-          className='infoline-photo3'
+          alt='Infoline-abbott'
+          className='infoline-photo-abbott'
           />
-          <p className="image__description-infoline3">
+          <p className="image__description-infoline-abbott">
               <b>Abbott Diabetes Care</b><br/>
             <b>800 222 688</b><br />
                 infolinia bezpłatna
@@ -81,15 +81,15 @@ function BackImage() {
     );
   }
 
-  function InfolineNumbers4(props) {
+  function InfolineNumberLifeScan(props) {
     return (
-      <div className='image-for-infoline4'>
+      <div className='image-for-infoline-lifescan'>
           <img
           src={props.img}
-          alt='Infoline4'
-          className='infoline-photo4'
+          alt='Infoline-lifescan'
+          className='infoline-photo-lifescan'
           />
-          <p className="image__description-infoline4">
+          <p className="image__description-infoline-lifescan">
               <b>LifeScan Johnson and Johnson</b><br/>
             <b>801 23 23 23</b><br />
             opłata wg. taryfy operatora
@@ -99,15 +99,15 @@ function BackImage() {
     );
   }
 
-  function InfolineNumbers5(props) {
+  function InfolineNumberMedtronic(props) {
     return (
-      <div className='image-for-infoline5'>
+      <div className='image-for-infoline-medtronic'>
           <img
           src={props.img}
-          alt='Infoline5'
-          className='infoline-photo5'
+          alt='Infoline-medtronic'
+          className='infoline-photo-medtronic'
           />
-          <p className="image__description-infoline5">
+          <p className="image__description-infoline-medtronic">
               <b>Medtronic Poland</b><br/>
             <b>22 465 69 87</b><br />
             czynna 24 godziny na dobę
@@ -117,15 +117,15 @@ function BackImage() {
     );
   }
 
-  function InfolineNumbers6(props) {
+  function InfolineNumberBioton(props) {
     return (
-      <div className='image-for-infoline6'>
+      <div className='image-for-infoline-bioton'>
           <img
           src={props.img}
-          alt='Infoline6'
-          className='infoline-photo6'
+          alt='Infoline-bioton'
+          className='infoline-photo-bioton'
           />
-          <p className="image__description-infoline6">
+          <p className="image__description-infoline-bioton">
               <b>Bioton</b><br/>
             <b>801 88 99 71</b><br />
             czynna poniedziałek-piątek, godz. 8.00 - 16.00

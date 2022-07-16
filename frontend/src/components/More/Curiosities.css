@@ -8,7 +8,7 @@
     opacity: 0.5;
 }
 
-.image-for-curiosities-1 {
+.image-for-curiosities-fat {
     position: fixed;
     top: 50%;
     left: 200px;
@@ -19,7 +19,7 @@
     text-align: center;
 }
 
-.image-for-curiosities-2 {
+.image-for-curiosities-die {
     position: fixed;
     top: 50%;
     left: 600px;
@@ -30,7 +30,7 @@
     text-align: center;
 }
 
-.image-for-curiosities-3 {
+.image-for-curiosities-types {
     position: fixed;
     top: 50%;
     left: 1000px;
@@ -41,7 +41,7 @@
     text-align: center;
 }
 
-.image-for-curiosities-4 {
+.image-for-curiosities-pregnant {
     position: fixed;
     top: 50%;
     left: 1400px;
@@ -52,7 +52,7 @@
     text-align: center;
 }
 
-.image-for-curiosities-5 {
+.image-for-curiosities-percent {
   position: fixed;
   top: 50%;
   left: 200px;
@@ -63,7 +63,7 @@
   text-align: center;
 }
 
-.image-for-curiosities-6 {
+.image-for-curiosities-count {
   position: fixed;
   top: 50%;
   left: 600px;
@@ -74,7 +74,7 @@
   text-align: center;
 }
 
-.image-for-curiosities-7 {
+.image-for-curiosities-blind {
   position: fixed;
   top: 50%;
   left: 1000px;
@@ -85,7 +85,7 @@
   text-align: center;
 }
 
-.image-for-curiosities-8 {
+.image-for-curiosities-treatment {
   position: fixed;
   top: 50%;
   left: 1400px;
@@ -96,7 +96,7 @@
   text-align: center;
 }
 
-.curiosities-photo {
+.curiosities-photo-fat {
     height: 300px;
     width: 300px;
     position:relative;
@@ -110,7 +110,7 @@
     border: 3px solid #000000;
   }
 
-  .curiosities-photo-2 {
+  .curiosities-photo-die {
     height: 300px;
     width: 300px;
     position:relative;
@@ -124,7 +124,7 @@
     border: 3px solid #000000;
   }
 
-  .curiosities-photo-3 {
+  .curiosities-photo-types {
     height: 300px;
     width: 300px;
     position:relative;
@@ -138,7 +138,7 @@
     border: 3px solid #000000;
   }
 
-  .curiosities-photo-4 {
+  .curiosities-photo-pregnant {
     height: 300px;
     width: 300px;
     position:relative;
@@ -152,7 +152,7 @@
     border: 3px solid #000000;
   }
 
-  .curiosities-photo-5 {
+  .curiosities-photo-percent {
     height: 300px;
     width: 300px;
     position:relative;
@@ -166,7 +166,7 @@
     border: 3px solid #000000;
   }
 
-  .curiosities-photo-6 {
+  .curiosities-photo-count {
     height: 300px;
     width: 300px;
     position:relative;
@@ -180,7 +180,7 @@
     border: 3px solid #000000;
   }
 
-  .curiosities-photo-7 {
+  .curiosities-photo-blind {
     height: 300px;
     width: 300px;
     position:relative;
@@ -194,7 +194,7 @@
     border: 3px solid #000000;
   }
 
-  .curiosities-photo-8 {
+  .curiosities-photo-treatment {
     height: 300px;
     width: 300px;
     position:relative;
@@ -208,7 +208,7 @@
     border: 3px solid #000000;
   }
 
-  .image__overlay-curiosities {
+  .image__overlay-curiosities-fat {
     position: absolute;
     bottom: 60%;
     left: 20%;
@@ -221,11 +221,11 @@
     border-radius: 2%;
   } 
 
-  .image__overlay-curiosities:hover {
+  .image__overlay-curiosities-fat:hover {
     opacity: 1;
   }
 
-  .image__overlay-curiosities-2 {
+  .image__overlay-curiosities-die {
     position: absolute;
     bottom: 60%;
     left: 20%;
@@ -238,11 +238,11 @@
     border-radius: 2%;
   } 
 
-  .image__overlay-curiosities-2:hover {
+  .image__overlay-curiosities-die:hover {
     opacity: 1;
   }
 
-  .image__overlay-curiosities-3 {
+  .image__overlay-curiosities-types {
     position: absolute;
     bottom: 60%;
     left: 20%;
@@ -255,11 +255,11 @@
     border-radius: 2%;
   } 
 
-  .image__overlay-curiosities-3:hover {
+  .image__overlay-curiosities-types:hover {
     opacity: 1;
   }
 
-  .image__overlay-curiosities-4 {
+  .image__overlay-curiosities-pregnant {
     position: absolute;
     bottom: 60%;
     left: 20%;
@@ -272,11 +272,11 @@
     border-radius: 2%;
   } 
 
-  .image__overlay-curiosities-4:hover {
+  .image__overlay-curiosities-pregnant:hover {
     opacity: 1;
   }
 
-  .image__overlay-curiosities-5 {
+  .image__overlay-curiosities-percent {
     position: absolute;
     top: 80%;
     left: 20%;
@@ -289,11 +289,11 @@
     border-radius: 2%;
   } 
 
-  .image__overlay-curiosities-5:hover {
+  .image__overlay-curiosities-percent:hover {
     opacity: 1;
   }
 
-  .image__overlay-curiosities-6 {
+  .image__overlay-curiosities-count {
     position: absolute;
     top: 80%;
     left: 20%;
@@ -306,11 +306,11 @@
     border-radius: 2%;
   } 
 
-  .image__overlay-curiosities-6:hover {
+  .image__overlay-curiosities-count:hover {
     opacity: 1;
   }
 
-  .image__overlay-curiosities-7 {
+  .image__overlay-curiosities-blind {
     position: absolute;
     top: 80%;
     left: 20%;
@@ -323,11 +323,11 @@
     border-radius: 2%;
   } 
 
-  .image__overlay-curiosities-7:hover {
+  .image__overlay-curiosities-blind:hover {
     opacity: 1;
   }
 
-  .image__overlay-curiosities-8 {
+  .image__overlay-curiosities-treatment {
     position: absolute;
     top: 80%;
     left: 20%;
@@ -340,11 +340,11 @@
     border-radius: 2%;
   } 
 
-  .image__overlay-curiosities-8:hover {
+  .image__overlay-curiosities-treatment:hover {
     opacity: 1;
   }
 
-  .image__description-curiosities-1 {
+  .image__description-curiosities-fat {
     font-size: 2em;
     margin-top: 2.5em;
     margin-left: 0.2em;
@@ -354,7 +354,7 @@
     cursor:default;
   }
 
-  .image__description-curiosities-2 {
+  .image__description-curiosities-die {
     font-size: 2em;
     margin-top: 5.0em;
     margin-left: 0.2em;
@@ -364,7 +364,7 @@
     cursor:default;
   }
 
-  .image__description-curiosities-3 {
+  .image__description-curiosities-types {
     font-size: 2em;
     margin-top: 4.5em;
     margin-left: 0.2em;
@@ -374,7 +374,7 @@
     cursor:default;
   }
 
-  .image__description-curiosities-4 {
+  .image__description-curiosities-pregnant {
     font-size: 1.5em;
     margin-top: 1.5em;
     margin-left: 0.2em;
@@ -384,7 +384,7 @@
     cursor:default;
   }
 
-  .image__description-curiosities-5 {
+  .image__description-curiosities-percent {
     font-size: 2.3em;
     margin-top: 4.0em;
     margin-left: 0.2em;
@@ -394,7 +394,7 @@
     cursor:default;
   }
 
-  .image__description-curiosities-6 {
+  .image__description-curiosities-count {
     font-size: 2.3em;
     margin-top: 4.0em;
     margin-left: 0.2em;
@@ -404,7 +404,7 @@
     cursor:default;
   }
 
-  .image__description-curiosities-7 {
+  .image__description-curiosities-blind {
     font-size: 2.3em;
     margin-top: 4.5em;
     margin-left: 0.2em;
@@ -414,7 +414,7 @@
     cursor:default;
   }
 
-  .image__description-curiosities-8 {
+  .image__description-curiosities-treatment {
     font-size: 2.3em;
     margin-top: 4.5em;
     margin-left: 0.2em;

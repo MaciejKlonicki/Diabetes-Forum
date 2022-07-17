@@ -37,9 +37,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
-}
+  }
 
-.header-links::before {
+  .header-links::before {
   content: '';
   background: #54b3d6;
   display: block;
@@ -49,17 +49,17 @@
   width: 0;
   height: 2px;
   transition: all 0.3s ease-in-out;
-}
+  }
 
-.header-links:hover {
+  .header-links:hover {
   background-position: 0;
-}
+  }
 
-.header-links:hover::before {
+  .header-links:hover::before {
   width: 100%;
-}
+  }
 
-.header-menu {
+  .header-menu {
   display: grid;
   grid-template-columns: repeat(5, auto);
   grid-gap: 120px;
@@ -68,11 +68,11 @@
   margin-right: 25rem;
   }
 
-.header-item {
+  .header-item {
   display: flex;
   align-items: center;
   height: 80px;
-}
+  }
 
 
   .header-button {

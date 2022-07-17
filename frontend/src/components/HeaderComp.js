@@ -8,73 +8,73 @@ import MoveDownMore from './SlideMenu/MoveDownMore';
 
 function HeaderComp() {
 
-  const [dropdown, setDropdown] = useState(false);
-  const [dropdown2, setDropdown2] = useState(false);
-  const [dropdown3, setDropdown3] = useState(false);
-  const [dropdown4, setDropdown4] = useState(false);
+  const [aboutDiabetes, setAboutDiabetes] = useState(false);
+  const [equipment, setEquipment] = useState(false);
+  const [advices, setAdvices] = useState(false);
+  const [more, setMore] = useState(false);
 
-  const onMouseEnter = () => {
+  const onMouseEnterAboutDiabetes = () => {
     if (window.innerWidth < 540) {
-      setDropdown(false);
+      setAboutDiabetes(false);
     } else {
-      setDropdown(true);
+      setAboutDiabetes(true);
     }
   };
 
-  const onMouseLeave = () => {
+  const onMouseLeaveAboutDiabetes = () => {
     if (window.innerWidth < 540) {
-      setDropdown(false);
+      setAboutDiabetes(false);
     } else {
-      setDropdown(false);
+      setAboutDiabetes(false);
     }
   };
 
   
-  const onMouseEnter2 = () => {
+  const onMouseEnterEquipment = () => {
     if (window.innerWidth < 540) {
-      setDropdown2(false);
+      setEquipment(false);
     } else {
-      setDropdown2(true);
+      setEquipment(true);
     }
   };
 
-  const onMouseLeave2 = () => {
+  const onMouseLeaveEquipment = () => {
     if (window.innerWidth < 540) {
-      setDropdown2(false);
+      setEquipment(false);
     } else {
-      setDropdown2(false);
+      setEquipment(false);
     }
   };
 
-  const onMouseEnter3 = () => {
+  const onMouseEnterAdvices = () => {
     if (window.innerWidth < 540) {
-      setDropdown3(false);
+      setAdvices(false);
     } else {
-      setDropdown3(true);
+      setAdvices(true);
     }
   };
 
-  const onMouseLeave3 = () => {
+  const onMouseLeaveAdvices = () => {
     if (window.innerWidth < 540) {
-      setDropdown3(false);
+      setAdvices(false);
     } else {
-      setDropdown3(false);
+      setAdvices(false);
     }
   };
 
-  const onMouseEnter4 = () => {
+  const onMouseEnterMore = () => {
     if (window.innerWidth < 540) {
-      setDropdown4(false);
+      setMore(false);
     } else {
-      setDropdown4(true);
+      setMore(true);
     }
   };
 
-  const onMouseLeave4 = () => {
+  const onMouseLeaveMore = () => {
     if (window.innerWidth < 540) {
-      setDropdown4(false);
+      setMore(false);
     } else {
-      setDropdown4(false);
+      setMore(false);
     }
   };
 
@@ -86,54 +86,54 @@ function HeaderComp() {
       <ul className='header-menu'>
         <li
           className='header-item'
-          onMouseEnter={onMouseEnter}
-          onMouseLeave={onMouseLeave}
+          onMouseEnter={onMouseEnterAboutDiabetes}
+          onMouseLeave={onMouseLeaveAboutDiabetes}
         >
         <Link to='/'
         className='header-links'
         >
         O cukrzycy
         </Link>
-        {dropdown && <MoveDownDiabetes />}
+        {aboutDiabetes && <MoveDownDiabetes />}
         </li>
 
         <li
           className='header-item'
-          onMouseEnter={onMouseEnter2}
-          onMouseLeave={onMouseLeave2}
+          onMouseEnter={onMouseEnterEquipment}
+          onMouseLeave={onMouseLeaveEquipment}
         >
         <Link to='/'
         className='header-links'
         >
         Sprzęt
         </Link>
-        {dropdown2 && <MoveDownMedicaments />}
+        {equipment && <MoveDownMedicaments />}
         </li>
 
         <li
           className='header-item'
-          onMouseEnter={onMouseEnter3}
-          onMouseLeave={onMouseLeave3}
+          onMouseEnter={onMouseEnterAdvices}
+          onMouseLeave={onMouseLeaveAdvices}
         >
         <Link to='/'
         className='header-links'
         >
         Porady
         </Link>
-        {dropdown3 && <MoveDownAdvices />}
+        {advices && <MoveDownAdvices />}
         </li>
 
         <li
           className='header-item'
-          onMouseEnter={onMouseEnter4}
-          onMouseLeave={onMouseLeave4}
+          onMouseEnter={onMouseEnterMore}
+          onMouseLeave={onMouseLeaveMore}
         >
         <Link to='/'
         className='header-links'
         >
         Więcej
         </Link>
-        {dropdown4 && <MoveDownMore />}
+        {more && <MoveDownMore />}
         </li>
       </ul>
         <a href="/kalkulator"><button className="header-button-calc btn">Kalkulator</button></a>

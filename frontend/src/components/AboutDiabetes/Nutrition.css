@@ -10,16 +10,14 @@
 
 
   .h2-nutrition-how-to {
-    color: rgb(255, 255, 255);
-    text-shadow: .1em .2em .1em hsl(200 50% 30%);
+    color: rgb(0, 0, 0);
     position: absolute;
-    bottom: 85%;
+    bottom: 90%;
     left:37%;
   }
 
   .h2-nutrition-what-and-when {
     color: rgb(255, 255, 255);
-    text-shadow: .1em .2em .1em hsl(200 50% 30%);
     position: absolute;
     bottom: 90%;
     left:44%;
@@ -41,17 +39,6 @@
     margin-left: 20px;
   }
 
-  .h2-border-how-to {
-    border: 2px solid rgb(8, 157, 243);
-    position: relative;
-    width: 1125px;
-    height: 250px;
-    left: 300px;
-    top: 20px;
-    background-color: rgba(15, 14, 13, 0.322);
-    z-index: -1;
-  }
-
   .h2-border-what-and-when {
     border: 2px solid rgb(8, 157, 243);
     position: relative;
@@ -68,8 +55,8 @@
     position: relative;
     width: 120px;
     height: 160px;
-    left: 20px;
-    top: 60px;
+    left: 150px;
+    top: 100px;
     background-color: rgba(15, 14, 13, 0.493);
     z-index: 1;
   }
@@ -80,8 +67,8 @@
     position: relative;
     width: 300px;
     height: 160px;
-    left: 150px;
-    bottom: 100px;
+    left: 350px;
+    bottom: 50px;
     background-color: rgba(15, 14, 13, 0.493);
     z-index: 1;
   }

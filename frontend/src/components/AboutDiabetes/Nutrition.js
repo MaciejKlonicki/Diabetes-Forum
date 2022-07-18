@@ -22,7 +22,7 @@ function BackImage() {
   function FiveRules() {
       return (
         <div>
-          <div className='h2-border-how-to'>
+          <div>
               <h2 className='h2-nutrition-how-to'>Jak przygotowywać potrawy?</h2>
             <div className='border-window-eat-five'>
               <p className='p-nutrition'>

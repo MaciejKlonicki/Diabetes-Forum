@@ -8,14 +8,6 @@
   opacity: 0.5;
   }
 
-
-  .h2-nutrition-how-to {
-    color: rgb(0, 0, 0);
-    position: absolute;
-    bottom: 90%;
-    left:37%;
-  }
-
   .h2-nutrition-what-and-when {
     color: rgb(255, 255, 255);
     position: absolute;
@@ -35,8 +27,8 @@
     color: rgb(255, 255, 255);
     position: relative;
     font-weight: 100;
-    top: 50px;
-    margin-left: 20px;
+    top: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
   .h2-border-what-and-when {
@@ -48,17 +40,6 @@
     top: 50px;
     background-color: rgba(15, 14, 13, 0.582);
     z-index: -1;
-  }
-
-  .border-window-eat-five {
-    border: 2px solid rgb(8, 157, 243);
-    position: relative;
-    width: 120px;
-    height: 160px;
-    left: 150px;
-    top: 100px;
-    background-color: rgba(15, 14, 13, 0.493);
-    z-index: 1;
   }
 
 
@@ -94,3 +75,48 @@
     background-color: rgba(15, 14, 13, 0.493);
     z-index: 1;
   }
+
+  .box-nutrition {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1500px;
+    height: 500px;
+    background: #111845a6;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgb(23, 32, 90);
+    border: 2px solid #2a3cad;
+    color: white;
+    padding: 20px;
+ }
+
+ .box-nutrition:before {
+  content: '';
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background: rgba(255,255,255,0.1);
+  transition:0.6s;
+  pointer-events: none;
+}
+
+.box-nutrition:hover:before {
+  left:-50%;
+  transform: skewX(-5deg);
+}
+
+.box-nutrition .content-nutrition {
+  position:absolute;
+  top:15px;
+  left:15px;
+  right:15px;
+  bottom:15px;
+  border:1px solid #08e1e9;
+  padding:20px;
+  text-align:center;
+  box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+}

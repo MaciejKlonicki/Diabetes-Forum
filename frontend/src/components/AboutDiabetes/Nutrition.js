@@ -14,8 +14,8 @@ function Nutrition() {
 function BackImage() {
     return (
       <img className='background-image-nutrition' 
-      src={"/images/background.jpg"} 
-      alt='backgroundimg'/>
+        src={"/images/background.jpg"} 
+        alt='backgroundimg'/>
     )
   }
 
@@ -23,14 +23,6 @@ function BackImage() {
       return (
         <div>
           <div>
-              <h2 className='h2-nutrition-how-to'>Jak przygotowywać potrawy?</h2>
-            <div className='border-window-eat-five'>
-              <p className='p-nutrition'>
-                <b>JEDZ 5<br /></b>
-                <br /><b>POSIŁKÓW<br /></b>
-                <br /><b>DZIENNIE<br /></b>
-              </p>
-            </div>
             <div className='border-window-how-to-cook'>
               <p className='p-nutrition'><b>Potrawy sporządzaj:</b><br />
                 1. Gotowane na wodzie,<br />
@@ -62,7 +54,8 @@ function BackImage() {
   function WhatToEat() {
       return (
           <div>
-              <div className='h2-border-what-and-when'>
+              <div className='box-nutrition'>
+                <div className='content-nutrition'>
               <h2 className='h2-nutrition-what-and-when'>Co i kiedy jeść?</h2>
               <p className='p-nutrition-what-and-when'>
                 <b>Pieczywo: </b> razowe, żytnio-razowe, graham, 100% żytni (chleb) <br />
@@ -82,6 +75,7 @@ function BackImage() {
                 <b>Zupy najlepiej gotować na wywarach z chudego mięsa czy na wywarach warzywnych, można dodać jogurtu naturalnego</b>
               </p>
               </div>
+            </div>
           </div>
       )
   }

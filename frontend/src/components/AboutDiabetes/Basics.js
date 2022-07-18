@@ -20,7 +20,8 @@ function BackImage() {
 
   function BasicInformations() {
       return (
-          <div>
+          <div className='box'>
+            <div className='content'>
               <div className='h2-basic'>
                 <h2>Podstawy</h2>
               </div>
@@ -42,6 +43,7 @@ function BackImage() {
                   Wartości wykraczające poza ten zakres mogą z czasem powodować rosnące problemy zdrowotne i prowadzić do uszkodzenia organów, takich jak nerki czy serce.
                 </p>
               </div>
+            </div>
           </div>
       )
   }

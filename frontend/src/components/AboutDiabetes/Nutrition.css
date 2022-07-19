@@ -18,7 +18,7 @@
   .p-nutrition {
     color: rgb(255, 255, 255);
     position: relative;
-    line-height: 27px;
+    line-height: 28px;
     top: -10px;
     font-weight: 100;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -50,25 +50,37 @@
   }
 
   .border-window-avoid {
-    border: 2px solid rgb(8, 157, 243);
-    position: relative;
-    width: 280px;
-    height: 160px;
-    left:460px;
-    bottom: 260px;
-    background-color: rgba(15, 14, 13, 0.493);
-    z-index: 1;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 200px;
+    background: #111845a6;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgb(23, 32, 90);
+    border: 2px solid #2a3cad;
+    color: white;
+    padding: 20px;
+    border-radius: 20%;
   }
 
   .border-window-continues {
-    border: 2px solid rgb(8, 157, 243);
-    position: relative;
-    width: 350px;
-    height: 160px;
-    left:750px;
-    bottom: 420px;
-    background-color: rgba(15, 14, 13, 0.493);
-    z-index: 1;
+    position: absolute;
+    top: 20%;
+    left: 83%;
+    transform: translate(-50%, -50%);
+    width: 370px;
+    height: 200px;
+    background: #111845a6;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgb(23, 32, 90);
+    border: 2px solid #2a3cad;
+    color: white;
+    padding: 20px;
+    border-radius: 20%;
   }
 
   .box-nutrition {

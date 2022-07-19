@@ -19,7 +19,6 @@
     color: rgb(255, 255, 255);
     position: relative;
     line-height: 28px;
-    top: -10px;
     font-weight: 100;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
@@ -32,55 +31,131 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
-  .border-window-how-to-cook {
-    position: absolute;
-    top: 20%;
-    left: 14%;
-    transform: translate(-50%, -50%);
-    width: 245px;
+  .gradient-border-how-to-cook {
+    --border-width: 3px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    width: 230px;
+    top: 30px;
+    left: 107px;
     height: 200px;
-    background: #111845a6;
-    box-sizing: border-box;
-    overflow: hidden;
-    box-shadow: 0 20px 50px rgb(23, 32, 90);
-    border: 2px solid #2a3cad;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    padding: 20px;
-    border-radius: 20%;
+    background: #222;
+  }
+  
+    .gradient-border-how-to-cook::after {
+      position: absolute;
+      content: "";
+      top: calc(-1 * var(--border-width));
+      left: calc(-1 * var(--border-width));
+      z-index: -1;
+      width: calc(100% + var(--border-width) * 2);
+      height: calc(100% + var(--border-width) * 2);
+      background: linear-gradient(
+        60deg,
+        hsl(224, 73%, 58%),
+        hsl(269, 46%, 49%),
+        hsl(314, 50%, 52%),
+        hsl(359, 63%, 60%),
+        hsl(44, 88%, 61%),
+        hsl(89, 85%, 61%),
+        hsl(134, 53%, 51%),
+        hsl(179, 47%, 46%)
+      );
+      background-size: 300% 300%;
+      background-position: 0 50%;
+      border-radius: calc(2 * var(--border-width));
+      animation: moveGradient 4s alternate infinite;
+    }
+  .gradient-border-how-to-cook-avoid {
+    --border-width: 3px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    width: 250px;
+    left: 43%;
+    bottom: 170px;
+    height: 200px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background: #222;
   }
 
-  .border-window-avoid {
+  .gradient-border-how-to-cook-avoid::after {
     position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      hsl(224, 73%, 58%),
+      hsl(269, 46%, 49%),
+      hsl(314, 50%, 52%),
+      hsl(359, 63%, 60%),
+      hsl(44, 88%, 61%),
+      hsl(89, 85%, 61%),
+      hsl(134, 53%, 51%),
+      hsl(179, 47%, 46%)
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+  }
+  
+
+  .gradient-border-how-to-cook-continues {
+    --border-width: 3px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    width: 360px;
+    left: 72.8%;
+    bottom: 370px;
     height: 200px;
-    background: #111845a6;
-    box-sizing: border-box;
-    overflow: hidden;
-    box-shadow: 0 20px 50px rgb(23, 32, 90);
-    border: 2px solid #2a3cad;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    padding: 20px;
-    border-radius: 20%;
+    background: #222;
   }
 
-  .border-window-continues {
+  .gradient-border-how-to-cook-continues::after {
     position: absolute;
-    top: 20%;
-    left: 83%;
-    transform: translate(-50%, -50%);
-    width: 370px;
-    height: 200px;
-    background: #111845a6;
-    box-sizing: border-box;
-    overflow: hidden;
-    box-shadow: 0 20px 50px rgb(23, 32, 90);
-    border: 2px solid #2a3cad;
-    color: white;
-    padding: 20px;
-    border-radius: 20%;
+    content: "";
+    top: calc(-1 * var(--border-width));
+    left: calc(-1 * var(--border-width));
+    z-index: -1;
+    width: calc(100% + var(--border-width) * 2);
+    height: calc(100% + var(--border-width) * 2);
+    background: linear-gradient(
+      60deg,
+      hsl(224, 73%, 58%),
+      hsl(269, 46%, 49%),
+      hsl(314, 50%, 52%),
+      hsl(359, 63%, 60%),
+      hsl(44, 88%, 61%),
+      hsl(89, 85%, 61%),
+      hsl(134, 53%, 51%),
+      hsl(179, 47%, 46%)
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    border-radius: calc(2 * var(--border-width));
+    animation: moveGradient 4s alternate infinite;
+  }
+
+      
+  @keyframes moveGradient {
+    50% {
+      background-position: 100% 50%;
+    }
   }
 
   .box-nutrition {

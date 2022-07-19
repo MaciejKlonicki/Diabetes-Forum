@@ -23,7 +23,7 @@ function BackImage() {
       return (
         <div>
           <div>
-            <div className='border-window-how-to-cook'>
+            <div className='gradient-border-how-to-cook'>
               <p className='p-nutrition'><b>Potrawy sporządzaj:</b><br />
                 <b>1.</b> Gotowane na wodzie,<br />
                 <b>2.</b> Na parze,<br />
@@ -32,14 +32,14 @@ function BackImage() {
                 <b>5.</b> Folii do grilowania
               </p>
             </div>
-            <div className='border-window-avoid'>
+            <div className='gradient-border-how-to-cook-avoid'>
               <p className='p-nutrition'><b>Unikaj:</b><br />
               <b>1.</b> Pieczywa zawierającego miód, karmel, słód jęczmienny<br />
               <b>2.</b> Ciast kruchych, francuskich ucieranych,<br />
               <b>3.</b> Ciepłego pieczywa, <br />
               </p>
             </div>
-            <div className='border-window-continues'>
+            <div className='gradient-border-how-to-cook-continues'>
               <p className='p-nutrition'>
               <b>4.</b> Chipsów, krakersów, paluszków, słodyczy,<br />
               <b>5.</b> Rozgotowanych produktów, potraw np.: makaronu, kaszy, ziemniaków, warzyw,<br />

@@ -21,7 +21,7 @@
     position: relative;
     color: rgb(255, 255, 255);
     font-weight: 100;
-    font-size: 1.45em;
+    font-size: 1.25em;
     top: 15px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 30px;
@@ -32,7 +32,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 1400px;
+    width: 1350px;
     height: 700px;
     background: #111845a6;
     box-sizing: border-box;

@@ -18,9 +18,10 @@
   .p-nutrition {
     color: rgb(255, 255, 255);
     position: relative;
-    padding-top: 5px;
-    padding-left: 6px;
-    font-weight: 200;
+    line-height: 27px;
+    top: -10px;
+    font-weight: 100;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
   .p-nutrition-what-and-when {
@@ -28,30 +29,24 @@
     position: relative;
     font-weight: 100;
     top: 30px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
-
-  .h2-border-what-and-when {
-    border: 2px solid rgb(8, 157, 243);
-    position: relative;
-    width: 1125px;
-    height: 450px;
-    left: 300px;
-    top: 50px;
-    background-color: rgba(15, 14, 13, 0.582);
-    z-index: -1;
-  }
-
 
   .border-window-how-to-cook {
-    border: 2px solid rgb(8, 157, 243);
-    position: relative;
-    width: 300px;
-    height: 160px;
-    left: 350px;
-    bottom: 50px;
-    background-color: rgba(15, 14, 13, 0.493);
-    z-index: 1;
+    position: absolute;
+    top: 20%;
+    left: 14%;
+    transform: translate(-50%, -50%);
+    width: 245px;
+    height: 200px;
+    background: #111845a6;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgb(23, 32, 90);
+    border: 2px solid #2a3cad;
+    color: white;
+    padding: 20px;
+    border-radius: 20%;
   }
 
   .border-window-avoid {

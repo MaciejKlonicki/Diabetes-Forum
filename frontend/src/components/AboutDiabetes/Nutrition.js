@@ -25,25 +25,25 @@ function BackImage() {
           <div>
             <div className='border-window-how-to-cook'>
               <p className='p-nutrition'><b>Potrawy sporządzaj:</b><br />
-                1. Gotowane na wodzie,<br />
-                2. Na parze,<br />
-                3. Duszone,<br />
-                4. Pieczenie bez tłuszczu w rękawie,<br />
-                5. Folii do grilowania
+                <b>1.</b> Gotowane na wodzie,<br />
+                <b>2.</b> Na parze,<br />
+                <b>3.</b> Duszone,<br />
+                <b>4.</b> Pieczenie bez tłuszczu,<br />
+                <b>5.</b> Folii do grilowania
               </p>
             </div>
             <div className='border-window-avoid'>
               <p className='p-nutrition'><b>Unikaj:</b><br />
-                1. Pieczywa zawierającego miód, karmel, słód jęczmienny<br />
-                2. Ciast kruchych, francuskich ucieranych,<br />
-                3. Ciepłego pieczywa, <br />
+              <b>1.</b> Pieczywa zawierającego miód, karmel, słód jęczmienny<br />
+              <b>2.</b> Ciast kruchych, francuskich ucieranych,<br />
+              <b>3.</b> Ciepłego pieczywa, <br />
               </p>
             </div>
             <div className='border-window-continues'>
               <p className='p-nutrition'>
-                4. Chipsów, krakersów, paluszków, słodyczy,<br />
-                5. Rozgotowanych produktów, potraw np.: makaronu, kaszy, ziemniaków, warzyw,<br />
-                6. Smażonych potraw - ich spożycie podnosi poziom cukru nawet do 5 godzin<br />
+              <b>4.</b> Chipsów, krakersów, paluszków, słodyczy,<br />
+              <b>5.</b> Rozgotowanych produktów, potraw np.: makaronu, kaszy, ziemniaków, warzyw,<br />
+              <b>6.</b> Smażonych potraw - ich spożycie podnosi poziom cukru nawet do 5 godzin<br />
               </p>
             </div>
           </div>

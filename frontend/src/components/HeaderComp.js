@@ -136,7 +136,7 @@ function HeaderComp() {
         {more && <MoveDownMore />}
         </li>
       </ul>
-        <a href="/kalkulator"><button className="header-button-calc btn">Kalkulator</button></a>
+        <a href="/kalkulator"><button className="header-button-calc button-style">Kalkulator</button></a>
         <a href="/przeliczniki"><button className="header-button btn">Przeliczniki</button></a>
         <a href="/logowanie"><button className="header-button-login btn">Logowanie</button></a>
         <a href="/rejestracja"><button className="header-button-registration btn">Rejestracja</button></a>

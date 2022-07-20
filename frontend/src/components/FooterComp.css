@@ -1,5 +1,6 @@
 .footer {
-    background: -webkit-linear-gradient(90deg, rgb(12, 52, 182) 5%,rgb(17, 199, 255) 100%);
+    background: rgb(0, 0, 0);
+    opacity: 0.85;
     color: white;
     position: fixed;
     bottom: 0;

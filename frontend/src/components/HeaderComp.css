@@ -88,6 +88,7 @@
     background-color: black;
     transition: all 0.5s;
     border-radius: 2em;
+    cursor: pointer;
   }
 
   .header-button:hover {
@@ -112,6 +113,7 @@
     background-color: black;
     transition: all 0.5s;
     border-radius: 2em;
+    cursor: pointer;
   }
 
   .header-button-calc:hover {
@@ -136,6 +138,7 @@
     background-color: black;
     transition: all 0.5s;
     border-radius: 2em;
+    cursor: pointer;
   }
 
   .header-button-login:hover {
@@ -160,6 +163,7 @@
     background-color: black;
     transition: all 0.5s;
     border-radius: 2em;
+    cursor: pointer;
   }
 
   .header-button-registration:hover {
@@ -168,11 +172,6 @@
   }
 
   @media screen and (max-width: 900px) {
-
-    .header-button-registration:hover {
-      color: black;
-      background-color: rgb(255, 255, 255);
-    }
 
     .header-button-registration {
       position: relative;
@@ -191,7 +190,14 @@
       background-color: black;
       transition: all 0.5s;
       border-radius: 2em;
+      cursor: pointer;
     }
+
+    .header-button-registration:hover {
+      color: black;
+      background-color: rgb(255, 255, 255);
+    }
+
 
     .header-button-login {
       position: relative;
@@ -210,7 +216,14 @@
       background-color: black;
       transition: all 0.5s;
       border-radius: 2em;
+      cursor: pointer;
     }
+
+    .header-button-login:hover {
+      color: black;
+      background-color: rgb(255, 255, 255);
+    }
+
 
 
     .header-button-calc {
@@ -230,7 +243,14 @@
       background-color: black;
       transition: all 0.5s;
       border-radius: 2em;
+      cursor: pointer;
     }
+
+    .header-button-calc:hover {
+      color: black;
+      background-color: rgb(255, 255, 255);
+    }
+
 
     .header-button {
       position: relative;
@@ -249,7 +269,14 @@
       background-color: black;
       transition: all 0.5s;
       border-radius: 2em;
+      cursor: pointer;
     }
+
+    .header-button:hover {
+      color: black;
+      background-color: rgb(255, 255, 255);
+    }
+
 
     .header-menu {
       display: grid;

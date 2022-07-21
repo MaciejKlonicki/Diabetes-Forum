@@ -5,6 +5,7 @@ import MoveDownDiabetes from './SlideMenu/MoveDownDiabetes';
 import MoveDownMedicaments from './SlideMenu/MoveDownMedicaments';
 import MoveDownAdvices from './SlideMenu/MoveDownAdvices';
 import MoveDownMore from './SlideMenu/MoveDownMore';
+import { AiFillCaretDown } from 'react-icons/ai';
 
 function HeaderComp() {
 
@@ -92,6 +93,9 @@ function HeaderComp() {
         <Link to='/'
         className='header-links'
         >
+          <div className="icon-pos-diabetes">
+            <AiFillCaretDown />
+          </div>
           Cukrzyca
         </Link>
         {aboutDiabetes && <MoveDownDiabetes />}
@@ -105,6 +109,9 @@ function HeaderComp() {
         <Link to='/'
         className='header-links'
         >
+          <div className="icon-pos-eq">
+            <AiFillCaretDown />
+          </div>
         Sprzęt
         </Link>
         {equipment && <MoveDownMedicaments />}
@@ -118,6 +125,9 @@ function HeaderComp() {
         <Link to='/'
         className='header-links'
         >
+          <div className="icon-pos-advice">
+            <AiFillCaretDown />
+          </div>
         Porady
         </Link>
         {advices && <MoveDownAdvices />}
@@ -131,6 +141,9 @@ function HeaderComp() {
         <Link to='/'
         className='header-links'
         >
+          <div className="icon-pos-more">
+            <AiFillCaretDown />
+          </div>
         Więcej
         </Link>
         {more && <MoveDownMore />}

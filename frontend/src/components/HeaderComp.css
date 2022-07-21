@@ -18,18 +18,17 @@
 }
 
 .header-links {
+  position: relative;
+  padding-bottom: 20px;
   color: white;
   text-decoration: none;
   text-align:center;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  display: flex;
   font-weight: 500;
   align-items: center;
   background-color: white;
   background-size: 200% 100%;
   background-position: -100%;
-  display: inline-block;
-  position: relative;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease-in-out;
@@ -40,7 +39,7 @@
   background: #ffffff;
   display: block;
   position: absolute;
-  bottom: -3px;
+  bottom: 15px;
   left: 0;
   width: 0;
   height: 2px;
@@ -68,6 +67,30 @@
   display: flex;
   align-items: center;
   height: 80px;
+  }
+
+  .icon-pos-diabetes {
+    position: relative;
+    top: 26px;
+    left: 50px;
+  }
+
+  .icon-pos-eq {
+    position: relative;
+    top: 26px;
+    left: 40px;
+  }
+
+  .icon-pos-advice {
+    position: relative;
+    top: 26px;
+    left: 40px;
+  }
+
+  .icon-pos-more {
+    position: relative;
+    top: 26px;
+    left: 40px;
   }
 
 

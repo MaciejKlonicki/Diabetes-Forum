@@ -315,18 +315,41 @@
       text-decoration: none;
       text-align:center;
       font-family: 'Muli', sans-serif;
-      display: flex;
       font-weight: 500;
       font-size: 15px;
       align-items: center;
       background-color: white;
       background-size: 200% 100%;
       background-position: -100%;
-      display: inline-block;
       position: relative;
+      padding-bottom: 20px;
       left: 20px;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       transition: all 0.3s ease-in-out;
+  }
+
+  .icon-pos-diabetes {
+    position: relative;
+    top: 22px;
+    left: 45px;
+  }
+
+  .icon-pos-eq {
+    position: relative;
+    top: 22px;
+    left: 35px;
+  }
+
+  .icon-pos-advice {
+    position: relative;
+    top: 22px;
+    left: 35px;
+  }
+
+  .icon-pos-more {
+    position: relative;
+    top: 22px;
+    left: 35px;
   }
   }

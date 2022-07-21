@@ -92,7 +92,7 @@ function HeaderComp() {
         <Link to='/'
         className='header-links'
         >
-        O cukrzycy
+          Cukrzyca
         </Link>
         {aboutDiabetes && <MoveDownDiabetes />}
         </li>

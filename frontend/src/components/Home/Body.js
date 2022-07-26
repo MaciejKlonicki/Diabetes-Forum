@@ -34,7 +34,7 @@ function BackImage() {
 function InformationCard(props) {
   return (
     <div className='cards-image-information'>
-      <h1>INFORMACJE</h1>
+      <h1>informacje</h1>
       <Link to={props.path}>
         <img
           src={props.img}
@@ -50,6 +50,7 @@ function InformationCard(props) {
 function FoodCard(props) {
   return (
     <div className='cards-image-food'>
+      <h1>przeliczniki</h1>
       <Link to={props.path}>
         <img
           src={props.img}
@@ -65,6 +66,7 @@ function FoodCard(props) {
 function CalculatorCard(props) {
   return (
     <div className='cards-image-calculator'>
+      <h1>kalkulator</h1>
       <Link to={props.path}>
         <img
           src={props.img}
@@ -80,6 +82,7 @@ function CalculatorCard(props) {
 function LoginCard(props) {
   return (
     <div className='cards-image-login'>
+      <h1>zaloguj sie</h1>
       <Link to={props.path}>
         <img
           src={props.img}

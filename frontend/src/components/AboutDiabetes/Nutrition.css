@@ -11,6 +11,7 @@
   .h2-nutrition-what-and-when {
     color: rgb(255, 255, 255);
     position: absolute;
+    text-align: center;
     bottom: 90%;
     left:44%;
   }
@@ -70,6 +71,7 @@
       border-radius: calc(2 * var(--border-width));
       animation: moveGradient 4s alternate infinite;
     }
+
   .gradient-border-how-to-cook-avoid {
     --border-width: 3px;
     position: relative;
@@ -201,4 +203,84 @@
   padding:20px;
   text-align:center;
   box-shadow: 0 5px 10px rgba(9,0,0,0.5);
+}
+
+@media screen and (max-width: 900px) {
+  .gradient-border-how-to-cook {
+    --border-width: 3px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    width: 190px;
+    top: 70px;
+    left: 10px;
+    height: 200px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background: #222;
+  }
+
+  .gradient-border-how-to-cook-avoid {
+    --border-width: 3px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    width: 250px;
+    left: 26%;
+    bottom: 130px;
+    height: 200px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background: #222;
+  }
+
+  .gradient-border-how-to-cook-continues {
+    --border-width: 3px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    width: 340px;
+    left: 58%;
+    bottom: 330px;
+    height: 200px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background: #222;
+  }
+
+  .box-nutrition {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 815px;
+    height: 540px;
+    background: #111845a6;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgb(23, 32, 90);
+    border: 2px solid #2a3cad;
+    color: white;
+    padding: 20px;
+ }
+
+ .p-nutrition-what-and-when {
+  color: rgb(255, 255, 255);
+  position: relative;
+  font-weight: 100;
+  top: 30px;
+  font-size: 16px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.h2-nutrition-what-and-when {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 90%;
+  left:40%;
+}
+
 }

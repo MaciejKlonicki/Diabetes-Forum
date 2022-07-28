@@ -20,7 +20,8 @@ function BackImage() {
 
   function ComplicationsWithDiabetes() {
     return (
-        <div className='border-living'>
+        <div className='box-compliation'>
+          <div className='content'>
             <div className='h2-how-to'>
                 <h2>Powikłania cukrzycy</h2>
             </div>
@@ -43,6 +44,7 @@ function BackImage() {
                 Paznokcie obcinaj prosto, by nie wrastały, ale nie za krótko, nie wycinaj skórek. <br />
                 Nie rozgrzewaj stóp poduszką elektryczną czy termoforem. <br />
             </p>
+            </div>
         </div>
     )
 }

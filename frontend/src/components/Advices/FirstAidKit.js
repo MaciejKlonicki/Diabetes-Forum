@@ -20,11 +20,12 @@ function BackImage() {
   
   function FirstAidKitInformations() {
     return (
-        <div className='border-living-first-aid-kit'>
-            <div className='h2-how-to'>
+        <div className='box-aid-kit'>
+            <div className='h2-aid-kit'>
+              <div className='content'>
                 <h2>Apteczka cukrzyka</h2>
             </div>
-              <p className='p-how-to'>
+              <p className='p-aid-kit'>
                 Dla cukrzyka ważna jest kontrola poziomu glukozy. <br />
                 Sprawdza się to za pomocą tzw. pasków, czyli suchych testów albo glukometru. <br />
                 Zazwyczaj przed posiłkiem lub podaniem insuliny, a potem 1,5-2 godzin po jedzeniu. <br />
@@ -39,6 +40,7 @@ function BackImage() {
                 <b>peny do miesiąca, otwartą fiolkę do 6 tygodni</b><br />
                 <b>Jeśli insulina zamarza, zmieniła barwę lub konsystencję – nie nadaje się do użytku.</b>
               </p>
+        </div>
         </div>
     )
 }

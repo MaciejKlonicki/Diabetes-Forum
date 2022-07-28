@@ -223,6 +223,7 @@
 
   .image__overlay-curiosities-fat:hover {
     opacity: 1;
+    transition: 0.9s;
   }
 
   .image__overlay-curiosities-die {
@@ -240,6 +241,7 @@
 
   .image__overlay-curiosities-die:hover {
     opacity: 1;
+    transition: 0.9s;
   }
 
   .image__overlay-curiosities-types {
@@ -257,6 +259,7 @@
 
   .image__overlay-curiosities-types:hover {
     opacity: 1;
+    transition: 0.9s;
   }
 
   .image__overlay-curiosities-pregnant {
@@ -274,6 +277,7 @@
 
   .image__overlay-curiosities-pregnant:hover {
     opacity: 1;
+    transition: 0.9s;
   }
 
   .image__overlay-curiosities-percent {
@@ -291,6 +295,7 @@
 
   .image__overlay-curiosities-percent:hover {
     opacity: 1;
+    transition: 0.9s;
   }
 
   .image__overlay-curiosities-count {
@@ -308,6 +313,7 @@
 
   .image__overlay-curiosities-count:hover {
     opacity: 1;
+    transition: 0.9s;
   }
 
   .image__overlay-curiosities-blind {
@@ -325,6 +331,7 @@
 
   .image__overlay-curiosities-blind:hover {
     opacity: 1;
+    transition: 0.9s;
   }
 
   .image__overlay-curiosities-treatment {
@@ -342,6 +349,7 @@
 
   .image__overlay-curiosities-treatment:hover {
     opacity: 1;
+    transition: 0.9s;
   }
 
   .image__description-curiosities-fat {

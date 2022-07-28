@@ -20,7 +20,7 @@ function BackImage() {
 
   function BasicInformations() {
       return (
-          <div className='box'>
+          <div className='box-how-to'>
             <div className='content'>
               <div className='h2-basic'>
                 <h2>Podstawy</h2>

@@ -94,6 +94,7 @@
 
  .image__overlay:hover {
   opacity: 1;
+  transition: 0.9s;
 }
 
 .image__description-info-for-informations {

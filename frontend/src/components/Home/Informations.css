@@ -98,32 +98,35 @@
 
 .image__description-info-for-informations {
   font-size: 1.59em;
-  margin-top: 5.15em;
+  margin-top: 4em;
   margin-right: 5px;
   margin-left: 5px;
-  font-weight: 400;
+  font-weight: 100;
   color: rgb(255, 255, 255);
   cursor:default;
+  line-height: 27px;
 }
 
 .image__description-info-for-types {
   font-size: 1.59em;
-  margin-top: 5.25em;
+  margin-top:3em;
   margin-right: 5px;
   margin-left: 5px;
   font-weight: 400;
   color: rgb(255, 255, 255);
   cursor:default;
+  line-height: 25px;
 }
 
 .image__description-info-for-treatment {
   font-size: 1.59em;
-  margin-top: 5.25em;
+  margin-top: 4em;
   margin-right: 5px;
   margin-left: 5px;
   font-weight: 400;
   color: rgb(255, 255, 255);
   cursor:default;
+  line-height: 25px;
 }
 
 

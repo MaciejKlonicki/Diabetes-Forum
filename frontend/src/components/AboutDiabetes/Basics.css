@@ -11,10 +11,11 @@
 .h2-basic {
 	position: relative;
 	perspective: 500px;
+  text-align: center;
 	top: 3%;
 	transform: translateY(-50%);
-    font-weight: 400;
-    font-size: 24px;
+  font-weight: 400;
+  font-size: 24px;
 }
 
  .p-basic {

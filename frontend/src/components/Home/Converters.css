@@ -18,36 +18,37 @@
 
   .first-table {
     position:relative;
-    top: 0px;
+    top: 50px;
     left: 1220px;
   }
 
   .second-table {
     position:relative;
+    top: 50px;
     left: 1370px;
   }
 
   .third-table {
     position:relative;
-    top: 350px;
+    top: 400px;
     left: -80px;
   }
 
   .fourth-table {
     position:relative;
-    top: 350px;
+    top: 400px;
     right: -70px;
   }
 
   .fifth-table {
     position:relative;
-    top: 700px;
+    top: 750px;
     right: 1380px;
   }
 
   .sixth-table {
     position:relative;
-    top: 700px;
+    top: 750px;
     right: 1230px;
   }
 
@@ -68,4 +69,53 @@
     
   td {
     text-align: center;
+  }
+
+  @media screen and (max-width: 900px) {
+    table {
+      position: relative;
+      border: 3px solid rgb(8, 157, 243);
+      width: 400px;
+      height: 300px;
+      bottom: 260px;
+      background-color: rgba(15, 14, 13, 0.397);
+      margin-top: 20px;
+      border-radius: 15px;
+    }
+
+    .first-table {
+      position:relative;
+      top: 50px;
+      left: 790px;
+    }
+  
+    .second-table {
+      position:relative;
+      top: 50px;
+      left: 800px;
+    }
+  
+    .third-table {
+      position:relative;
+      top: 400px;
+      left: -10px;
+    }
+  
+    .fourth-table {
+      position:relative;
+      top: 400px;
+      right: 0px;
+    }
+  
+    .fifth-table {
+      position:relative;
+      top: 750px;
+      right: 810px;
+    }
+  
+    .sixth-table {
+      position:relative;
+      top: 750px;
+      right: 800px;
+    }
   }

@@ -71,3 +71,33 @@
     color: rgb(255, 255, 255);
     cursor:default;
 }
+
+@media screen and (max-width: 900px) {
+
+  .box-aid-kit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 700px;
+    background: #111845a6;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: 0 20px 50px rgb(23, 32, 90);
+    border: 2px solid #2a3cad;
+    color: white;
+    padding: 20px;
+ }
+
+  .p-aid-kit {
+    font-size: 1em;
+    margin-top: 90px;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    line-height: 28px;
+    color: rgb(255, 255, 255);
+    cursor:default;
+}
+}

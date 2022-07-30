@@ -100,18 +100,6 @@ function CuriositiesInformationFat(props) {
           <div className="image__overlay-curiosities-pregnant">
             <p className="image__description-curiosities-pregnant">
               <b>Trzeci typ cukrzycy to cukrzyca ciążowa</b><br />
-              Ten typ cukrzycy charakteryzuje się
-              hiperglikemią, oraz podwyższonym
-              poziomem cukru we krwi podczas
-              ciąży, z wartością powyżej normy ale
-              poniżej poziomu charakterystycznego
-              dla cukrzycy właściwej.
-              Kobiety cierpiące na cukrzycę
-              ciążową są w grupie zwiększonego
-              ryzyka powikłań podczas ciąży i
-              porodu. Ponadto są one także
-              narażone na zachorowanie na
-              cukrzycę typu 2 w przyszłości.
             </p>
           </div>
       </div>

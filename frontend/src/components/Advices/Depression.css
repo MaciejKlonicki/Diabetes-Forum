@@ -7,3 +7,27 @@
     display: flex;
     opacity: 0.5;
 }
+
+.p-depression {
+    font-size: 1.10em;
+    margin-left: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 20px;
+    font-weight: 100;
+    line-height: 27px;
+    color: rgb(255, 255, 255);
+    cursor:default;
+}
+
+@media screen and (max-width: 900px) {
+    .p-depression {
+        font-size: 1em;
+        margin-left: 20px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-right: 20px;
+        font-weight: 100;
+        line-height: 20.8px;
+        color: rgb(255, 255, 255);
+        cursor:default;
+    }
+}

@@ -25,7 +25,7 @@ function BackImage() {
             <div className='h2-how-to'>
                 <h2>Depresja cukrzyka</h2>
             </div>
-            <p className='p-how-to'>
+            <p className='p-depression'>
                 <b>Często zdarza się, że osoba chora na cukrzycę ma depresję i inne problemy psychiczne, a to wpływa z kolei na jej zachowanie i zdolność do przestrzegania diety i zaleceń lekarza.</b><br /><br />
                 <b>Możliwe problemy psychiczne cukrzyka:</b><br /> <br />
                 <b>Zespół lęku napadowego</b> inaczej lęk paniczny – przed chorobą, jej konsekwencjami, utratą kontroli. Objawy to m.in. przyspieszony rytm serca (tachykardia), zbyt szybki i głęboki oddech (hiperwentylacja), duszności, dreszcze, rozstrój żołądka, zawroty głowy, bóle w klatce piersiowej, poczucie obcości. Może pojawić się agorafobia (lęk przed otwartą przestrzenią). Najczęściej u pacjentów z cukrzycą typu I. <br/><br/>

@@ -22,11 +22,11 @@ function BackImage() {
       return (
           <div className='box-how-to'>
             <div className='content'>
-              <div className='h2-basic'>
+              <div className='h2-how-to'>
                 <h2>Podstawy</h2>
               </div>
               <div>
-                <p className='p-basic'>
+                <p className='p-basics'>
                   <b>Cukrzyca</b> jest przewlekłą chorobą, która występuje, gdy organizm nie wytwarza dostatecznej ilości <b>insuliny</b> lub nie wykorzystuje jej w odpowiedni sposób. 
                   Gdy w organizmie brakuje insuliny lub działa ona nieprawidłowo, poziom <b>glukozy</b> we krwi wzrasta. <br />
                   <br />U chorego może być obecne zarówno upośledzenie wydzielania, jak i funkcji insuliny.

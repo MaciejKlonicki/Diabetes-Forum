@@ -82,7 +82,7 @@ function CalculatorCard(props) {
 function LoginCard(props) {
   return (
     <div className='cards-image-login'>
-      <h1>zaloguj sie</h1>
+      <h1>zaloguj się</h1>
       <Link to={props.path}>
         <img
           src={props.img}

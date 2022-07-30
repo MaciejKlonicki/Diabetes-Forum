@@ -28,6 +28,7 @@
     color: rgb(255, 255, 255);
     position: relative;
     font-weight: 100;
+    line-height: 26px;
     top: 30px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
@@ -272,7 +273,8 @@
   position: relative;
   font-weight: 100;
   top: 30px;
-  font-size: 16px;
+  font-size: 15px;
+  line-height: 23px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -282,5 +284,4 @@
   bottom: 90%;
   left:40%;
 }
-
 }

@@ -71,8 +71,8 @@ function BackImage() {
                 <b>Warzywa: (jemy o określonej godzinie posiłku!!!)</b> ziemniaki, buraki, marchew gotowana, kukurydza, fasola, groch, bób, soja <br />
                 <b>Napoje bez cukru</b><br />
                 <b>Tłuszcze roślinne: </b> olej rzepakowy, oliwa - na zimno i ciepło, olej słonecznikowy, olej lniany - tylko na zimno <br />
-                <b>Zup nie gotować na wywarach z korpusów, skrzydełek, żeberek, kości, nie dodajemy wegety, kucharków, kostek rosołowych, bulionetek czy mąki</b><br />
-                <b>Zupy najlepiej gotować na wywarach z chudego mięsa czy na wywarach warzywnych, można dodać jogurtu naturalnego</b>
+                   Zup <b>nie</b> gotować na wywarach z korpusów, skrzydełek, żeberek, kości, <b>nie</b> dodajemy wegety, kucharków, kostek rosołowych, bulionetek czy mąki<br />
+                  Zupy najlepiej gotować na wywarach z <b>chudego</b> mięsa czy na wywarach warzywnych, można dodać jogurtu naturalnego.
               </p>
               </div>
             </div>

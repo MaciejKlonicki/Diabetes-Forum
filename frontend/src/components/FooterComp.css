@@ -30,6 +30,7 @@
   background-color: black;
   transition: all 0.5s;
   border-radius: 2em;
+  cursor: pointer;
   }
 
   .footer-button-contact:hover {

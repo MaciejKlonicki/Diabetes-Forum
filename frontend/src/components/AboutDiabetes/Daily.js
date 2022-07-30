@@ -20,9 +20,9 @@ function BackImage() {
 
 function DailyRoutines() {
   return (
-    <div className='box-daily'>
+    <div className='box-how-to'>
       <div className='content'>
-      <div className='h2-daily'>
+      <div className='h2-how-to'>
         <h2>Codzienność</h2>
       </div>
       <div>

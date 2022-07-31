@@ -1,210 +1,108 @@
 .header {
-  background: rgb(0, 0, 0);
-  opacity: 0.85;
-  height: 50px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2;
-  position: fixed;
-  top: 0;    
-  z-index: 2;
+    background: rgb(0, 0, 0);
+    opacity: 0.85;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2;
+    position: fixed;
+    top: 0;    
+    z-index: 2;
 }
 
 .header-logo {
-  margin-left: 10px;
-  display: flex;
+    margin-left: 10px;
+    display: flex;
 }
 
 .header-links {
-  position: relative;
-  padding-bottom: 20px;
-  color: white;
-  text-decoration: none;
-  text-align:center;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 100;
-  align-items: center;
-  background-color: white;
-  background-size: 200% 100%;
-  background-position: -100%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  transition: all 0.3s ease-in-out;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  -webkit-tap-highlight-color: transparent;
+    position: relative;
+    padding-bottom: 20px;
+    color: white;
+    text-decoration: none;
+    text-align:center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    align-items: center;
+    background-color: white;
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
   }
 
   .header-links::before {
-  content: '';
-  background: #ffffff;
-  display: block;
-  position: absolute;
-  bottom: 15px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  transition: all 0.3s ease-in-out;
+      content: '';
+      background: #ffffff;
+      display: block;
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      transition: all 0.3s ease-in-out;
   }
 
   .header-links:hover {
-  background-position: 0;
+      background-position: 0;
   }
 
   .header-links:hover::before {
-  width: 100%;
+      width: 100%;
   }
 
   .header-menu {
-  display: grid;
-  grid-template-columns: repeat(5, auto);
-  grid-gap: 120px;
-  width: 90vw;
-  justify-content: end;
-  margin-right: 25rem;
+      display: grid;
+      grid-template-columns: repeat(5, auto);
+      grid-gap: 120px;
+      width: 90vw;
+      justify-content: end;
+      margin-right: 25rem;
   }
 
   .header-item {
-  display: flex;
-  align-items: center;
-  height: 80px;
+      display: flex;
+      align-items: center;
+      height: 80px;
   }
 
   .icon-pos-diabetes {
-    position: relative;
-    top: 26px;
-    left: 50px;
+      position: relative;
+      top: 26px;
+      left: 50px;
   }
 
   .icon-pos-eq {
-    position: relative;
-    top: 26px;
-    left: 40px;
+      position: relative;
+      top: 26px;
+      left: 40px;
   }
 
   .icon-pos-advice {
-    position: relative;
-    top: 26px;
-    left: 40px;
+      position: relative;
+      top: 26px;
+      left: 40px;
   }
 
   .icon-pos-more {
-    position: relative;
-    top: 26px;
-    left: 40px;
+      position: relative;
+      top: 26px;
+      left: 40px;
   }
 
 
   .header-button {
-    position: relative;
-    right: 500px;
-    display: inline-block;
-    padding: 0.5em 1.7em;
-    margin: 0 0.1em 0.1em 0;
-    border: 0.16em solid rgb(255, 255, 255);
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    color: #ffffff;
-    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
-    text-align: center;
-    background-color: black;
-    transition: all 0.5s;
-    border-radius: 2em;
-    cursor: pointer;
-  }
-
-  .header-button:hover {
-    color: black;
-    background-color: rgb(255, 255, 255);
-  }
-
-  .header-button-calc {
-    position: relative;
-    right: 150px;
-    display: inline-block;
-    padding: 0.5em 1.7em;
-    margin: 0 0.1em 0.1em 0;
-    border: 0.16em solid rgb(255, 255, 255);
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    color: #ffffff;
-    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
-    text-align: center;
-    background-color: black;
-    transition: all 0.5s;
-    border-radius: 2em;
-    cursor: pointer;
-  }
-
-  .header-button-calc:hover {
-    color: black;
-    background-color: rgb(255, 255, 255);
-  }
-
-  .header-button-login {
-    position: relative;
-    right: 30px;
-    display: inline-block;
-    padding: 0.5em 1.7em;
-    margin: 0 0.1em 0.1em 0;
-    border: 0.16em solid rgb(255, 255, 255);
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    color: #ffffff;
-    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
-    text-align: center;
-    background-color: black;
-    transition: all 0.5s;
-    border-radius: 2em;
-    cursor: pointer;
-  }
-
-  .header-button-login:hover {
-    color: black;
-    background-color: rgb(255, 255, 255);
-  }
-
-  .header-button-registration {
-    position: relative;
-    right: 20px;
-    display: inline-block;
-    padding: 0.5em 1.7em;
-    margin: 0 0.1em 0.1em 0;
-    border: 0.16em solid rgb(255, 255, 255);
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    color: #ffffff;
-    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
-    text-align: center;
-    background-color: black;
-    transition: all 0.5s;
-    border-radius: 2em;
-    cursor: pointer;
-  }
-
-  .header-button-registration:hover {
-    color: black;
-    background-color: rgb(255, 255, 255);
-  }
-
-  @media screen and (max-width: 900px) {
-
-    .header-button-registration {
       position: relative;
-      right: 10px;
+      right: 500px;
       display: inline-block;
-      padding: 0.4em 0.5em;
+      padding: 0.5em 1.7em;
       margin: 0 0.1em 0.1em 0;
       border: 0.16em solid rgb(255, 255, 255);
       box-sizing: border-box;
@@ -218,142 +116,243 @@
       transition: all 0.5s;
       border-radius: 2em;
       cursor: pointer;
+  }
+
+  .header-button:hover {
+      color: black;
+      background-color: rgb(255, 255, 255);
+  }
+
+  .header-button-calc {
+      position: relative;
+      right: 150px;
+      display: inline-block;
+      padding: 0.5em 1.7em;
+      margin: 0 0.1em 0.1em 0;
+      border: 0.16em solid rgb(255, 255, 255);
+      box-sizing: border-box;
+      text-decoration: none;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      color: #ffffff;
+      text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+      text-align: center;
+      background-color: black;
+      transition: all 0.5s;
+      border-radius: 2em;
+      cursor: pointer;
+  }
+
+  .header-button-calc:hover {
+      color: black;
+      background-color: rgb(255, 255, 255);
+  }
+
+  .header-button-login {
+      position: relative;
+      right: 30px;
+      display: inline-block;
+      padding: 0.5em 1.7em;
+      margin: 0 0.1em 0.1em 0;
+      border: 0.16em solid rgb(255, 255, 255);
+      box-sizing: border-box;
+      text-decoration: none;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      color: #ffffff;
+      text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+      text-align: center;
+      background-color: black;
+      transition: all 0.5s;
+      border-radius: 2em;
+      cursor: pointer;
+  }
+
+  .header-button-login:hover {
+      color: black;
+      background-color: rgb(255, 255, 255);
+  }
+
+  .header-button-registration {
+      position: relative;
+      right: 20px;
+      display: inline-block;
+      padding: 0.5em 1.7em;
+      margin: 0 0.1em 0.1em 0;
+      border: 0.16em solid rgb(255, 255, 255);
+      box-sizing: border-box;
+      text-decoration: none;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      color: #ffffff;
+      text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+      text-align: center;
+      background-color: black;
+      transition: all 0.5s;
+      border-radius: 2em;
+      cursor: pointer;
+  }
+
+  .header-button-registration:hover {
+      color: black;
+      background-color: rgb(255, 255, 255);
+  }
+
+  @media screen and (max-width: 900px) {
+    .header-button-registration {
+        position: relative;
+        right: 10px;
+        display: inline-block;
+        padding: 0.4em 0.5em;
+        margin: 0 0.1em 0.1em 0;
+        border: 0.16em solid rgb(255, 255, 255);
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        color: #ffffff;
+        text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+        text-align: center;
+        background-color: black;
+        transition: all 0.5s;
+        border-radius: 2em;
+        cursor: pointer;
     }
 
     .header-button-registration:hover {
-      color: black;
-      background-color: rgb(255, 255, 255);
+        color: black;
+        background-color: rgb(255, 255, 255);
     }
 
 
     .header-button-login {
-      position: relative;
-      right: 15px;
-      display: inline-block;
-      padding: 0.4em 0.5em;
-      margin: 0 0.1em 0.1em 0;
-      border: 0.16em solid rgb(255, 255, 255);
-      box-sizing: border-box;
-      text-decoration: none;
-      font-family: "Roboto", sans-serif;
-      font-weight: 400;
-      color: #ffffff;
-      text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
-      text-align: center;
-      background-color: black;
-      transition: all 0.5s;
-      border-radius: 2em;
-      cursor: pointer;
+        position: relative;
+        right: 15px;
+        display: inline-block;
+        padding: 0.4em 0.5em;
+        margin: 0 0.1em 0.1em 0;
+        border: 0.16em solid rgb(255, 255, 255);
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        color: #ffffff;
+        text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+        text-align: center;
+        background-color: black;
+        transition: all 0.5s;
+        border-radius: 2em;
+        cursor: pointer;
     }
 
     .header-button-login:hover {
-      color: black;
-      background-color: rgb(255, 255, 255);
+        color: black;
+        background-color: rgb(255, 255, 255);
     }
 
 
 
     .header-button-calc {
-      position: relative;
-      right: -30px;
-      display: inline-block;
-      padding: 0.4em 0.5em;
-      margin: 0 0.1em 0.1em 0;
-      border: 0.16em solid rgb(255, 255, 255);
-      box-sizing: border-box;
-      text-decoration: none;
-      font-family: "Roboto", sans-serif;
-      font-weight: 400;
-      color: #ffffff;
-      text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
-      text-align: center;
-      background-color: black;
-      transition: all 0.5s;
-      border-radius: 2em;
-      cursor: pointer;
+        position: relative;
+        right: -30px;
+        display: inline-block;
+        padding: 0.4em 0.5em;
+        margin: 0 0.1em 0.1em 0;
+        border: 0.16em solid rgb(255, 255, 255);
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        color: #ffffff;
+        text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+        text-align: center;
+        background-color: black;
+        transition: all 0.5s;
+        border-radius: 2em;
+        cursor: pointer;
     }
 
     .header-button-calc:hover {
-      color: black;
-      background-color: rgb(255, 255, 255);
+        color: black;
+        background-color: rgb(255, 255, 255);
     }
 
 
     .header-button {
-      position: relative;
-      right: 150px;
-      display: inline-block;
-      padding: 0.4em 0.5em;
-      margin: 0 0.1em 0.1em 0;
-      border: 0.16em solid rgb(255, 255, 255);
-      box-sizing: border-box;
-      text-decoration: none;
-      font-family: "Roboto", sans-serif;
-      font-weight: 400;
-      color: #ffffff;
-      text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
-      text-align: center;
-      background-color: black;
-      transition: all 0.5s;
-      border-radius: 2em;
-      cursor: pointer;
+        position: relative;
+        right: 150px;
+        display: inline-block;
+        padding: 0.4em 0.5em;
+        margin: 0 0.1em 0.1em 0;
+        border: 0.16em solid rgb(255, 255, 255);
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        color: #ffffff;
+        text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+        text-align: center;
+        background-color: black;
+        transition: all 0.5s;
+        border-radius: 2em;
+        cursor: pointer;
     }
 
     .header-button:hover {
-      color: black;
-      background-color: rgb(255, 255, 255);
+        color: black;
+        background-color: rgb(255, 255, 255);
     }
 
 
     .header-menu {
-      display: grid;
-      grid-template-columns: repeat(5, auto);
-      grid-gap: 35px;
-      width: 90vw;
-      justify-content: end;
-      margin-right: 7rem;
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-gap: 35px;
+        width: 90vw;
+        justify-content: end;
+        margin-right: 7rem;
     }
 
     .header-links {
-      color: white;
-      text-decoration: none;
-      text-align:center;
-      font-family: 'Muli', sans-serif;
-      font-weight: 500;
-      font-size: 15px;
-      align-items: center;
-      background-color: white;
-      background-size: 200% 100%;
-      background-position: -100%;
-      position: relative;
-      padding-bottom: 20px;
-      left: 20px;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transition: all 0.3s ease-in-out;
+        color: white;
+        text-decoration: none;
+        text-align:center;
+        font-family: 'Muli', sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        align-items: center;
+        background-color: white;
+        background-size: 200% 100%;
+        background-position: -100%;
+        position: relative;
+        padding-bottom: 20px;
+        left: 20px;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 0.3s ease-in-out;
   }
 
   .icon-pos-diabetes {
-    position: relative;
-    top: 22px;
-    left: 45px;
+      position: relative;
+      top: 22px;
+      left: 45px;
   }
 
   .icon-pos-eq {
-    position: relative;
-    top: 22px;
-    left: 35px;
+      position: relative;
+      top: 22px;
+      left: 35px;
   }
 
   .icon-pos-advice {
-    position: relative;
-    top: 22px;
-    left: 35px;
+      position: relative;
+      top: 22px;
+      left: 35px;
   }
 
   .icon-pos-more {
-    position: relative;
-    top: 22px;
-    left: 35px;
+      position: relative;
+      top: 22px;
+      left: 35px;
   }
   }

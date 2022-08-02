@@ -219,6 +219,7 @@
     font-size: 10px;
     background-color: rgba(15, 14, 13, 0.651);
     border-radius: 2%;
+    cursor: pointer;
   } 
 
   .image__overlay-curiosities-fat:hover {
@@ -237,6 +238,7 @@
     font-size: 10px;
     background-color: rgba(15, 14, 13, 0.651);
     border-radius: 2%;
+    cursor: pointer;
   } 
 
   .image__overlay-curiosities-die:hover {
@@ -255,6 +257,7 @@
     font-size: 10px;
     background-color: rgba(15, 14, 13, 0.651);
     border-radius: 2%;
+    cursor: pointer;
   } 
 
   .image__overlay-curiosities-types:hover {
@@ -273,6 +276,7 @@
     font-size: 10px;
     background-color: rgba(15, 14, 13, 0.651);
     border-radius: 2%;
+    cursor: pointer;
   } 
 
   .image__overlay-curiosities-pregnant:hover {
@@ -291,6 +295,7 @@
     font-size: 10px;
     background-color: rgba(15, 14, 13, 0.651);
     border-radius: 2%;
+    cursor: pointer;
   } 
 
   .image__overlay-curiosities-percent:hover {
@@ -309,6 +314,7 @@
     font-size: 10px;
     background-color: rgba(15, 14, 13, 0.651);
     border-radius: 2%;
+    cursor: pointer;
   } 
 
   .image__overlay-curiosities-count:hover {
@@ -327,6 +333,7 @@
     font-size: 10px;
     background-color: rgba(15, 14, 13, 0.651);
     border-radius: 2%;
+    cursor: pointer;
   } 
 
   .image__overlay-curiosities-blind:hover {
@@ -345,6 +352,7 @@
     font-size: 10px;
     background-color: rgba(15, 14, 13, 0.651);
     border-radius: 2%;
+    cursor: pointer;
   } 
 
   .image__overlay-curiosities-treatment:hover {
@@ -359,7 +367,7 @@
     margin-right: 0.2em;
     font-weight: 100;
     color: rgb(255, 255, 255);
-    cursor:default;
+    cursor: pointer;
   }
 
   .image__description-curiosities-die {
@@ -369,7 +377,7 @@
     margin-right: 0.2em;
     font-weight: 100;
     color: rgb(255, 255, 255);
-    cursor:default;
+    cursor: pointer;
   }
 
   .image__description-curiosities-types {
@@ -379,7 +387,7 @@
     margin-right: 0.2em;
     font-weight: 100;
     color: rgb(255, 255, 255);
-    cursor:default;
+    cursor: pointer;
   }
 
   .image__description-curiosities-pregnant {
@@ -389,7 +397,7 @@
     margin-right: 0.2em;
     font-weight: 100;
     color: rgb(255, 255, 255);
-    cursor:default;
+    cursor: pointer;
   }
 
   .image__description-curiosities-percent {
@@ -399,7 +407,7 @@
     margin-right: 0.2em;
     font-weight: 100;
     color: rgb(255, 255, 255);
-    cursor:default;
+    cursor: pointer;
   }
 
   .image__description-curiosities-count {
@@ -409,7 +417,7 @@
     margin-right: 0.2em;
     font-weight: 100;
     color: rgb(255, 255, 255);
-    cursor:default;
+    cursor: pointer;
   }
 
   .image__description-curiosities-blind {
@@ -419,7 +427,7 @@
     margin-right: 0.2em;
     font-weight: 100;
     color: rgb(255, 255, 255);
-    cursor:default;
+    cursor: pointer;
   }
 
   .image__description-curiosities-treatment {
@@ -429,5 +437,5 @@
     margin-right: 0.2em;
     font-weight: 100;
     color: rgb(255, 255, 255);
-    cursor:default;
+    cursor: pointer;
   }

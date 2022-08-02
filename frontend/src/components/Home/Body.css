@@ -82,11 +82,12 @@
   h1 {
     position: relative;
     top: 20px;
-    font-size: 25px;
-    font-weight: normal;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    font-family:'Arial black';
     text-transform: uppercase;
-    letter-spacing: 15px;
+    letter-spacing: 18px;
+    text-align: center;
   }
   
 @media screen and (max-width: 900px) {

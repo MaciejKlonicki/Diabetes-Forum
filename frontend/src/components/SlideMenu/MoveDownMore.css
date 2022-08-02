@@ -1,14 +1,14 @@
-.movedown-menu-more {
+  .movedown-menu-more {
     background: rgb(0, 0, 0);
-    width: 110px;
+    min-width: 110px;
+    height: 70px;
     position: absolute;
-    top: 50px;
-    right: 945px;
+    left: 655px;
     list-style: none;
     text-align: center;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .movedown-link-more {
@@ -18,9 +18,8 @@
     text-decoration: none;
     color: #fff;
     padding: 10px;
-    text-align: start;
     position: relative;
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .movedown-link-more:hover {
@@ -32,18 +31,36 @@
     .movedown-menu-more {
         background: rgb(0, 0, 0);
         position: absolute;
-        width: 80px;
+        min-width: 80px;
         top: 50px;
-        right: 435px;
+        left: 325px;
         list-style: none;
         text-align: center;
         border-bottom-right-radius: 5px;
         border-bottom-left-radius: 5px;
-        font-size: 15px;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       }
 
       .movedown-link-more {
         font-size: 12px;
       }
+  }
+
+  @media screen and (min-width:900px) and (max-width: 1000px) {
+    .movedown-menu-more {
+      background: rgb(0, 0, 0);
+      position: absolute;
+      min-width: 80px;
+      top: 50px;
+      left: 415px;
+      list-style: none;
+      text-align: center;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .movedown-link-more {
+      font-size: 12px;
+    }
   }

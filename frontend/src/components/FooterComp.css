@@ -1,6 +1,6 @@
 .footer {
     background: rgb(0, 0, 0);
-    opacity: 0.85;
+    opacity: 0.80;
     color: white;
     position: fixed;
     bottom: 0;
@@ -38,6 +38,24 @@
     background-color: rgb(255, 255, 255);
   }
 
+  .movedown-menu-more {
+    background: rgb(0, 0, 0);
+    position: absolute;
+    width: 80px;
+    top: 50px;
+    right: 435px;
+    list-style: none;
+    text-align: center;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .movedown-link-more {
+    font-size: 12px;
+  }
+
   @media screen and (max-width: 900px) {
 
     .footer-button-contact {
@@ -64,3 +82,29 @@
         background-color: rgb(255, 255, 255);
       }
   }
+
+      @media screen and (min-width:900px) and (max-width: 1400px) {
+        .footer-button-contact {
+          position: relative;
+          left: 150px;
+          display: inline-block;
+          padding: 0.5em 1.7em;
+          margin: 0 0.1em 0.1em 0;
+          border: 0.16em solid rgb(255, 255, 255);
+          box-sizing: border-box;
+          text-decoration: none;
+          font-family: "Roboto", sans-serif;
+          font-weight: 400;
+          color: #ffffff;
+          text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+          text-align: center;
+          background-color: black;
+          transition: all 0.5s;
+          border-radius: 2em;
+          }
+        
+          .footer-button-contact:hover {
+            color: black;
+            background-color: rgb(255, 255, 255);
+          }
+      }

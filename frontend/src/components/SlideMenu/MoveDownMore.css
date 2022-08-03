@@ -1,13 +1,11 @@
   .movedown-menu-more {
     background: rgb(0, 0, 0);
     min-width: 110px;
-    height: 70px;
+    height: 75px;
     position: absolute;
     left: 655px;
     list-style: none;
     text-align: center;
-    border-bottom-right-radius: 5px;
-    border-bottom-left-radius: 5px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
@@ -19,7 +17,7 @@
     color: #fff;
     padding: 10px;
     position: relative;
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .movedown-link-more:hover {
@@ -50,13 +48,14 @@
     .movedown-menu-more {
       background: rgb(0, 0, 0);
       position: absolute;
-      min-width: 80px;
+      width: 85px;
       top: 50px;
-      left: 415px;
+      left: 370px;
       list-style: none;
       text-align: center;
       border-bottom-right-radius: 5px;
       border-bottom-left-radius: 5px;
+      font-size: 15px;
       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 

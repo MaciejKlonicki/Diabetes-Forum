@@ -186,6 +186,7 @@ function BackImage() {
         </tbody>
         </table>
         </p>
+        <div className='border-calc'>
           <p className='sugar-position'>zmierzony cukier: </p>
               <input
               className='sugar'
@@ -195,7 +196,7 @@ function BackImage() {
               name='sugar'
               value={sugar}> 
               </input>
-            <div className='result-of-sugar-calc'>
+            <div className='first-n'>
               {sugarResult = ((Number(sugar) - 100) / Number(correctNumber)).toFixed(1)} j
             </div>
           <p className='exchangers-position-text'>
@@ -209,12 +210,13 @@ function BackImage() {
               name='exchangers-input'
               value={exchangersInput}> 
             </input>
-            <div className='exchangers-calc'>
+            <div className='second-n'>
               {exchangersResult = ((Number(firstBreakfast) || Number(secondBreakfast) || Number(lunch) || Number(tea) || 
                 Number(firstDinner) || Number(secondDinner))*exchangersInput).toFixed(1)} j
             </div>
             <div className='final-result'>
               Wynik = {(Number(sugarResult) + Number(exchangersResult)).toFixed(1)} j
+            </div>
             </div>
       </div>
     )

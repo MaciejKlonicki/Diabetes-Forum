@@ -205,22 +205,20 @@
 
   .sugar {
     position: relative;
-    bottom: 570px;
-    left: 1220px;
+    top: 105px;
+    left: 325px;
     width: 50px;
     height: 30px;
     cursor: text;
     resize: none;
     font-size: 16px;
-    padding-top: 5px;
-    padding-left: 5px;
     border-radius: 5px;
   }
 
   .sugar-position {
     position:fixed;
-    bottom: 530px;
-    padding-left: 900px;
+    bottom: 310px;
+    padding-left: 10px;
     font-size: 22px;
     font-weight: 400;
     color: rgb(0, 0, 0);
@@ -228,63 +226,60 @@
     text-transform: uppercase;
   }
 
-  .result-of-sugar-calc {
-    position: relative;
-    bottom: 510px;
-    left: 1400px;
-    padding-top: 5px;
-    padding-left: 5px;
-    font-size: 45px;
-    font-weight: 400;
-    color: rgb(0, 0, 0);
+  .first-n {
+    opacity: 0;
+  }
+
+  .second-n {
+    opacity: 0;
   }
 
   .exchangers-position-text {
     position:relative;
-    bottom: 580px;
-    padding-left: 900px;
-    font-size: 21px;
+    top: 150px;
+    font-size: 22px;
+    padding-left: 10px;
     font-weight: 400;
     color: rgb(0, 0, 0);
-    letter-spacing: 5px;
+    letter-spacing: 2.9px;
     text-transform: uppercase;
   }
 
   .exchangers-input {
     position: relative;
-    bottom: 609px;
-    left: 1250px;
+    top: 122px;
+    left: 325px;
+    padding-left: 10px;
     width: 50px;
     height: 30px;
     cursor: text;
     resize: none;
     font-size: 16px;
-    padding-top: 5px;
-    padding-left: 5px;
-    border-radius: 5px;
-  }
-
-  .exchangers-calc {
-    position: relative;
-    bottom: 430px;
-    left: 1400px;
-    padding-top: 5px;
-    padding-left: 5px;
-    font-size: 45px;
-    font-weight: 400;
-    color: rgb(0, 0, 0);
-    -webkit-appearance: none;
+    border-radius: 4px;
   }
 
   .final-result {
     position:relative;
-    bottom: 400px;
-    padding-left: 1300px;
+    top: 200px;
+    text-align: center;
     font-size: 45px;
     font-weight: 400;
     color: rgb(0, 0, 0);
   }
 
+  .border-calc {
+    background-color: rgba(0, 0, 0, 0.37);
+    border: 3px solid #000000;
+    position: fixed;
+    width: 400px;
+    height: 450px;
+    bottom: -8px;
+    left: 1250px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    border-radius: 15px;
+  }
+  
   .calc-table {
     position: relative;
     border: 3px solid rgb(0, 0, 0);

@@ -62,8 +62,8 @@
 
   .first-breakfast {
     position: relative;
-    top: 40px;
-    left: 40px;
+    top: 45px;
+    left: 100px;
     width: 35px;
     height: 30px;
     cursor: text;
@@ -85,7 +85,7 @@
   .second-breakfast {
     position: relative;
     top: 10px;
-    left: 113px;
+    left: 100px;
     width: 35px;
     height: 30px;
     cursor: text;
@@ -293,4 +293,24 @@
     font-size: 45px;
     font-weight: 400;
     color: rgb(0, 0, 0);
+  }
+
+  table {
+    position: relative;
+    border: 3px solid rgb(0, 0, 0);
+    width: 250px;
+    height: 350px;
+    bottom: 260px;
+    background-color: rgba(15, 14, 13, 0.397);
+    margin-top: 300px;
+    right: 80px;
+    border-radius: 15px;
+  }
+    
+  th {
+    border-bottom: 2px solid black;
+  }
+    
+  td {
+    text-align: center;
   }

@@ -105,7 +105,13 @@ function BackImage() {
           </input> mg/dl insuliny
         </p>
         <p className='calculator-desc-eat'>
-              Posiłki
+          <table>
+            <tbody>
+              <tr>
+              <th>Posiłki</th>
+              </tr>
+              <tr>
+                <td>
               <input
               className='first-breakfast'
               type={propTypes.number}
@@ -115,6 +121,10 @@ function BackImage() {
               value={firstBreakfast}> 
               </input><br /><br />
           <p className='first-breakfast-position'>Pierwsze śniadanie</p>
+          </td>
+          </tr>
+          <tr>
+            <td>
               <input
               className='second-breakfast'
               type={propTypes.number}
@@ -124,6 +134,8 @@ function BackImage() {
               value={secondBreakfast}> 
               </input>
           <p className='second-breakfast-position'>Drugie śniadanie</p>
+              </td>
+              </tr>
               <input
               className='lunch'
               type={propTypes.number}
@@ -160,6 +172,8 @@ function BackImage() {
               value={secondDinner}> 
               </input>
           <p className='second-dinner-position'>Druga kolacja</p>
+        </tbody>
+        </table>
         </p>
           <p className='sugar-position'>Podaj zmierzony cukier: </p>
               <input

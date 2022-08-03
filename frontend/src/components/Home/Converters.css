@@ -54,7 +54,7 @@
 
   table {
     position: relative;
-    border: 3px solid rgb(8, 157, 243);
+    border: 3px solid rgb(0, 0, 0);
     width: 650px;
     height: 300px;
     bottom: 260px;
@@ -74,7 +74,7 @@
   @media screen and (max-width: 900px) {
     table {
       position: relative;
-      border: 3px solid rgb(8, 157, 243);
+      border: 3px solid rgb(0, 0, 0);
       width: 400px;
       height: 300px;
       bottom: 260px;

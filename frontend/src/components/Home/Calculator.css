@@ -8,22 +8,10 @@
     opacity: 0.5;
 }
 
-.h2-calc {
-    color: white;
-    position: relative;
-    left: 700px;
-    text-shadow: .1em .2em .1em hsl(200 50% 30%);
-    font-size: 20px;
-    font-weight: 800;
-    font-family: 'Raleway',sans-serif;
-    color: #ffffff;
-    align-items: center;
-    top: 40px;
-  }
-
   .calculator-desc-exchangers {
+    position: relative;
+    top: 70px;
     font-size: 1.8em;
-    margin-top: 3.5em;
     margin-left: 14.5em;
     font-weight: 400;
     color: rgb(0, 0, 0);
@@ -49,8 +37,9 @@
   }
 
   .calculator-desc-calculator {
+    position: relative;
+    top: 40px;
     font-size: 1.8em;
-    margin-top: -1.3em;
     margin-left: 38em;
     font-weight: 400;
     color: rgb(0, 0, 0);

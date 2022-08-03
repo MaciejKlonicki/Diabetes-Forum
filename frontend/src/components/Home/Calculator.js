@@ -26,9 +26,6 @@ function BackImage() {
   function Calculators(props) {
     return (
       <div>
-        <div className='h2-calc'>
-          <h2>Kalkulator cukrzyka</h2>
-        </div>
         <p className="calculator-desc-exchangers">
           Przeliczniki
           </p>

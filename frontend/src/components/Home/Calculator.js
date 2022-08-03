@@ -187,6 +187,8 @@ function BackImage() {
         </table>
         </p>
         <div className='border-calc'>
+          <p className='calc-title'>Wyliczenia</p>
+          <div className='line'></div>
           <p className='sugar-position'>zmierzony cukier: </p>
               <input
               className='sugar'

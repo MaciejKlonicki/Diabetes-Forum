@@ -40,7 +40,7 @@
 
   .calculator-desc-calculator {
     position: relative;
-    top: 50px;
+    top: 100px;
     font-size: 1.8em;
     margin-left: 38em;
     font-weight: 400;
@@ -265,6 +265,24 @@
     font-size: 45px;
     font-weight: 400;
     color: rgb(0, 0, 0);
+  }
+
+  .calc-title {
+    position: relative;
+    font-size: 1.4em;
+    text-align: center;
+    top: 10px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    cursor:default;
+  }
+
+  .line {
+    position: relative;
+    border-bottom: 2px solid black;
+    top: 25px;
+    width: 389px;
+    left: 2px;
   }
 
   .border-calc {

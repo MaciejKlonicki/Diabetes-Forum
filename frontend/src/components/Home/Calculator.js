@@ -105,7 +105,7 @@ function BackImage() {
           </input> mg/dl insuliny
         </p>
         <p className='calculator-desc-eat'>
-          <table>
+          <table className='gradient-border'>
             <tbody>
               <tr>
               <th>Posiłki</th>
@@ -136,6 +136,8 @@ function BackImage() {
           <p className='second-breakfast-position'>Drugie śniadanie</p>
               </td>
               </tr>
+              <tr>
+              <td>
               <input
               className='lunch'
               type={propTypes.number}
@@ -145,6 +147,10 @@ function BackImage() {
               value={lunch}> 
               </input>
           <p className='lunch-position'>Obiad</p>
+          </td>
+              </tr>
+              <tr>
+              <td>
               <input
               className='tea'
               type={propTypes.number}
@@ -154,6 +160,10 @@ function BackImage() {
               value={tea}> 
               </input>
           <p className='tea-position'>Podwieczorek</p>
+          </td>
+              </tr>
+              <tr>
+              <td>
               <input
               className='first-dinner'
               type={propTypes.number}
@@ -163,6 +173,10 @@ function BackImage() {
               value={firstDinner}> 
               </input>
           <p className='first-dinner-position'>Pierwsza kolacja</p>
+          </td>
+              </tr>
+              <tr>
+              <td>
               <input
               className='second-dinner'
               type={propTypes.number}
@@ -172,6 +186,8 @@ function BackImage() {
               value={secondDinner}> 
               </input>
           <p className='second-dinner-position'>Druga kolacja</p>
+          </td>
+              </tr>
         </tbody>
         </table>
         </p>

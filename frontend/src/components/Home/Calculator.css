@@ -10,27 +10,29 @@
 
   .calculator-desc-exchangers {
     position: relative;
-    top: 70px;
+    top: 120px;
     font-size: 1.8em;
-    margin-left: 14.5em;
+    margin-left: 11em;
     font-weight: 400;
     color: rgb(0, 0, 0);
+    letter-spacing: 13px;
+    text-transform: uppercase;
     cursor:default;
   }
 
   .calculator-desc-correct {
-    font-size: 1.2em;
-    margin-top: 1em;
-    margin-left: 20em;
+    font-size: 1.4em;
+    margin-top: 3em;
+    margin-left: 13.3em;
     font-weight: 400;
     color: rgb(0, 0, 0);
     cursor:default;
+    letter-spacing: 5px;
   }
 
   .calculator-desc-eat {
-    font-size: 1.6em;
-    margin-top: 1em;
-    margin-left: 17.5em;
+    font-size: 1.4em;
+    margin-left: 20em;
     font-weight: 400;
     color: rgb(0, 0, 0);
     cursor:default;
@@ -62,8 +64,8 @@
 
   .first-breakfast {
     position: relative;
-    top: 45px;
-    left: 100px;
+    top: 10px;
+    left: 130px;
     width: 35px;
     height: 30px;
     cursor: text;
@@ -75,7 +77,8 @@
   }
   .first-breakfast-position {
     font-size: 0.78em;
-    margin-top: -0.6em;
+    letter-spacing: 4px;
+    margin-top: -40px;
     margin-left: -3em;
     font-weight: 400;
     color: rgb(0, 0, 0);
@@ -85,7 +88,7 @@
   .second-breakfast {
     position: relative;
     top: 10px;
-    left: 100px;
+    left: 130px;
     width: 35px;
     height: 30px;
     cursor: text;
@@ -97,6 +100,7 @@
   }
   .second-breakfast-position {
     font-size: 0.78em;
+    letter-spacing: 4px;
     margin-top: -0.8em;
     margin-left: -3em;
     font-weight: 400;
@@ -107,7 +111,7 @@
   .lunch {
     position: relative;
     top: 10px;
-    left: 113px;
+    left: 130px;
     width: 35px;
     height: 30px;
     cursor: text;
@@ -119,6 +123,7 @@
   }
   .lunch-position {
     font-size: 0.78em;
+    letter-spacing: 4px;
     margin-top: -0.8em;
     margin-left: -3em;
     font-weight: 400;
@@ -129,7 +134,7 @@
   .tea {
     position: relative;
     top: 10px;
-    left: 113px;
+    left: 130px;
     width: 35px;
     height: 30px;
     cursor: text;
@@ -141,6 +146,7 @@
   }
   .tea-position {
     font-size: 0.78em;
+    letter-spacing: 4px;
     margin-top: -0.8em;
     margin-left: -3em;
     font-weight: 400;
@@ -151,7 +157,7 @@
   .first-dinner {
     position: relative;
     top: 10px;
-    left: 113px;
+    left: 130px;
     width: 35px;
     height: 30px;
     cursor: text;
@@ -163,6 +169,7 @@
   }
   .first-dinner-position {
     font-size: 0.78em;
+    letter-spacing: 4px;
     margin-top: -0.8em;
     margin-left: -3em;
     font-weight: 400;
@@ -173,7 +180,7 @@
   .second-dinner {
     position: relative;
     top: 10px;
-    left: 113px;
+    left: 130px;
     width: 35px;
     height: 30px;
     cursor: text;
@@ -186,6 +193,7 @@
 
   .second-dinner-position {
     font-size: 0.78em;
+    letter-spacing: 4px;
     margin-top: -0.8em;
     margin-left: -3em;
     font-weight: 400;
@@ -298,11 +306,12 @@
   table {
     position: relative;
     border: 3px solid rgb(0, 0, 0);
-    width: 250px;
-    height: 350px;
-    bottom: 260px;
-    background-color: rgba(15, 14, 13, 0.397);
-    margin-top: 300px;
+    width: 400px;
+    height: 400px;
+    bottom: 230px;
+    background-color: rgba(7, 7, 6, 0.397);
+    margin-top: 280px;
+    left: -160px;
     right: 80px;
     border-radius: 15px;
   }

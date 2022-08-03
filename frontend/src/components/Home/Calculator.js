@@ -32,11 +32,6 @@ function BackImage() {
         <p className="calculator-desc-calculator">
           Kalkulator
           </p>
-          <img
-            src={props.img}
-            alt='plus'
-            className='plus'
-          />
       </div>
     )
   }
@@ -105,7 +100,7 @@ function BackImage() {
           </input> mg/dl insuliny
         </p>
         <p className='calculator-desc-eat'>
-          <table className='gradient-border'>
+          <table className='calc-table'>
             <tbody>
               <tr>
               <th>Posiłki</th>
@@ -191,7 +186,7 @@ function BackImage() {
         </tbody>
         </table>
         </p>
-          <p className='sugar-position'>Podaj zmierzony cukier: </p>
+          <p className='sugar-position'>zmierzony cukier: </p>
               <input
               className='sugar'
               type={propTypes.number}
@@ -200,16 +195,11 @@ function BackImage() {
               name='sugar'
               value={sugar}> 
               </input>
-                <img
-                  src={props.img}
-                  alt='rightArrow'
-                  className='right-arrow'
-                />
             <div className='result-of-sugar-calc'>
               {sugarResult = ((Number(sugar) - 100) / Number(correctNumber)).toFixed(1)} j
             </div>
           <p className='exchangers-position-text'>
-            Podaj liczbe wymienników: 
+            liczba wymienników: 
           </p>
             <input
               className='exchangers-input'
@@ -223,11 +213,6 @@ function BackImage() {
               {exchangersResult = ((Number(firstBreakfast) || Number(secondBreakfast) || Number(lunch) || Number(tea) || 
                 Number(firstDinner) || Number(secondDinner))*exchangersInput).toFixed(1)} j
             </div>
-                <img
-                  src={props.img}
-                  alt='rightArrow'
-                  className='right-arrow2'
-                />
             <div className='final-result'>
               Wynik = {(Number(sugarResult) + Number(exchangersResult)).toFixed(1)} j
             </div>

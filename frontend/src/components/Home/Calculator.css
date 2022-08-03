@@ -8,18 +8,6 @@
     opacity: 0.5;
 }
 
-  .calculator-desc-exchangers {
-    position: relative;
-    top: 120px;
-    font-size: 1.8em;
-    margin-left: 11em;
-    font-weight: 400;
-    color: rgb(0, 0, 0);
-    letter-spacing: 13px;
-    text-transform: uppercase;
-    cursor:default;
-  }
-
   .calculator-desc-correct {
     font-size: 1.4em;
     margin-top: 3em;
@@ -38,13 +26,27 @@
     cursor:default;
   }
 
+  .calculator-desc-exchangers {
+    position: relative;
+    top: 80px;
+    font-size: 1.8em;
+    margin-left: 11em;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    letter-spacing: 13px;
+    text-transform: uppercase;
+    cursor:default;
+  }
+
   .calculator-desc-calculator {
     position: relative;
-    top: 40px;
+    top: 50px;
     font-size: 1.8em;
     margin-left: 38em;
     font-weight: 400;
     color: rgb(0, 0, 0);
+    letter-spacing: 13px;
+    text-transform: uppercase;
     cursor:default;
   }
   
@@ -203,8 +205,8 @@
 
   .sugar {
     position: relative;
-    bottom: 460px;
-    left: 1160px;
+    bottom: 570px;
+    left: 1220px;
     width: 50px;
     height: 30px;
     cursor: text;
@@ -217,19 +219,13 @@
 
   .sugar-position {
     position:fixed;
-    bottom: 580px;
+    bottom: 530px;
     padding-left: 900px;
     font-size: 22px;
     font-weight: 400;
     color: rgb(0, 0, 0);
-  }
-
-  .right-arrow {
-    position:relative;
-    bottom: 445px;
-    left: 1220px;
-    height: 50px;
-    width: 100px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
   }
 
   .result-of-sugar-calc {
@@ -245,17 +241,19 @@
 
   .exchangers-position-text {
     position:relative;
-    bottom: 340px;
+    bottom: 580px;
     padding-left: 900px;
     font-size: 21px;
     font-weight: 400;
     color: rgb(0, 0, 0);
+    letter-spacing: 5px;
+    text-transform: uppercase;
   }
 
   .exchangers-input {
     position: relative;
-    bottom: 380px;
-    left: 1158px;
+    bottom: 609px;
+    left: 1250px;
     width: 50px;
     height: 30px;
     cursor: text;
@@ -278,22 +276,6 @@
     -webkit-appearance: none;
   }
 
-  .right-arrow2 {
-    position:relative;
-    bottom: 480px;
-    left: 1270px;
-    height: 50px;
-    width: 100px;
-  }
-
-  .plus {
-    position:relative;
-    left: 1420px;
-    top: 125px;
-    height: 50px;
-    width: 50px;
-  }
-
   .final-result {
     position:relative;
     bottom: 400px;
@@ -303,7 +285,7 @@
     color: rgb(0, 0, 0);
   }
 
-  table {
+  .calc-table {
     position: relative;
     border: 3px solid rgb(0, 0, 0);
     width: 400px;
@@ -312,10 +294,9 @@
     background-color: rgba(7, 7, 6, 0.397);
     margin-top: 280px;
     left: -160px;
-    right: 80px;
     border-radius: 15px;
   }
-    
+      
   th {
     border-bottom: 2px solid black;
   }

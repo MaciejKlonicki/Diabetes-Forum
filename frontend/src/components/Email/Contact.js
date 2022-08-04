@@ -44,7 +44,7 @@ export default function Contact() {
                             <textarea className="form-control" id="" cols="80" rows="20" placeholder="Wiadomość" required name="message"></textarea>
                         </div>
                         <div className="submit-holder">
-                            <button className="header-button-sub btn" value="Wyślij">Wyślij</button>
+                            <button className="footer-button" value="Wyślij">Wyślij</button>
                         </div>
                 </form>
             </div>

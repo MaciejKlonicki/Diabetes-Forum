@@ -99,7 +99,7 @@ function CuriositiesInformationFat(props) {
           />
           <div className="image__overlay-curiosities-pregnant">
             <p className="image__description-curiosities-pregnant">
-              <b>Trzeci typ cukrzycy to cukrzyca ciążowa</b><br />
+              Trzeci typ cukrzycy to cukrzyca ciążowa<br />
             </p>
           </div>
       </div>

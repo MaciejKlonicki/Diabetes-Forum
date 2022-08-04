@@ -46,23 +46,3 @@
         font-size: 12px;
       }
   }
-
-  @media screen and (min-width:900px) and (max-width: 1000px) {
-    .movedown-menu-advices {
-      background: rgb(0, 0, 0);
-      position: absolute;
-      width: 80px;
-      top: 50px;
-      right: 540px;
-      list-style: none;
-      text-align: center;
-      border-bottom-right-radius: 5px;
-      border-bottom-left-radius: 5px;
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      font-size: 15px;
-    }
-
-    .movedown-link-advices {
-      font-size: 12px;
-    }
-  }

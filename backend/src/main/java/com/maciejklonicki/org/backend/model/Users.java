@@ -8,6 +8,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Collection;
+import java.util.List;
 
 @Entity
 @Table(name = "users", uniqueConstraints = @UniqueConstraint(columnNames = "email"))
@@ -25,7 +26,7 @@ public class Users {
     private String firstName;
 
     @Column(nullable = false)
-    private String secondName;
+    private String lastName;
 
     private String email;
 
@@ -40,4 +41,7 @@ public class Users {
             inverseJoinColumns = @JoinColumn(
                     name = "role_id", referencedColumnName = "id"))
     private Collection<Role> roles;
+
+    public <T> Users(String firstName, String lastName, String email, String password, List<T> role_user) {
+    }
 }

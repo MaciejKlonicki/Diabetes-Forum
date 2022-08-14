@@ -5,7 +5,6 @@ import com.maciejklonicki.org.backend.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -25,8 +24,9 @@ public class UserService {
     }
 
     //adding new user
-    public void addNewUser (Users users) {
+    public Users addNewUser (Users users) {
         userRepository.save(users);
+        return users;
     }
 
     //delete user
@@ -35,8 +35,9 @@ public class UserService {
     }
 
     //update user
-    public void updateUser (Users users, Integer userID) {
+    public Users updateUser (Users users, Integer id) {
         userRepository.save(users);
+        return users;
     }
 
 

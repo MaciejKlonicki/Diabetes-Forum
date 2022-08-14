@@ -13,13 +13,13 @@
 }
 
 .header-logo {
-    margin-left: 10px;
+    margin-left: 20px;
     display: flex;
 }
 
 .header-links {
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     color: white;
     text-decoration: none;
     text-align:center;
@@ -30,6 +30,7 @@
     background-size: 200% 100%;
     background-position: -100%;
     -webkit-background-clip: text;
+    background-clip:var(#ffffff);
     -webkit-text-fill-color: transparent;
     transition: all 0.3s ease-in-out;
     -webkit-font-smoothing: antialiased;
@@ -43,10 +44,10 @@
       background: #ffffff;
       display: block;
       position: absolute;
-      bottom: 15px;
+      bottom: 5px;
       left: 0;
       width: 0;
-      height: 2px;
+      height: 1.5px;
       transition: all 0.3s ease-in-out;
   }
 
@@ -102,13 +103,12 @@
       position: relative;
       right: 500px;
       display: inline-block;
-      padding: 0.5em 1.7em;
+      padding: 0.2em 1em;
       margin: 0 0.1em 0.1em 0;
       border: 0.16em solid rgb(255, 255, 255);
       box-sizing: border-box;
       text-decoration: none;
-      font-family: "Roboto", sans-serif;
-      font-weight: 400;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #ffffff;
       text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
       text-align: center;
@@ -127,13 +127,12 @@
       position: relative;
       right: 150px;
       display: inline-block;
-      padding: 0.5em 1.7em;
+      padding: 0.2em 1em;
       margin: 0 0.1em 0.1em 0;
       border: 0.16em solid rgb(255, 255, 255);
       box-sizing: border-box;
       text-decoration: none;
-      font-family: "Roboto", sans-serif;
-      font-weight: 400;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #ffffff;
       text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
       text-align: center;
@@ -152,13 +151,12 @@
       position: relative;
       right: 30px;
       display: inline-block;
-      padding: 0.5em 1.7em;
+      padding: 0.2em 1em;
       margin: 0 0.1em 0.1em 0;
       border: 0.16em solid rgb(255, 255, 255);
       box-sizing: border-box;
       text-decoration: none;
-      font-family: "Roboto", sans-serif;
-      font-weight: 400;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #ffffff;
       text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
       text-align: center;
@@ -177,13 +175,12 @@
       position: relative;
       right: 20px;
       display: inline-block;
-      padding: 0.5em 1.7em;
+      padding: 0.2em 1em;
       margin: 0 0.1em 0.1em 0;
       border: 0.16em solid rgb(255, 255, 255);
       box-sizing: border-box;
       text-decoration: none;
-      font-family: "Roboto", sans-serif;
-      font-weight: 400;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       color: #ffffff;
       text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
       text-align: center;
@@ -328,6 +325,7 @@
         padding-bottom: 20px;
         left: 20px;
         -webkit-background-clip: text;
+        background-clip:var(#ffffff);
         -webkit-text-fill-color: transparent;
         transition: all 0.3s ease-in-out;
   }

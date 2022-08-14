@@ -1,7 +1,7 @@
 export const Advices = [
     {
-        title: 'Jak żyć z cukrzycą',
-        path: '/jak-zyc-z-cukrzyca',
+        title: 'Życie z cukrzycą',
+        path: '/zycie-z-cukrzyca',
         cName: 'movedown-link-advices'
     },
     {

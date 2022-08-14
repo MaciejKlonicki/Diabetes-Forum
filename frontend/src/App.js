@@ -37,7 +37,7 @@ function App() {
         <Route path='/glukometry' exact component={Glucometers} />
         <Route path='/paski' exact component={Stripes} />
         <Route path='/igly' exact component={Needles} />
-        <Route path='/jak-zyc-z-cukrzyca' exact component={HowTo} />
+        <Route path='/zycie-z-cukrzyca' exact component={HowTo} />
         <Route path='/powiklania-cukrzycy' exact component={Complications} />
         <Route path='/apteczka-cukrzyka' exact component={FirstAidKit} />
         <Route path='/depresja-cukrzyka' exact component={Depression} />

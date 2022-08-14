@@ -6,11 +6,6 @@ function Converters() {
     <div className="Converters">
         <BackImage />
         <FirstTable />
-        {/* <SecondTable />
-        <ThirdTable />
-        <FourthTable />
-        <FifthTable />
-        <SixthTable /> */}
     </div>
   );
 }
@@ -25,7 +20,7 @@ function BackImage() {
 
 function FirstTable() {
   return (
-    <div className='first-table-pos'>
+    <div className='first-table-pos w-100'>
       <table class="table table-hover table-dark">
         <thead>
         <tr>
@@ -65,22 +60,6 @@ function FirstTable() {
           <td>15 g = 1 WW</td>
           <td>1 łyżka stołowa</td>
         </tr>
-        </tbody>
-      </table>
-      </div>
-  )
-}
-
-function SecondTable() {
-  return (
-    <div className='second-table'>
-      <table>
-      <tbody>
-        <tr>
-          <th>Jedzenie</th>
-          <th>Przelicznik</th>
-          <th>Ilość</th>
-        </tr>
         <tr>
           <td>Mleko</td>
           <td>200 g = 1 WW </td>
@@ -105,22 +84,6 @@ function SecondTable() {
           <td>Maślanka</td>
           <td>200 g = 1 WW</td>
           <td>1 szklanka</td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-  )
-}
-
-function ThirdTable() {
-  return (
-    <div className='third-table'>
-      <table>
-      <tbody>
-        <tr>
-          <th>Jedzenie</th>
-          <th>Przelicznik</th>
-          <th>Ilość</th>
         </tr>
         <tr>
           <td>Mąka</td>
@@ -157,22 +120,6 @@ function ThirdTable() {
           <td>45 g = 1 WW</td>
           <td>½ szklanki</td>
         </tr>
-        </tbody>
-      </table>
-    </div>
-  )
-}
-
-function FourthTable() {
-  return (
-    <div className='fourth-table'>
-      <table>
-      <tbody>
-        <tr>
-          <th>Jedzenie</th>
-          <th>Przelicznik</th>
-          <th>Ilość</th>
-        </tr>
         <tr>
           <td>Ananas</td>
           <td>100 g = 1 WW </td>
@@ -208,22 +155,6 @@ function FourthTable() {
           <td>120 g = 1 WW </td>
           <td>1 szklanka</td>
         </tr>
-        </tbody>
-      </table>
-    </div>
-  )
-}
-
-function FifthTable() {
-  return (
-    <div className='fifth-table'>
-      <table>
-      <tbody>
-        <tr>
-          <th>Jedzenie</th>
-          <th>Przelicznik</th>
-          <th>Ilość</th>
-        </tr>
         <tr>
           <td>Kukurydza </td>
           <td>100 g = 1 WW </td>
@@ -254,22 +185,6 @@ function FifthTable() {
           <td>200 g = 1 WW </td>
           <td>½ sztk. </td>
         </tr>
-        </tbody>
-      </table>
-    </div>
-  )
-}
-
-function SixthTable() {
-  return (
-    <div className='sixth-table'>
-      <table>
-      <tbody>
-        <tr>
-          <th>Jedzenie</th>
-          <th>Przelicznik</th>
-          <th>Ilość</th>
-        </tr>
         <tr>
           <td>Kotlet mielony</td>
           <td>60 g = 1 WW </td>
@@ -297,8 +212,9 @@ function SixthTable() {
         </tr>
         </tbody>
       </table>
-    </div>
+      </div>
   )
 }
+
   
 export default Converters;

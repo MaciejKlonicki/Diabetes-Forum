@@ -6,11 +6,11 @@ function Converters() {
     <div className="Converters">
         <BackImage />
         <FirstTable />
-        <SecondTable />
+        {/* <SecondTable />
         <ThirdTable />
         <FourthTable />
         <FifthTable />
-        <SixthTable />
+        <SixthTable /> */}
     </div>
   );
 }
@@ -25,14 +25,16 @@ function BackImage() {
 
 function FirstTable() {
   return (
-    <div className='first-table'>
-      <table>
-        <tbody>
+    <div className='first-table-pos'>
+      <table class="table table-hover table-dark">
+        <thead>
         <tr>
           <th>Jedzenie</th>
           <th>Przelicznik</th>
           <th>Ilość</th>
         </tr>
+        </thead>
+        <tbody>
         <tr>
           <td>Chleb pszenny</td>
           <td>20g = 1 WW</td>
@@ -65,7 +67,7 @@ function FirstTable() {
         </tr>
         </tbody>
       </table>
-    </div>
+      </div>
   )
 }
 

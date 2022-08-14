@@ -35,9 +35,15 @@ public class UserService {
     }
 
     //update user
-    public Users updateUser (Users users, Integer id) {
-        userRepository.save(users);
-        return users;
+    public Users updateUser (Users usersDetails, Integer userID) {
+        Users users = userRepository.findById(userID).get();
+        users.setFirstName(usersDetails.getFirstName());
+        users.setSecondName(usersDetails.getSecondName());
+        users.setEmail(usersDetails.getEmail());
+        users.setPassword(usersDetails.getPassword());
+        users.setPhoneNumber(usersDetails.getPhoneNumber());
+
+        return userRepository.save(users);
     }
 
 

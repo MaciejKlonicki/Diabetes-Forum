@@ -21,7 +21,7 @@ public class Users {
     @Column(nullable = false)
     private String firstName;
     @Column(nullable = false)
-    private String lastName;
+    private String secondName;
     private String email;
     @Column(nullable = false)
     private String password;

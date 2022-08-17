@@ -19,7 +19,7 @@ import Depression from './components/Advices/Depression';
 import Curiosities from './components/More/Curiosities';
 import Infoline from './components/More/Infoline';
 import Calculator from './components/Home/Calculator';
-import Login from './components/Home/Login';
+import {Login} from './components/Home/Login';
 
 function App() {
   return (

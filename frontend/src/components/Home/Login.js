@@ -24,15 +24,15 @@ export class Login extends Component {
   }
 
   validateUser = () => {
-    this.props.authenticateUser(this.state.email, this.state.password);
-    // setTimeout(() => {
-    //   if(this.props.auth.isLoggedIn) {
-    //     return this.props.history.push("/");
-    //   } else {
-    //     this.resetLoginForm();
-    //     this.setState({"error": "Invalid email or password"}); 
-    //   }
-    // })
+    authenticateUser(this.state.email, this.state.password);
+    setTimeout(() => {
+      if(this.props.auth.isLoggedIn) {
+        return this.props.history.push("/logowanie");
+      } else {
+        this.resetLoginForm();
+        this.setState({"error": "Invalid email or password"}); 
+      }
+    })
   }
 
   resetLoginForm = () => {
@@ -40,7 +40,6 @@ export class Login extends Component {
   }
 
   render () {
-
     const {email, password, error} = this.state;
     
     return (
@@ -84,11 +83,11 @@ export class Login extends Component {
             </Card.Body>
             <Card.Footer style={{"textAlign":"right"}}>
               <Button size="sm" type='button' variant='success' onClick={this.validateUser}
-              disabled={this.state.email.length === 0 || this.state.password.length === 0}>
+                disabled={this.state.email.length === 0 || this.state.password.length === 0}>
                 <FontAwesomeIcon icon={faSignInAlt}/> Login
               </Button>{' '}
               <Button size="sm" type='button' variant='info' onClick={this.resetLoginForm}
-              disabled={this.state.email.length === 0 && this.state.password.length === 0}>
+                disabled={this.state.email.length === 0 && this.state.password.length === 0}>
                 <FontAwesomeIcon icon={faUndo}/> Reset
               </Button>
             </Card.Footer>
@@ -112,4 +111,4 @@ export class Login extends Component {
     };
   };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Login);
+export default connect(mapDispatchToProps, mapStateToProps)(Login);

@@ -9,7 +9,7 @@ export const authenticateUser = (email, password) => {
             dispatch(failure());
         }
     };
-}
+};
 
 const loginRequest = () => {
     return {
@@ -17,16 +17,16 @@ const loginRequest = () => {
     };
 };
 
-const success = () => {
+const success = isLoggedIn => {
     return {
         type: SUCCESS,
-        payload: true
+        payload: isLoggedIn
     };
 };
 
-const failure = () => {
+const failure = isLoggedIn => {
     return {
         type: FAILURE,
-        payload: false
+        payload: isLoggedIn
     };
 };

@@ -10,7 +10,7 @@
 
 .image-for-glucometr-glucomaxxx {
     position: fixed;
-    top: 50%;
+    top: 48%;
     left: 150px;
     height: 700px;
     width: 380px;
@@ -21,7 +21,7 @@
 
 .image-for-glucometr-glucosense {
     position: fixed;
-    top: 102%;
+    top: 100%;
     left: 600px;
     height: 700px;
     width: 380px;
@@ -32,7 +32,7 @@
 
 .image-for-glucometr-iXellPro {
     position: fixed;
-    top: 102%;
+    top: 100%;
     left: 1050px;
     height: 700px;
     width: 380px;
@@ -43,7 +43,7 @@
 
 .image-for-glucometr-iXell {
     position: fixed;
-    top: 102%;
+    top: 100%;
     left: 1460px;
     height: 700px;
     width: 380px;

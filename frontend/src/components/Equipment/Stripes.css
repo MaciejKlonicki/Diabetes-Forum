@@ -76,7 +76,7 @@
     height: 300px;
     width: 300px;
     position:relative;
-    bottom: -5%;
+    bottom: -8%;
     left: 9%;
     opacity: 0.9;
 }
@@ -164,7 +164,7 @@
     font-weight: 400;
     color: rgb(0, 0, 0);
     position: absolute;
-    top: 270px;
+    top: 310px;
     left: 60px;
     margin-left: 35px;
     margin-right: 10px;

@@ -55,7 +55,7 @@ function InformationAboutGlucometerGlucosense(props) {
           className='glucometr-glucosense-photo'
         />
         <div className='h2-position-glucometer-glucosense'>
-        <h2>Glukometr Glucosense PRO</h2>
+        <h2>Glukometr Glucosense</h2>
         </div>
           <p className="image__description-glucosense">
             Glukometr Glucosense pro z paskami testowymi Glucosense to system monitorowania glikemii stworzony specjalnie dla osób z cukrzycą typu 2.
@@ -78,7 +78,7 @@ function InformationAboutGlucometeriXellPro(props) {
           className='glucometr-iXellPro-photo'
         />
         <div className='h2-position-glucometer-iXellPro'>
-        <h2>Glukometr iXell pro</h2>
+        <h2>Glukometr iXell PRO</h2>
         </div>
           <p className="image__description-iXellPro">
             Ekran LED z podświetlanymi cyframi – gwarancja czytelności wyniku.

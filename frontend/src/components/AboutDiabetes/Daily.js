@@ -61,7 +61,7 @@ function DailyRoutines() {
           <b>spaceruj,</b><br />
           <b>jeśli jeździsz samochodem, zaparkuj dalej, jeżeli jeździsz autobusem,
           wysiadaj przystanek wcześniej lub późnej,</b><br />
-          <b>wyrób nawyk regularnych ćwiczeń np. porannych</b><br />
+          <b>wyrób nawyk regularnych ćwiczeń np. porannych.</b><br />
         </p>
       </div>
     </div>

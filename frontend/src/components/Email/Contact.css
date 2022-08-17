@@ -15,7 +15,8 @@
 .name-holder {
     position: relative;
     left: 45%;
-    bottom: -130px;
+    bottom: -70px;
+    width: 250px;
     opacity: 0.7;
 
 }
@@ -23,28 +24,31 @@
 .email-holder {
     position: relative;
     left: 45%;
-    bottom: -150px;
+    bottom: -80px;
+    width: 250px;
     opacity: 0.7;
 }
 
 .text-holder {
     position: relative;
     left: 45%;
-    bottom: -170px;
+    width: 250px;
+    bottom: -90px;
     opacity: 0.7;
 }
 
 .form-holder {
     position: relative;
-    left: 35%;
-    bottom: -220px;
+    left: 25%;
+    width: 1000px;
+    bottom: -100px;
     opacity: 0.7;
 }
 
 .submit-holder {
     position: relative;
-    left: 60%;
-    bottom: -170px;
+    left: 62%;
+    bottom: -20px;
     opacity: 1;
 }
 

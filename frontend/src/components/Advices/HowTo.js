@@ -4,19 +4,10 @@ import './HowTo.css';
 function HowTo() {
   return (
     <div>
-        <BackImage />
         <HowToLiveWith />
     </div>
   )
 }
-
-function BackImage() {
-    return (
-      <img className='background-image-how-to' 
-        src={"/images/background.jpg"} 
-        alt='backgroundimg'/>
-    )
-  }
 
 function HowToLiveWith() {
     return (

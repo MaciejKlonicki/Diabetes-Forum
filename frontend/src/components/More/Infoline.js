@@ -4,7 +4,6 @@ import './Infoline.css';
 function Infoline() {
   return (
     <div>
-        <BackImage />
         <InfolineNumberRoche
             img='/images/telephone.png' />
         <InfolineNumberAscensia
@@ -20,14 +19,6 @@ function Infoline() {
     </div>
   )
 }
-
-function BackImage() {
-    return (
-      <img className='background-image-infoline' 
-        src={"/images/background.jpg"} 
-        alt='backgroundimg'/>
-    )
-  }
 
   function InfolineNumberRoche(props) {
     return (

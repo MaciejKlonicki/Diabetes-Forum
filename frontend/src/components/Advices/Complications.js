@@ -1,22 +1,12 @@
 import React from 'react';
-import './Complications.css';
 
 function Complications() {
   return (
     <div>
-        <BackImage />
         <ComplicationsWithDiabetes />
     </div>
   )
 }
-
-function BackImage() {
-    return (
-      <img className='background-image-complications' 
-        src={"/images/background.jpg"} 
-        alt='backgroundimg'/>
-    )
-  }
 
   function ComplicationsWithDiabetes() {
     return (

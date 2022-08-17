@@ -4,19 +4,10 @@ import './FirstAidKit.css';
 function FirstAidKit() {
   return (
     <div>
-        <BackImage />
         <FirstAidKitInformations />
     </div>
   )
 }
-
-function BackImage() {
-    return (
-      <img className='background-image-first-aid-kit' 
-        src={"/images/background.jpg"} 
-        alt='backgroundimg'/>
-    )
-  }
   
   function FirstAidKitInformations() {
     return (

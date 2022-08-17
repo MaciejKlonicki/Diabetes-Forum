@@ -5,7 +5,6 @@ import './Informations.css'
 function Informations() {
   return (
     <div>
-        <BackImage />
         <ImagesForInformations
           img='/images/question.jpg'/>
         <ImagesForTypesOfDiabetes
@@ -15,14 +14,6 @@ function Informations() {
     </div>
   )
 }
-
-function BackImage() {
-    return (
-      <img className='background-image' 
-      src={"/images/background.jpg"} 
-      alt='backgroundimg'/>
-    )
-  }
 
   function ImagesForInformations(props) {
     return (

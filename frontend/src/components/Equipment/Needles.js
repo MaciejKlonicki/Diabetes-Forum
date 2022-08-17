@@ -4,7 +4,6 @@ import './Needles.css';
 function Needles() {
   return (
     <div>
-        <BackImage />
         <InformationAboutNeedleVerifine4mm
           img='/images/igly-1.png' />
         <InformationAboutNeedleVerifine6mm
@@ -16,14 +15,6 @@ function Needles() {
     </div>
   )
 }
-
-function BackImage() {
-    return (
-      <img className='background-image-needles' 
-        src={"/images/background.jpg"} 
-        alt='backgroundimg'/>
-    )
-  }
 
   function InformationAboutNeedleVerifine4mm(props) {
     return (

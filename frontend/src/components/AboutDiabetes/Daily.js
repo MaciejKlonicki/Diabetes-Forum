@@ -4,19 +4,11 @@ import './Daily.css';
 function Daily() {
   return (
     <div>
-        <BackImage />
         <DailyRoutines />
     </div>
   )
 }
 
-function BackImage() {
-    return (
-      <img className='background-image-daily' 
-      src={"/images/background.jpg"} 
-      alt='backgroundimg'/>
-    )
-  }
 
 function DailyRoutines() {
   return (

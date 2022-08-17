@@ -4,19 +4,10 @@ import './Depression.css';
 function Depression() {
   return (
     <div>
-        <BackImage />
         <HowToLiveWith />
     </div>
   )
 }
-
-function BackImage() {
-    return (
-      <img className='background-image-depression' 
-        src={"/images/background.jpg"} 
-        alt='backgroundimg'/>
-    )
-  }
 
   function HowToLiveWith() {
     return (

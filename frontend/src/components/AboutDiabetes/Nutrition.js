@@ -4,21 +4,11 @@ import './Nutrition.css';
 function Nutrition() {
   return (
     <div>
-        <BackImage />
         <FiveRules />
         <WhatToEat />
     </div>
   )
 }
-
-function BackImage() {
-    return (
-      <img className='background-image-nutrition' 
-        src={"/images/background.jpg"} 
-        alt='backgroundimg'/>
-    )
-  }
-
   function FiveRules() {
       return (
         <div>

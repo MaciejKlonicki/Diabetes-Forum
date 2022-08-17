@@ -25,6 +25,7 @@ function App() {
   return (
     <Router>
       <HeaderComp />
+      <BackImage />
       <Switch>
         <Route path='/' exact component={Body} />
         <Route path='/kontakt' exact component={Contact} />
@@ -49,5 +50,14 @@ function App() {
       </Router>
   );
 }
+
+function BackImage() {
+  return (
+    <img className='background-image' 
+    src={"/images/background.jpg"} 
+    alt='backgroundimg'/>
+  )
+}
+
 
 export default App;

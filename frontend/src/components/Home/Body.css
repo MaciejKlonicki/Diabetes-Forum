@@ -1,13 +1,3 @@
-.background-image {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: -1;
-  display: flex;
-  opacity: 0.6;
-}
-
 .cards-image-information {
   background-color: rgba(0, 0, 0, 0.37);
   border: 3px solid #000000;

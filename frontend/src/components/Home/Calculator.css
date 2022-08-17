@@ -1,13 +1,3 @@
-.background-image-calculator {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -1;
-    display: flex;
-    opacity: 0.5;
-}
-
   .calculator-desc-correct {
     font-size: 1.4em;
     margin-top: 3em;

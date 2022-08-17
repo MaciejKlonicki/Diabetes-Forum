@@ -4,7 +4,6 @@ import './Curiosities.css';
 function Curiosities() {
   return (
     <div>
-        <BackImage />
         <CuriositiesInformationFat
           img='/images/curiosities-1.jpg'/>
         <CuriositiesInformationDie
@@ -23,14 +22,6 @@ function Curiosities() {
           img='/images/curiosities-8.jpg'/>
     </div>
   )
-}
-
-function BackImage() {
-    return (
-      <img className='background-image-curiosities' 
-        src={"/images/background.jpg"} 
-        alt='backgroundimg'/>
-    )
 }
 
 function CuriositiesInformationFat(props) {

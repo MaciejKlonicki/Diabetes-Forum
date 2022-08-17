@@ -4,19 +4,10 @@ import './Basics.css';
 function Basics() {
   return (
     <div>
-        <BackImage />
         <BasicInformations />
     </div>
   )
 }
-
-function BackImage() {
-    return (
-      <img className='background-image-basics' 
-      src={"/images/background.jpg"} 
-      alt='backgroundimg'/>
-    )
-  }
 
   function BasicInformations() {
       return (

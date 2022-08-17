@@ -6,7 +6,6 @@ function Body() {
 
   return (
     <div>
-        <BackImage />
         <InformationCard
           img='/images/informations.jpg'
           path='/informacje'/>
@@ -22,14 +21,6 @@ function Body() {
     </div>
   )
 }
-
-function BackImage() {
-    return (
-      <img className='background-image' 
-      src={"/images/background.jpg"} 
-      alt='backgroundimg'/>
-    )
-  }
 
 function InformationCard(props) {
   return (

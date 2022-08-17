@@ -1,13 +1,3 @@
-.background-image-needles {
-    object-fit: cover;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    z-index: -1;
-    display: flex;
-    opacity: 0.5;
-}
-
 .image-for-needles-verifine4mm {
     position: fixed;
     top: 45%;

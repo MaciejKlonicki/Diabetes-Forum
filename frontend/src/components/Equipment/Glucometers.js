@@ -4,7 +4,6 @@ import './Glucometers.css';
 function Glucometers() {
   return (
     <div>
-        <BackImage />
         <InformationAboutGlucometerGlucomaxxx
           img='/images/glucometr-1.png' />
         <InformationAboutGlucometerGlucosense
@@ -16,14 +15,6 @@ function Glucometers() {
     </div>
   )
 }
-
-function BackImage() {
-    return (
-      <img className='background-image-glucometers' 
-        src={"/images/background.jpg"}
-        alt='backgroundimg'/>
-    )
-  }
 
 function InformationAboutGlucometerGlucomaxxx(props) {
     return (

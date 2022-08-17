@@ -1,19 +1,10 @@
-.background-image-converters {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -1;
-    display: flex;
-    opacity: 0.5;
-  }
-
   .first-table-pos {
     position: relative;
     top: 100px;
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 100px;
+    opacity: 0.9;
   }
 
   th {

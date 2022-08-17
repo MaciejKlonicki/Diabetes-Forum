@@ -4,7 +4,6 @@ import './Stripes.css';
 function Stripes() {
   return (
     <div>
-        <BackImage />
         <InformationAboutStripeAccuChekActive
           img='/images/paski-1.png' />
         <InformationAboutStripeAccuChekGuide
@@ -16,14 +15,6 @@ function Stripes() {
     </div>
   )
 }
-
-function BackImage() {
-    return (
-      <img className='background-image-stripes' 
-        src={"/images/background.jpg"} 
-        alt='backgroundimg'/>
-    )
-  }
 
   function InformationAboutStripeAccuChekActive(props) {
     return (

@@ -4,18 +4,9 @@ import './Converters.css';
 function Converters() {
   return (
     <div className="Converters">
-        <BackImage />
         <FirstTable />
     </div>
   );
-}
-
-function BackImage() {
-  return (
-    <img className='background-image-converters' 
-    src={"/images/background.jpg"} 
-    alt='backgroundimg'/>
-  )
 }
 
 function FirstTable() {

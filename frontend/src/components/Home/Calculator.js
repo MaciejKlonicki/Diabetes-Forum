@@ -6,7 +6,6 @@ import { propTypes } from 'react-bootstrap/esm/Image';
 function Calculator() {
   return (
     <div>
-        <BackImage />
         <Calculators 
         img='/images/plus.png'/>
         <Correct 
@@ -14,14 +13,6 @@ function Calculator() {
     </div>
   )
 }
-
-function BackImage() {
-    return (
-      <img className='background-image-calculator' 
-      src={"/images/background.jpg"} 
-      alt='backgroundimg'/>
-    )
-  }
 
   function Calculators(props) {
     return (

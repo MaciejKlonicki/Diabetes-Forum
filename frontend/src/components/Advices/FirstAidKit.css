@@ -1,13 +1,3 @@
-.background-image-first-aid-kit {
-    object-fit: cover;
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    z-index: -1;
-    display: flex;
-    opacity: 0.5;
-}
-
 .box-aid-kit {
     position: absolute;
     top: 50%;

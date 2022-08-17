@@ -66,7 +66,7 @@
 
   .first-breakfast {
     position: relative;
-    top: 10px;
+    top: 25px;
     left: 130px;
     width: 35px;
     height: 30px;
@@ -89,7 +89,7 @@
 
   .second-breakfast {
     position: relative;
-    top: 10px;
+    top: 20px;
     left: 130px;
     width: 35px;
     height: 30px;
@@ -112,7 +112,7 @@
 
   .lunch {
     position: relative;
-    top: 10px;
+    top: 20px;
     left: 130px;
     width: 35px;
     height: 30px;
@@ -135,7 +135,7 @@
 
   .tea {
     position: relative;
-    top: 10px;
+    top: 20px;
     left: 130px;
     width: 35px;
     height: 30px;
@@ -158,7 +158,7 @@
 
   .first-dinner {
     position: relative;
-    top: 10px;
+    top: 20px;
     left: 130px;
     width: 35px;
     height: 30px;
@@ -181,7 +181,7 @@
 
   .second-dinner {
     position: relative;
-    top: 10px;
+    top: 20px;
     left: 130px;
     width: 35px;
     height: 30px;
@@ -205,7 +205,7 @@
 
   .sugar {
     position: relative;
-    top: 78px;
+    top: 50px;
     left: 325px;
     width: 50px;
     height: 30px;
@@ -217,7 +217,7 @@
 
   .sugar-position {
     position:fixed;
-    bottom: 310px;
+    bottom: 295px;
     padding-left: 10px;
     font-size: 22px;
     font-weight: 400;
@@ -236,7 +236,7 @@
 
   .exchangers-position-text {
     position:relative;
-    top: 150px;
+    top: 100px;
     font-size: 22px;
     padding-left: 10px;
     font-weight: 400;
@@ -247,7 +247,7 @@
 
   .exchangers-input {
     position: relative;
-    top: 122px;
+    top: 52px;
     left: 325px;
     padding-left: 10px;
     width: 50px;
@@ -260,7 +260,7 @@
 
   .final-result {
     position:relative;
-    top: 200px;
+    top: 120px;
     text-align: center;
     font-size: 45px;
     font-weight: 400;
@@ -280,7 +280,7 @@
   .line {
     position: relative;
     border-bottom: 2px solid black;
-    top: 25px;
+    top: 0px;
     width: 389px;
     left: 2px;
   }
@@ -291,11 +291,10 @@
     position: fixed;
     width: 400px;
     height: 450px;
-    bottom: -8px;
+    top: 485px;
     left: 1250px;
     transform: translate(-50%, -50%);
     z-index: 1;
-    border-radius: 15px;
   }
   
   .calc-table {
@@ -307,7 +306,6 @@
     background-color: rgba(7, 7, 6, 0.397);
     margin-top: 280px;
     left: -160px;
-    border-radius: 15px;
   }
       
   th {

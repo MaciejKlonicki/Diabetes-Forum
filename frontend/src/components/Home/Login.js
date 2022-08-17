@@ -1,20 +1,25 @@
-import React, {} from 'react';
+import React, { Component } from 'react';
 import {Row, Col, Card, Form, InputGroup, FormControl} from "react-bootstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import {faEnvelope, faLock, faSignInAlt} from "@fortawesome/free-solid-svg-icons"
+import {faEnvelope, faLock, faSignInAlt} from "@fortawesome/free-solid-svg-icons";
 
-function Login() {
 
-  // constructor(props) {
-  //   super(props);
-  // }
+class Login extends Component {
 
-  let email;
-  let password;
+  constructor(props) {
+    super(props);
+    this.state = this.initialState;
+  }
 
+  initialState = {
+    email:'', password:''
+  }
+
+  render () {
+
+    const {email, password} = this.state;
 
     return (
-
       <Row className='justify-content-md-center'>
         <Col xs={5}>
           <Card>
@@ -53,6 +58,7 @@ function Login() {
         </Col>
       </Row>
     )
+  }
   };
 
   export default Login;

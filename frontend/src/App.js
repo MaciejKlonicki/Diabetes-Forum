@@ -19,7 +19,6 @@ import Depression from './components/Advices/Depression';
 import Curiosities from './components/More/Curiosities';
 import Infoline from './components/More/Infoline';
 import Calculator from './components/Home/Calculator';
-import Registration from './components/Home/Registration';
 import Login from './components/Home/Login';
 
 function App() {
@@ -44,8 +43,7 @@ function App() {
         <Route path='/ciekawostki' exact component={Curiosities} />
         <Route path='/infolinie' exact component={Infoline} />
         <Route path='/kalkulator' exact component={Calculator} />
-        <Route path='/rejestracja' exact component={Registration} />
-        <Route path='/logowanie' exact component={Login} />
+        <Route path='/logowanie' exact component= {Login} />
       </Switch>
       <FooterComp />
       </Router>

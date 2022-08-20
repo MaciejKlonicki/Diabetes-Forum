@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import {Row, Col, Card, Form, InputGroup, FormControl, Button, Alert} from "react-bootstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faEnvelope, faLock, faSignInAlt, faUndo} from "@fortawesome/free-solid-svg-icons";
-import './Login.css';
 import {connect} from 'react-redux';
 import {authenticateUser} from './indeks';
+import './Login.css';
 
 export class Login extends Component {
 

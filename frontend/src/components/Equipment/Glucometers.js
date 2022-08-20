@@ -25,7 +25,7 @@ function InformationAboutGlucometerGlucomaxxx(props) {
             className='glucometr-glucomaxxx-photo'
           />
           <div className='h2-position-glucometer-glucomaxxx'>
-          <h2>Glukometr Glucomaxx Connect</h2>
+            <h2>Glukometr Glucomaxx Connect</h2>
           </div>
             <p className="image__description-glucomaxxx">
               Precyzyjny i dokładny system monitorowania glikemii dla pacjentów z cukrzycą.

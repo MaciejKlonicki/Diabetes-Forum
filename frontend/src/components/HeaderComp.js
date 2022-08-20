@@ -1,11 +1,11 @@
 import React, { useState} from "react";
-import './HeaderComp.css';
 import { Link } from 'react-router-dom';
 import MoveDownDiabetes from './SlideMenu/MoveDownDiabetes';
 import MoveDownMedicaments from './SlideMenu/MoveDownMedicaments';
 import MoveDownAdvices from './SlideMenu/MoveDownAdvices';
 import MoveDownMore from './SlideMenu/MoveDownMore';
 import { AiFillCaretDown } from 'react-icons/ai';
+import './HeaderComp.css';
 
 function HeaderComp() {
 

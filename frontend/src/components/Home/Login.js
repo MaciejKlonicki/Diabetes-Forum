@@ -26,7 +26,7 @@ export class Login extends Component {
   validateUser = () => {
     authenticateUser(this.state.email, this.state.password);
     setTimeout(() => {
-      if(this.props.auth.isLoggedIn) {
+      if(this.props.isLoggedIn) {
         return this.props.history.push("/logowanie");
       } else {
         this.resetLoginForm();

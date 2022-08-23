@@ -101,9 +101,9 @@
 
   .header-button {
       position: relative;
-      right: 500px;
+      right: 470px;
       display: inline-block;
-      padding: 0.2em 1em;
+      padding: 0.15em 0.7em;
       margin: 0 0.1em 0.1em 0;
       border: 0.16em solid rgb(255, 255, 255);
       box-sizing: border-box;
@@ -127,7 +127,7 @@
       position: relative;
       right: 150px;
       display: inline-block;
-      padding: 0.2em 1em;
+      padding: 0.15em 0.7em;
       margin: 0 0.1em 0.1em 0;
       border: 0.16em solid rgb(255, 255, 255);
       box-sizing: border-box;
@@ -151,7 +151,7 @@
       position: relative;
       right: 30px;
       display: inline-block;
-      padding: 0.2em 1em;
+      padding: 0.15em 0.7em;
       margin: 0 0.1em 0.1em 0;
       border: 0.16em solid rgb(255, 255, 255);
       box-sizing: border-box;
@@ -175,7 +175,7 @@
       position: relative;
       right: 20px;
       display: inline-block;
-      padding: 0.2em 1em;
+      padding: 0.15em 0.7em;
       margin: 0 0.1em 0.1em 0;
       border: 0.16em solid rgb(255, 255, 255);
       box-sizing: border-box;

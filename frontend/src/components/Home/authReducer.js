@@ -1,10 +1,10 @@
 import {LOGIN_REQUEST, SUCCESS, FAILURE} from './authTypes';
 
-const initalState = {
+const initialState = {
     isLoggedIn: ''
 };
 
-const reducer = (state = initalState, action) => {
+const reducer = (state = initialState, action) => {
     switch(action.type) {
         case LOGIN_REQUEST:
             return {
@@ -20,7 +20,7 @@ const reducer = (state = initalState, action) => {
             };
         default:
             return state;
-    }
+    };
 };
 
 export default reducer;

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {Row, Col, Card, Form, InputGroup, FormControl, Button, Alert} from "react-bootstrap";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faEnvelope, faLock, faSignInAlt, faUndo} from "@fortawesome/free-solid-svg-icons";
@@ -6,7 +6,7 @@ import {connect} from 'react-redux';
 import {authenticateUser} from './indeks';
 import './Login.css';
 
-export class Login extends Component {
+export class Login extends React.Component {
 
   constructor(props) {
     super(props);
@@ -23,6 +23,10 @@ export class Login extends Component {
     });
   }
 
+  resetLoginForm = () => {
+    this.setState(() => this.initialState);
+  }
+  
   validateUser = () => {
     authenticateUser(this.state.email, this.state.password);
     setTimeout(() => {
@@ -32,12 +36,8 @@ export class Login extends Component {
         this.resetLoginForm();
         this.setState({"error": "Invalid email or password"}); 
       }
-    })
-  }
-
-  resetLoginForm = () => {
-    this.setState(() => this.initialState);
-  }
+    });
+  };
 
   render () {
     const {email, password, error} = this.state;
@@ -87,7 +87,7 @@ export class Login extends Component {
                 <FontAwesomeIcon icon={faSignInAlt}/> Login
               </Button>{' '}
               <Button size="sm" type='button' variant='info' onClick={this.resetLoginForm}
-                disabled={this.state.email.length === 0 && this.state.password.length === 0}>
+                disabled={this.state.email.length === 0 && this.state.password.length === 0 && this.state.error.length === 0}>
                 <FontAwesomeIcon icon={faUndo}/> Reset
               </Button>
             </Card.Footer>
@@ -101,9 +101,9 @@ export class Login extends Component {
 
   const mapStateToProps = state => {
     return {
-      auth:state.auth
-    }
-  };
+      auth: state.auth
+    };
+  }
 
   const mapDispatchToProps = dispatch => {
     return {

@@ -17,16 +17,16 @@ const loginRequest = () => {
     };
 };
 
-const success = isLoggedIn => {
+const success = () => {
     return {
         type: SUCCESS,
-        payload: isLoggedIn
+        payload: true
     };
 };
 
-const failure = isLoggedIn => {
+const failure = () => {
     return {
         type: FAILURE,
-        payload: isLoggedIn
+        payload: false
     };
 };

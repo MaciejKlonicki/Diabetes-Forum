@@ -12,7 +12,7 @@ function Converters() {
 function FirstTable() {
   return (
     <div className='first-table-pos w-100'>
-      <table class="table table-hover table-dark">
+      <table className="table table-hover table-dark">
         <thead>
         <tr>
           <th>Jedzenie</th>

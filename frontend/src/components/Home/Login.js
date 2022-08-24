@@ -3,7 +3,7 @@ import {Row, Col, Card, Form, InputGroup, FormControl, Button, Alert} from "reac
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faEnvelope, faLock, faSignInAlt, faUndo} from "@fortawesome/free-solid-svg-icons";
 import {connect} from 'react-redux';
-import {authenticateUser} from './indeks';
+import {authenticateUser} from './index';
 import './Login.css';
 
 export class Login extends React.Component {
@@ -23,21 +23,22 @@ export class Login extends React.Component {
     });
   }
 
-  resetLoginForm = () => {
-    this.setState(() => this.initialState);
-  }
-  
+    
   validateUser = () => {
     authenticateUser(this.state.email, this.state.password);
     setTimeout(() => {
       if(this.props.isLoggedIn) {
-        return this.props.history.push("/logowanie");
+        return this.props.history.push("/");
       } else {
         this.resetLoginForm();
         this.setState({"error": "Invalid email or password"}); 
       }
     });
   };
+
+  resetLoginForm = () => {
+    this.setState(() => this.initialState);
+  }
 
   render () {
     const {email, password, error} = this.state;
@@ -72,8 +73,8 @@ export class Login extends React.Component {
                     <FormControl 
                     required
                     autoComplete='off'
-                    type='password'
-                    name='password'
+                    type="password"
+                    name="password"
                     value={password}
                     onChange={this.credentialChange}
                     className={"bg-dark text-white"}

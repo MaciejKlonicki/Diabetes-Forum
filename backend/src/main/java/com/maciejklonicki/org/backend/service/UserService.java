@@ -4,13 +4,11 @@ import com.maciejklonicki.org.backend.model.Users;
 import com.maciejklonicki.org.backend.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @Service
 @RequiredArgsConstructor
 public class UserService {
-
     private final UserRepository userRepository;
 
     //getting all users

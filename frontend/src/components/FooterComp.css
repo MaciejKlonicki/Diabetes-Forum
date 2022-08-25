@@ -10,14 +10,14 @@
     align-items: center;
     height: 50px;
     display: flex;
-    font-size: 13px;
+    font-size: 14px;
 }
 
  .footer-button-contact {
     position: relative;
     left: 500px;
     display: inline-block;
-    padding: 0.5em 1.7em;
+    padding: 0.4em 1.7em;
     margin: 0 0.1em 0.1em 0;
     border: 0.16em solid rgb(255, 255, 255);
     box-sizing: border-box;

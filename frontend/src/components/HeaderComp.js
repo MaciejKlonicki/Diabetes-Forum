@@ -125,7 +125,7 @@ function HeaderComp() {
         <Link to='/'
         className='header-links'
         >
-          <div className="icon-pos-advice">
+          <div className="icon-pos-eq">
             <AiFillCaretDown />
           </div>
         Porady
@@ -141,7 +141,7 @@ function HeaderComp() {
         <Link to='/'
         className='header-links'
         >
-          <div className="icon-pos-more">
+          <div className="icon-pos-eq">
             <AiFillCaretDown />
           </div>
         Więcej

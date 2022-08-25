@@ -77,27 +77,14 @@
   .icon-pos-diabetes {
       position: relative;
       top: 26px;
-      left: 50px;
+      left: 45px;
   }
 
   .icon-pos-eq {
       position: relative;
       top: 26px;
-      left: 40px;
+      left: 35px;
   }
-
-  .icon-pos-advice {
-      position: relative;
-      top: 26px;
-      left: 40px;
-  }
-
-  .icon-pos-more {
-      position: relative;
-      top: 26px;
-      left: 40px;
-  }
-
 
   .header-button {
       position: relative;

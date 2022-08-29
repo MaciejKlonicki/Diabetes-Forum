@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import axios from 'axios';
 import { Card, Table } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faList } from '@fortawesome/free-solid-svg-icons';
+import { faUser } from '@fortawesome/free-solid-svg-icons';
 import './UserList.css';
 
 export default class UserList extends Component {
@@ -30,14 +30,34 @@ export default class UserList extends Component {
         return (
             <div className='card-position'>
                 <Card className={"border border-dark bg-dark text-white"}>
-                    <Card.Header><FontAwesomeIcon icon={faList}/>{' '}Lista użytkowników</Card.Header>
+                    <Card.Header><FontAwesomeIcon icon={faUser}/>{' '}Lista użytkowników</Card.Header>
                     <Card.Body>
                         <Table bordered hover striped variant="dark">
                             <thead>
                                 <tr>
-
+                                    <td>Name</td>
+                                    <td>Email</td>
+                                    <td>Address</td>
+                                    <td>Created</td>
+                                    <td>Balance</td>
                                 </tr>
                             </thead>
+                            <tbody>
+                                {this.state.users.length === 0 ?
+                                <tr align="center">
+                                    <td colSpan="6">Brak użytkowników!</td>
+                                </tr> : 
+                                this.state.users.map((user, index) =>(
+                                    <tr key={index}>
+                                        <td>{user.first}{' '}{user.last}</td>
+                                        <td>{user.email}</td>
+                                        <td>{user.address}</td>
+                                        <td>{user.created}</td>
+                                        <td>{user.balance}</td>
+                                    </tr>
+                                ))
+                                }
+                            </tbody>
                         </Table>
                     </Card.Body>
                 </Card>

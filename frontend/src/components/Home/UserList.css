@@ -1,7 +1,7 @@
 .card-position {
     position: relative;
-    top: 100px;
     left: 100px;
     width: 1500px;
-    height: 1500px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }

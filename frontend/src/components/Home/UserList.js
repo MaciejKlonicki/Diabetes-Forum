@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import axios from 'axios';
-import { Card, Table } from 'react-bootstrap';
+import { Button, Card, FormControl, InputGroup, Table } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faStepBackward, faFastBackward, faStepForward, faFastForward } from '@fortawesome/free-solid-svg-icons';
 import './UserList.css';
 
 export default class UserList extends Component {
@@ -10,7 +10,9 @@ export default class UserList extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            users: []
+            users: [],
+            currentPage : 1,
+            usersPerPage: 10
         };
     }
 
@@ -27,6 +29,13 @@ export default class UserList extends Component {
     } ;
 
     render() {
+
+        const {users, currentPage, usersPerPage} = this.state;
+        const lastIndex = currentPage * usersPerPage;
+        const firstIndex = lastIndex - usersPerPage;
+        const currentUsers = users.slice(firstIndex, lastIndex);
+        const totalPages = (users.length / usersPerPage);
+
         return (
             <div className='card-position'>
                 <Card className={"border border-dark bg-dark text-white"}>
@@ -43,11 +52,11 @@ export default class UserList extends Component {
                                 </tr>
                             </thead>
                             <tbody>
-                                {this.state.users.length === 0 ?
+                                {users.length === 0 ?
                                 <tr align="center">
                                     <td colSpan="6">Brak użytkowników!</td>
                                 </tr> : 
-                                this.state.users.map((user, index) =>(
+                                currentUsers.map((user, index) =>(
                                     <tr key={index}>
                                         <td>{user.first}{' '}{user.last}</td>
                                         <td>{user.email}</td>
@@ -60,6 +69,28 @@ export default class UserList extends Component {
                             </tbody>
                         </Table>
                     </Card.Body>
+                    <Card.Footer>
+                        <div style={{"float":"left"}}>
+                            Strona {currentPage} z {totalPages}
+                        </div>
+                        <div style={{"float":"right"}}>
+                            <InputGroup size='sm'>
+                                    <Button type='button' variant='outline-info' disabled={currentPage === 1 ? true : false}>
+                                    <FontAwesomeIcon icon={faFastBackward}/>{' '}Pierwsza
+                                    </Button>
+                                    <Button type='button' variant='outline-info' disabled={currentPage === 1 ? true : false}>
+                                    <FontAwesomeIcon icon={faStepBackward}/>{' '}Poprzednia
+                                    </Button>
+                                <FormControl />
+                                    <Button type='button' variant='outline-info' disabled={currentPage === totalPages ? true : false}>
+                                    <FontAwesomeIcon icon={faStepForward}/>{' '}Następna
+                                    </Button>
+                                    <Button type='button' variant='outline-info' disabled={currentPage === totalPages ? true : false}>
+                                    <FontAwesomeIcon icon={faFastForward}/>{' '}Ostatnia
+                                    </Button>
+                            </InputGroup>
+                        </div>
+                    </Card.Footer>
                 </Card>
             </div>
         );

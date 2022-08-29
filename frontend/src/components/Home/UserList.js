@@ -26,7 +26,45 @@ export default class UserList extends Component {
         .then((data) => {
             this.setState({users: data});
         });
-    } ;
+    };
+
+    changePage = event => {
+        this.setState({
+            [event.target.name]: parseInt(event.target.value)
+        });
+    };
+
+    firstPage = () => {
+        if(this.state.currentPage > 1) {
+            this.setState({
+                currentPage : 1
+            });
+        }
+    };
+
+    prevPage = () => {
+        if(this.state.currentPage > 1) {
+            this.setState({
+                currentPage : this.state.currentPage - 1
+            });
+        }
+    };
+
+    nextPage = () => {
+        if(this.state.currentPage < Math.ceil(this.state.users.length / this.state.usersPerPage)) {
+            this.setState({
+                currentPage : this.state.currentPage + 1
+            });
+        }
+    };
+
+    lastPage = () => {
+        if(this.state.currentPage < Math.ceil(this.state.users.length / this.state.usersPerPage)) {
+            this.setState({
+                currentPage : Math.ceil(this.state.users.length / this.state.usersPerPage)
+            });
+        }
+    };
 
     render() {
 
@@ -34,7 +72,15 @@ export default class UserList extends Component {
         const lastIndex = currentPage * usersPerPage;
         const firstIndex = lastIndex - usersPerPage;
         const currentUsers = users.slice(firstIndex, lastIndex);
-        const totalPages = (users.length / usersPerPage);
+        const totalPages = parseInt((users.length / usersPerPage));
+
+        const pageNumCss = {
+            width: "45px",
+            border: "1px solid #17A2B8",
+            color: "#17A2B8",
+            textAlign: "center",
+            fontWeight: "bold"
+        };
 
         return (
             <div className='card-position'>
@@ -75,17 +121,22 @@ export default class UserList extends Component {
                         </div>
                         <div style={{"float":"right"}}>
                             <InputGroup size='sm'>
-                                    <Button type='button' variant='outline-info' disabled={currentPage === 1 ? true : false}>
+                                    <Button type='button' variant='outline-info' disabled={currentPage === 1 ? true : false}
+                                    onClick={this.firstPage}>
                                     <FontAwesomeIcon icon={faFastBackward}/>{' '}Pierwsza
                                     </Button>
-                                    <Button type='button' variant='outline-info' disabled={currentPage === 1 ? true : false}>
+                                    <Button type='button' variant='outline-info' disabled={currentPage === 1 ? true : false}
+                                    onClick={this.prevPage}>
                                     <FontAwesomeIcon icon={faStepBackward}/>{' '}Poprzednia
                                     </Button>
-                                <FormControl />
-                                    <Button type='button' variant='outline-info' disabled={currentPage === totalPages ? true : false}>
+                                <FormControl style={pageNumCss} className={"bg-dark"} name="currentPage" value={currentPage} 
+                                    onChange={this.changePage}/>
+                                    <Button type='button' variant='outline-info' disabled={currentPage === totalPages ? true : false}
+                                    onClick={this.nextPage}>
                                     <FontAwesomeIcon icon={faStepForward}/>{' '}Następna
                                     </Button>
-                                    <Button type='button' variant='outline-info' disabled={currentPage === totalPages ? true : false}>
+                                    <Button type='button' variant='outline-info' disabled={currentPage === totalPages ? true : false}
+                                    onClick={this.lastPage}>
                                     <FontAwesomeIcon icon={faFastForward}/>{' '}Ostatnia
                                     </Button>
                             </InputGroup>

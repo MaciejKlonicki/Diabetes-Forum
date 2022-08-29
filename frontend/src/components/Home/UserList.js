@@ -90,11 +90,11 @@ export default class UserList extends Component {
                         <Table bordered hover striped variant="dark">
                             <thead>
                                 <tr>
-                                    <td>Name</td>
+                                    <td>Dane</td>
                                     <td>Email</td>
-                                    <td>Address</td>
-                                    <td>Created</td>
-                                    <td>Balance</td>
+                                    <td>Adres</td>
+                                    <td>Data stworzenia</td>
+                                    <td>Saldo</td>
                                 </tr>
                             </thead>
                             <tbody>

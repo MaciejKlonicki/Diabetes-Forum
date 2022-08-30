@@ -1,27 +1,28 @@
-import React, {Component} from 'react'
-import {connect} from 'react-redux'
-import './FooterComp.css'
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import { Link } from 'react-router-dom';
+import './FooterComp.css';
 
 class FooterComp extends Component {
-  render() {
-
-    const userLinks = (
-      <>
-        &copy; {new Date().getFullYear()} Kielce University of Technology | All rights reserved | Terms of Service | Privacy
-        <a href="/kontakt"><button className="footer-button-contact">Kontakt</button></a>
-        <a href="/lista-uzytkownikow"><button className="footer-button-contact-users">Użytkownicy</button></a>
-      </>
-    );
+  render(){
 
     const guestLinks = (
       <>
-        &copy; {new Date().getFullYear()} Kielce University of Technology | All rights reserved | Terms of Service | Privacy
+
+      </>
+    );
+
+    const userLinks = (
+      <>
+        <Link to="/kontakt"><button className="footer-button-contact">Kontakt</button></Link>
+        <Link to="/lista-uzytkownikow"><button className="footer-button-contact-users">Użytkownicy</button></Link>
       </>
     );
 
   return (
     <div className='footer'>
-      {this.props.auth.isLoggedIn ? userLinks : guestLinks}
+        &copy; {new Date().getFullYear()} Kielce University of Technology | All rights reserved | Terms of Service | Privacy
+        {this.props.auth.isLoggedIn ? userLinks : guestLinks}
     </div>
   );
   };

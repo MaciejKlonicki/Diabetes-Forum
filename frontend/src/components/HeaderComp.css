@@ -93,7 +93,7 @@
 
   .header-button {
       position: relative;
-      right: 470px;
+      right: 480px;
       display: inline-block;
       padding: 0.15em 0.7em;
       margin: 0 0.1em 0.1em 0;
@@ -209,6 +209,7 @@
       color: black;
       background-color: rgb(255, 255, 255);
   }
+
 
   @media screen and (max-width: 900px) {
     .header-button-registration {

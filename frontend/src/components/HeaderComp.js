@@ -166,8 +166,8 @@ class HeaderComp extends Component {
         {this.state.more && <MoveDownMore />}
         </li>
       </ul>
-        <a href="/kalkulator"><button className="header-button-calc button-style">Kalkulator</button></a>
-        <a href="/przeliczniki"><button className="header-button btn">Przeliczniki</button></a>
+        <Link to="/kalkulator"><button className="header-button-calc button-style">Kalkulator</button></Link>
+        <Link to="/przeliczniki"><button className="header-button btn">Przeliczniki</button></Link>
         <a href="/logowanie"><button className="header-button-logout">Wyloguj</button></a>
     </>
   );

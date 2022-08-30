@@ -46,7 +46,7 @@ function App() {
         <Route path='/ciekawostki' exact component={Curiosities} />
         <Route path='/infolinie' exact component={Infoline} />
         <Route path='/kalkulator' exact component={Calculator} />
-        <Route path='/logowanie' exact component={Login} />
+        <Route path='/logowanie' exact component={Login}/>
         <Route path='/lista-uzytkownikow' exact component ={UserList} />
       </Switch>
       <FooterComp />

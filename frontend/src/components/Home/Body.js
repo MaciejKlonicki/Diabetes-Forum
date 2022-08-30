@@ -1,11 +1,14 @@
-import React from "react";
+import React, {Component} from "react";
 import './Body.css';
 import { Link } from 'react-router-dom';
+import {connect} from 'react-redux';
 
-function Body() {
+class Body extends Component {
 
-  return (
-    <div>
+  render(){
+
+    const guestLinks = (
+      <>
         <InformationCard
           img='/images/informations.jpg'
           path='/informacje'/>
@@ -18,8 +21,32 @@ function Body() {
         <LoginCard
           img='/images/login.jpg'
           path='/logowanie'/>
+      </>
+    );
+
+    const userLinks = (
+      <>
+        <InformationCard
+          img='/images/informations.jpg'
+          path='/informacje'/>
+        <FoodCard
+          img='/images/food.jpg'
+          path='/przeliczniki'/>
+        <CalculatorCard
+          img='/images/calc.jpg'
+          path='/kalkulator'/>
+        <CuriositiesCard
+          img='/images/curiosities.jpg'
+          path='/ciekawostki'/>
+      </>
+    );
+
+  return (
+    <div>
+      {this.props.auth.isLoggedIn ? userLinks : guestLinks}
     </div>
   )
+}
 }
 
 function InformationCard(props) {
@@ -86,4 +113,26 @@ function LoginCard(props) {
   )
 }
 
-export default Body
+function CuriositiesCard(props) {
+  return (
+    <div className='cards-image-curiosities'>
+      <h1>ciekawostki</h1>
+      <Link to={props.path}>
+        <img
+          src={props.img}
+          alt='curiosities'
+          className='photo_cards'
+        />
+      </Link>
+    </div>
+    
+  )
+}
+
+const mapStateToProps = state => {
+  return {
+    auth: state.auth
+  };
+};
+
+export default connect(mapStateToProps)(Body);

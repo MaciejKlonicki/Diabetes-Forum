@@ -54,6 +54,20 @@
   backdrop-filter: blur(5px);
 }
 
+.cards-image-curiosities {
+  background-color: rgba(0, 0, 0, 0.37);
+  border: 3px solid #000000;
+  position: fixed;
+  top: 50%;
+  left: 1505px;
+  height: 570px;
+  width: 380px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
+
 .photo_cards {
   height: 400px;
   width: 350px;

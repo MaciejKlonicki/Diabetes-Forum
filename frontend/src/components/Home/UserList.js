@@ -5,6 +5,7 @@ import { Button, Card, FormControl, InputGroup, Table } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faStepBackward, faFastBackward, faStepForward, faFastForward } from '@fortawesome/free-solid-svg-icons';
 import './UserList.css';
+import { Alert } from 'bootstrap';
 
 class UserList extends Component {
 
@@ -53,7 +54,7 @@ class UserList extends Component {
     };
 
     nextPage = () => {
-        if(this.state.currentPage < Math.ceil(this.state.users.length / this.state.usersPerPage)) {
+        if(this.state.currentPage < Math.ceil(this.props.userData.users.length / this.state.usersPerPage)) {
             this.setState({
                 currentPage : this.state.currentPage + 1
             });
@@ -61,18 +62,22 @@ class UserList extends Component {
     };
 
     lastPage = () => {
-        if(this.state.currentPage < Math.ceil(this.state.users.length / this.state.usersPerPage)) {
+        let usersLength = this.props.userData.users.length;
+        if(this.state.currentPage < Math.ceil(usersLength / this.state.usersPerPage)) {
             this.setState({
-                currentPage : Math.ceil(this.state.users.length / this.state.usersPerPage)
+                currentPage : Math.ceil(usersLength / this.state.usersPerPage)
             });
         }
     };
 
     render() {
 
-        const {users, currentPage, usersPerPage} = this.state;
+        const {currentPage, usersPerPage} = this.state;
         const lastIndex = currentPage * usersPerPage;
         const firstIndex = lastIndex - usersPerPage;
+
+        const userData = this.props.userData;
+        const users = userData.users;
         const currentUsers = users.slice(firstIndex, lastIndex);
         const totalPages = parseInt((users.length / usersPerPage));
 
@@ -86,7 +91,11 @@ class UserList extends Component {
 
         return (
             <div className='card-position'>
-                <Card className={"border border-dark bg-dark text-white"}>
+                {userData.error ? 
+                    <Alert variant="danger">
+                        {userData.error}
+                    </Alert> :
+                    <Card className={"border border-dark bg-dark text-white"}>
                     <Card.Header><FontAwesomeIcon icon={faUser}/>{' '}Lista użytkowników</Card.Header>
                     <Card.Body>
                         <Table bordered hover striped variant="dark">
@@ -145,6 +154,7 @@ class UserList extends Component {
                         </div>
                     </Card.Footer>
                 </Card>
+                }
             </div>
         );
     }

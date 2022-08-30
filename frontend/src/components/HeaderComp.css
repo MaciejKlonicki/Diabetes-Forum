@@ -12,6 +12,11 @@
     z-index: 2;
 }
 
+.header-logo-logout {
+    position: relative;
+    right: 710px;
+}
+
 .header-logo {
     margin-left: 20px;
     display: flex;
@@ -62,7 +67,7 @@
   .header-menu {
       display: grid;
       grid-template-columns: repeat(5, auto);
-      grid-gap: 120px;
+      grid-gap: 150px;
       width: 90vw;
       justify-content: end;
       margin-right: 25rem;
@@ -110,6 +115,29 @@
       background-color: rgb(255, 255, 255);
   }
 
+  .header-button-logout {
+    position: relative;
+    right: 20px;
+    padding: 0.15em 0.7em;
+    margin: 0 0.1em 0.1em 0;
+    border: 0.16em solid rgb(255, 255, 255);
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+    text-align: center;
+    background-color: black;
+    transition: all 0.5s;
+    border-radius: 2em;
+    cursor: pointer;
+  }
+
+  .header-button-logout:hover {
+    color: black;
+    background-color: rgb(255, 255, 255);
+  }
+
   .header-button-calc {
       position: relative;
       right: 150px;
@@ -136,7 +164,7 @@
 
   .header-button-login {
       position: relative;
-      right: 30px;
+      left: 650px;
       display: inline-block;
       padding: 0.15em 0.7em;
       margin: 0 0.1em 0.1em 0;
@@ -160,7 +188,7 @@
 
   .header-button-registration {
       position: relative;
-      right: 20px;
+      left: 700px;
       display: inline-block;
       padding: 0.15em 0.7em;
       margin: 0 0.1em 0.1em 0;

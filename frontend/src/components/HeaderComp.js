@@ -1,5 +1,6 @@
-import React, { useState} from "react";
+import React, {Component} from "react";
 import { Link } from 'react-router-dom';
+import {connect} from 'react-redux';
 import MoveDownDiabetes from './SlideMenu/MoveDownDiabetes';
 import MoveDownMedicaments from './SlideMenu/MoveDownMedicaments';
 import MoveDownAdvices from './SlideMenu/MoveDownAdvices';
@@ -7,80 +8,96 @@ import MoveDownMore from './SlideMenu/MoveDownMore';
 import { AiFillCaretDown } from 'react-icons/ai';
 import './HeaderComp.css';
 
-function HeaderComp() {
+class HeaderComp extends Component {
 
-  const [aboutDiabetes, setAboutDiabetes] = useState(false);
-  const [equipment, setEquipment] = useState(false);
-  const [advices, setAdvices] = useState(false);
-  const [more, setMore] = useState(false);
+  constructor(props) {
+    super(props);
+    this.state = {
+      aboutDiabetes: false,
+      equipment: false,
+      advices: false,
+      more: false,
+    }
+  }
+
+  render(){
 
   const onMouseEnterAboutDiabetes = () => {
     if (window.innerWidth < 540) {
-      setAboutDiabetes(false);
+      this.setState({aboutDiabetes: false})
     } else {
-      setAboutDiabetes(true);
+      this.setState({aboutDiabetes: true})
     }
   };
 
   const onMouseLeaveAboutDiabetes = () => {
     if (window.innerWidth < 540) {
-      setAboutDiabetes(false);
+      this.setState({aboutDiabetes: false})
     } else {
-      setAboutDiabetes(false);
+      this.setState({aboutDiabetes: false})
     }
   };
-
   
   const onMouseEnterEquipment = () => {
     if (window.innerWidth < 540) {
-      setEquipment(false);
+      this.setState({equipment: false})
     } else {
-      setEquipment(true);
+      this.setState({equipment: true})
     }
   };
 
   const onMouseLeaveEquipment = () => {
     if (window.innerWidth < 540) {
-      setEquipment(false);
+      this.setState({equipment: false})
     } else {
-      setEquipment(false);
+      this.setState({equipment: false})
     }
   };
 
   const onMouseEnterAdvices = () => {
     if (window.innerWidth < 540) {
-      setAdvices(false);
+      this.setState({advices: false})
     } else {
-      setAdvices(true);
+      this.setState({advices: true})
     }
   };
 
   const onMouseLeaveAdvices = () => {
     if (window.innerWidth < 540) {
-      setAdvices(false);
+      this.setState({advices: false})
     } else {
-      setAdvices(false);
+      this.setState({advices: false})
     }
   };
 
   const onMouseEnterMore = () => {
     if (window.innerWidth < 540) {
-      setMore(false);
+      this.setState({more: false})
     } else {
-      setMore(true);
+      this.setState({more: true})
     }
   };
 
   const onMouseLeaveMore = () => {
     if (window.innerWidth < 540) {
-      setMore(false);
+      this.setState({more: false})
     } else {
-      setMore(false);
+      this.setState({more: false})
     }
   };
 
-  return (
-    <nav className='header'>
+  const guestLinks = (
+    <>
+      <Link to='/' className='header-logo-logout'>
+      <img src='/images/sugar-blood-level.png' alt='sugar-logo'/>
+      </Link>
+      <a href="/logowanie"><button className="header-button-login btn">Logowanie</button></a>
+      <a href="/rejestracja"><button className="header-button-registration btn">Rejestracja</button></a>
+    </>
+  );
+
+  const userLinks = (
+    <>
       <Link to='/' className='header-logo'>
       <img src='/images/sugar-blood-level.png' alt='sugar-logo'/>
       </Link>
@@ -98,7 +115,7 @@ function HeaderComp() {
           </div>
           Cukrzyca
         </Link>
-        {aboutDiabetes && <MoveDownDiabetes />}
+        {this.state.aboutDiabetes && <MoveDownDiabetes />}
         </li>
 
         <li
@@ -114,7 +131,7 @@ function HeaderComp() {
           </div>
         Sprzęt
         </Link>
-        {equipment && <MoveDownMedicaments />}
+        {this.state.equipment && <MoveDownMedicaments />}
         </li>
 
         <li
@@ -130,7 +147,7 @@ function HeaderComp() {
           </div>
         Porady
         </Link>
-        {advices && <MoveDownAdvices />}
+        {this.state.advices && <MoveDownAdvices />}
         </li>
 
         <li
@@ -146,15 +163,27 @@ function HeaderComp() {
           </div>
         Więcej
         </Link>
-        {more && <MoveDownMore />}
+        {this.state.more && <MoveDownMore />}
         </li>
       </ul>
         <a href="/kalkulator"><button className="header-button-calc button-style">Kalkulator</button></a>
         <a href="/przeliczniki"><button className="header-button btn">Przeliczniki</button></a>
-        <a href="/logowanie"><button className="header-button-login btn">Logowanie</button></a>
-        <a href="/rejestracja"><button className="header-button-registration btn">Rejestracja</button></a>
-    </nav>
-  )
-}
+        <a href="/logowanie"><button className="header-button-logout">Wyloguj</button></a>
+    </>
+  );
 
-export default HeaderComp
+  return (
+    <nav className='header'>
+      {this.props.auth.isLoggedIn ? userLinks : guestLinks}
+    </nav>
+  );
+  };
+};
+
+const mapStateToProps = state => {
+  return {
+    auth: state.auth
+  };
+};
+
+export default connect(mapStateToProps)(HeaderComp);

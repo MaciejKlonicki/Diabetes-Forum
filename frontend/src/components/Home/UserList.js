@@ -1,11 +1,12 @@
 import React, {Component} from 'react'
-import axios from 'axios';
+import {connect} from 'react-redux';
+import {fetchUsers} from '../services/user/userActions';
 import { Button, Card, FormControl, InputGroup, Table } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faStepBackward, faFastBackward, faStepForward, faFastForward } from '@fortawesome/free-solid-svg-icons';
 import './UserList.css';
 
-export default class UserList extends Component {
+class UserList extends Component {
 
     constructor(props) {
         super(props);
@@ -17,16 +18,17 @@ export default class UserList extends Component {
     }
 
     componentDidMount() {
-        this.findAllRandomUsers();
+        //this.findAllRandomUsers();
+        this.props.fetchUsers();
     }
 
-    findAllRandomUsers() {
-        axios.get("https://randomapi.com/api/6de6abfedb24f889e0b5f675edc50deb?fmt=raw&sole")
-        .then(response => response.data)
-        .then((data) => {
-            this.setState({users: data});
-        });
-    };
+    // findAllRandomUsers() {
+    //     axios.get("https://randomapi.com/api/6de6abfedb24f889e0b5f675edc50deb?fmt=raw&sole")
+    //     .then(response => response.data)
+    //     .then((data) => {
+    //         this.setState({users: data});
+    //     });
+    // };
 
     changePage = event => {
         this.setState({
@@ -147,3 +149,17 @@ export default class UserList extends Component {
         );
     }
 }
+
+const mapStateToProps = state => {
+    return {
+        userData: state.user
+    }
+};
+
+const mapDispatchToProps = dispatch => {
+    return {
+        fetchUsers: () => dispatch(fetchUsers())
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(UserList);

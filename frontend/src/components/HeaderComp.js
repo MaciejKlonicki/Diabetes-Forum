@@ -7,6 +7,7 @@ import MoveDownAdvices from './SlideMenu/MoveDownAdvices';
 import MoveDownMore from './SlideMenu/MoveDownMore';
 import { AiFillCaretDown } from 'react-icons/ai';
 import './HeaderComp.css';
+import {logoutUser} from './services/index';
 
 class HeaderComp extends Component {
 
@@ -19,6 +20,10 @@ class HeaderComp extends Component {
       more: false,
     }
   }
+
+  logout = () => {
+    this.props.logoutUser();
+  };
 
   render(){
 
@@ -168,7 +173,7 @@ class HeaderComp extends Component {
       </ul>
         <Link to="/kalkulator"><button className="header-button-calc button-style">Kalkulator</button></Link>
         <Link to="/przeliczniki"><button className="header-button btn">Przeliczniki</button></Link>
-        <a href="/logowanie"><button className="header-button-logout">Wyloguj</button></a>
+        <Link to="/logowanie" onClick={this.logout}><button className="header-button-logout">Wyloguj</button></Link>
     </>
   );
 
@@ -186,4 +191,10 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps)(HeaderComp);
+const mapDispatchToProps = dispatch => {
+  return {
+    logoutUser: () => dispatch(logoutUser())
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(HeaderComp);

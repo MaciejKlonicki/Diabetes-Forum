@@ -19,6 +19,7 @@
     right: 20px;
     position: relative;
     font-size: 15px !important;
+    padding-bottom: 5px;
   }
 
   .movedown-link-more:hover {

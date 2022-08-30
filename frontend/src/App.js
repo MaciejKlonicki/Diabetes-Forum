@@ -20,10 +20,7 @@ import Curiosities from './components/More/Curiosities';
 import Infoline from './components/More/Infoline';
 import Calculator from './components/Home/Calculator';
 import {Login} from './components/Home/Login';
-import UserList from './components/Home/UserList';
-
-import {Provider} from 'react-redux';
-import store from './components/services/store';
+import UserList from './components/User/UserList';
 
 
 function App() {
@@ -50,7 +47,7 @@ function App() {
         <Route path='/infolinie' exact component={Infoline} />
         <Route path='/kalkulator' exact component={Calculator} />
         <Route path='/logowanie' exact component= {Login} />
-        <Route path='/lista-uzytkownikow' exact component = {() => <Provider store={store}><UserList /></Provider>} />
+        <Route path='/lista-uzytkownikow' exact component ={UserList} />
       </Switch>
       <FooterComp />
       </Router>

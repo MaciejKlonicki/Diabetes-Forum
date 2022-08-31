@@ -16,20 +16,9 @@ export default function Contact() {
         e.target.reset()
     }
 
-    function BackImage() {
-        return (
-          <img className='background-image-contact' 
-          src={"/images/background.jpg"} 
-          alt='backgroundimgcontact'/>
-        )
-      }
-
-
-
     return(
         <div>
             <div>
-            <BackImage />
             <form onSubmit={sendEmail}>
                         <div className="name-holder">
                             <input type="text" className="form-control" placeholder="Nazwa użytkownika" required name="name"/>

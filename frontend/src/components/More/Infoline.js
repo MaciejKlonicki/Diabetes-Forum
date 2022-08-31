@@ -49,7 +49,7 @@ function Infoline() {
               <b>Ascensia Diabetes Care</b><br/>
               <b>800 999 090</b><br />
               infolinia bezpłatna z komórek:<br/> 
-              <b>22 8820 900</b> opłata wg. taryfy operatora
+              22 8820 900 opłata wg. taryfy operatora
           </p>
       </div>
     );

@@ -4,19 +4,22 @@ import com.maciejklonicki.org.backend.model.Role;
 import com.maciejklonicki.org.backend.model.Users;
 import com.maciejklonicki.org.backend.service.RoleService;
 import com.maciejklonicki.org.backend.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @SpringBootApplication
 public class BackendApplication implements CommandLineRunner {
 
-	@Autowired
-	private UserService userService;
+	private final UserService userService;
 
-	@Autowired
-	private RoleService roleService;
+	private final RoleService roleService;
+
+	public BackendApplication(UserService userService, RoleService roleService) {
+		this.userService = userService;
+		this.roleService = roleService;
+	}
 
 	public static void main(String[] args) {
 		SpringApplication.run(BackendApplication.class, args);
@@ -32,9 +35,9 @@ public class BackendApplication implements CommandLineRunner {
 		users.setFirstName("Maciej");
 		users.setSecondName("Klonicki");
 		users.setEmail("test@test.com");
-		users.setPassword("test");
+		users.setPassword(new BCryptPasswordEncoder().encode("test"));
 		users.setPhoneNumber("123456789");
-		users.setRole(roleService.findSingleRole(1));
+		users.setRole(roleService.findSingleRole(2));
 		userService.addNewUser(users);
 	}
 }

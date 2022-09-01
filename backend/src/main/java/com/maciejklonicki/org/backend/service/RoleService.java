@@ -1,12 +1,12 @@
 package com.maciejklonicki.org.backend.service;
 
 import com.maciejklonicki.org.backend.model.Role;
-import com.maciejklonicki.org.backend.model.Users;
 import com.maciejklonicki.org.backend.repository.RoleRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -19,23 +19,22 @@ public class RoleService {
     }
 
     //getting single user
-    public Role findSingleRole (Integer id) {
-        return roleRepository.findById(id).orElseThrow();
+    public Optional<Role> findById (Long id) {
+        return roleRepository.findById(id);
     }
 
     //adding new user
-    public Role addNewRole (Role role) {
-        roleRepository.save(role);
-        return role;
+    public Role saveOrUpdate (Role role) {
+        return roleRepository.saveAndFlush(role);
     }
 
     //delete user
-    public void deleteRole (Integer id) {
+    public void deleteRole (Long id) {
         roleRepository.deleteById(id);
     }
 
     //update user
-    public Role updateRole (Role roleDetails, Integer roleID) {
+    public Role updateRole (Role roleDetails, Long roleID) {
         Role role = roleRepository.findById(roleID).get();
         role.setName(roleDetails.getName());
         role.setUsers(roleDetails.getUsers());

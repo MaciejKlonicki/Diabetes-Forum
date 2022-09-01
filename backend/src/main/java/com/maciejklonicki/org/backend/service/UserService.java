@@ -17,7 +17,7 @@ public class UserService {
     }
 
     //getting single user
-    public Users findSingleUser (Integer id) {
+    public Users findSingleUser (Long id) {
         return userRepository.findById(id).orElseThrow();
     }
 
@@ -28,18 +28,17 @@ public class UserService {
     }
 
     //delete user
-    public void deleteUser (Integer id) {
+    public void deleteUser (Long id) {
         userRepository.deleteById(id);
     }
 
     //update user
-    public Users updateUser (Users usersDetails, Integer userID) {
+    public Users updateUser (Users usersDetails, Long userID) {
         Users users = userRepository.findById(userID).get();
-        users.setFirstName(usersDetails.getFirstName());
-        users.setSecondName(usersDetails.getSecondName());
+        users.setName(usersDetails.getName());
         users.setEmail(usersDetails.getEmail());
         users.setPassword(usersDetails.getPassword());
-        users.setPhoneNumber(usersDetails.getPhoneNumber());
+        users.setMobile(usersDetails.getMobile());
 
         return userRepository.save(users);
     }

@@ -1,29 +1,27 @@
 package com.maciejklonicki.org.backend.model;
 
-import lombok.AllArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import com.sun.istack.NotNull;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Table(name = "role")
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
 public class Role {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    @GeneratedValue
+    private Long id;
 
-    @Column(nullable = false)
+    @NotNull
     private String name;
 
     @OneToMany(targetEntity = Users.class, mappedBy = "role",
         fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JsonManagedReference
     private Set<Users> users;
 }

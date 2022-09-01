@@ -21,7 +21,7 @@ public class UserController {
         return userService.findAllUsers();
     }
     @GetMapping("/{id}")
-    ResponseEntity<?> getSingleUser(@PathVariable Integer id) {
+    ResponseEntity<?> getSingleUser(@PathVariable Long id) {
         Optional<Users> users = Optional.ofNullable(userService.findSingleUser(id));
         return users.map(response -> ResponseEntity.ok().body(response))
                 .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
@@ -33,12 +33,12 @@ public class UserController {
                 .body(result);
     }
     @DeleteMapping("/{id}")
-    public ResponseEntity<?> deleteUser(@PathVariable Integer id) {
+    public ResponseEntity<?> deleteUser(@PathVariable Long id) {
         userService.deleteUser(id);
         return ResponseEntity.ok().build();
     }
     @PutMapping("/{id}")
-    Users updateUser (@RequestBody Users users, @PathVariable(value = "id") Integer id) {
+    Users updateUser (@RequestBody Users users, @PathVariable(value = "id") Long id) {
         return userService.updateUser(users,id);
     }
 }

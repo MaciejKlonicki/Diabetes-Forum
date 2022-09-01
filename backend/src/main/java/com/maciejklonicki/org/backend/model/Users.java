@@ -1,39 +1,36 @@
 package com.maciejklonicki.org.backend.model;
 
-import lombok.AllArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.sun.istack.NotNull;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
 
 @Entity
-@Table (name = "users")
 @Getter
 @Setter
-@NoArgsConstructor
-@AllArgsConstructor
 public class Users {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    @GeneratedValue
+    private Long id;
 
-    @Column(nullable = false)
-    private String firstName;
+    @NotNull
+    private String name;
 
-    @Column(nullable = false)
-    private String secondName;
-
+    @NotNull
     private String email;
 
-    @Column(nullable = false)
-    private String password;
+    @NotNull
+    private String mobile;
 
-    private String phoneNumber;
+    @NotNull
+    private String password;
 
     @ManyToOne
     @JoinColumn(name = "role_id")
+    @JsonBackReference
     private Role role;
 
 }

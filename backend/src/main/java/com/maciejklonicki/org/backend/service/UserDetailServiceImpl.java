@@ -17,7 +17,7 @@ import java.util.Collection;
 
 @Service
 @RequiredArgsConstructor
-public class UserDetailService implements UserDetailsService {
+public class UserDetailServiceImpl implements UserDetailsService {
 
     private final UserRepository userRepository;
 
@@ -27,7 +27,8 @@ public class UserDetailService implements UserDetailsService {
         if (users == null) {
             throw new UsernameNotFoundException("Email " + email + " not found");
         }
-        return new User(users.getEmail(), users.getPassword(), getGrantedAuthority(users));
+        return new org.springframework.security.core.userdetails.User(users.getEmail(), users.getPassword(), getGrantedAuthority(users));
+
     }
 
     private Collection<GrantedAuthority> getGrantedAuthority(Users users) {

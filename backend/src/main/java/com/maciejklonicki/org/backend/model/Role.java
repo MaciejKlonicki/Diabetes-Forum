@@ -6,34 +6,24 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
-@Table (name = "users")
+@Table(name = "role")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Users {
+public class Role {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @Column(nullable = false)
-    private String firstName;
+    private String name;
 
-    @Column(nullable = false)
-    private String secondName;
-
-    private String email;
-
-    @Column(nullable = false)
-    private String password;
-
-    private String phoneNumber;
-
-    @ManyToOne
-    @JoinColumn(name = "role_id")
-    private Role role;
-
+    @OneToMany(targetEntity = Users.class, mappedBy = "role",
+        fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private Set<Users> users;
 }

@@ -24,16 +24,23 @@ public class BackendApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Role role = new Role();
-		role.setName("admin");
-		roleService.saveOrUpdate(role);
+		roleService.saveOrUpdate(new Role(66L, "admin"));
+		roleService.saveOrUpdate(new Role(65L, "user"));
 
-		Users users = new Users();
-		users.setEmail("test@test.com");
-		users.setName("Test User");
-		users.setMobile("123456789");
-		users.setRole(roleService.findById(52L).get());
-		users.setPassword(new BCryptPasswordEncoder().encode("test"));
-		userService.addNewUser(users);
+//		Users users1 = new Users();
+//		users1.setEmail("test@user.com");
+//		users1.setName("Test User");
+//		users1.setMobile("123456789");
+//		users1.setRole(roleService.findById(65L).get());
+//		users1.setPassword(new BCryptPasswordEncoder().encode("testuser"));
+//		userService.addNewUser(users1);
+//
+//		Users users2 = new Users();
+//		users2.setEmail("test@admin.com");
+//		users2.setName("Test Admin");
+//		users2.setMobile("123456789");
+//		users2.setRole(roleService.findById(66L).get());
+//		users2.setPassword(new BCryptPasswordEncoder().encode("testadmin"));
+//		userService.addNewUser(users2);
 	}
 }

@@ -3,10 +3,12 @@ package com.maciejklonicki.org.backend.service;
 import com.maciejklonicki.org.backend.model.Users;
 import com.maciejklonicki.org.backend.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
+@Component
 @RequiredArgsConstructor
 public class UserService {
     private final UserRepository userRepository;
@@ -23,7 +25,7 @@ public class UserService {
 
     //adding new user
     public Users addNewUser (Users users) {
-        userRepository.save(users);
+        userRepository.saveAndFlush(users);
         return users;
     }
 

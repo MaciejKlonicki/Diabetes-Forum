@@ -24,14 +24,14 @@ public class BackendApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		roleService.saveOrUpdate(new Role(66L, "admin"));
-		roleService.saveOrUpdate(new Role(65L, "user"));
+		roleService.saveOrUpdate(new Role(91L, "admin"));
+		roleService.saveOrUpdate(new Role(92L, "user"));
 
 //		Users users1 = new Users();
 //		users1.setEmail("test@user.com");
 //		users1.setName("Test User");
 //		users1.setMobile("123456789");
-//		users1.setRole(roleService.findById(65L).get());
+//		users1.setRole(roleService.findById(92L).get());
 //		users1.setPassword(new BCryptPasswordEncoder().encode("testuser"));
 //		userService.addNewUser(users1);
 //
@@ -39,7 +39,7 @@ public class BackendApplication implements CommandLineRunner {
 //		users2.setEmail("test@admin.com");
 //		users2.setName("Test Admin");
 //		users2.setMobile("123456789");
-//		users2.setRole(roleService.findById(66L).get());
+//		users2.setRole(roleService.findById(91L).get());
 //		users2.setPassword(new BCryptPasswordEncoder().encode("testadmin"));
 //		userService.addNewUser(users2);
 	}

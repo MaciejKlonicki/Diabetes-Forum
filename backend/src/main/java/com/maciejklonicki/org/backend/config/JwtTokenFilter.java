@@ -1,7 +1,11 @@
 package com.maciejklonicki.org.backend.config;
 
+import io.jsonwebtoken.Claims;
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.filter.OncePerRequestFilter;
 
@@ -10,33 +14,46 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.Date;
 
 public class JwtTokenFilter extends OncePerRequestFilter {
 
+    private static Logger log = LoggerFactory.getLogger(JwtTokenFilter.class);
+
     private final JwtTokenProvider tokenProvider;
+    private Authentication authentication;
 
     public JwtTokenFilter(JwtTokenProvider tokenProvider) {
         this.tokenProvider = tokenProvider;
     }
 
     @Override
-    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+    public void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+        log.info("JwtTokenFilter : doFilterInternal");
         String token = request.getHeader("Authorization");
-
-        try {
-            if (token != null && tokenProvider.validateToken(token)) {
-                SecurityContextHolder.getContext().setAuthentication(tokenProvider.getAuthentication(token));
-            }
-        } catch (RuntimeException e) {
-            SecurityContextHolder.clearContext();
-            response.setContentType("application/json");
-            response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+        if (token != null) {
             try {
-                response.getWriter().println(new JSONObject().put("exception", "expired or invalid JWT token " + e.getMessage()));
-            } catch (IOException | JSONException e1) {
-                e1.printStackTrace();
+                Claims claims = tokenProvider.getClaimsFromToken(token);
+                if (!claims.getExpiration().before(new Date())) {
+                    authentication = tokenProvider.getAuthentication(claims.getSubject());
+                    if (authentication.isAuthenticated()) {
+                        SecurityContextHolder.getContext().setAuthentication(authentication);
+                    }
+                }
+            } catch (RuntimeException e) {
+                try {
+                    SecurityContextHolder.clearContext();
+                    response.setContentType("application/json");
+                    response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
+                    response.getWriter().println(
+                            new JSONObject().put("exception", "expired or invalid JWT token " + e.getMessage()));
+                } catch (IOException | JSONException e1) {
+                    e1.printStackTrace();
+                }
+                return;
             }
-            return;
+        } else {
+            log.info("authenticate method");
         }
         filterChain.doFilter(request, response);
     }

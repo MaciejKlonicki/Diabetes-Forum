@@ -5,6 +5,7 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -12,6 +13,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
+import java.io.Serial;
 import java.io.Serializable;
 import java.util.Base64;
 import java.util.Date;
@@ -22,8 +24,10 @@ public class JwtTokenProvider implements Serializable {
 
     private final UserDetailsService userDetailsService;
 
+    @Serial
     private static final long serialVersionUID = 3538567818657403754L;
-    private String secretKey = "skay";
+    @Value("${jwt.secret-key}")
+    private String secretKey;
 
     @PostConstruct
     protected void init () {
@@ -35,20 +39,18 @@ public class JwtTokenProvider implements Serializable {
         claims.put("auth", role);
 
         Date now = new Date();
-        long validityInMilliseconds = 10 * 2500 * 2050;
+        long validityInMilliseconds = 50 * 60 * 60;
         return Jwts.builder().setClaims(claims).setIssuedAt(now)
                 .setExpiration(new Date(now.getTime() + validityInMilliseconds))
                 .signWith(SignatureAlgorithm.HS256, secretKey).compact();
     }
 
-    public Authentication getAuthentication (String token) {
-        String username = Jwts.parser().setSigningKey(secretKey).parseClaimsJws(token).getBody().getSubject();
+    public Authentication getAuthentication (String username) {
         UserDetails userDetails = userDetailsService.loadUserByUsername(username);
         return new UsernamePasswordAuthenticationToken(userDetails, "", userDetails.getAuthorities());
     }
 
-    public boolean validateToken (String token) {
-        Jwts.parser().setSigningKey(secretKey).parseClaimsJws(token).getBody();
-        return true;
+    public Claims getClaimsFromToken (String token) {
+        return Jwts.parser().setSigningKey(secretKey).parseClaimsJws(token).getBody();
     }
 }

@@ -8,4 +8,8 @@ Forum for diabetes - all about: treatment, daily life, equipment, curiosities, i
 - Easy interface of the page. 
 - Login and registration system ( on works )
 - Contact form to send an email to the page administration.
+- Admin and User role.
+- More options available for admin than user.
+- JWT Token applied.
+- Spring security applied.
 

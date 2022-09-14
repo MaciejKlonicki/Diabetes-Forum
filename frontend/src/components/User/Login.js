@@ -52,20 +52,21 @@ class Login extends Component {
                     <FontAwesomeIcon icon={faSignInAlt} /> Login
                 </Card.Header>
                 <Card.Body>
-                    <Form as={Col}>
+                    <Form>
                         <InputGroup>
                             <InputGroup.Text><FontAwesomeIcon icon={faEnvelope}/></InputGroup.Text>
-                        </InputGroup>
                         <FormControl required autoComplete='off' type='text' name='email' value={email} onChange={this.credentialChange}
                             className={"bg-dark text-white"} placeholder="Enter Email Address"/>
+                        </InputGroup>
                     </Form>
                     <br></br>
                     <Form as={Col}>
                         <InputGroup>
                             <InputGroup.Text><FontAwesomeIcon icon={faLock} /></InputGroup.Text>
-                        </InputGroup>
+                        
                         <FormControl required autoComplete='off' type='password' name='password' value={password} onChange={this.credentialChange}
                             className={"bg-dark text-white"} placeholder="Enter Password"/>
+                        </InputGroup>
                     </Form>
                 </Card.Body>
                 <Card.Footer style={{"textAlign":"right"}}>

@@ -27,23 +27,3 @@
       transform: scale(1.1);
       transition: all 0.2s ease-out;
     }
-  
-    @media screen and (max-width: 960px) {
-      .movedown-menu-medicaments {
-          background: rgb(0, 0, 0);
-          position: absolute;
-          width: 80px;
-          top: 50px;
-          right: 590px;
-          list-style: none;
-          text-align: center;
-          border-bottom-right-radius: 5px;
-          border-bottom-left-radius: 5px;
-          font-size: 15px;
-          font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-  
-        .movedown-link-medicaments {
-          font-size: 12px;
-        }
-    }

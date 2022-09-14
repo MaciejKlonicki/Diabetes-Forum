@@ -27,23 +27,3 @@
     transform: scale(1.1);
     transition: all 0.2s ease-out;
   }
-
-  @media screen and (max-width: 960px) {
-    .movedown-menu-diabetes {
-        background: rgb(0, 0, 0);
-        position: absolute;
-        width: 85px;
-        top: 50px;
-        right: 675px;
-        list-style: none;
-        text-align: center;
-        border-bottom-right-radius: 5px;
-        border-bottom-left-radius: 5px;
-        font-size: 15px;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      }
-
-      .movedown-link-diabetes {
-        font-size: 12px;
-      }
-  }

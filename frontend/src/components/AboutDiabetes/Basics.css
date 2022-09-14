@@ -6,14 +6,3 @@
   font-size: 21px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-@media screen and (max-width: 900px) {
-  .p-basics {
-    color: rgb(255, 255, 255);
-    position: relative;
-    font-weight: 100;
-    top: 30px;
-    font-size: 17px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-}

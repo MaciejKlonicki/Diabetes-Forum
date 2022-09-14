@@ -15,7 +15,7 @@
 
  .footer-button-contact {
     position: relative;
-    left: 600px;
+    left: 530px;
     display: inline-block;
     padding: 0.4em 1.7em;
     margin: 0 0.1em 0.1em 0;
@@ -38,32 +38,6 @@
     background-color: rgb(255, 255, 255);
   }
 
-  .footer-button-contact-users {
-    position: relative;
-    left: 350px;
-    display: inline-block;
-    padding: 0.4em 1.7em;
-    margin: 0 0.1em 0.1em 0;
-    border: 0.16em solid rgb(255, 255, 255);
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    color: #ffffff;
-    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
-    text-align: center;
-    background-color: black;
-    transition: all 0.5s;
-    border-radius: 2em;
-    cursor: pointer;
-  }
-
-  .footer-button-contact-users:hover {
-    color: black;
-    background-color: rgb(255, 255, 255);
-  }
-
-
   .movedown-menu-more {
     background: rgb(0, 0, 0);
     position: absolute;
@@ -80,31 +54,4 @@
 
   .movedown-link-more {
     font-size: 12px;
-  }
-
-  @media screen and (max-width: 900px) {
-
-    .footer-button-contact {
-      position: relative;
-      left: 110px;
-      display: inline-block;
-      padding: 0.5em 1.7em;
-      margin: 0 0.1em 0.1em 0;
-      border: 0.16em solid rgb(255, 255, 255);
-      box-sizing: border-box;
-      text-decoration: none;
-      font-family: "Roboto", sans-serif;
-      font-weight: 400;
-      color: #ffffff;
-      text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
-      text-align: center;
-      background-color: black;
-      transition: all 0.5s;
-      border-radius: 2em;
-      }
-    
-      .footer-button-contact:hover {
-        color: black;
-        background-color: rgb(255, 255, 255);
-      }
   }

@@ -26,22 +26,3 @@
     transform: scale(1.1);
     transition: all 0.2s ease-out;
   }
-
-  @media screen and (max-width: 960px) {
-    .movedown-menu-more {
-        background: rgb(0, 0, 0);
-        position: absolute;
-        min-width: 80px;
-        top: 50px;
-        left: 325px;
-        list-style: none;
-        text-align: center;
-        border-bottom-right-radius: 5px;
-        border-bottom-left-radius: 5px;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      }
-
-      .movedown-link-more {
-        font-size: 12px;
-      }
-  }

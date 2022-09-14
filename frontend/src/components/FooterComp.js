@@ -15,7 +15,6 @@ class FooterComp extends Component {
     const userLinks = (
       <>
         <Link to="/kontakt"><button className="footer-button-contact">Kontakt</button></Link>
-        <Link to="/lista-uzytkownikow"><button className="footer-button-contact-users">Użytkownicy</button></Link>
       </>
     );
 

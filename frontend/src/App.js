@@ -19,7 +19,6 @@ import Depression from './components/Advices/Depression';
 import Curiosities from './components/More/Curiosities';
 import Infoline from './components/More/Infoline';
 import Calculator from './components/Home/Calculator';
-import UserList from './components/User/UserList';
 import Login from './components/User/Login';
 import Register from './components/User/Register';
 
@@ -59,7 +58,6 @@ function App() {
         <Route path='/kalkulator' exact component={Calculator} />
         <Route path='/logowanie' exact component={Login}/>
         <Route path='/rejestracja' exact component={Register}/>
-        <Route path='/lista-uzytkownikow' exact component ={UserList} />
       </Switch>
       <FooterComp />
       </Router>

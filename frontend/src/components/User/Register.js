@@ -11,6 +11,8 @@ class Register extends Component {
     constructor(props) {
         super(props);
         this.state = this.initialState;
+        this.state.show = false;
+        this.state.message = '';
     }
 
     initialState = {
@@ -27,16 +29,20 @@ class Register extends Component {
         let userObject = {
             name: this.state.name,
             email: this.state.email,
-            password: this.state.password,
-            mobile: this.state.contact
+            mobile: this.state.contact,
+            password: this.state.password
         };
         this.props.registerUser(userObject);
         this.resetRegisterForm();
         setTimeout(() => {
             if(this.props.user.message != null) {
-                
+                this.setState({ show: true, message: this.props.user.message});
+                setTimeout(() => {
+                    this.setState({show: false});
+                    this.props.history.push("/logowanie");
+                }, 3000);
             } else {
-
+                this.setState({show: false});
             }
         }, 2000);
     };

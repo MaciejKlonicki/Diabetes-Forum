@@ -35,7 +35,7 @@ public class UserResourceImpl {
 
     private final RoleRepository roleRepository;
 
-    @PostMapping(value = "/register", produces = MediaType.APPLICATION_JSON_VALUE)
+    @PostMapping(value = "/register", consumes = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<String> register(@RequestBody Users users) {
         log.info("UserResourceImpl : register");
         JSONObject jsonObject = new JSONObject();
@@ -43,7 +43,7 @@ public class UserResourceImpl {
             users.setPassword(new BCryptPasswordEncoder().encode(users.getPassword()));
             users.setRole(roleRepository.findByName(ConstantUtils.USER.toString()));
             Users savedUsers = userRepository.saveAndFlush(users);
-            jsonObject.put("message", savedUsers.getName() + "saved succesfully");
+            jsonObject.put("message", savedUsers.getName() + " saved succesfully");
             return new ResponseEntity<>(jsonObject.toString(), HttpStatus.OK);
         } catch (JSONException e) {
             try {

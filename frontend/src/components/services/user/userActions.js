@@ -18,7 +18,7 @@ export const fetchUsers = () => {
 export const registerUser = (userObject) => {
     return dispatch => {
         dispatch(userRequest());
-        axios.post("http://localhost:8080/rest/users/register", userObject)
+        axios.post("http://localhost:8080/users/register", userObject)
         .then(response => {
             dispatch({
                 type: UT.USER_SAVED_SUCCESS,

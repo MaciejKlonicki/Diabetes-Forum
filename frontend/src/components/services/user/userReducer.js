@@ -19,7 +19,7 @@ const reducer = (state = initialState, action) => {
         case UT.USER_SAVED_SUCCESS:
             return {
                 message: action.payload,
-                error:''
+                error: ''
             }
         case UT.USER_FAILURE:
             return {

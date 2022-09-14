@@ -4,6 +4,7 @@ import com.maciejklonicki.org.backend.model.Role;
 import com.maciejklonicki.org.backend.model.Users;
 import com.maciejklonicki.org.backend.service.RoleService;
 import com.maciejklonicki.org.backend.service.UserService;
+import com.maciejklonicki.org.backend.utils.ConstantUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -24,23 +25,23 @@ public class BackendApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		roleService.saveOrUpdate(new Role(91L, "admin"));
-		roleService.saveOrUpdate(new Role(92L, "user"));
+		roleService.saveOrUpdate(new Role(ConstantUtils.ADMIN.toString()));
+		roleService.saveOrUpdate(new Role(ConstantUtils.USER.toString()));
 
-//		Users users1 = new Users();
-//		users1.setEmail("test@user.com");
-//		users1.setName("Test User");
-//		users1.setMobile("123456789");
-//		users1.setRole(roleService.findById(92L).get());
-//		users1.setPassword(new BCryptPasswordEncoder().encode("testuser"));
-//		userService.addNewUser(users1);
-//
-//		Users users2 = new Users();
-//		users2.setEmail("test@admin.com");
-//		users2.setName("Test Admin");
-//		users2.setMobile("123456789");
-//		users2.setRole(roleService.findById(91L).get());
-//		users2.setPassword(new BCryptPasswordEncoder().encode("testadmin"));
-//		userService.addNewUser(users2);
+		Users users1 = new Users();
+		users1.setEmail("test@user.com");
+		users1.setName("Test User");
+		users1.setMobile("123456789");
+		users1.setRole(roleService.findByName(ConstantUtils.USER.toString()));
+		users1.setPassword(new BCryptPasswordEncoder().encode("testuser"));
+		userService.addNewUser(users1);
+
+		Users users2 = new Users();
+		users2.setEmail("test@admin.com");
+		users2.setName("Test Admin");
+		users2.setMobile("123456789");
+		users2.setRole(roleService.findByName(ConstantUtils.ADMIN.toString()));
+		users2.setPassword(new BCryptPasswordEncoder().encode("testadmin"));
+		userService.addNewUser(users2);
 	}
 }

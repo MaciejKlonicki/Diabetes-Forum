@@ -5,6 +5,7 @@ import {connect} from 'react-redux';
 
 class Body extends Component {
 
+
   render(){
 
     const guestLinks = (

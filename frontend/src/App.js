@@ -24,6 +24,16 @@ import Login from './components/User/Login';
 
 
 function App() {
+
+  window.onbeforeunload = (event) => {
+    const e = event || window.event;
+    e.preventDefault();
+    if (e) {
+      e.returnValue = '';
+    }
+    return '';
+  };
+
   return (
     <Router>
       <HeaderComp />

@@ -100,7 +100,7 @@
       border: 0.16em solid rgb(255, 255, 255);
       box-sizing: border-box;
       text-decoration: none;
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family:Arial, Helvetica, sans-serif;
       color: #ffffff;
       text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
       text-align: center;
@@ -124,7 +124,7 @@
     border: 0.16em solid rgb(255, 255, 255);
     box-sizing: border-box;
     text-decoration: none;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     color: #ffffff;
     text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
     text-align: center;
@@ -147,7 +147,7 @@
     border: 0.16em solid rgb(255, 255, 255);
     box-sizing: border-box;
     text-decoration: none;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     color: #ffffff;
     text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
     text-align: center;
@@ -164,20 +164,13 @@
 
   .header-button-login {
       position: relative;
-      left: 650px;
-      display: inline-block;
+      left: 680px;
       padding: 0.15em 0.7em;
-      margin: 0 0.1em 0.1em 0;
-      border: 0.16em solid rgb(255, 255, 255);
-      box-sizing: border-box;
-      text-decoration: none;
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      border: 0.15em solid rgb(255, 255, 255);
+      font-family: Arial, Helvetica, sans-serif;
       color: #ffffff;
-      text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
-      text-align: center;
-      background-color: black;
       transition: all 0.5s;
-      border-radius: 2em;
+      border-radius: 1em;
       cursor: pointer;
   }
 
@@ -195,7 +188,7 @@
       border: 0.16em solid rgb(255, 255, 255);
       box-sizing: border-box;
       text-decoration: none;
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family:Arial, Helvetica, sans-serif;
       color: #ffffff;
       text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
       text-align: center;

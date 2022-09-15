@@ -19,7 +19,7 @@
         android:id="@+id/etDiabetesMobileAppTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Wpisz tytuł"
+        android:hint="DD/MM - hh:mm - cukier"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnDiabetesMobileAppAdd"
         app:layout_constraintStart_toStartOf="parent" />

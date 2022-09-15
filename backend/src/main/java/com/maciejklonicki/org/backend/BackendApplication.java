@@ -25,8 +25,8 @@ public class BackendApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		roleService.saveOrUpdate(new Role(ConstantUtils.ADMIN.toString()));
-		roleService.saveOrUpdate(new Role(ConstantUtils.USER.toString()));
+//		roleService.saveOrUpdate(new Role(ConstantUtils.ADMIN.toString()));
+//		roleService.saveOrUpdate(new Role(ConstantUtils.USER.toString()));
 
 //		Users users1 = new Users();
 //		users1.setEmail("test@user.com");

@@ -5,6 +5,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faSignInAlt, faEnvelope, faLock, faUndo} from '@fortawesome/free-solid-svg-icons';
 import './Login.css';
 import {authenticateUser} from '../services/index'
+import { Link } from 'react-router-dom';
 
 class Login extends Component {
 
@@ -30,7 +31,7 @@ class Login extends Component {
                 return this.props.history.push("/");
             } else {
                 this.resetLoginForm();
-                this.setState({"error":"Invalid email and password"});
+                this.setState({"error":"Niepoprawne dane do logowania"});
             }
         }, 500);
     };
@@ -56,7 +57,7 @@ class Login extends Component {
                         <InputGroup>
                             <InputGroup.Text><FontAwesomeIcon icon={faEnvelope}/></InputGroup.Text>
                         <FormControl required autoComplete='off' type='text' name='email' value={email} onChange={this.credentialChange}
-                            className={"bg-dark text-white"} placeholder="Enter Email Address"/>
+                            className={"bg-dark text-white"} placeholder="Wpisz adres mailowy"/>
                         </InputGroup>
                     </Form>
                     <br></br>
@@ -65,13 +66,13 @@ class Login extends Component {
                             <InputGroup.Text><FontAwesomeIcon icon={faLock} /></InputGroup.Text>
                         
                         <FormControl required autoComplete='off' type='password' name='password' value={password} onChange={this.credentialChange}
-                            className={"bg-dark text-white"} placeholder="Enter Password"/>
+                            className={"bg-dark text-white"} placeholder="Wpisz hasło"/>
                         </InputGroup>
                     </Form>
                 </Card.Body>
                 <Card.Footer style={{"textAlign":"right"}}>
                     <Button size="sm" type="button" variant="success" onClick={this.validateUser}
-                    disabled={this.state.length===0 || this.state.password.length===0}>
+                    disabled={this.state.email.length===0 || this.state.password.length===0}>
                         <FontAwesomeIcon icon={faSignInAlt}/> Login
                     </Button>{' '}
                     <Button size="sm" type="button" variant="info" onClick={this.resetLoginForm} 
@@ -79,6 +80,7 @@ class Login extends Component {
                         <FontAwesomeIcon icon={faUndo}/> Reset
                     </Button>
                 </Card.Footer>
+                <p style={{"padding-left": "2%"}}>Nie masz konta? <Link to="/rejestracja">Zarejestruj się</Link></p>
             </Card>
         </Col>
       </Row>

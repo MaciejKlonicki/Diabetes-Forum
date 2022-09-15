@@ -96,8 +96,8 @@ class HeaderComp extends Component {
       <Link to='/' className='header-logo-logout'>
       <img src='/images/sugar-blood-level.png' alt='sugar-logo'/>
       </Link>
-      <a href="/logowanie"><button className="header-button-login btn">Logowanie</button></a>
-      <a href="/rejestracja"><button className="header-button-registration btn">Rejestracja</button></a>
+      <Link to="/logowanie"><button className="header-button-login btn">Logowanie</button></Link>
+      <Link to="/rejestracja"><button className="header-button-registration btn">Rejestracja</button></Link>
     </>
   );
 

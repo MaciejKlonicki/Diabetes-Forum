@@ -1,6 +1,6 @@
 .cards-image-information {
   background-color: rgba(0, 0, 0, 0.37);
-  border: 3px solid #000000;
+  border: 2px solid #000000;
   position: fixed;
   top: 50%;
   left: 200px;
@@ -9,12 +9,12 @@
   transform: translate(-50%, -50%);
   z-index: 1;
   text-align: center;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(2px);
 }
 
 .cards-image-food {
   background-color: rgba(0, 0, 0, 0.37);
-  border: 3px solid #000000;
+  border: 2px solid #000000;
   position: fixed;
   top: 50%;
   left: 635px;
@@ -23,12 +23,12 @@
   transform: translate(-50%, -50%);
   z-index: 1;
   text-align: center;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(2px);
 }
 
 .cards-image-calculator {
   background-color: rgba(0, 0, 0, 0.37);
-  border: 3px solid #000000;
+  border: 2px solid #000000;
   position: fixed;
   top: 50%;
   left: 1070px;
@@ -37,12 +37,12 @@
   transform: translate(-50%, -50%);
   z-index: 1;
   text-align: center;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(2px);
 }
 
 .cards-image-login {
   background-color: rgba(0, 0, 0, 0.37);
-  border: 3px solid #000000;
+  border: 2px solid #000000;
   position: fixed;
   top: 50%;
   left: 1505px;
@@ -51,12 +51,12 @@
   transform: translate(-50%, -50%);
   z-index: 1;
   text-align: center;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(2px);
 }
 
 .cards-image-curiosities {
   background-color: rgba(0, 0, 0, 0.37);
-  border: 3px solid #000000;
+  border: 2px solid #000000;
   position: fixed;
   top: 50%;
   left: 1505px;
@@ -65,7 +65,7 @@
   transform: translate(-50%, -50%);
   z-index: 1;
   text-align: center;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(2px);
 }
 
 .photo_cards {
@@ -73,10 +73,9 @@
   width: 350px;
   position:relative;
   top: 11%;
-  border: 2px solid #000000;
+  border: 1.5px solid #000000;
   opacity: 0.9;
   transition: all 0.5s ease;
-  border-radius: 20px;
 }
 
 .photo_cards:hover {
@@ -87,7 +86,6 @@
     position: relative;
     top: 20px;
     font-size: 21px;
-    font-weight: 400;
     font-family:'Arial black';
     text-transform: uppercase;
     letter-spacing: 18px;

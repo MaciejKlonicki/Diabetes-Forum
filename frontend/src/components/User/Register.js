@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faLock, faUndo,faUserPlus, faUser } from '@fortawesome/free-solid-svg-icons';
 import './Register.css';
 import {registerUser} from '../services/index'
+import { Link } from 'react-router-dom';
 
 class Register extends Component {
 
@@ -67,40 +68,41 @@ class Register extends Component {
                             <InputGroup>
                                 <InputGroup.Text><FontAwesomeIcon icon={faUser}/></InputGroup.Text>
                                 <FormControl autoComplete='off' type='text' name='name' value={name} onChange={this.userChange}
-                                className={"bg-dark text-white"} placeholder="Enter name" />
+                                className={"bg-dark text-white"} placeholder="Nazwa użytkownika" />
                             </InputGroup>
                         </Form><br></br>
                         <Form>
                             <InputGroup>
                                 <InputGroup.Text><FontAwesomeIcon icon={faEnvelope}/></InputGroup.Text>
                                 <FormControl required autoComplete='off' type='text' name='email' value={email} onChange={this.userChange}
-                                className={"bg-dark text-white"} placeholder="Enter email address" />
+                                className={"bg-dark text-white"} placeholder="Adres mailowy" />
                             </InputGroup>
                         </Form><br></br>
                         <Form>
                             <InputGroup>
                                 <InputGroup.Text><FontAwesomeIcon icon={faLock}/></InputGroup.Text>
                                 <FormControl required autoComplete='off' type='password' name='password' value={password} onChange={this.userChange}
-                                className={"bg-dark text-white"} placeholder="Enter password" />
+                                className={"bg-dark text-white"} placeholder="Hasło" />
                             </InputGroup>
                         </Form><br></br>
                         <Form>
                             <InputGroup>
                                 <InputGroup.Text><FontAwesomeIcon icon={faPhone}/></InputGroup.Text>
                                 <FormControl autoComplete='off' type='text' name='contact' value={contact} onChange={this.userChange}
-                                className={"bg-dark text-white"} placeholder="Enter phone number" />
+                                className={"bg-dark text-white"} placeholder="Numer telefonu" />
                             </InputGroup>
                         </Form><br></br>
                     </Card.Body>
                     <Card.Footer style={{"textAlign":"right"}}>
                         <Button size="sm" type="button" variant="success" onClick={this.registerUser}
                         disabled={this.state.email.length === 0 || this.state.password.length === 0}>
-                            <FontAwesomeIcon icon={faUserPlus}/> Register
+                            <FontAwesomeIcon icon={faUserPlus}/> Rejestracja
                         </Button>{' '}
                         <Button size="sm" type="button" variant="info" onClick={this.resetRegisterForm}>
                         <FontAwesomeIcon icon={faUndo}/> Reset
                         </Button>
                     </Card.Footer>
+                    <p style={{"padding-left": "2%"}}>Masz już konto? <Link to="/logowanie">Zaloguj się</Link></p>
                 </Card>
             </Col>
         </Row>

@@ -30,9 +30,9 @@ function CuriositiesInformationFat(props) {
           <img
             src={props.img}
             alt='Curiosities-fat'
-            className='curiosities-photo-fat'
+            className='curiosities-photo'
           />
-          <div className="image__overlay-curiosities-fat">
+          <div className="image__overlay-curiosities-top">
             <p className="image__description-curiosities-fat">
               Szacuje się, że w samej Polsce nadwagę i otyłość ma prawie 2/3 społeczeństwa.
               Pomimo że otyłość brzuszna to najpoważniejszy czynnik ryzyka wystąpienia cukrzycy typu II, nie oznacza to, że nie dotyka ona osób szczupłych.
@@ -48,10 +48,10 @@ function CuriositiesInformationFat(props) {
           <img
             src={props.img}
             alt='Curiosities-die'
-            className='curiosities-photo-die'
+            className='curiosities-photo'
           />
-          <div className="image__overlay-curiosities-die">
-            <p className="image__description-curiosities-die">
+          <div className="image__overlay-curiosities-top">
+            <p className="image__description-curiosities-top">
               Przewiduje się że liczba zgonów z powodu cukrzycy zwiększy się o 50% w ciągu kolejnych 10 lat.
             </p>
           </div>
@@ -65,10 +65,10 @@ function CuriositiesInformationFat(props) {
           <img
             src={props.img}
             alt='Curiosities-types'
-            className='curiosities-photo-types'
+            className='curiosities-photo'
           />
-          <div className="image__overlay-curiosities-types">
-            <p className="image__description-curiosities-types">
+          <div className="image__overlay-curiosities-top">
+            <p className="image__description-curiosities-top">
               Typ 1 charakteryzuje się
               brakiem produkcji insuliny.
               Drugi typ cukrzycy jest
@@ -86,10 +86,10 @@ function CuriositiesInformationFat(props) {
           <img
             src={props.img}
             alt='Curiosities-pregnant'
-            className='curiosities-photo-pregnant'
+            className='curiosities-photo'
           />
-          <div className="image__overlay-curiosities-pregnant">
-            <p className="image__description-curiosities-pregnant">
+          <div className="image__overlay-curiosities-top">
+            <p className="image__description-curiosities-top">
               Trzeci typ cukrzycy to cukrzyca ciążowa<br />
             </p>
           </div>
@@ -103,10 +103,10 @@ function CuriositiesInformationFat(props) {
           <img
             src={props.img}
             alt='Curiosities-percent'
-            className='curiosities-photo-percent'
+            className='curiosities-photo'
           />
-          <div className="image__overlay-curiosities-percent">
-            <p className="image__description-curiosities-percent">
+          <div className="image__overlay-curiosities-bottom">
+            <p className="image__description-curiosities-bottom">
               Za 50% do 80% zgonów
               wśród osób cierpiących na cukrzycę
               odpowiedzialne są choroby układu krążenia.
@@ -122,10 +122,10 @@ function CuriositiesInformationFat(props) {
           <img
             src={props.img}
             alt='Curiosities-count'
-            className='curiosities-photo-count'
+            className='curiosities-photo'
           />
-          <div className="image__overlay-curiosities-count">
-            <p className="image__description-curiosities-count">
+          <div className="image__overlay-curiosities-bottom">
+            <p className="image__description-curiosities-bottom">
               Cukrzyca spowodowała 4,2 miliona zgonów na całym świecie w 2019 roku.
             </p>
           </div>
@@ -139,10 +139,10 @@ function CuriositiesInformationFat(props) {
           <img
             src={props.img}
             alt='Curiosities-blind'
-            className='curiosities-photo-blind'
+            className='curiosities-photo'
           />
-          <div className="image__overlay-curiosities-blind">
-            <p className="image__description-curiosities-blind">
+          <div className="image__overlay-curiosities-bottom">
+            <p className="image__description-curiosities-bottom">
               Cukrzyca prowadzi do ślepoty, amputacji oraz niewydolności nerek.
             </p>
           </div>
@@ -156,10 +156,10 @@ function CuriositiesInformationFat(props) {
           <img
             src={props.img}
             alt='Curiosities-treatment'
-            className='curiosities-photo-treatment'
+            className='curiosities-photo'
           />
-          <div className="image__overlay-curiosities-treatment">
-            <p className="image__description-curiosities-treatment">
+          <div className="image__overlay-curiosities-bottom">
+            <p className="image__description-curiosities-bottom">
               Obecnie nie ma możliwości wyleczenia cukrzycy.
             </p>
           </div>

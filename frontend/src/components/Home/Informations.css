@@ -5,7 +5,6 @@
   height: 600px;
   width: 380px;
   transform: translate(-50%, -50%);
-  z-index: 1;
   text-align: center;
 }
 
@@ -16,7 +15,6 @@
   height: 600px;
   width: 380px;
   transform: translate(-50%, -50%);
-  z-index: 1;
   text-align: center;
 }
 
@@ -27,61 +25,34 @@
   height: 600px;
   width: 380px;
   transform: translate(-50%, -50%);
-  z-index: 1;
   text-align: center;
 }
 
 .info-photo {
   height: 700px;
   width: 400px;
-  position:relative;
+  position: relative;
   bottom: 10%;
   left: 10%;
-  opacity: 0.9;
   transition: all 0.5s ease;
-  border-radius: 1%;
-  cursor:auto;
-  opacity: 1;
-  border: 3px solid #000000e0;
+  cursor: pointer;
+  border: 2px solid #000000e0;
 }
 
 
 .image__overlay {
   position: absolute;
-  bottom: -7%;
+  bottom: -6.5%;
   left: 10%;
   width: 400px;
-  height: 700px;
+  height: 698px;
   opacity: 0;
-  transition: opacity 0.25s;
+  transition: 1s;
   font-size: 10px;
   background-color: rgba(15, 14, 13, 0.651);
-  border-radius: 2%;
 } 
 
-.h2-position-info {
-  align-items: center;
-  justify-content: center;
-  color: rgb(255, 255, 255);
-  position: absolute;
-  width: 350px;
-  height: 650px;
-  bottom: 0%;
-  left: 15%;
-}
-
-.h2-position-type {
-  align-items: center;
-  justify-content: center;
-  color: rgb(255, 255, 255);
-  position: absolute;
-  width: 350px;
-  height: 650px;
-  bottom: 0%;
-  left: 15%;
-}
-
-.h2-position-treatment {
+.h2-position {
   align-items: center;
   justify-content: center;
   color: rgb(255, 255, 255);

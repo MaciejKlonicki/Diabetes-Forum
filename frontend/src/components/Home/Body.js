@@ -5,9 +5,7 @@ import {connect} from 'react-redux';
 
 class Body extends Component {
 
-
   render(){
-
     const guestLinks = (
       <>
         <InformationCard
@@ -61,6 +59,8 @@ function InformationCard(props) {
           className='photo_cards'
         />
       </Link>
+      <div>
+      </div>
     </div>
     
   )

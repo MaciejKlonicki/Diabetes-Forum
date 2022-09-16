@@ -119,7 +119,7 @@ function Calculator() {
               name='secondBreakfast'
               value={secondBreakfast}> 
               </input>
-          <p className='second-breakfast-position'>Drugie śniadanie</p>
+          <p className='position'>Drugie śniadanie</p>
               </td>
               </tr>
               <tr>
@@ -132,7 +132,7 @@ function Calculator() {
               name='lunch'
               value={lunch}> 
               </input>
-          <p className='lunch-position'>Obiad</p>
+          <p className='position'>Obiad</p>
           </td>
               </tr>
               <tr>
@@ -145,7 +145,7 @@ function Calculator() {
               name='tea'
               value={tea}> 
               </input>
-          <p className='tea-position'>Podwieczorek</p>
+          <p className='position'>Podwieczorek</p>
           </td>
               </tr>
               <tr>
@@ -158,7 +158,7 @@ function Calculator() {
               name='first-dinner'
               value={firstDinner}> 
               </input>
-          <p className='first-dinner-position'>Pierwsza kolacja</p>
+          <p className='position'>Pierwsza kolacja</p>
           </td>
               </tr>
               <tr>
@@ -171,7 +171,7 @@ function Calculator() {
               name='second-dinner'
               value={secondDinner}> 
               </input>
-          <p className='second-dinner-position'>Druga kolacja</p>
+          <p className='position'>Druga kolacja</p>
           </td>
               </tr>
         </tbody>

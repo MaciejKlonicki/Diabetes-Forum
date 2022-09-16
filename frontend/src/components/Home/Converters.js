@@ -1,15 +1,8 @@
 import React from 'react';
 import './Converters.css';
-  
-function Converters() {
-  return (
-    <div className="Converters">
-        <FirstTable />
-    </div>
-  );
-}
 
-function FirstTable() {
+
+function Converters() {
   return (
     <div className='first-table-pos w-100'>
       <table className="table table-hover table-dark">
@@ -207,5 +200,4 @@ function FirstTable() {
   )
 }
 
-  
 export default Converters;

@@ -1,5 +1,4 @@
 import React from 'react'
-import './Body.css';
 import './Informations.css'
 
 function Informations() {
@@ -23,7 +22,7 @@ function Informations() {
           alt='Informations'
           className='info-photo'
           />
-          <div className='h2-position-info'>
+          <div className='h2-position'>
           <h2>Czym jest cukrzyca?</h2>
           </div>
           <div className="image__overlay">
@@ -50,7 +49,7 @@ function Informations() {
           alt='Types'
           className='info-photo'
           />
-          <div className='h2-position-type'>
+          <div className='h2-position'>
           <h2>Typy cukrzycy</h2>
           </div>
           <div className="image__overlay">
@@ -77,7 +76,7 @@ function Informations() {
           alt='Treatment'
           className='info-photo'
           />
-          <div className='h2-position-treatment'>
+          <div className='h2-position'>
           <h2>Leczenie cukrzycy</h2>
           </div>
           <div className="image__overlay">

@@ -41,11 +41,11 @@ class Register extends Component {
                 setTimeout(() => {
                     this.setState({show: false});
                     this.props.history.push("/logowanie");
-                }, 3000);
+                }, 500);
             } else {
                 this.setState({show: false});
             }
-        }, 2000);
+        }, 300);
     };
 
     resetRegisterForm = () => {

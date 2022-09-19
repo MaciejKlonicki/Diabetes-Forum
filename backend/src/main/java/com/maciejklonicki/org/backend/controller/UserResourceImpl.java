@@ -19,6 +19,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/users")
 @RequiredArgsConstructor
@@ -39,6 +41,10 @@ public class UserResourceImpl {
     public ResponseEntity<String> register(@RequestBody Users users) {
         log.info("UserResourceImpl : register");
         JSONObject jsonObject = new JSONObject();
+        Users email = userRepository.findByEmail(users.getEmail());
+        if (email != null) {
+            return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).build();
+        }
         try {
             users.setPassword(new BCryptPasswordEncoder().encode(users.getPassword()));
             users.setRole(roleRepository.findByName(ConstantUtils.USER.toString()));

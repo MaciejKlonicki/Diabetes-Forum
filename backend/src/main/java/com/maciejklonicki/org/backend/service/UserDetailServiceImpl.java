@@ -6,7 +6,6 @@ import com.maciejklonicki.org.backend.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -24,7 +23,7 @@ public class UserDetailServiceImpl implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
         Users users = userRepository.findByEmail(email);
-        if (users == null) {
+        if (users == null || !users.getEmail().isEmpty()) {
             throw new UsernameNotFoundException("Email " + email + " not found");
         }
         return new org.springframework.security.core.userdetails.User(users.getEmail(), users.getPassword(), getGrantedAuthority(users));

@@ -93,7 +93,7 @@ class HeaderComp extends Component {
 
   const guestLinks = (
     <>
-      <Link to='/' className='header-logo-logout'>
+      <Link to='/' style={{position: "relative", right: "800px"}}>
       <img src='/images/sugar-blood-level.png' alt='sugar-logo'/>
       </Link>
       <Link to="/logowanie"><button className="header-button-login btn">Logowanie</button></Link>

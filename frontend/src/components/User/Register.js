@@ -3,7 +3,6 @@ import {connect} from 'react-redux';
 import {Row, Col, Card, Form, InputGroup, FormControl, Button} from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faLock, faUndo,faUserPlus, faUser } from '@fortawesome/free-solid-svg-icons';
-import './Register.css';
 import {registerUser} from '../services/index'
 import { Link } from 'react-router-dom';
 import RegisterAlert from './RegisterAlert';
@@ -68,7 +67,7 @@ class Register extends Component {
 
     return (
         <>
-        <Row className='css-position-register'>
+        <Row style={{position: "relative", top: "200px", left: "525px"}}>
             <Col xs={5}>
                 <Card className={"border border-dark bg-dark text-white"}>
                     <Card.Header>

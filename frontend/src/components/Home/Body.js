@@ -50,7 +50,8 @@ class Body extends Component {
 
 function InformationCard(props) {
   return (
-    <div className='cards-image-information'>
+    <div style={{position: "fixed", top: "50%", left: "250px", height: "570px", width: "380px",
+      backgroundColor: "rgba(0, 0, 0, 0.37)", border: "2px solid #000000", transform: "translate(-50%, -50%)", textAlign: "center"}}>
       <h1>informacje</h1>
       <Link to={props.path}>
         <img
@@ -68,7 +69,8 @@ function InformationCard(props) {
 
 function FoodCard(props) {
   return (
-    <div className='cards-image-food'>
+    <div style={{position: "fixed", top: "50%", left: "700px", height: "570px", width: "380px",
+    backgroundColor: "rgba(0, 0, 0, 0.37)", border: "2px solid #000000", transform: "translate(-50%, -50%)", textAlign: "center"}}>
       <h1>przeliczniki</h1>
       <Link to={props.path}>
         <img
@@ -84,7 +86,8 @@ function FoodCard(props) {
 
 function CalculatorCard(props) {
   return (
-    <div className='cards-image-calculator'>
+    <div style={{position: "fixed", top: "50%", left: "1150px", height: "570px", width: "380px",
+    backgroundColor: "rgba(0, 0, 0, 0.37)", border: "2px solid #000000", transform: "translate(-50%, -50%)", textAlign: "center"}}>
       <h1>kalkulator</h1>
       <Link to={props.path}>
         <img
@@ -100,7 +103,8 @@ function CalculatorCard(props) {
 
 function LoginCard(props) {
   return (
-    <div className='cards-image-login'>
+    <div style={{position: "fixed", top: "50%", left: "1610px", height: "570px", width: "380px",
+    backgroundColor: "rgba(0, 0, 0, 0.37)", border: "2px solid #000000", transform: "translate(-50%, -50%)", textAlign: "center"}}>
       <h1>zaloguj się</h1>
       <Link to={props.path}>
         <img
@@ -116,7 +120,8 @@ function LoginCard(props) {
 
 function CuriositiesCard(props) {
   return (
-    <div className='cards-image-curiosities'>
+    <div style={{position: "fixed", top: "50%", left: "1610px", height: "570px", width: "380px",
+    backgroundColor: "rgba(0, 0, 0, 0.37)", border: "2px solid #000000", transform: "translate(-50%, -50%)", textAlign: "center"}}>
       <h1>ciekawostki</h1>
       <Link to={props.path}>
         <img

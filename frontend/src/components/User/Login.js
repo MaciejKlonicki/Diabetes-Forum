@@ -3,7 +3,6 @@ import {connect} from 'react-redux';
 import {Row, Col, Card, Form, InputGroup, FormControl, Button, Alert} from 'react-bootstrap';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faSignInAlt, faEnvelope, faLock, faUndo} from '@fortawesome/free-solid-svg-icons';
-import './Login.css';
 import {authenticateUser} from '../services/index'
 import { Link } from 'react-router-dom';
 
@@ -45,7 +44,7 @@ class Login extends Component {
     const {email, password, error} = this.state;
 
     return (
-      <Row className='css-position'>
+      <Row style={{position: "relative", top: "250px", left: "525px"}}>
         <Col xs={5}>
             {error && <Alert variant="danger">{error}</Alert>}
             <Card className={"border border-dark bg-dark text-white"}>

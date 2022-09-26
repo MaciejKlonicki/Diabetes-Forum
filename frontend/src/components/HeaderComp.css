@@ -12,11 +12,6 @@
     z-index: 2;
 }
 
-.header-logo-logout {
-    position: relative;
-    right: 710px;
-}
-
 .header-logo {
     margin-left: 20px;
     display: flex;
@@ -164,7 +159,7 @@
 
   .header-button-login {
       position: relative;
-      left: 680px;
+      left: 790px;
       padding: 0.15em 0.7em;
       border: 0.15em solid rgb(255, 255, 255);
       font-family: Arial, Helvetica, sans-serif;
@@ -181,7 +176,7 @@
 
   .header-button-registration {
       position: relative;
-      left: 700px;
+      left: 800px;
       display: inline-block;
       padding: 0.15em 0.7em;
       margin: 0 0.1em 0.1em 0;

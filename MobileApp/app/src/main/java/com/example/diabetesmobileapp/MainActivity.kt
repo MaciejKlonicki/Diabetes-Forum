@@ -4,30 +4,30 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.item_diabetesmobileapp.*
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var todoAdapter: MobileAppAdapter
+    private lateinit var diabetesApp: MobileAppAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        todoAdapter = MobileAppAdapter(mutableListOf())
 
-        rvDiabetesMobileApp.adapter = todoAdapter
-        rvDiabetesMobileApp.layoutManager = LinearLayoutManager(this)
+        diabetesApp = MobileAppAdapter(mutableListOf())
+
+        rvDziennik.adapter = diabetesApp
+        rvDziennik.layoutManager = LinearLayoutManager(this)
 
         btnDiabetesMobileAppAdd.setOnClickListener {
-            val todoTitle = etDiabetesMobileAppTitle.text.toString()
-            if (todoTitle.isNotEmpty()) {
-                val todo = DiabetesMobileApp(todoTitle)
-                todoAdapter.addTodo(todo)
-                etDiabetesMobileAppTitle.text.clear()
+            val title = etDziennik.text.toString()
+            if (title.isNotEmpty()) {
+                val titleList = DiabetesMobileApp(title)
+                diabetesApp.addTodo(titleList)
+                etDziennik.text.clear()
             }
         }
         btnDiabetesMobileAppDelete.setOnClickListener {
-            todoAdapter.deleteDoneTodos()
+            diabetesApp.deleteDoneTodos()
         }
     }
 }

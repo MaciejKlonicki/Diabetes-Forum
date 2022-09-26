@@ -10,29 +10,19 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_diabetesmobileapp.view.*
 
 class MobileAppAdapter (
-    private val todos: MutableList<DiabetesMobileApp>
+    private val diabetes: MutableList<DiabetesMobileApp>
 ) : RecyclerView.Adapter<MobileAppAdapter.TodoViewHolder>() {
     class TodoViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView)
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TodoViewHolder {
-        return TodoViewHolder(
-            LayoutInflater.from(parent.context).inflate(
-                R.layout.item_diabetesmobileapp,
-                parent,
-                false
-            )
-        )
-    }
-
     fun addTodo(todo: DiabetesMobileApp) {
-        todos.add(todo)
-        notifyItemInserted(todos.size -1)
+        diabetes.add(todo)
+        notifyItemInserted(diabetes.size -1)
     }
 
     fun deleteDoneTodos() {
-        todos.removeAll {
-            todo ->
-            todo.isChecked
+        diabetes.removeAll {
+            listToDo ->
+            listToDo.check
         }
         notifyDataSetChanged()
     }
@@ -45,20 +35,30 @@ class MobileAppAdapter (
         }
     }
 
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TodoViewHolder {
+        return TodoViewHolder(
+            LayoutInflater.from(parent.context).inflate(
+                R.layout.item_diabetesmobileapp,
+                parent,
+                false
+            )
+        )
+    }
+
     override fun onBindViewHolder(holder: TodoViewHolder, position: Int) {
-        val curTodo = todos[position]
+        val curTodo = diabetes[position]
         holder.itemView.apply {
-            tvDiabetesMobileApp.text = curTodo.title
-            cbDiabetesMobileApp.isChecked = curTodo.isChecked
-            toggleStrikeThrough(tvDiabetesMobileApp, curTodo.isChecked)
-            cbDiabetesMobileApp.setOnCheckedChangeListener { _, isChecked ->
-                toggleStrikeThrough(tvDiabetesMobileApp, isChecked)
-                curTodo.isChecked = !curTodo.isChecked
+            tvDziennik.text = curTodo.myTitle
+            cbDziennik.isChecked = curTodo.check
+            toggleStrikeThrough(tvDziennik, curTodo.check)
+            cbDziennik.setOnCheckedChangeListener { _, isChecked ->
+                toggleStrikeThrough(tvDziennik, isChecked)
+                curTodo.check = !curTodo.check
             }
         }
     }
 
     override fun getItemCount(): Int {
-        return todos.size
+        return diabetes.size
     }
 }

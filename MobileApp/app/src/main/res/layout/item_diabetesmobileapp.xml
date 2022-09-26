@@ -7,18 +7,18 @@
     android:paddingEnd="8dp">
 
     <TextView
-        android:id="@+id/tvDiabetesMobileApp"
+        android:id="@+id/tvDziennik"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="ex"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/cbDiabetesMobileApp"
+        app:layout_constraintEnd_toStartOf="@+id/cbDziennik"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <CheckBox
-        android:id="@+id/cbDiabetesMobileApp"
+        android:id="@+id/cbDziennik"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"

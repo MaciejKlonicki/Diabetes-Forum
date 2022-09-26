@@ -60,8 +60,6 @@ function InformationCard(props) {
           className='photo_cards'
         />
       </Link>
-      <div>
-      </div>
     </div>
     
   )

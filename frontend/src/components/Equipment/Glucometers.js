@@ -71,7 +71,7 @@ function InformationAboutGlucometeriXellPro(props) {
         <div className='h2-pos'>
         <h2>Glukometr iXell PRO</h2>
         </div>
-          <p className="image__description">
+          <p className="image__description-glu">
             Ekran LED z podświetlanymi cyframi – gwarancja czytelności wyniku.
             Zasilanie baterią AAA – wygodne, ogólnodostępne i gdyż wystarcza na wiele pomiarów, a gdy bateria się wyczerpie jest ona dostępna wszędzie, a jej koszt jest niewielki.
             Możliwość oznaczenia pomiaru przed i po posiłku (funkcja AC/PC) – możliwość poznania reakcji organizmu na wszystkie produkty, które spożywamy.
@@ -91,7 +91,7 @@ function InformationAboutGlucometeriXell(props) {
         <div className='h2-pos'>
         <h2>Glukometr iXell</h2>
         </div>
-          <p className="image__description">
+          <p className="iimage__description-glu">
             Jeden przycisk – proste użytkowanie glukometru
             Brak kodowania – eliminuje ryzyko błędu przy nowym opakowaniu pasków.
             Wyrzut paska po pomiarze – bezpieczeństwo dla pacjenta i osób z jego otoczenia.

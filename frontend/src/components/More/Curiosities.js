@@ -167,4 +167,4 @@ function CuriositiesInformationFat(props) {
     );  
   }
 
-export default Curiosities
+export default Curiosities;

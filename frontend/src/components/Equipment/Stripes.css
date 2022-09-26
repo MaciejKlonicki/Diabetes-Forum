@@ -1,50 +1,4 @@
-.image-for-stripes-accuChekActive {
-    position: fixed;
-    top: 50%;
-    left: 150px;
-    height: 700px;
-    width: 380px;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    text-align: center;
-}
-
-.image-for-stripes-accuChekGuide {
-    position: fixed;
-    top: 50%;
-    left: 600px;
-    height: 700px;
-    width: 380px;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    text-align: center;
-}
-
-.image-for-stripes-accuChekInstant {
-    position: fixed;
-    top: 50%;
-    left: 1050px;
-    height: 700px;
-    width: 380px;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    text-align: center;
-    opacity: 0.9;
-}
-
-.image-for-stripes-examedinFast {
-    position: fixed;
-    top: 50%;
-    left: 1460px;
-    height: 700px;
-    width: 380px;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    text-align: center;
-    opacity: 0.9;
-}
-
-.stripes-accuChekActive-photo {
+.stripes-photo {
     height: 300px;
     width: 300px;
     position:relative;
@@ -53,67 +7,7 @@
     opacity: 0.9;
 }
 
-.stripes-accuChekGuide-photo {
-    height: 300px;
-    width: 300px;
-    position:relative;
-    bottom: -5%;
-    left: 9%;
-    opacity: 0.9;
-}
-
-.stripes-accuChekInstant-photo {
-    height: 300px;
-    width: 300px;
-    position:relative;
-    bottom: -8%;
-    left: 9%;
-    opacity: 0.9;
-}
-
-.stripes-examedinFast-photo {
-    height: 300px;
-    width: 300px;
-    position:relative;
-    bottom: -5%;
-    left: 9%;
-    opacity: 0.9;
-}
-
-.h2-position-stripes-accuChekActive {
-    align-items: center;
-    justify-content: center;
-    color: rgb(0, 0, 0);
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    bottom: 5%;
-    left: 17%;
-}
-
-.h2-position-stripes-accuChekGuide {
-    align-items: center;
-    justify-content: center;
-    color: rgb(0, 0, 0);
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    bottom: 5%;
-    left: 17%;
-}
-
-.h2-position-stripes-accuChekInstant {
-    align-items: center;
-    justify-content: center;
-    color: rgb(0, 0, 0);
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    bottom: 5%;
-    left: 17%;
-}
-
-.h2-position-stripes-examedinFast {
+.h2-position-stripes {
     align-items: center;
     justify-content: center;
     color: rgb(0, 0, 0);
@@ -136,7 +30,7 @@
     margin-right: 60px;
   }
 
-  .image__description-stripes-accuChekGuide {
+  .image__description-stripes {
     font-size: 1.00em;
     margin-top: 5.25em;
     font-weight: 400;
@@ -147,29 +41,3 @@
     margin-left: 35px;
     margin-right: 10px;
   }
-
-  .image__description-stripes-accuChekInstant {
-    font-size: 1.00em;
-    margin-top: 5.25em;
-    font-weight: 400;
-    color: rgb(0, 0, 0);
-    position: absolute;
-    top: 310px;
-    left: 60px;
-    margin-left: 35px;
-    margin-right: 10px;
-  }
-
-  .image__description-stripes-examedinFast {
-    font-size: 1.00em;
-    margin-top: 5.25em;
-    font-weight: 400;
-    color: rgb(0, 0, 0);
-    position: absolute;
-    top: 270px;
-    left: 60px;
-    margin-left: 35px;
-    margin-right: 10px;
-  }
-
-

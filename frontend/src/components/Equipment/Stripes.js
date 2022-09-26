@@ -18,13 +18,13 @@ function Stripes() {
 
   function InformationAboutStripeAccuChekActive(props) {
     return (
-        <div className='image-for-stripes-accuChekActive'>
+        <div style={{position: "fixed", top: "50%", left: "200px", height: "700px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Stripes-accuChekActive'
-            className='stripes-accuChekActive-photo'
+            className='stripes-photo'
           />
-          <div className='h2-position-stripes-accuChekActive'>
+          <div className='h2-position-stripes'>
           <h2>Paski Accu-Chek Active</h2>
           </div>
             <p className="image__description-stripes-accuChekActive">
@@ -42,16 +42,16 @@ function Stripes() {
 
 function InformationAboutStripeAccuChekGuide(props) {
     return (
-        <div className='image-for-stripes-accuChekGuide'>
+        <div style={{position: "fixed", top: "50%", left: "675px", height: "700px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Stripes-accuChekGuide'
-            className='stripes-accuChekGuide-photo'
+            className='stripes-photo'
           />
-          <div className='h2-position-stripes-accuChekGuide'>
+          <div className='h2-position-stripes'>
           <h2>Paski Accu-Chek Guide</h2>
           </div>
-            <p className="image__description-stripes-accuChekGuide">
+            <p className="image__description-stripes">
               Temperatura przechowania: od 4°C do 30°C. <br />
               Granica wykrywalności (najniższa wyświetlana wartość): 10 mg/dL (0,6 mmol/L) dla testu paskowego <br />
               Zakres pomiarowy systemu: 10–600 mg/dL (0,6–33,3 mmol/L) <br />
@@ -65,16 +65,16 @@ function InformationAboutStripeAccuChekGuide(props) {
 
 function InformationAboutStripeAccuCheckInstant(props) {
     return (
-        <div className='image-for-stripes-accuChekInstant'>
+        <div style={{position: "fixed", top: "50%", left: "1150px", height: "700px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Stripes-accuChekInstant'
-            className='stripes-accuChekInstant-photo'
+            className='stripes-photo'
           />
-          <div className='h2-position-stripes-accuChekInstant'>
-          <h2>Paski Accu Check Instant</h2>
+          <div className='h2-position-stripes'>
+          <h2>Paski Accu Check Insta</h2>
           </div>
-            <p className="image__description-stripes-accuChekInstant">
+            <p className="image__description-stripes">
               Paski testowe  Accu Check Instant pasujące do glukometru o tej samej nazwie tj. Accu Check Instant.
               Paski charakteryzują się zaprojektowaną według nowej technologii szeroką kapilarą, która doskonale zasysa próbkę krwi. 
               Wystarczy przyłożyć niewielką kroplę krwi w dowolnym punkcie żółtej kapilary, a krew zostanie zassana automatycznie. <br />
@@ -87,16 +87,16 @@ function InformationAboutStripeAccuCheckInstant(props) {
 
 function InformationAboutStripeExamedinFast(props) {
     return (
-        <div className='image-for-stripes-examedinFast'>
+        <div style={{position: "fixed", top: "50%", left: "1610px", height: "700px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Stripes-examedinFast'
-            className='stripes-examedinFast-photo'
+            className='stripes-photo'
           />
-          <div className='h2-position-stripes-examedinFast'>
+          <div className='h2-position-stripes'>
           <h2>Paski Examedin Fast</h2>
           </div>
-            <p className="image__description-stripes-examedinFast">
+            <p className="image__description-stripes">
               Testy paskowe Examedin FAST służą do oznaczania stężenia glukozy w świeżej krwi kapilarnej. 
               Wynik podawany jest na podstawie pomiaru prądu elektrycznego, wytworzonego w reakcji glukozy z enzymem umieszczonym na elektrodzie testu paskowego. 
               Próbka krwi jest automatycznie zasysana przez okienko testu paskowego dzięki wykorzystaniu zjawiska kapilarnego. 

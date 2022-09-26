@@ -31,7 +31,7 @@ function Basics() {
                   Wczesne rozpoznanie cukrzycy i od początku dobra jej kontrola pozwalają zapobiec powikłaniom i prowadzić aktywne życie.<br />
                   <br />Pewne badania wskazują, że choroba <b>Alzheimera</b> również może być odmianą cukrzycy wynikającą ze złej tolerancji glukozy przez mózg.
                   Glikemia u zdrowego człowieka waha się w granicach <b>70-99</b> mg/dl (na czczo; po 2 godzinach od posiłku nie powinno być to więcej niż 140 mg/dl). 
-                  Wartości wykraczające poza ten zakres mogą z czasem powodować rosnące problemy zdrowotne i prowadzić do uszkodzenia organów, takich jak nerki czy serce.
+                  Wartości wykraczające poza ten zakres mogą z czasem powodować rosnące problemy zdrowotne i prowadzić do uszkodzenia organów.
                 </p>
               </div>
             </div>

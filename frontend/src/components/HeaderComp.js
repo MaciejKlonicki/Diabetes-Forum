@@ -103,7 +103,7 @@ class HeaderComp extends Component {
 
   const userLinks = (
     <>
-      <Link to='/' className='header-logo'>
+      <Link to='/' style={{marginLeft: "20px", display: "flex"}}>
       <img src='/images/sugar-blood-level.png' alt='sugar-logo'/>
       </Link>
       <ul className='header-menu'>
@@ -115,7 +115,7 @@ class HeaderComp extends Component {
         <Link to='/'
         className='header-links'
         >
-          <div className="icon-pos-diabetes">
+          <div style={{position: "relative", top: "26px", left: "45px"}}>
             <AiFillCaretDown />
           </div>
           Cukrzyca
@@ -131,7 +131,7 @@ class HeaderComp extends Component {
         <Link to='/'
         className='header-links'
         >
-          <div className="icon-pos-eq">
+          <div style={{position: "relative", top: "26px", left: "35px"}}>
             <AiFillCaretDown />
           </div>
         Sprzęt
@@ -147,7 +147,7 @@ class HeaderComp extends Component {
         <Link to='/'
         className='header-links'
         >
-          <div className="icon-pos-eq">
+          <div style={{position: "relative", top: "26px", left: "35px"}}>
             <AiFillCaretDown />
           </div>
         Porady
@@ -163,7 +163,7 @@ class HeaderComp extends Component {
         <Link to='/'
         className='header-links'
         >
-          <div className="icon-pos-eq">
+          <div style={{position: "relative", top: "26px", left: "35px"}}>
             <AiFillCaretDown />
           </div>
         Więcej

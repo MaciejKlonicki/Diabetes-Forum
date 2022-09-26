@@ -26,7 +26,7 @@ function Curiosities() {
 
 function CuriositiesInformationFat(props) {
     return (
-      <div className='image-for-curiosities-fat'>
+      <div style={{position: "fixed", top: "50%", left: "200px", height: "600px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Curiosities-fat'
@@ -44,7 +44,7 @@ function CuriositiesInformationFat(props) {
 
   function CuriositiesInformationDie(props) {
     return (
-      <div className='image-for-curiosities-die'>
+      <div style={{position: "fixed", top: "50%", left: "675px", height: "600px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Curiosities-die'
@@ -61,7 +61,7 @@ function CuriositiesInformationFat(props) {
 
   function CuriositiesInformationTypes(props) {
     return (
-      <div className='image-for-curiosities-types'>
+      <div style={{position: "fixed", top: "50%", left: "1150px", height: "600px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Curiosities-types'
@@ -82,7 +82,7 @@ function CuriositiesInformationFat(props) {
 
   function CuriositiesInformationPregnant(props) {
     return (
-      <div className='image-for-curiosities-pregnant'>
+      <div style={{position: "fixed", top: "50%", left: "1600px", height: "600px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Curiosities-pregnant'
@@ -99,7 +99,7 @@ function CuriositiesInformationFat(props) {
 
   function CuriositiesInformationPercent(props) {
     return (
-      <div className='image-for-curiosities-percent'>
+      <div style={{position: "fixed", top: "50%", left: "200px", bottom: "500px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Curiosities-percent'
@@ -118,7 +118,7 @@ function CuriositiesInformationFat(props) {
 
   function CuriositiesInformationCount(props) {
     return (
-      <div className='image-for-curiosities-count'>
+      <div style={{position: "fixed", top: "50%", left: "675px", bottom: "500px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Curiosities-count'
@@ -135,7 +135,7 @@ function CuriositiesInformationFat(props) {
 
   function CuriositiesInformationBlind(props) {
     return (
-      <div className='image-for-curiosities-blind'>
+      <div style={{position: "fixed", top: "50%", left: "1150px", bottom: "500px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Curiosities-blind'
@@ -152,7 +152,7 @@ function CuriositiesInformationFat(props) {
 
   function CuriositiesInformationTreatment(props) {
     return (
-      <div className='image-for-curiosities-treatment'>
+      <div style={{position: "fixed", top: "50%", left: "1600px", bottom: "500px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Curiosities-treatment'

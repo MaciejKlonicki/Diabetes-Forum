@@ -12,11 +12,6 @@
     z-index: 2;
 }
 
-.header-logo {
-    margin-left: 20px;
-    display: flex;
-}
-
 .header-links {
     position: relative;
     padding-bottom: 10px;
@@ -55,14 +50,14 @@
       background-position: 0;
   }
 
-  .header-links:hover::before {
+  .header-links:hover::before { 
       width: 100%;
   }
 
   .header-menu {
       display: grid;
       grid-template-columns: repeat(5, auto);
-      grid-gap: 150px;
+      grid-gap: 200px;
       width: 90vw;
       justify-content: end;
       margin-right: 25rem;
@@ -72,18 +67,6 @@
       display: flex;
       align-items: center;
       height: 80px;
-  }
-
-  .icon-pos-diabetes {
-      position: relative;
-      top: 26px;
-      left: 45px;
-  }
-
-  .icon-pos-eq {
-      position: relative;
-      top: 26px;
-      left: 35px;
   }
 
   .header-button {

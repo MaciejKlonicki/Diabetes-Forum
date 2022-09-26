@@ -6,6 +6,7 @@ import { faPhone, faEnvelope, faLock, faUndo,faUserPlus, faUser } from '@fortawe
 import './Register.css';
 import {registerUser} from '../services/index'
 import { Link } from 'react-router-dom';
+import RegisterAlert from './RegisterAlert';
 
 class Register extends Component {
 
@@ -14,6 +15,7 @@ class Register extends Component {
         this.state = this.initialState;
         this.state.show = false;
         this.state.message = '';
+        this.registrationAlert = React.createRef();
     }
 
     initialState = {
@@ -45,6 +47,7 @@ class Register extends Component {
                 }, 2000);
             } else {
                 this.setState({show: false});
+                this.showRegistrationAlert("danger","Użytkownik istnieje!", "Zmień adres e-mail")
             }
         }, 400);
     };
@@ -53,10 +56,18 @@ class Register extends Component {
         this.setState(() => this.initialState);
     };
 
+    showRegistrationAlert(variant, heading, message) {
+        this.registrationAlert.current.setVariant(variant);
+        this.registrationAlert.current.setHeading(heading);
+        this.registrationAlert.current.setMessage(message);
+        this.registrationAlert.current.setVisible(true);
+    }
+
   render() {
     const {name, email, password, contact} = this.state;
 
     return (
+        <>
         <Row className='css-position-register'>
             <Col xs={5}>
                 <Card className={"border border-dark bg-dark text-white"}>
@@ -106,6 +117,8 @@ class Register extends Component {
                 </Card>
             </Col>
         </Row>
+        <RegisterAlert ref={this.registrationAlert} />
+        </>
     )
   }
 }

@@ -27,7 +27,7 @@ public class BackendApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 //		roleService.saveOrUpdate(new Role(ConstantUtils.ADMIN.toString()));
 //		roleService.saveOrUpdate(new Role(ConstantUtils.USER.toString()));
-
+//
 //		Users users1 = new Users();
 //		users1.setEmail("test@user.com");
 //		users1.setName("Test User");

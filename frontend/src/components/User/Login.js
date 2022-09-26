@@ -80,7 +80,7 @@ class Login extends Component {
                         <FontAwesomeIcon icon={faUndo}/> Reset
                     </Button>
                 </Card.Footer>
-                <p style={{"padding-left": "2%"}}>Nie masz konta? <Link to="/rejestracja">Zarejestruj się</Link></p>
+                <p style={{"paddingLeft": "2%"}}>Nie masz konta? <Link to="/rejestracja">Zarejestruj się</Link></p>
             </Card>
         </Col>
       </Row>

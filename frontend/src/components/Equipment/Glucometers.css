@@ -1,49 +1,5 @@
-.image-for-glucometr-glucomaxxx {
-    position: fixed;
-    top: 48%;
-    left: 150px;
-    height: 700px;
-    width: 380px;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    text-align: center;
-}
-
-.image-for-glucometr-glucosense {
-    position: fixed;
-    top: 100%;
-    left: 600px;
-    height: 700px;
-    width: 380px;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    text-align: center;
-}
-
-.image-for-glucometr-iXellPro {
-    position: fixed;
-    top: 100%;
-    left: 1050px;
-    height: 700px;
-    width: 380px;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    text-align: center;
-}
-
-.image-for-glucometr-iXell {
-    position: fixed;
-    top: 100%;
-    left: 1460px;
-    height: 700px;
-    width: 380px;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    text-align: center;
-}
-
 .glucometr-glucomaxxx-photo {
-    height: 500px;
+    height: 470px;
     width: 400px;
     position:relative;
     bottom: 10%;
@@ -51,7 +7,7 @@
     opacity: 0.9;
 }
 
-.glucometr-glucosense-photo {
+.glucometr-photo {
     height: 470px;
     width: 400px;
     position:relative;
@@ -60,79 +16,16 @@
     opacity: 0.9;
 }
 
-.glucometr-iXellPro-photo {
-    height: 470px;
-    width: 400px;
-    position:relative;
-    bottom: 74%;
-    left: 9%;
-    opacity: 0.9;
+.h2-pos {
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: -13%;
+  left: 17%;
 }
-
-.glucometr-iXell-photo {
-    height: 470px;
-    width: 400px;
-    position:relative;
-    bottom: 74%;
-    left: 9%;
-    opacity: 0.9;
-}
-
-.h2-position-glucometer-glucomaxxx {
-    align-items: center;
-    justify-content: center;
-    color: rgb(0, 0, 0);
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    bottom: -2%;
-    left: 17%;
-}
-
-.h2-position-glucometer-glucosense {
-    align-items: center;
-    justify-content: center;
-    color: rgb(0, 0, 0);
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    top: -13%;
-    left: 17%;
-}
-
-.h2-position-glucometer-iXellPro {
-    align-items: center;
-    justify-content: center;
-    color: rgb(0, 0, 0);
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    top: -13%;
-    left: 17%;
-}
-
-.h2-position-glucometer-iXell {
-    align-items: center;
-    justify-content: center;
-    color: rgb(0, 0, 0);
-    position: absolute;
-    width: 350px;
-    height: 350px;
-    top: -12%;
-    left: 17%;
-}
-
-.image__description-glucomaxxx {
-    font-size: 1.00em;
-    margin-top: 5.25em;
-    font-weight: 400;
-    color: rgb(0, 0, 0);
-    position: relative;
-    bottom: 150px;
-    left: 60px;
-    margin-left: 35px;
-    margin-right: 60px;
-  }
 
   .image__description-glucosense {
     font-size: 1.00em;
@@ -146,20 +39,19 @@
     margin-right: 10px;
   }
 
-  .image__description-iXellPro {
+  .image__description-glucomaxxx {
     font-size: 1.00em;
     margin-top: 5.25em;
     font-weight: 400;
     color: rgb(0, 0, 0);
-    position: absolute;
-    top: -18%;
-    left: 17%;
-    bottom: 180px;
+    position: relative;
+    bottom: 150px;
+    left: 60px;
     margin-left: 35px;
-    margin-right: 10px;
+    margin-right: 60px;
   }
 
-  .image__description-iXell {
+  .image__description {
     font-size: 1.00em;
     margin-top: 5.25em;
     font-weight: 400;

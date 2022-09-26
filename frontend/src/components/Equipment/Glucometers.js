@@ -18,14 +18,14 @@ function Glucometers() {
 
 function InformationAboutGlucometerGlucomaxxx(props) {
     return (
-        <div className='image-for-glucometr-glucomaxxx'>
+        <div style={{position: "fixed", top: "53%", left: "200px", height: "700px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Glucometr-Glucomaxxx'
             className='glucometr-glucomaxxx-photo'
           />
-          <div className='h2-position-glucometer-glucomaxxx'>
-            <h2>Glukometr Glucomaxx Connect</h2>
+          <div style={{position: "absolute", alignItems: "center", justifyContent: "center", color: "black", width: "350px", height: "350px", bottom: "-2%", left: "17%"}}>
+            <h2>Glukometr Glucomaxx</h2>
           </div>
             <p className="image__description-glucomaxxx">
               Precyzyjny i dokładny system monitorowania glikemii dla pacjentów z cukrzycą.
@@ -39,13 +39,13 @@ function InformationAboutGlucometerGlucomaxxx(props) {
 
 function InformationAboutGlucometerGlucosense(props) {
   return (
-      <div className='image-for-glucometr-glucosense'>
+      <div style={{position: "fixed", top: "100%", left: "675px", height: "700px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
         <img
           src={props.img}
           alt='Glucometr-glucosense'
-          className='glucometr-glucosense-photo'
+          className='glucometr-photo'
         />
-        <div className='h2-position-glucometer-glucosense'>
+        <div className='h2-pos'>
         <h2>Glukometr Glucosense</h2>
         </div>
           <p className="image__description-glucosense">
@@ -62,21 +62,19 @@ function InformationAboutGlucometerGlucosense(props) {
 
 function InformationAboutGlucometeriXellPro(props) {
   return (
-      <div className='image-for-glucometr-iXellPro'>
+      <div style={{position: "fixed", top: "100%", left: "1175px", height: "700px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
         <img
           src={props.img}
           alt='Glucometr-iXellPro'
-          className='glucometr-iXellPro-photo'
+          className='glucometr-photo'
         />
-        <div className='h2-position-glucometer-iXellPro'>
+        <div className='h2-pos'>
         <h2>Glukometr iXell PRO</h2>
         </div>
-          <p className="image__description-iXellPro">
+          <p className="image__description">
             Ekran LED z podświetlanymi cyframi – gwarancja czytelności wyniku.
             Zasilanie baterią AAA – wygodne, ogólnodostępne i gdyż wystarcza na wiele pomiarów, a gdy bateria się wyczerpie jest ona dostępna wszędzie, a jej koszt jest niewielki.
             Możliwość oznaczenia pomiaru przed i po posiłku (funkcja AC/PC) – możliwość poznania reakcji organizmu na wszystkie produkty, które spożywamy.
-            Jeden przycisk – proste użytkowanie glukometru,
-            Elegancki wygląd, wyjątkowa lekkość
           </p>
       </div>
   )
@@ -84,22 +82,21 @@ function InformationAboutGlucometeriXellPro(props) {
 
 function InformationAboutGlucometeriXell(props) {
   return (
-      <div className='image-for-glucometr-iXell'>
+      <div style={{position: "fixed", top: "100%", left: "1600px", height: "700px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
         <img
           src={props.img}
           alt='Glucometr-iXell'
-          className='glucometr-iXell-photo'
+          className='glucometr-photo'
         />
-        <div className='h2-position-glucometer-iXell'>
+        <div className='h2-pos'>
         <h2>Glukometr iXell</h2>
         </div>
-          <p className="image__description-iXell">
+          <p className="image__description">
             Jeden przycisk – proste użytkowanie glukometru
             Brak kodowania – eliminuje ryzyko błędu przy nowym opakowaniu pasków.
             Wyrzut paska po pomiarze – bezpieczeństwo dla pacjenta i osób z jego otoczenia.
             Funkcja średnich z 60 i 90 dni – pomoc w oszacowaniu HbA1c i profilaktyce powikłań cukrzycy.
             Paski testowe iXell używane są przez personel medyczny, w polskich szpitalach.
-            Dokładność systemu potwierdzona certyfikatem spełnienia wymogów najnowszej normy.
           </p>
       </div>
   )

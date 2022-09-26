@@ -19,7 +19,8 @@ class FooterComp extends Component {
     );
 
   return (
-    <div className='footer'>
+    <div style={{background: "black", opacity: "0.8", color: "white", position: "fixed", bottom: "0", width: "100%", height: "50px", justifyContent: "center", alignItems: "center",
+        display: "flex", fontSize: "14px"}}>
         &copy; {new Date().getFullYear()} Kielce University of Technology | All rights reserved | Terms of Service | Privacy
         {this.props.auth.isLoggedIn ? userLinks : guestLinks}
     </div>

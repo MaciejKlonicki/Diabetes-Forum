@@ -84,7 +84,7 @@ class Register extends Component {
                         <Form>
                             <InputGroup>
                                 <InputGroup.Text><FontAwesomeIcon icon={faEnvelope}/></InputGroup.Text>
-                                <FormControl required autoComplete='off' type='text' name='email' value={email} onChange={this.userChange}
+                                <FormControl required autoComplete='off' type='email' name='email' value={email} onChange={this.userChange}
                                 className={"bg-dark text-white"} placeholder="Adres mailowy" />
                             </InputGroup>
                         </Form><br></br>

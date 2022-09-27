@@ -1,15 +1,10 @@
 import React from 'react';
 import './Basics.css';
+import { Component } from 'react';
 
-function Basics() {
-  return (
-    <div>
-        <BasicInformations />
-    </div>
-  )
-}
+  class BasicInformations extends Component {
 
-  function BasicInformations() {
+    render() {
       return (
           <div className='box-how-to'>
             <div className='content'>
@@ -37,6 +32,8 @@ function Basics() {
             </div>
           </div>
       )
+    }
   }
 
-export default Basics
+
+export default BasicInformations;

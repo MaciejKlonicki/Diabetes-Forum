@@ -3,7 +3,7 @@ import HeaderComp from './components/HeaderComp';
 import FooterComp from './components/FooterComp';
 import Body from './components/Home/Body';
 import Contact from './components/Email/Contact';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Informations from './components/Home/Informations';
 import Converters from './components/Home/Converters';
 import Basics from './components/AboutDiabetes/Basics';
@@ -21,6 +21,7 @@ import Infoline from './components/More/Infoline';
 import Calculator from './components/Home/Calculator';
 import Login from './components/User/Login';
 import Register from './components/User/Register';
+import PrivateRoute from './components/PrivateRoute';
 
 
 function App() {
@@ -38,12 +39,11 @@ function App() {
     <Router>
       <HeaderComp />
       <BackImage />
-      <Switch>
         <Route path='/' exact component={Body} />
         <Route path='/kontakt' exact component={Contact} />
         <Route path='/informacje' exact component={Informations} />
         <Route path='/przeliczniki' exact component={Converters} />
-        <Route path='/podstawy' exact component={Basics} />
+        <PrivateRoute path='/podstawy' exact component={Basics} />
         <Route path='/odzywianie' exact component={Nutrition} />
         <Route path='/codziennosc' exact component={Daily} />
         <Route path='/glukometry' exact component={Glucometers} />
@@ -58,7 +58,6 @@ function App() {
         <Route path='/kalkulator' exact component={Calculator} />
         <Route path='/logowanie' exact component={Login}/>
         <Route path='/rejestracja' exact component={Register}/>
-      </Switch>
       <FooterComp />
       </Router>
   );

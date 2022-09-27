@@ -1,21 +1,19 @@
-import React, { Component } from 'react'
-import { authenticateUser } from './services/index';
+import React from 'react'
+import { success } from './services/index';
 import {connect} from 'react-redux';
 import { Redirect, Route } from 'react-router-dom';
-import BasicInformations from './AboutDiabetes/Basics';
 
-class PrivateRoute extends Component {
-
-render() {
-    return (
-        <Route>
-            {!this.props.auth.isLoggedIn
+const PrivateRoute =  ({children, ...rest}) => {
+    let auth = success();
+    return(
+        <Route {...rest}>
+            {auth.isLoggedIn
             ?
-            <Redirect to="/logowanie" />
-            : <BasicInformations />}
+            children
+            :
+            <Redirect to="/logowanie"/>}
         </Route>
-    )
-  }
+    );
 }
 
 const mapStateToProps = state => {
@@ -26,7 +24,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        authenticateUser: (email, password) => dispatch(authenticateUser(email, password))
+        success: (isLoggedIn) => dispatch(success(isLoggedIn))
     };
 };
 

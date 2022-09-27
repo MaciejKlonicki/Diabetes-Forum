@@ -32,7 +32,7 @@ export const logoutUser = () => {
     };
 };
 
-const success = isLoggedIn => {
+export const success = isLoggedIn => {
     return {
         type: AT.SUCCESS,
         payload: isLoggedIn

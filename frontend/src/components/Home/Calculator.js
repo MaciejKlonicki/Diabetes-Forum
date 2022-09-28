@@ -1,7 +1,7 @@
 import React from 'react';
 import './Calculator.css';
 import {useState} from 'react';
-import { propTypes } from 'react-bootstrap/esm/Image';
+import { propTypes } from 'react-bootstrap/Image';
 
 function Calculator() {
   return (

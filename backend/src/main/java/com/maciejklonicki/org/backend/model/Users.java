@@ -2,14 +2,15 @@ package com.maciejklonicki.org.backend.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.sun.istack.NotNull;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 
 @Entity
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Users {
 
     @Id
@@ -33,4 +34,10 @@ public class Users {
     @JsonBackReference
     private Role role;
 
+    public Users(String name, String email, String mobile, String password) {
+        this.name = name;
+        this.email = email;
+        this.mobile = mobile;
+        this.password = password;
+    }
 }

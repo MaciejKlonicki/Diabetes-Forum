@@ -40,24 +40,26 @@ function App() {
       <HeaderComp />
       <BackImage />
         <Route path='/' exact component={Body} />
-        <Route path='/kontakt' exact component={Contact} />
-        <Route path='/informacje' exact component={Informations} />
-        <Route path='/przeliczniki' exact component={Converters} />
-        <PrivateRoute path='/podstawy' exact component={Basics} />
-        <Route path='/odzywianie' exact component={Nutrition} />
-        <Route path='/codziennosc' exact component={Daily} />
-        <Route path='/glukometry' exact component={Glucometers} />
-        <Route path='/paski' exact component={Stripes} />
-        <Route path='/igly' exact component={Needles} />
-        <Route path='/zycie-z-cukrzyca' exact component={HowTo} />
-        <Route path='/powiklania-cukrzycy' exact component={Complications} />
-        <Route path='/apteczka-cukrzyka' exact component={FirstAidKit} />
-        <Route path='/depresja-cukrzyka' exact component={Depression} />
-        <Route path='/ciekawostki' exact component={Curiosities} />
-        <Route path='/infolinie' exact component={Infoline} />
         <Route path='/kalkulator' exact component={Calculator} />
         <Route path='/logowanie' exact component={Login}/>
         <Route path='/rejestracja' exact component={Register}/>
+        <Route path='/informacje' exact component={Informations} />
+        <Route path='/przeliczniki' exact component={Converters} />
+        
+        <PrivateRoute path='/kontakt' exact component={Contact} />
+        <PrivateRoute path='/podstawy' exact component={Basics} />
+        <PrivateRoute path='/odzywianie' exact component={Nutrition} />
+        <PrivateRoute path='/codziennosc' exact component={Daily} />
+        <PrivateRoute path='/glukometry' exact component={Glucometers} />
+        <PrivateRoute path='/paski' exact component={Stripes} />
+        <PrivateRoute path='/igly' exact component={Needles} />
+        <PrivateRoute path='/zycie-z-cukrzyca' exact component={HowTo} />
+        <PrivateRoute path='/powiklania-cukrzycy' exact component={Complications} />
+        <PrivateRoute path='/apteczka-cukrzyka' exact component={FirstAidKit} />
+        <PrivateRoute path='/depresja-cukrzyka' exact component={Depression} />
+        <PrivateRoute path='/ciekawostki' exact component={Curiosities} />
+        <PrivateRoute path='/infolinie' exact component={Infoline} />
+
       <FooterComp />
       </Router>
   );

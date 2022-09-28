@@ -1,32 +1,20 @@
 import React from 'react'
-import { success } from './services/index';
-import {connect} from 'react-redux';
 import { Redirect, Route } from 'react-router-dom';
 
-const PrivateRoute =  ({children, ...rest}) => {
-    let auth = success();
+const PrivateRoute =  ({component: Component, ...rest}) => {
+    let auth = localStorage.getItem('jwtToken')
     return(
         <Route {...rest}>
-            {auth.isLoggedIn
-            ?
-            children
+        {auth === null
+        ?
+        <Redirect to="/logowanie"/>
             :
-            <Redirect to="/logowanie"/>}
+            <Component {...rest} />}
         </Route>
     );
 }
 
-const mapStateToProps = state => {
-    return {
-        auth: state.auth
-    }
-};
-
-const mapDispatchToProps = dispatch => {
-    return {
-        success: (isLoggedIn) => dispatch(success(isLoggedIn))
-    };
-};
 
 
-export default connect(mapStateToProps, mapDispatchToProps)(PrivateRoute);
+
+export default PrivateRoute;

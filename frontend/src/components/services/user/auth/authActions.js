@@ -39,7 +39,7 @@ export const success = isLoggedIn => {
     };
 };
 
-const failure = () => {
+export const failure = () => {
     return {
         type: AT.FAILURE,
         payload: false

@@ -25,7 +25,7 @@ public class UserController {
     }
     @GetMapping("/{id}")
     ResponseEntity<?> getSingleUser(@PathVariable Long id) {
-        Optional<Users> users = Optional.ofNullable(userService.findSingleUser(id));
+        Optional<Users> users = userService.findSingleUser(id);
         return users.map(response -> ResponseEntity.ok().body(response))
                 .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }

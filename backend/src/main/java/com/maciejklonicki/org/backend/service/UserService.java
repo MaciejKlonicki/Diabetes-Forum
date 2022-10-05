@@ -6,6 +6,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.Optional;
 
 @Component
 @RequiredArgsConstructor
@@ -19,8 +20,8 @@ public class UserService {
     }
 
     //getting single user
-    public Users findSingleUser (Long id) {
-        return userRepository.findById(id).orElseThrow();
+    public Optional<Users> findSingleUser (Long id) {
+        return userRepository.findById(id);
     }
 
     //adding new user

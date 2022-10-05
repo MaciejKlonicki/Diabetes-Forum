@@ -41,6 +41,14 @@ public class Users {
         this.password = password;
     }
 
+    public Users(Long id, String name, String email, String mobile, String password) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.mobile = mobile;
+        this.password = password;
+    }
+
     public Users() {
 
     }

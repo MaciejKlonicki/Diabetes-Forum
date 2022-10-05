@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @AllArgsConstructor
-@NoArgsConstructor
+@ToString
 public class Users {
 
     @Id
@@ -39,5 +39,9 @@ public class Users {
         this.email = email;
         this.mobile = mobile;
         this.password = password;
+    }
+
+    public Users() {
+
     }
 }

@@ -21,6 +21,7 @@ class UserRepositoryTest {
 
     @Test
     void findIfTheUserWithThisEmailExists() {
+
         //given
         String email = "asdasd@wp.pl";
         Users users = new Users(
@@ -40,10 +41,13 @@ class UserRepositoryTest {
 
     @Test
     void findIfTheUserWithThisEmailDoesNotExists() {
+
         //given
         String email = "maciekasd.kloniasdcki@gmail.com";
+
         //when
         Users byEmail = underTest.findByEmail(email);
+
         //then
         assertThat(byEmail).isNull();
     }

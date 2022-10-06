@@ -28,7 +28,7 @@ function Infoline() {
             alt='Infoline-roche'
             className='infoline-photo-roche'
           />
-          <p className="image__description-infoline-roche">
+          <p className="image__description">
               <b>Roche Diabetes Care Polska</b><br/>
               <b>801 080 104</b><br />
               czynna poniedziałek-piątek, godz. 8.00 - 16.00
@@ -45,7 +45,7 @@ function Infoline() {
             alt='Infoline-ascensia'
             className='infoline-photo-ascensia'
           />
-          <p className="image__description-infoline-ascensia">
+          <p className="image__description">
               <b>Ascensia Diabetes Care</b><br/>
               <b>800 999 090</b><br />
               infolinia bezpłatna z komórek:<br/> 
@@ -80,7 +80,7 @@ function Infoline() {
             alt='Infoline-lifescan'
             className='infoline-photo-lifescan'
           />
-          <p className="image__description-infoline-lifescan">
+          <p className="image__description-2">
               <b>LifeScan Johnson and Johnson</b><br/>
               <b>801 23 23 23</b><br />
               opłata wg. taryfy operatora
@@ -98,7 +98,7 @@ function Infoline() {
             alt='Infoline-medtronic'
             className='infoline-photo-medtronic'
           />
-          <p className="image__description-infoline-medtronic">
+          <p className="image__description-2">
               <b>Medtronic Poland</b><br/>
               <b>22 465 69 87</b><br />
               czynna 24 godziny na dobę
@@ -116,7 +116,7 @@ function Infoline() {
             alt='Infoline-bioton'
             className='infoline-photo-bioton'
           />
-          <p className="image__description-infoline-bioton">
+          <p className="image__description-2">
               <b>Bioton</b><br/>
               <b>801 88 99 71</b><br />
               czynna poniedziałek-piątek, godz. 8.00 - 16.00

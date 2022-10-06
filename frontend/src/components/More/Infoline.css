@@ -136,19 +136,7 @@
     opacity: 1;
   }
 
-  .image__description-infoline-roche {
-    font-size: 1.2em;
-    margin-top: 2.5em;
-    font-weight: 100;
-    color: rgb(0, 0, 0);
-    cursor:default;
-    position: relative;
-    left: 300px;
-    bottom: 200px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-
-  .image__description-infoline-ascensia {
+  .image__description {
     font-size: 1.2em;
     margin-top: 2.5em;
     font-weight: 100;
@@ -172,7 +160,7 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
-  .image__description-infoline-lifescan {
+  .image__description-2 {
     font-size: 1.2em;
     margin-top: 2.5em;
     font-weight: 100;
@@ -182,28 +170,4 @@
     left: 300px;
     bottom: 130px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-
-  .image__description-infoline-medtronic {
-    font-size: 1.2em;
-    margin-top: 2.5em;
-    font-weight: 100;
-    color: rgb(0, 0, 0);
-    cursor:default;
-    position: relative;
-    left: 300px;
-    bottom: 130px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-
-  .image__description-infoline-bioton {
-    font-size: 1.2em;
-    margin-top: 2.5em;
-    font-weight: 100;
-    color: rgb(0, 0, 0);
-    cursor:default;
-    position: relative;
-    left: 300px;
-    bottom: 130px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
   }

@@ -178,7 +178,11 @@ class HeaderComp extends Component {
   );
 
   return (
-    <nav className='header'>
+    <nav 
+    style={{background: "rgb(0,0,0)", opacity: "0.80", 
+    height: "50px", width: "100%", display: "flex", 
+    justifyContent: "center", alignItems: "center", 
+    position: "fixed", top: "0", zIndex: "2"}}>
       {this.props.auth.isLoggedIn ? userLinks : guestLinks}
     </nav>
   );

@@ -1,57 +1,13 @@
-.header {
-    background: rgb(0, 0, 0);
-    opacity: 0.80;
-    height: 50px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2;
-    position: fixed;
-    top: 0;    
-    z-index: 2;
-}
-
 .header-links {
     position: relative;
     padding-bottom: 10px;
     color: white;
-    text-decoration: none;
     text-align:center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
     align-items: center;
     background-color: white;
-    background-size: 200% 100%;
-    background-position: -100%;
     -webkit-background-clip: text;
     background-clip:var(#ffffff);
     -webkit-text-fill-color: transparent;
-    transition: all 0.3s ease-in-out;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  .header-links::before {
-      content: '';
-      background: #ffffff;
-      display: block;
-      position: absolute;
-      bottom: 5px;
-      left: 0;
-      width: 0;
-      height: 1.5px;
-      transition: all 0.3s ease-in-out;
-  }
-
-  .header-links:hover {
-      background-position: 0;
-  }
-
-  .header-links:hover::before { 
-      width: 100%;
   }
 
   .header-menu {
@@ -72,17 +28,9 @@
   .header-button {
       position: relative;
       right: 480px;
-      display: inline-block;
       padding: 0.15em 0.7em;
-      margin: 0 0.1em 0.1em 0;
       border: 0.16em solid rgb(255, 255, 255);
-      box-sizing: border-box;
-      text-decoration: none;
-      font-family:Arial, Helvetica, sans-serif;
       color: #ffffff;
-      text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
-      text-align: center;
-      background-color: black;
       transition: all 0.5s;
       border-radius: 2em;
       cursor: pointer;
@@ -96,16 +44,9 @@
   .header-button-calc {
     position: relative;
     right: 150px;
-    display: inline-block;
     padding: 0.15em 0.7em;
-    margin: 0 0.1em 0.1em 0;
     border: 0.16em solid rgb(255, 255, 255);
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family:Arial, Helvetica, sans-serif;
     color: #ffffff;
-    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
-    text-align: center;
     background-color: black;
     transition: all 0.5s;
     border-radius: 2em;
@@ -121,14 +62,8 @@
     position: relative;
     right: 20px;
     padding: 0.15em 0.7em;
-    margin: 0 0.1em 0.1em 0;
     border: 0.16em solid rgb(255, 255, 255);
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family:Arial, Helvetica, sans-serif;
     color: #ffffff;
-    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
-    text-align: center;
     background-color: black;
     transition: all 0.5s;
     border-radius: 2em;
@@ -145,7 +80,6 @@
       left: 790px;
       padding: 0.15em 0.7em;
       border: 0.15em solid rgb(255, 255, 255);
-      font-family: Arial, Helvetica, sans-serif;
       color: #ffffff;
       transition: all 0.5s;
       border-radius: 1em;
@@ -160,16 +94,9 @@
   .header-button-registration {
       position: relative;
       left: 800px;
-      display: inline-block;
       padding: 0.15em 0.7em;
-      margin: 0 0.1em 0.1em 0;
       border: 0.16em solid rgb(255, 255, 255);
-      box-sizing: border-box;
-      text-decoration: none;
-      font-family:Arial, Helvetica, sans-serif;
       color: #ffffff;
-      text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
-      text-align: center;
       background-color: black;
       transition: all 0.5s;
       border-radius: 2em;

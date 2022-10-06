@@ -37,14 +37,8 @@ public class UserService {
 
     //update user
     public Users updateUser (Users usersDetails, Long userID) {
-        Users users = userRepository.findById(userID).get();
-        users.setName(usersDetails.getName());
-        users.setEmail(usersDetails.getEmail());
-        users.setPassword(usersDetails.getPassword());
-        users.setMobile(usersDetails.getMobile());
-
-        return userRepository.save(users);
+        userRepository.findById(userID);
+        usersDetails.setId(userID);
+        return userRepository.save(usersDetails);
     }
-
-
 }

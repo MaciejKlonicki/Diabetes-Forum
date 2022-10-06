@@ -42,6 +42,7 @@ public class UserController {
         userService.deleteUser(id);
         return ResponseEntity.ok().build();
     }
+
     @PutMapping("/{id}")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     Users updateUser (@RequestBody Users users, @PathVariable(value = "id") Long id) {

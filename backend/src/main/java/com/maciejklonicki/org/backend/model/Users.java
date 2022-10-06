@@ -1,7 +1,6 @@
 package com.maciejklonicki.org.backend.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.sun.istack.NotNull;
 import lombok.*;
 
 import javax.persistence.*;
@@ -11,22 +10,23 @@ import javax.persistence.*;
 @Setter
 @AllArgsConstructor
 @ToString
+@Builder
 public class Users {
 
     @Id
     @GeneratedValue
     private Long id;
 
-    @NotNull
+    @Column(nullable = false)
     private String name;
 
-    @NotNull
+    @Column(nullable = false)
     private String email;
 
-    @NotNull
+    @Column(nullable = false)
     private String mobile;
 
-    @NotNull
+    @Column(nullable = false)
     private String password;
 
     @ManyToOne
@@ -50,6 +50,5 @@ public class Users {
     }
 
     public Users() {
-
     }
 }

@@ -64,7 +64,7 @@ class UserServiceTest {
     }
 
     @Test
-    void deleteUser() {
+    void canDeleteUser() {
         //when
         underTest.deleteUser(5L);
         //then

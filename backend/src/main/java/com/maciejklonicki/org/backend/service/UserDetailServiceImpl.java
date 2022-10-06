@@ -1,6 +1,5 @@
 package com.maciejklonicki.org.backend.service;
 
-
 import com.maciejklonicki.org.backend.model.Users;
 import com.maciejklonicki.org.backend.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
@@ -27,7 +26,6 @@ public class UserDetailServiceImpl implements UserDetailsService {
             throw new UsernameNotFoundException("Email " + email + " not found");
         }
         return new org.springframework.security.core.userdetails.User(users.getEmail(), users.getPassword(), getGrantedAuthority(users));
-
     }
 
     private Collection<GrantedAuthority> getGrantedAuthority(Users users) {

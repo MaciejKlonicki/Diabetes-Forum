@@ -22,11 +22,11 @@ function Infoline() {
 
   function InfolineNumberRoche(props) {
     return (
-      <div className='image-for-infoline-roche'>
+      <div style={{position: "fixed", top: "49%", left: "600px", bottom: "-100px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Infoline-roche'
-            className='infoline-photo-roche'
+            style={{position: "relative", height: "50px", width: "50px", bottom: "15%", left: "10%", opacity: "0.9", transition: "all 0.5s ease"}}
           />
           <p className="image__description">
               <b>Roche Diabetes Care Polska</b><br/>
@@ -39,11 +39,11 @@ function Infoline() {
 
   function InfolineNumberAscensia(props) {
     return (
-      <div className='image-for-infoline-ascensia'>
+      <div style={{position: "fixed", top: "49%", left: "600px", bottom: "120px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Infoline-ascensia'
-            className='infoline-photo-ascensia'
+            style={{position: "relative", height: "50px", width: "50px", bottom: "20%", left: "10%", opacity: "0.9", transition: "all 0.5s ease"}}
           />
           <p className="image__description">
               <b>Ascensia Diabetes Care</b><br/>
@@ -57,11 +57,11 @@ function Infoline() {
 
   function InfolineNumberAbbott(props) {
     return (
-      <div className='image-for-infoline-abbott'>
+      <div style={{position: "fixed", top: "50%", left: "600px", bottom: "380px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Infoline-abbott'
-            className='infoline-photo-abbott'
+            style={{position: "relative", height: "50px", width: "50px", bottom: "60%", left: "10%", opacity: "0.9", transition: "all 0.5s ease"}}
           />
           <p className="image__description-infoline-abbott">
               <b>Abbott Diabetes Care</b><br/>
@@ -74,11 +74,11 @@ function Infoline() {
 
   function InfolineNumberLifeScan(props) {
     return (
-      <div className='image-for-infoline-lifescan'>
+      <div style={{position: "fixed", top: "53%", left: "600px", bottom: "500px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Infoline-lifescan'
-            className='infoline-photo-lifescan'
+            style={{position: "relative", height: "50px", width: "50px", bottom: "12%", left: "10%", opacity: "0.9", transition: "all 0.5s ease"}}
           />
           <p className="image__description-2">
               <b>LifeScan Johnson and Johnson</b><br/>
@@ -92,11 +92,11 @@ function Infoline() {
 
   function InfolineNumberMedtronic(props) {
     return (
-      <div className='image-for-infoline-medtronic'>
+      <div style={{position: "fixed", top: "70%", left: "600px", bottom: "680px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Infoline-medtronic'
-            className='infoline-photo-medtronic'
+            style={{position: "relative", height: "50px", width: "50px", bottom: "12%", left: "10%", opacity: "0.9", transition: "all 0.5s ease"}}
           />
           <p className="image__description-2">
               <b>Medtronic Poland</b><br/>
@@ -110,11 +110,11 @@ function Infoline() {
 
   function InfolineNumberBioton(props) {
     return (
-      <div className='image-for-infoline-bioton'>
+      <div style={{position: "fixed", top: "85%", left: "600px", bottom: "680px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Infoline-bioton'
-            className='infoline-photo-bioton'
+            style={{position: "relative", height: "50px", width: "50px", bottom: "12%", left: "10%", opacity: "0.9", transition: "all 0.5s ease"}}
           />
           <p className="image__description-2">
               <b>Bioton</b><br/>

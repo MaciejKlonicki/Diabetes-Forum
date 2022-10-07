@@ -18,7 +18,9 @@ function Needles() {
 
   function InformationAboutNeedleVerifine4mm(props) {
     return (
-        <div style={{position: "fixed", top: "50%", left: "200px", height: "700px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
+        <div style={{position: "fixed", top: "50%", left: "200px", 
+        height: "700px", width: "380px", transform: "translate(-50%, -50%)", 
+        zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Needless-verifine4mm'
@@ -40,7 +42,9 @@ function Needles() {
 
 function InformationAboutNeedleVerifine6mm(props) {
     return (
-        <div style={{position: "fixed", top: "50%", left: "675px", height: "700px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
+        <div style={{position: "fixed", top: "50%", left: "675px", 
+        height: "700px", width: "380px", transform: "translate(-50%, -50%)", 
+        zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Needless-verifine6mm'
@@ -61,7 +65,9 @@ function InformationAboutNeedleVerifine6mm(props) {
 
 function InformationAboutNeedleInsupen8mm(props) {
     return (
-        <div style={{position: "fixed", top: "50%", left: "1150px", height: "700px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
+        <div style={{position: "fixed", top: "50%", left: "1150px", 
+        height: "700px", width: "380px", transform: "translate(-50%, -50%)", 
+        zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Needless-insupen8mm'
@@ -81,7 +87,9 @@ function InformationAboutNeedleInsupen8mm(props) {
 
 function InformationAboutNeedleInsupen4mm(props) {
     return (
-        <div style={{position: "fixed", top: "50%", left: "1600px", height: "700px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
+        <div style={{position: "fixed", top: "50%", left: "1600px", 
+        height: "700px", width: "380px", transform: "translate(-50%, -50%)", 
+        zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Needless-insupen4mm'

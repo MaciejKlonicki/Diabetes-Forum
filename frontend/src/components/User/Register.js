@@ -77,38 +77,68 @@ class Register extends Component {
                         <Form>
                             <InputGroup>
                                 <InputGroup.Text><FontAwesomeIcon icon={faUser}/></InputGroup.Text>
-                                <FormControl autoComplete='off' type='text' name='name' value={name} onChange={this.userChange}
+                                <FormControl 
+                                autoComplete='off' 
+                                type='text' 
+                                name='name' 
+                                value={name} 
+                                onChange={this.userChange}
                                 className={"bg-dark text-white"} placeholder="Nazwa użytkownika" />
                             </InputGroup>
                         </Form><br></br>
                         <Form>
                             <InputGroup>
                                 <InputGroup.Text><FontAwesomeIcon icon={faEnvelope}/></InputGroup.Text>
-                                <FormControl required autoComplete='off' type='email' name='email' value={email} onChange={this.userChange}
+                                <FormControl 
+                                required 
+                                autoComplete='off' 
+                                type='email' 
+                                name='email' 
+                                value={email} 
+                                onChange={this.userChange}
                                 className={"bg-dark text-white"} placeholder="Adres mailowy" />
                             </InputGroup>
                         </Form><br></br>
                         <Form>
                             <InputGroup>
                                 <InputGroup.Text><FontAwesomeIcon icon={faLock}/></InputGroup.Text>
-                                <FormControl required autoComplete='off' type='password' name='password' value={password} onChange={this.userChange}
+                                <FormControl 
+                                required 
+                                autoComplete='off' 
+                                type='password' 
+                                name='password' 
+                                value={password} 
+                                onChange={this.userChange}
                                 className={"bg-dark text-white"} placeholder="Hasło" />
                             </InputGroup>
                         </Form><br></br>
                         <Form>
                             <InputGroup>
                                 <InputGroup.Text><FontAwesomeIcon icon={faPhone}/></InputGroup.Text>
-                                <FormControl autoComplete='off' type='text' name='contact' value={contact} onChange={this.userChange}
+                                <FormControl 
+                                autoComplete='off' 
+                                type='text' 
+                                name='contact' 
+                                value={contact} 
+                                onChange={this.userChange}
                                 className={"bg-dark text-white"} placeholder="Numer telefonu" />
                             </InputGroup>
                         </Form><br></br>
                     </Card.Body>
                     <Card.Footer style={{"textAlign":"right"}}>
-                        <Button size="sm" type="button" variant="success" onClick={this.registerUser}
+                        <Button 
+                        size="sm" 
+                        type="button" 
+                        variant="success" 
+                        onClick={this.registerUser}
                         disabled={this.state.email.length === 0 || this.state.password.length === 0}>
                             <FontAwesomeIcon icon={faUserPlus}/> Rejestracja
                         </Button>{' '}
-                        <Button size="sm" type="button" variant="info" onClick={this.resetRegisterForm}>
+                        <Button 
+                        size="sm" 
+                        type="button" 
+                        variant="info" 
+                        onClick={this.resetRegisterForm}>
                         <FontAwesomeIcon icon={faUndo}/> Reset
                         </Button>
                     </Card.Footer>

@@ -8,7 +8,6 @@
     text-align: center;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .movedown-link-advices {
@@ -24,6 +23,6 @@
   }
 
   .movedown-link-advices:hover {
-    transform: scale(1.1);
-    transition: all 0.2s ease-out;
+    transform: scale(1.05);
+    transition: all 0.5s ease-out;
   }

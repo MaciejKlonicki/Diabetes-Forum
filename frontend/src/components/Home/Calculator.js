@@ -17,10 +17,14 @@ function Calculator() {
   function Calculators(props) {
     return (
       <div>
-        <p style={{position: "relative", top: "80px", fontSize: "1.8em", marginLeft: "11em", fontWeight: "400", color: "rgb(0,0,0)", letterSpacing: "13px", textTransform: "uppercase"}}>
+        <p style={{position: "relative", top: "80px", fontSize: "1.8em", 
+        marginLeft: "11em", fontWeight: "400", color: "rgb(0,0,0)", 
+        letterSpacing: "13px", textTransform: "uppercase"}}>
           Przeliczniki
           </p>
-        <p style={{position: "relative", top: "100px", fontSize: "1.8em", marginLeft: "38em", fontWeight: "400", color: "rgb(0,0,0)", letterSpacing: "13px", textTransform: "uppercase"}}>
+        <p style={{position: "relative", top: "100px", fontSize: "1.8em", 
+        marginLeft: "38em", fontWeight: "400", color: "rgb(0,0,0)", 
+        letterSpacing: "13px", textTransform: "uppercase"}}>
           Kalkulator
           </p>
       </div>
@@ -82,7 +86,10 @@ function Calculator() {
         <p className="calculator-desc-correct">
           Korekta:
             <input
-              style={{textDecoration: "none", position: "relative", backgroundColor: "#0000005d", top: "2px", left: "2px", width: "35px", height: "30px", cursor: "text", resize: "none", fontSize: "16px", paddingTop: "2px", paddingLeft: "9px", borderRadius: "3px", border: "2px solid black"}}
+              style={{textDecoration: "none", position: "relative", 
+              backgroundColor: "#0000005d", top: "2px", left: "2px", width: "35px", 
+              height: "30px", cursor: "text", resize: "none", fontSize: "16px", paddingTop: "2px", 
+              paddingLeft: "9px", borderRadius: "3px", border: "2px solid black"}}
               type={propTypes.number}
               id='correctNumber'
               onChange={handleChangeCorrectNumber}
@@ -99,20 +106,25 @@ function Calculator() {
               <tr>
                 <td>
               <input
-              style={{position: "relative", backgroundColor: "#0000005d", top: "25px", left: "130px", width: "35px", height: "30px", cursor: "text", resize: "none", fontSize: "16px", paddingTop: "2px", paddingLeft: "9px", borderRadius: "3px", border: "2px solid black"}}
+              style={{position: "relative", backgroundColor: "#0000005d", top: "25px", 
+              left: "130px", width: "35px", height: "30px", cursor: "text", resize: "none", 
+              fontSize: "16px", paddingTop: "2px", paddingLeft: "9px", borderRadius: "3px", border: "2px solid black"}}
               type={propTypes.number}
               id='firstBreakfast'
               onChange={handleChangeFirstBreakfast}
               name='firstBreakfast'
               value={firstBreakfast}> 
               </input><br /><br />
-          <p style={{fontSize: "0.78em", letterSpacing: "4px", marginTop: "-40px", marginLeft: "-3em", fontWeight: "400", color: "rgb(0,0,0)"}}>Pierwsze śniadanie</p>
+          <p style={{fontSize: "0.78em", letterSpacing: "4px", marginTop: "-40px", 
+          marginLeft: "-3em", fontWeight: "400", color: "rgb(0,0,0)"}}>Pierwsze śniadanie</p>
           </td>
           </tr>
           <tr>
             <td>
               <input
-              style={{position: "relative", backgroundColor: "#0000005d", top: "15px", left: "130px", width: "35px", height: "30px", cursor: "text", resize: "none", fontSize: "16px", paddingTop: "5px", paddingLeft: "5px", borderRadius: "3px", border: "2px solid black"}}
+              style={{position: "relative", backgroundColor: "#0000005d", top: "15px", 
+              left: "130px", width: "35px", height: "30px", cursor: "text", resize: "none", 
+              fontSize: "16px", paddingTop: "5px", paddingLeft: "5px", borderRadius: "3px", border: "2px solid black"}}
               type={propTypes.number}
               id='secondBreakfast'
               onChange={handleChangeSecondBreakfast}
@@ -125,7 +137,9 @@ function Calculator() {
               <tr>
               <td>
               <input
-              style={{position: "relative", backgroundColor: "#0000005d", top: "15px", left: "130px", width: "35px", height: "30px", cursor: "text", resize: "none", fontSize: "16px", paddingTop: "2px", paddingLeft: "9px", borderRadius: "3px", border: "2px solid black"}}
+              style={{position: "relative", backgroundColor: "#0000005d", top: "15px", 
+              left: "130px", width: "35px", height: "30px", cursor: "text", resize: "none", 
+              fontSize: "16px", paddingTop: "2px", paddingLeft: "9px", borderRadius: "3px", border: "2px solid black"}}
               type={propTypes.number}
               id='lunch'
               onChange={handleChangeLunch}
@@ -138,7 +152,9 @@ function Calculator() {
               <tr>
               <td>
               <input
-              style={{position: "relative", backgroundColor: "#0000005d", top: "15px", left: "130px", width: "35px", height: "30px", cursor: "text", resize: "none", fontSize: "16px", paddingTop: "2px", paddingLeft: "9px", borderRadius: "3px", border: "2px solid black"}}
+              style={{position: "relative", backgroundColor: "#0000005d", top: "15px", 
+              left: "130px", width: "35px", height: "30px", cursor: "text", resize: "none", 
+              fontSize: "16px", paddingTop: "2px", paddingLeft: "9px", borderRadius: "3px", border: "2px solid black"}}
               type={propTypes.number}
               id='tea'
               onChange={handleChangeTea}
@@ -151,7 +167,9 @@ function Calculator() {
               <tr>
               <td>
               <input
-              style={{position: "relative", backgroundColor: "#0000005d", top: "15px", left: "130px", width: "35px", height: "30px", cursor: "text", resize: "none", fontSize: "16px", paddingTop: "2px", paddingLeft: "9px", borderRadius: "3px", border: "2px solid black"}}
+              style={{position: "relative", backgroundColor: "#0000005d", top: "15px", 
+              left: "130px", width: "35px", height: "30px", cursor: "text", resize: "none", 
+              fontSize: "16px", paddingTop: "2px", paddingLeft: "9px", borderRadius: "3px", border: "2px solid black"}}
               type={propTypes.number}
               id='first-dinner'
               onChange={handleChangeFirstDinner}
@@ -164,7 +182,9 @@ function Calculator() {
               <tr>
               <td>
               <input
-              style={{position: "relative", backgroundColor: "#0000005d", top: "15px", left: "130px", width: "35px", height: "30px", cursor: "text", resize: "none", fontSize: "16px", paddingTop: "2px", paddingLeft: "9px", borderRadius: "3px", border: "2px solid black"}}
+              style={{position: "relative", backgroundColor: "#0000005d", top: "15px", 
+              left: "130px", width: "35px", height: "30px", cursor: "text", resize: "none", 
+              fontSize: "16px", paddingTop: "2px", paddingLeft: "9px", borderRadius: "3px", border: "2px solid black"}}
               type={propTypes.number}
               id='second-dinner'
               onChange={handleChangeSecondDinner}

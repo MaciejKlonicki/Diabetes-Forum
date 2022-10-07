@@ -55,8 +55,14 @@ class Login extends Component {
                     <Form>
                         <InputGroup>
                             <InputGroup.Text><FontAwesomeIcon icon={faEnvelope}/></InputGroup.Text>
-                        <FormControl required autoComplete='off' type='text' name='email' value={email} onChange={this.credentialChange}
-                            className={"bg-dark text-white"} placeholder="Wpisz adres mailowy"/>
+                        <FormControl 
+                        required 
+                        autoComplete='off' 
+                        type='text' 
+                        name='email' 
+                        value={email} 
+                        onChange={this.credentialChange}
+                        className={"bg-dark text-white"} placeholder="Wpisz adres mailowy"/>
                         </InputGroup>
                     </Form>
                     <br></br>
@@ -64,17 +70,31 @@ class Login extends Component {
                         <InputGroup>
                             <InputGroup.Text><FontAwesomeIcon icon={faLock} /></InputGroup.Text>
                         
-                        <FormControl required autoComplete='off' type='password' name='password' value={password} onChange={this.credentialChange}
-                            className={"bg-dark text-white"} placeholder="Wpisz hasło"/>
+                        <FormControl 
+                        required 
+                        autoComplete='off' 
+                        type='password' 
+                        name='password' 
+                        value={password} 
+                        onChange={this.credentialChange}
+                        className={"bg-dark text-white"} placeholder="Wpisz hasło"/>
                         </InputGroup>
                     </Form>
                 </Card.Body>
                 <Card.Footer style={{"textAlign":"right"}}>
-                    <Button size="sm" type="button" variant="success" onClick={this.validateUser}
+                    <Button 
+                    size="sm" 
+                    type="button" 
+                    variant="success" 
+                    onClick={this.validateUser}
                     disabled={this.state.email.length===0 || this.state.password.length===0}>
                         <FontAwesomeIcon icon={faSignInAlt}/> Login
                     </Button>{' '}
-                    <Button size="sm" type="button" variant="info" onClick={this.resetLoginForm} 
+                    <Button 
+                    size="sm" 
+                    type="button" 
+                    variant="info" 
+                    onClick={this.resetLoginForm} 
                     disabled={this.state.length===0 && this.state.password.length===0 && this.state.error.length===0}>
                         <FontAwesomeIcon icon={faUndo}/> Reset
                     </Button>

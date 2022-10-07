@@ -18,13 +18,17 @@ function Glucometers() {
 
 function InformationAboutGlucometerGlucomaxxx(props) {
     return (
-        <div style={{position: "fixed", top: "53%", left: "200px", height: "700px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
+        <div style={{position: "fixed", top: "53%", left: "200px", 
+        height: "700px", width: "380px", transform: "translate(-50%, -50%)", 
+        zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Glucometr-Glucomaxxx'
             className='glucometr-glucomaxxx-photo'
           />
-          <div style={{position: "absolute", alignItems: "center", justifyContent: "center", color: "black", width: "350px", height: "350px", bottom: "-2%", left: "17%"}}>
+          <div style={{position: "absolute", alignItems: "center", 
+          justifyContent: "center", color: "black", width: "350px", 
+          height: "350px", bottom: "-2%", left: "17%"}}>
             <h2>Glukometr Glucomaxx</h2>
           </div>
             <p className="image__description-glucomaxxx">
@@ -39,7 +43,9 @@ function InformationAboutGlucometerGlucomaxxx(props) {
 
 function InformationAboutGlucometerGlucosense(props) {
   return (
-      <div style={{position: "fixed", top: "100%", left: "675px", height: "700px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
+      <div style={{position: "fixed", top: "100%", left: "675px", 
+      height: "700px", width: "380px", transform: "translate(-50%, -50%)", 
+      zIndex: "1", textAlign: "center"}}>
         <img
           src={props.img}
           alt='Glucometr-glucosense'
@@ -62,7 +68,9 @@ function InformationAboutGlucometerGlucosense(props) {
 
 function InformationAboutGlucometeriXellPro(props) {
   return (
-      <div style={{position: "fixed", top: "100%", left: "1175px", height: "700px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
+      <div style={{position: "fixed", top: "100%", left: "1175px", 
+      height: "700px", width: "380px", transform: "translate(-50%, -50%)", 
+      zIndex: "1", textAlign: "center"}}>
         <img
           src={props.img}
           alt='Glucometr-iXellPro'
@@ -82,7 +90,9 @@ function InformationAboutGlucometeriXellPro(props) {
 
 function InformationAboutGlucometeriXell(props) {
   return (
-      <div style={{position: "fixed", top: "100%", left: "1600px", height: "700px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
+      <div style={{position: "fixed", top: "100%", left: "1600px", 
+      height: "700px", width: "380px", transform: "translate(-50%, -50%)", 
+      zIndex: "1", textAlign: "center"}}>
         <img
           src={props.img}
           alt='Glucometr-iXell'

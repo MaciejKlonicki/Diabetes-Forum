@@ -16,13 +16,15 @@ function Informations() {
 
   function ImagesForInformations(props) {
     return (
-      <div style={{position: "fixed", top: "50%", left: "250px", height: "600px", width: "380px", transform: "translate(-50%, -50%)", textAlign: "center"}}>
+      <div style={{position: "fixed", top: "50%", left: "250px", 
+      height: "600px", width: "380px", transform: "translate(-50%, -50%)", textAlign: "center"}}>
           <img
           src={props.img}
           alt='Informations'
           className='info-photo'
           />
-          <div style={{position: "absolute", bottom: "0%", left: "15%", color: "white", width: "350px", height: "650px"}}>
+          <div style={{position: "absolute", bottom: "0%", 
+          left: "15%", color: "white", width: "350px", height: "650px"}}>
           <h2>Czym jest cukrzyca?</h2>
           </div>
           <div className="image__overlay">
@@ -43,13 +45,15 @@ function Informations() {
 
   function ImagesForTypesOfDiabetes(props) {
     return (
-      <div style={{position: "fixed", top: "50%", left: "870px", height: "600px", width: "380px", transform: "translate(-50%, -50%)", textAlign: "center"}}>
+      <div style={{position: "fixed", top: "50%", left: "870px", 
+      height: "600px", width: "380px", transform: "translate(-50%, -50%)", textAlign: "center"}}>
           <img
           src={props.img}
           alt='Types'
           className='info-photo'
           />
-          <div style={{position: "absolute", bottom: "0%", left: "15%", color: "white", width: "350px", height: "650px"}}>
+          <div style={{position: "absolute", bottom: "0%", 
+          left: "15%", color: "white", width: "350px", height: "650px"}}>
           <h2>Typy cukrzycy</h2>
           </div>
           <div className="image__overlay">
@@ -69,13 +73,15 @@ function Informations() {
 
   function ImagesForTreatmentOfDiabetes(props) {
     return (
-      <div style={{position: "fixed", top: "50%", left: "1520px", height: "600px", width: "380px", transform: "translate(-50%, -50%)", textAlign: "center"}}>
+      <div style={{position: "fixed", top: "50%", left: "1520px", 
+      height: "600px", width: "380px", transform: "translate(-50%, -50%)", textAlign: "center"}}>
           <img
           src={props.img}
           alt='Treatment'
           className='info-photo'
           />
-          <div style={{position: "absolute", bottom: "0%", left: "15%", color: "white", width: "350px", height: "650px"}}>
+          <div style={{position: "absolute", bottom: "0%", 
+          left: "15%", color: "white", width: "350px", height: "650px"}}>
           <h2>Leczenie cukrzycy</h2>
           </div>
           <div className="image__overlay">

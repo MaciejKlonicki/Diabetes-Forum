@@ -93,11 +93,14 @@ class HeaderComp extends Component {
 
   const guestLinks = (
     <>
-      <Link to='/' style={{position: "relative", right: "800px"}}>
+      <Link to='/' 
+      style={{position: "relative", right: "800px"}}>
       <img src='/images/sugar-blood-level.png' alt='sugar-logo'/>
       </Link>
-      <Link to="/logowanie"><button className="header-button-login btn">Logowanie</button></Link>
-      <Link to="/rejestracja"><button className="header-button-registration btn">Rejestracja</button></Link>
+      <Link to="/logowanie">
+        <button className="header-button-login btn">Logowanie</button></Link>
+      <Link to="/rejestracja">
+        <button className="header-button-registration btn">Rejestracja</button></Link>
     </>
   );
 
@@ -115,7 +118,8 @@ class HeaderComp extends Component {
         <Link to='/'
         className='header-links'
         >
-          <div style={{position: "relative", top: "26px", left: "45px"}}>
+          <div 
+          style={{position: "relative", top: "26px", left: "45px"}}>
             <AiFillCaretDown />
           </div>
           Cukrzyca
@@ -129,7 +133,7 @@ class HeaderComp extends Component {
           onMouseLeave={onMouseLeaveEquipment}
         >
         <Link to='/'
-        className='header-links'
+          className='header-links'
         >
           <div style={{position: "relative", top: "26px", left: "35px"}}>
             <AiFillCaretDown />

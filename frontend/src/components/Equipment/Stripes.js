@@ -18,7 +18,9 @@ function Stripes() {
 
   function InformationAboutStripeAccuChekActive(props) {
     return (
-        <div style={{position: "fixed", top: "50%", left: "200px", height: "700px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
+        <div style={{position: "fixed", top: "50%", left: "200px", 
+        height: "700px", width: "380px", transform: "translate(-50%, -50%)", 
+        zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Stripes-accuChekActive'
@@ -42,7 +44,9 @@ function Stripes() {
 
 function InformationAboutStripeAccuChekGuide(props) {
     return (
-        <div style={{position: "fixed", top: "50%", left: "675px", height: "700px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
+        <div style={{position: "fixed", top: "50%", left: "675px", 
+        height: "700px", width: "380px", transform: "translate(-50%, -50%)", 
+        zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Stripes-accuChekGuide'
@@ -65,7 +69,9 @@ function InformationAboutStripeAccuChekGuide(props) {
 
 function InformationAboutStripeAccuCheckInstant(props) {
     return (
-        <div style={{position: "fixed", top: "50%", left: "1150px", height: "700px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
+        <div style={{position: "fixed", top: "50%", left: "1150px", 
+        height: "700px", width: "380px", transform: "translate(-50%, -50%)", 
+        zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Stripes-accuChekInstant'
@@ -87,7 +93,9 @@ function InformationAboutStripeAccuCheckInstant(props) {
 
 function InformationAboutStripeExamedinFast(props) {
     return (
-        <div style={{position: "fixed", top: "50%", left: "1610px", height: "700px", width: "380px", transform: "translate(-50%, -50%)", zIndex: "1", textAlign: "center"}}>
+        <div style={{position: "fixed", top: "50%", left: "1610px", 
+        height: "700px", width: "380px", transform: "translate(-50%, -50%)", 
+        zIndex: "1", textAlign: "center"}}>
           <img
             src={props.img}
             alt='Stripes-examedinFast'

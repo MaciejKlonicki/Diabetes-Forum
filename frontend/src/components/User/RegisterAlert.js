@@ -35,7 +35,8 @@ class RegisterAlert extends Component {
             return (
                 <>
                 <div className='RegistrationAlert'>
-                    <Alert variant={this.state.variant} onClose={() => this.setState({visible: false})} dismissible>
+                    <Alert variant={this.state.variant} 
+                    onClose={() => this.setState({visible: false})} dismissible>
                         <Alert.Heading>{this.state.heading}</Alert.Heading>
                         <p>
                             {this.state.message}

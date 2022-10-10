@@ -14,28 +14,23 @@ public class UserService {
 
     private final UserRepository userRepository;
 
-    //getting all users
     public List<Users> findAllUsers () {
         return userRepository.findAll();
     }
 
-    //getting single user
     public Optional<Users> findSingleUser (Long id) {
         return userRepository.findById(id);
     }
 
-    //adding new user
     public Users addNewUser (Users users) {
         userRepository.saveAndFlush(users);
         return users;
     }
 
-    //delete user
     public void deleteUser (Long id) {
         userRepository.deleteById(id);
     }
 
-    //update user
     public Users updateUser (Users usersDetails, Long userID) {
         userRepository.findById(userID);
         usersDetails.setId(userID);

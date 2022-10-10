@@ -16,6 +16,8 @@ export default function Contact() {
         e.target.reset()
     }
 
+
+
     return(
         <div>
             <div>

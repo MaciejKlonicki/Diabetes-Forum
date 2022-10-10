@@ -31,7 +31,7 @@ function Infoline() {
             style={{position: "relative", height: "50px", width: "50px", 
             bottom: "15%", left: "10%", opacity: "0.9", transition: "all 0.5s ease"}}
           />
-          <p className="image__description">
+          <p className="image__description-info">
               <b>Roche Diabetes Care Polska</b><br/>
               <b>801 080 104</b><br />
               czynna poniedziałek-piątek, godz. 8.00 - 16.00
@@ -51,7 +51,7 @@ function Infoline() {
             style={{position: "relative", height: "50px", width: "50px", 
             bottom: "20%", left: "10%", opacity: "0.9", transition: "all 0.5s ease"}}
           />
-          <p className="image__description">
+          <p className="image__description-info">
               <b>Ascensia Diabetes Care</b><br/>
               <b>800 999 090</b><br />
               infolinia bezpłatna z komórek:<br/> 

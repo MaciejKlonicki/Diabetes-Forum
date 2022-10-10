@@ -17,18 +17,22 @@ import java.util.Optional;
 @RequiredArgsConstructor
 @CrossOrigin(origins = "http://localhost:3000")
 public class UserController {
+
     private final UserService userService;
+
     @GetMapping
     @PreAuthorize("hasRole('ROLE_ADMIN') or hasRole('ROLE_USER')")
     List<Users> findAllUsers() {
         return userService.findAllUsers();
     }
+
     @GetMapping("/{id}")
     ResponseEntity<?> getSingleUser(@PathVariable Long id) {
         Optional<Users> users = userService.findSingleUser(id);
         return users.map(response -> ResponseEntity.ok().body(response))
                 .orElse(new ResponseEntity<>(HttpStatus.NOT_FOUND));
     }
+
     @PostMapping
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     ResponseEntity<Users> addNewUser (@RequestBody Users users) throws URISyntaxException {
@@ -36,6 +40,7 @@ public class UserController {
         return ResponseEntity.created(new URI("/users" + result.getId()))
                 .body(result);
     }
+
     @DeleteMapping("/{id}")
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     public ResponseEntity<?> deleteUser(@PathVariable Long id) {

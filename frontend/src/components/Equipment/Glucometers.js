@@ -101,7 +101,7 @@ function InformationAboutGlucometeriXell(props) {
         <div className='h2-pos'>
         <h2>Glukometr iXell</h2>
         </div>
-          <p className="iimage__description-glu">
+          <p className="image__description-glu">
             Jeden przycisk – proste użytkowanie glukometru
             Brak kodowania – eliminuje ryzyko błędu przy nowym opakowaniu pasków.
             Wyrzut paska po pomiarze – bezpieczeństwo dla pacjenta i osób z jego otoczenia.

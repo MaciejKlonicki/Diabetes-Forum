@@ -9,10 +9,11 @@ Forum for diabetes - all about: treatment, daily life, equipment, curiosities, i
 - Login and registration system.
 - Contact form to send an email to the page administration.
 - Admin and User role.
-- More options available for admin than user.
 - JWT Token applied.
 - Spring security applied.
 - Security Router URL's,
 - Login and register forms,
 - You cannot register to the existing email,
-- You cannot go to some URL's which are inside of Private Roues.
+- You cannot go to some URL's which are inside of Private Routes,
+- Tests for backend applied,
+- diabetic diary - mobile app (simple mobile app, where we can add and delete some daily messages). 

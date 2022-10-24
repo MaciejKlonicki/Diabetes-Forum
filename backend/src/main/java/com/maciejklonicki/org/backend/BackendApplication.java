@@ -1,13 +1,22 @@
 package com.maciejklonicki.org.backend;
 
+import com.maciejklonicki.org.backend.model.Role;
+import com.maciejklonicki.org.backend.model.Users;
+import com.maciejklonicki.org.backend.service.RoleService;
+import com.maciejklonicki.org.backend.service.UserService;
+import com.maciejklonicki.org.backend.utils.ConstantUtils;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @SpringBootApplication
 @RequiredArgsConstructor
 public class BackendApplication implements CommandLineRunner {
+
+//	private final UserService userService;
+//	private final RoleService roleService;
 
 	public static void main(String[] args) {
 		SpringApplication.run(BackendApplication.class, args);

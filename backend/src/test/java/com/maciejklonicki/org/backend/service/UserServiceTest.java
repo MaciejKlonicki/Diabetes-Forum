@@ -29,6 +29,10 @@ class UserServiceTest {
     }
 
     @Test
+    void isRepoNotEmpty() {
+        assertThat(userRepository).isNotNull();
+    }
+    @Test
     void canFindAllUsers() {
         //when
         underTest.findAllUsers();

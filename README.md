@@ -1,19 +1,49 @@
-# Diabetes-Forum
-Forum for diabetes - all about: treatment, daily life, equipment, curiosities, infolines, etc 
+# Forum for diabetes
+# Informations
+Forum is provided for people with diabetes diseases. Contains all the information you need to know about diabetes like basics, equipment, nutrition, daily life, complications, helplines and more.
+Application provides REST API that may be used to log in or register users account with JSON Web Token.
 
-# Features
-- Converters - food converters to calculate boluses for food.
-- Informations - all needed informations for diabetes like what to eat, how to life.
-- Calculator - calculator to calculate the eaten food to convert that to [J] for glucometers to input boluses.
-- Simple interface of the page. 
-- Login and registration system.
-- Contact form to send an email to the page administration.
-- Admin and User role.
-- JWT Token applied.
-- Spring security applied.
-- Security Router URL's,
-- Login and register forms,
-- You cannot register to the existing email,
-- You cannot go to some URL's which are inside of Private Routes,
-- Tests for backend applied,
-- diabetic diary - mobile app (simple mobile app, where we can add and delete some daily messages). 
+| Role | User | Admin |
+| :---         |     :---:      | ---: |
+| E-mail   |test@user.com|test@admin.com|
+| Password     |testuser|testadmin  
+
+# Technologies
+• Java 17
+
+• Spring Boot 5
+
+• Spring Security 5
+
+• PostgreSQL
+
+• Tomcat
+
+• JWT Token
+
+• Maven
+
+• IntelliJ IDEA
+
+• Hibernate
+
+• Spring Data JPA
+
+• DevTools
+
+• Lombok
+
+• H2
+
+• Jettison
+
+# Diabetes
+• Basics of diabetes | Good eating habits | Daily life with diabetes
+# Equipment
+• Types of glucometers | Types of insulin strips | Types of insulin needles
+# Advices
+• How to live with diabetes | Diabetes complications | Diabetes first aid kit | Diabetic depression
+# More
+• Interesting facts | Diabetes helplines
+# Practical tools
+• Food converters | Diabetic calculator

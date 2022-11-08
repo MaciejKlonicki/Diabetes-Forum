@@ -280,3 +280,26 @@ README.md
 
 # Screenshots
 
+### Main page (not logged in)
+![image](https://user-images.githubusercontent.com/82573905/200570217-617530db-608d-4d3b-9f1e-35d8a6d426f2.png)
+### Login and Registration froms
+![image](https://user-images.githubusercontent.com/82573905/200570388-0c61e5d6-16b3-4cea-82bb-03d96e12c5cd.png)
+![image](https://user-images.githubusercontent.com/82573905/200570491-569c5c9e-619c-41c2-b286-3b6a9421512a.png)
+### Main page (after successful login)
+![image](https://user-images.githubusercontent.com/82573905/200570665-b268a617-3dc5-4a03-b069-5f02f1ede36f.png)
+### Other pages
+![image](https://user-images.githubusercontent.com/82573905/200570784-b662ed1a-3591-4fc5-bf72-25f114fbeda9.png)
+
+![image](https://user-images.githubusercontent.com/82573905/200570846-76253535-c0e4-4c2f-a8f5-dcf38a5f81eb.png)
+
+![image](https://user-images.githubusercontent.com/82573905/200570897-8d114db9-21e2-4a1f-adde-9c46dd33cf1d.png)
+
+![image](https://user-images.githubusercontent.com/82573905/200570972-6f6ace9b-15af-47e5-9820-ec38729fe4f6.png)
+
+![image](https://user-images.githubusercontent.com/82573905/200571018-ace7bdbf-8a98-4dae-9bb2-f69d8cecc1b2.png)
+
+![image](https://user-images.githubusercontent.com/82573905/200571145-74b9ec45-385b-4c3f-b82e-0d42ae4e1587.png)
+
+
+
+
